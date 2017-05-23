@@ -10,7 +10,7 @@
 
 @media only screen and (max-width:1220px){
 
-	body{font-size: 18px;}
+	body{font-size: 17px;}
 	h1{font-size:55px;}
 	h2{font-size:45px;}
 	h3{font-size:36px;}
@@ -211,9 +211,9 @@
 	}
 
 	.menu{
-		right: 50%;
-		top:auto;
-		bottom:-30px;
+		right: 50% !important;
+		top:auto !important;
+		bottom:-30px !important;
 		margin-right: -75px;
 	}
 
