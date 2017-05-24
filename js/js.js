@@ -115,16 +115,21 @@ $("#contact-me form").validate({
 	  },
 	},
 	submitHandler: function (form) {
-	    $.ajax({
-	    type: "POST",
-	    url: "mail.php",
-	    data: $(form).serialize(),
-	    success: function () {
-	        $("#contact-me form :input").prop("disabled", true);
-	        $('#contact-me .thank-you').fadeIn();
-	    }
-	    });
-	    return false; // required to block normal submit since you used ajax
+        if($('.samanira_secure').val() == '') {
+    	    $.ajax({
+    	    type: "POST",
+    	    url: "mail.php",
+    	    data: $(form).serialize(),
+    	    success: function () {
+    	        $("#contact-me form :input").prop("disabled", true);
+    	        $('#contact-me .thank-you').fadeIn();
+    	    }
+    	    });
+    	    return false; // required to block normal submit since you used ajax
+        } else {
+          $('.contact-form form input[type="submit"]').prop('disabled', true);
+          return false;
+        }   
 	},
 	errorPlacement: function(){
 	    return false;  // suppresses error message text
