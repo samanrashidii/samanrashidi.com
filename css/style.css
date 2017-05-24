@@ -646,4 +646,11 @@
 	border-color: #0a9abd !important;
 }
 
+.samanira_secure{
+	visibility: hidden !important;
+	opacity: 0 !important;
+	height: 0 !important;
+	border:none !important;
+}
+
 /*****       Footer       *****/
