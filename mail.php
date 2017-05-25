@@ -5,7 +5,7 @@
 		$to .= 'me@samanrashidi.com';
 		
 		// subject
-		$subject = $_POST['full_name'];
+		$subject = 'Samanrashidi.com: ' . $_POST['full_name'];
 		
 		// message
 		$message = '<strong>Message from contact me section</strong><br />
