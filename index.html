@@ -69,13 +69,13 @@
 		</style>
 	</head>
 	<body>
-		<div id="wrapper">
+		<div id="wrapper" itemscope itemtype="http://www.schema.org/Person" itemprop="developer">
 
 <!-- ======== Header Start ======== -->
 
 			<div class="menu">
 				<div class="menu-wrapper">
-					<ul class="menu-items">
+					<ul class="menu-items" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
 						<li class="menu-item">
 							<button class="menu-item-button" onClick="JavaScript:$('#Home').animatescroll({scrollSpeed:1200,easing:'easeInExpo'})">
 								<i class="menu-item-icon home" title="Home"></i>
@@ -146,7 +146,7 @@
 								<h1>About Me</h1>
 							</div><!-- section-title end -->
 							<div class="section-content">
-								<p class="justified">My name is Saman Rashidi, I’m from Tehran, Iran, and I specialize in Web Design and Front-end Web Development. I hold 4 CIW certification from MFTN (Mojtama Fani Tehran), and have gained more than 8500 points and 100 achievements in <a target="_blank" href="http://www.teamtreehouse.com/samanrashidi">TeamTreeHouse</a> Website. I started working with <a target="_blank" href="http://www.edoramedia.com">Edoramedia</a> digital solution company since October 2014 as a front-end developer. Before entering a career in creating web pages, I received my bachelor’s degree in Biology and shortly became highly interested in the science known as Neuromarketing. Due to my passion and education, I pursued the Marketing Management certification and worked with Dr. Mohsen Oftadehal (Cognitive Scientist) to concentrate on advertising skills approached using biological methods. Today I am a Senior Front-end Developer in Edoramedia focus on designing creative and appealing websites, attractive and clean to the viewers’ eyes, and skillfully developed on the back-end.I am the owner of <a target="_blank" href="http://github.com/samanrashidii/samanira">SamanirA</a> framework with my partner <a target="_blank" href="http://www.samirasalimian.com">Samira Salimian</a> to make a better and simpler framework for front-end developers.</p>
+								<p class="justified" itemprop="description">My name is <strong itemprop="name">Saman Rashidi</strong>, I’m from Tehran, Iran, and I specialize in <strong itemprop="expertise">Web Design and Front-end Web Development</strong>. I hold 4 CIW certification from MFTN (Mojtama Fani Tehran), and have gained more than 8500 points and 100 achievements in <a target="_blank" href="http://www.teamtreehouse.com/samanrashidi">TeamTreeHouse</a> Website. I started working with <a itemprop="company" target="_blank" href="http://www.edoramedia.com">Edoramedia</a> digital solution company since October 2014 as a front-end developer. Before entering a career in creating web pages, I received my bachelor’s degree in Biology and shortly became highly interested in the science known as Neuromarketing. Due to my passion and education, I pursued the Marketing Management certification and worked with Dr. Mohsen Oftadehal (Cognitive Scientist) to concentrate on advertising skills approached using biological methods. Today I am a Senior Front-end Developer in Edoramedia focus on designing creative and appealing websites, attractive and clean to the viewers’ eyes, and skillfully developed on the back-end.I am the owner of <a target="_blank" href="http://github.com/samanrashidii/samanira">SamanirA</a> framework with my partner <a target="_blank" href="http://www.samirasalimian.com">Samira Salimian</a> to make a better and simpler framework for front-end developers.</p>
 							</div><!-- section-content end -->
 							<div class="pagination">
 								<div class="pagination-content">
@@ -188,7 +188,7 @@
 								</div><!-- pagination-navigation end -->
 							</div><!-- pagination end -->
 						</div><!-- reveal end -->
-						<img class="saman" src="images/saman_rashidi.png" alt="" />
+						<img itemprop="image" class="saman" src="images/saman_rashidi.png" alt="" />
 					</div><!-- frame end -->
 				</div><!-- about-me end -->
 
@@ -664,15 +664,15 @@
 								<h3 class="inner-title information-icon">Contact Information</h3>
 								<div class="contact-info">
 									<ul>
-										<li><strong class="mobile-icon">Mobile Number:</strong> <a href="tel:+989128996990">+989128996990</a></li>
+										<li><strong class="mobile-icon">Mobile Number:</strong> <a itemprop="mobileNumber" href="tel:+989128996990">+989128996990</a></li>
 										<li><strong class="navigation-icon">Address:</strong> <a target="_blank" href="https://www.google.com/maps/@32.4943981,54.451405,6z">Tehran, Iran.</a></li>
-										<li><strong class="email-icon">Email Address:</strong> <a href="mailto:me@samanrashidi.com">Me@samanrashidi.com</a></li>
+										<li><strong class="email-icon">Email Address:</strong> <a itemprop="emailAddress" href="mailto:me@samanrashidi.com">Me@samanrashidi.com</a></li>
 										<li class="socials">
-											<a class="social-icon telegram" target="_blank" href="https://telegram.me/samanrashidii"></a>
-											<a class="social-icon github" target="_blank" href="https://github.com/samanrashidii"></a>
-											<a class="social-icon linkedin" target="_blank" href="https://www.linkedin.com/in/samanrsh"></a>
-											<a class="social-icon googleplus" target="_blank" href="https://plus.google.com/109638627387819515843"></a>
-											<a class="social-icon facebook" target="_blank" href="https://www.facebook.com/Samanrashidii"></a>	
+											<a itemprop="telegramID" class="social-icon telegram" target="_blank" href="https://telegram.me/samanrashidii"></a>
+											<a itemprop="github" class="social-icon github" target="_blank" href="https://github.com/samanrashidii"></a>
+											<a itemprop="linkedin" class="social-icon linkedin" target="_blank" href="https://www.linkedin.com/in/samanrsh"></a>
+											<a itemprop="googlePlus" class="social-icon googleplus" target="_blank" href="https://plus.google.com/109638627387819515843"></a>
+											<a itemprop="facebook" class="social-icon facebook" target="_blank" href="https://www.facebook.com/Samanrashidii"></a>	
 										</li>
 									</ul>
 								</div><!-- contact-info end -->
@@ -753,7 +753,7 @@
 			<div id="footer" class="has-shape shape-4 center-aligned">
 				<div class="frame">
 					<a href="http://www.samanrashidi.com"><img src="images/logo.png" alt="" /></a>
-					<span>Copyright © <span class="current-year"></span> <a href="http://www.samanrashidi.com">Saman Rashidi</a>. All rights reserved</span>
+					<span>Copyright © <span class="current-year"></span> <a itemprop="url" href="http://www.samanrashidi.com">Saman Rashidi</a>. All rights reserved</span>
 				</div><!-- frame end -->
 			</div><!-- approach end -->
 
