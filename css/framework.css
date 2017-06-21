@@ -204,6 +204,7 @@ button{cursor: pointer;}
 }
 
 .bttn.large{
+	min-width: 0;
 	font-size: 20px;
 	padding:12px 25px;
 	margin:0;

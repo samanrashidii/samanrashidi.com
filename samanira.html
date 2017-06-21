@@ -19,6 +19,7 @@
 
         <!-- CSS Files
         ================================================== -->
+        <link rel="stylesheet" type="text/css" href="css/samanira.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/framework.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/saman.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
@@ -27,6 +28,8 @@
         <!-- Javascript Files
         ================================================== -->
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/core.plugins.js"></script>
+        <script type="text/javascript" src="js/samanira.js"></script>
         <script type="text/javascript" src="js/reveal.js"></script>
         <script type="text/javascript" src="js/animate.js"></script>
 
@@ -246,7 +249,168 @@
 </code>
 </pre>
                             </div><!-- css-code-box end -->
-                        <p>In here we are resetting main selectors and defining the project main properties</p>
+                            <p>- In here we are resetting main selectors and defining the project main properties</p>
+                            <h5>#FORM</h5>
+                            <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">::-webkit-input-placeholder</span><span class="code-item">{</span>
+    font-family: 'Roboto';
+    font-size:16px;
+    color: #9a9a9a;
+<span class="code-item">}</span>
+
+<span class="selector">:-moz-placeholder</span><span class="code-item">{</span>
+    font-family: 'Roboto';
+    font-size:16px;
+    color: #9a9a9a;
+<span class="code-item">}</span>
+
+<span class="selector">::-moz-placeholder</span><span class="code-item">{</span>
+    font-family: 'Roboto';
+    font-size:16px;
+    color: #9a9a9a;
+<span class="code-item">}</span>
+
+<span class="selector">:-ms-input-placeholder</span><span class="code-item">{</span>  
+    font-family: 'Roboto';
+    font-size:16px;
+    color: #9a9a9a;
+<span class="code-item">}</span>
+
+<span class="selector">fieldset</span><span class="code-item">{</span>
+    padding:15px;
+    border:1px solid #121212;
+<span class="code-item">}</span>
+
+<span class="selector">legend</span><span class="code-item">{</span>
+    font-size: 20px;
+    color:#121212;
+    padding:0 15px;
+<span class="code-item">}</span>
+
+<span class="selector">input</span><span class="code-item">,</span>
+<span class="selector">textarea</span><span class="code-item">,</span>
+<span class="selector">button</span><span class="code-item">{</span>
+    font-family: 'Roboto';
+    font-size: 16px;
+    color:#121212;
+    outline:none;
+    background-color: #ffffff;
+    border:none;
+    -webkit-appearance:none;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
+
+<span class="selector">select</span><span class="code-item">{</span>
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    text-align: center;
+    padding:0 15px;
+    outline: none;
+    background: url('../images/assets/arrow-bottom.png') no-repeat 95% center #ffffff;
+    border:1px solid #121212;
+    border-radius: 2px;
+    -webkit-appearance:none;
+<span class="code-item">}</span>
+
+<span class="selector">input</span><span class="code-item">{</span>
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding:0 15px;
+    border:1px solid #121212;
+    border-radius: 2px;
+<span class="code-item">}</span>
+
+<span class="selector">textarea</span><span class="code-item">{</span>
+    width: 100%;
+    height: 150px;
+    padding:15px;
+    resize:none;
+    border:1px solid #121212;
+    border-radius: 2px;
+<span class="code-item">}</span>
+
+<span class="selector">label</span><span class="code-item">{</span>
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color:#121212;
+    padding-top:12px;
+<span class="code-item">}</span>
+
+<span class="selector">input[type="submit"]</span><span class="code-item">{</span>
+    display: inline-block;
+    min-width: 160px;
+    width: auto;
+    font-size: 16px;
+    color:#ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding:0 15px;
+    cursor: pointer;
+    background-color: #121212;
+    border-radius: 2px;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
+
+<span class="selector">input[type="search"]</span><span class="code-item">{</span>
+    padding-right: 32px;
+    background: url('../images/icons/search.png') no-repeat 95% center #ffffff;
+<span class="code-item">}</span>
+
+<span class="selector">input[type="reset"]</span><span class="code-item">{</span>
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    color: #121212;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+<span class="code-item">}</span>
+
+<span class="selector">input[type="file"]</span><span class="code-item">{</span>
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 200px;
+    padding:0;
+    opacity: 0;
+    cursor: pointer;
+    border:none;
+    border-radius: 2px;
+    z-index: 5;
+<span class="code-item">}</span>
+
+<span class="selector">input.has-icon</span><span class="code-item">{</span>padding-right: 40px;<span class="code-item">}</span>
+<span class="selector">input.datepicker</span><span class="code-item">{</span>cursor: pointer;<span class="code-item">}</span>
+
+<span class="selector">address</span><span class="code-item">{</span>font-style: normal;<span class="code-item">}</span>
+
+<span class="selector">input:not([type="submit"]):focus</span><span class="code-item">,</span>
+<span class="selector">textarea:focus</span><span class="code-item">,</span>
+<span class="selector">select:focus</span><span class="code-item">{</span>border-color: #0a9abd;<span class="code-item">}</span>
+
+<span class="selector">input[type="submit"]:hover</span><span class="code-item">,</span>
+<span class="selector">input[type="submit"]:focus</span><span class="code-item">{</span>background-color: #0a9abd;<span class="code-item">}</span>
+</code>
+</pre>
+                            </div><!-- css-code-box end -->
+                            <p>- In here we are resetting form selectors and defining the project form properties</p>                        
                         </div><!-- main-port-content end -->
                         <div class="side-port-content">
                             <div class="button-box">
