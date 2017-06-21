@@ -83,78 +83,177 @@
                             </ol>
                             <h4 class="reveal">What is the arrangement rules for <strong>css properties</strong> ?</h4>
                             <p>In <a href="http://github.com/samanrashidii/samanira" target="_blank"><strong>SamanirA</strong></a> we put each css property with the same arrangement after each other, that makes your code organized and clean. You can see the arrangement rules here :</p>
-                            <div class="code-box">
-                                <span class="code-1">Selector</span>&nbsp;&nbsp;{
-                                <br />
-                                <div class="inner-code code-2">content</div>
-                                <div class="inner-code code-2">direction</div>
-                                <div class="inner-code code-2">box-sizing</div>
-                                <div class="inner-code code-2">position</div>
-                                <div class="inner-code code-2">top</div>
-                                <div class="inner-code code-2">right</div>
-                                <div class="inner-code code-2">bottom</div>
-                                <div class="inner-code code-2">left</div>
-                                <div class="inner-code code-2">display</div>
-                                <div class="inner-code code-2">vertical-align</div>
-                                <div class="inner-code code-2">float</div>
-                                <div class="inner-code code-2">min-width</div>
-                                <div class="inner-code code-2">width</div>
-                                <div class="inner-code code-2">max-width</div>
-                                <div class="inner-code code-2">min-height</div>
-                                <div class="inner-code code-2">height</div>
-                                <div class="inner-code code-2">max-height</div>
-                                <div class="inner-code code-2">line-height</div>
-                                <div class="inner-code code-2">overflow</div>
-                                <div class="inner-code code-2">overflow-x</div>
-                                <div class="inner-code code-2">overflow-y</div>
-                                <div class="inner-code code-2">font-family</div>
-                                <div class="inner-code code-2">font-size</div>
-                                <div class="inner-code code-2">font-weight</div>
-                                <div class="inner-code code-2">font-style</div>
-                                <div class="inner-code code-2">font-variant</div>
-                                <div class="inner-code code-2">color</div>
-                                <div class="inner-code code-2">text-align</div>
-                                <div class="inner-code code-2">text-decoration</div>
-                                <div class="inner-code code-2">text-transform</div>
-                                <div class="inner-code code-2">text-shadow</div>
-                                <div class="inner-code code-2">letter-spacing</div>
-                                <div class="inner-code code-2">line-break</div>
-                                <div class="inner-code code-2">word-break</div>
-                                <div class="inner-code code-2">word-wrap</div>
-                                <div class="inner-code code-2">padding</div>
-                                <div class="inner-code code-2">padding-top</div>
-                                <div class="inner-code code-2">padding-right</div>
-                                <div class="inner-code code-2">padding-bottom</div>
-                                <div class="inner-code code-2">padding-left</div>
-                                <div class="inner-code code-2">margin</div>
-                                <div class="inner-code code-2">margin-top</div>
-                                <div class="inner-code code-2">margin-right</div>
-                                <div class="inner-code code-2">margin-bottom</div>
-                                <div class="inner-code code-2">margin-left</div>
-                                <div class="inner-code code-2">resize</div>
-                                <div class="inner-code code-2">visibility</div>
-                                <div class="inner-code code-2">opacity</div>
-                                <div class="inner-code code-2">clear</div>
-                                <div class="inner-code code-2">cursor</div>
-                                <div class="inner-code code-2">outline</div>
-                                <div class="inner-code">other properties *</div>
-                                <div class="inner-code code-2">background</div>
-                                <div class="inner-code code-2">border</div>
-                                <div class="inner-code code-2">border-radius</div>
-                                <div class="inner-code code-2">z-index</div>
-                                <div class="inner-code code-2">box-shadow</div>
-                                <div class="inner-code code-2">transition</div>
-                                <div class="inner-code code-2">transform</div>
-                                <div class="inner-code code-2">animation</div>
-                                &nbsp;&nbsp;}
-                            </div><!-- code-box end -->
+                            <div class="css-code-box">
+<pre>
+<code>                            
+<span class="selector">Selector</span><span class="code-item">{</span>
+    content
+    direction
+    box-sizing
+    position
+    top
+    right
+    bottom
+    left
+    display
+    vertical-align
+    float
+    min-width
+    width
+    max-width
+    min-height
+    height
+    max-height
+    line-height
+    overflow
+    overflow-x
+    overflow-y
+    font-family
+    font-size
+    font-weight
+    font-style
+    font-variant
+    color
+    text-align
+    text-decoration
+    text-transform
+    text-shadow
+    letter-spacing
+    line-break
+    word-break
+    word-wrap
+    padding
+    padding-top
+    padding-right
+    padding-bottom
+    padding-left
+    margin
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+    resize
+    visibility
+    opacity
+    clear
+    cursor
+    outline
+    <span class="site-color-2">other properties *</span>
+    background
+    border
+    border-radius
+    z-index
+    box-shadow
+    transition
+    transform
+    animation
+<span class="code-item">}</span>
+</code>
+</pre>
+                            </div><!-- css-code-box end -->
                             <p><span class="site-color-2">*</span> If you want to add more property in your css code put them in the "other properties" area</p>
+                            <h4 class="reveal">What are the <strong>defined classes</strong> ?</h4>
+                            <p>In <a href="http://github.com/samanrashidii/samanira" target="_blank"><strong>SamanirA</strong></a> every item that we may need to create a web pages is defined in form of categories, We will go through "samanira.css" and see how it is working:</p>
+                            <h5>#MAIN</h5>
+                            <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">*</span><span class="code-item">,</span>
+<span class="selector">*::after</span><span class="code-item">,</span>
+<span class="selector">*::before</span><span class="code-item">{</span>
+    padding:0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+<span class="code-item">}</span>
+
+<span class="selector">html</span><span class="code-item">,</span>
+<span class="selector">body</span><span class="code-item">{</span>
+    min-height: 100%;
+    height: 100%;
+<span class="code-item">}</span>
+
+<span class="selector">body</span><span class="code-item">{</span>
+    line-height: 1.5;
+    font-family: 'Roboto', 'Roboto-Medium', Arial, sans-serif;
+    font-size:16px;
+    color:#121212;
+    background-color:#fefefe;
+<span class="code-item">}</span>
+
+<span class="selector">a</span><span class="code-item">{</span>
+    color: inherit;
+    text-decoration:none;
+    outline: none;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
+
+<span class="selector">a:hover</span><span class="code-item">,</span>
+<span class="selector">a:focus</span><span class="code-item">{</span>outline: none;<span class="code-item">}</span>
+
+<span class="selector">a img</span><span class="code-item">{</span>
+    outline:none;
+    border:none;
+<span class="code-item">}</span>
+
+<span class="selector">img</span><span class="code-item"></span>
+    display: block;
+    max-width:100%;
+    height: auto !important;
+    margin:auto;
+<span class="code-item">}</span>
+
+<span class="selector">ul</span><span class="code-item">,</span>
+<span class="selector">ol</span><span class="code-item">{</span>list-style:none;}
+
+<span class="selector">h1</span><span class="code-item">,</span>
+<span class="selector">h2</span><span class="code-item">,</span>
+<span class="selector">h3</span><span class="code-item">,</span>
+<span class="selector">h4</span><span class="code-item">,</span>
+<span class="selector">h5</span><span class="code-item">,</span>
+<span class="selector">h6</span><span class="code-item">{</span>
+    line-height: 1.3;
+    font-family: 'Roboto-Medium';
+    font-weight: normal;
+    color:#121212;
+<span class="code-item">}</span>
+
+<span class="selector">h1</span><span class="code-item">{</span>font-size:60px;<span class="code-item">}</span>
+<span class="selector">h2</span><span class="code-item">{</span>font-size:50px;<span class="code-item">}</span>
+<span class="selector">h3</span><span class="code-item">{</span>font-size:40px;<span class="code-item">}</span>
+<span class="selector">h4</span><span class="code-item">{</span>font-size:30px;<span class="code-item">}</span>
+<span class="selector">h5</span><span class="code-item">{</span>font-size:20px;<span class="code-item">}</span>
+<span class="selector">h6</span><span class="code-item">{</span>font-size:17px;<span class="code-item">}</span>
+
+<span class="selector">p</span><span class="code-item">{</span>padding-top:15px;<span class="code-item">}</span>
+<span class="selector">p a</span><span class="code-item">{</span>color:#0a9abd;<span class="code-item">}</span>
+<span class="selector">p strong</span><span class="code-item">{</span>color:#0a9abd;<span class="code-item">}</span>
+
+<span class="selector">strong</span><span class="code-item">{</span>font-weight: normal;<span class="code-item">}</span>
+
+<span class="selector">table</span><span class="code-item">{</span>
+    width: 100%;
+    border-collapse: collapse;
+<span class="code-item">}</span>
+
+<span class="selector">iframe</span><span class="code-item">{</span>
+    outline:none;
+    border:none;
+<span class="code-item">}</span>
+</code>
+</pre>
+                            </div><!-- css-code-box end -->
+                        <p>In here we are resetting main selectors and defining the project main properties</p>
                         </div><!-- main-port-content end -->
                         <div class="side-port-content">
                             <div class="button-box">
                                 <a class="bttn" href="#">About SamanirA</a>
                                 <a class="bttn" href="#">Setup SamanirA</a>
                                 <a class="bttn" href="#">Arrangement Rules</a>
+                                <a class="bttn" href="#">Defined Classes</a>
                             </div><!-- button-box end -->
                         </div><!-- side-port-content end -->
                     </div><!-- frame end -->
@@ -176,7 +275,7 @@
 
 <!-- ======== Footer End ======== -->
 
-        </div><!-- wrapper end -->
+        </div><!-- wrapper end -->     
 <script type="text/javascript">
 // Reveal Content
 
