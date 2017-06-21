@@ -716,6 +716,11 @@
 
 .samanira h4{margin-top:50px;}
 .samanira h4 strong{color:#0a9abd;}
+.samanira h5{
+	font-size: 26px;
+	color:#f55757;
+	margin-top:25px;
+}
 .samanira p{
 	font-family: 'Effra-light';
 	color:#dadada;
@@ -761,23 +766,23 @@
 	border-radius: 4px;
 }
 
-.code-box{
+.css-code-box{
 	max-width: 500px;
 	height: 400px;
 	overflow-y: auto;
 	font-size: 18px;
-	color:#f55757;
-	padding:25px;
+	color:#232323;
+	padding:0 20px;
 	margin-top:20px;
 	background: #f3f3f3;
     border-radius: 4px;
-    -webkit-box-shadow: inset 0 10px 25px #c3c3c3;
-    -moz-box-shadow: inset 0 10px 25px #c3c3c3;
-    box-shadow: inset 0 10px 25px #c3c3c3;
+    -webkit-box-shadow: inset 0 10px 25px #d3d3d3;
+    -moz-box-shadow: inset 0 10px 25px #d3d3d3;
+    box-shadow: inset 0 10px 25px #d3d3d3;
 }
 
-.code-1{color:#0a9abd;}
-.code-2{color:#232323;}
+code{font-size: 15px;}
 
-.inner-code{margin-left: 100px;}
+.selector{color:#0a9abd;}
+.code-item{color:#f55757;}
 
