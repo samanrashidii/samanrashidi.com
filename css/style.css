@@ -51,6 +51,31 @@
 	background-image: url('../images/assets/arrow-top.png');
 }
 
+.menu {
+	position: fixed;
+	top:0;
+	right:0;
+	width: 150px;
+  	height: 150px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+	z-index: 999999999;
+}
+
+.pagination-navigation {
+	position: relative;
+	font-size: 0;
+	text-align: center;
+	margin-top:25px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
 .Arrow{
 	position: absolute;
 	bottom:40px;
@@ -485,12 +510,14 @@
 .telegram{background-image: url('../images/icons/telegram.png');}
 .github{background-image: url('../images/icons/github.png');}
 .googleplus{background-image: url('../images/icons/googleplus.png');}
+.instagram{background-image: url('../images/icons/instagram.png');}
 
 .facebook:hover{background-color: #3b5998;}
 .linkedin:hover{background-color: #0077b5;}
 .telegram:hover{background-color: #0088cc;}
 .github:hover{background-color: #6cc644;}
 .googleplus:hover{background-color: #d34836;}
+.instagram:hover{background-color: #fccc63;}
 
 #footer{
 	width: 100%;
@@ -567,6 +594,8 @@
 	color:#ffffff;
 	text-shadow:0 0 12px #181818;
 }
+
+.potfolio-banner.no-textshadow h1{text-shadow: none;}
 
 .potfolio-banner h1 span{
 	display: block;
@@ -651,6 +680,64 @@
 	opacity: 0 !important;
 	height: 0 !important;
 	border:none !important;
+}
+
+.schema-item{
+	display: block;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.samanira{padding:80px 0;}
+
+.samanira h4{margin-top:50px;}
+.samanira h4 strong{color:#0a9abd;}
+.samanira p{
+	font-family: 'Effra-light';
+	color:#dadada;
+	padding-top:20px;
+}
+
+.samanira p strong{font-family: 'Effra-light';}
+.samanira li a,
+.samanira p a{color:#f55757;}
+
+.samanira ul,
+.samanira ol{margin-top:20px;}
+.samanira ul li::before{
+	content:'';
+	display: inline-block;
+	vertical-align: middle;
+	width: 8px;
+	height: 8px;
+	margin: -3px 12px 0 5px;
+	background-color: #dadada;
+	border-radius: 100%;
+}
+
+.samanira ol li::before{
+	content:attr(li-number);
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Effra-light';
+	color:#dadada;
+	margin: -4px 8px 0 5px;
+}
+
+.samanira ul li,
+.samanira ol li{
+	font-family: 'Effra-light';
+	color:#dadada;
+	margin:10px 0;
+}
+
+.samanira img{
+	display: block;
+	margin:15px 0;
+	border-radius: 4px;
 }
 
 /*****       Footer       *****/

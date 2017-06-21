@@ -203,6 +203,23 @@ button{cursor: pointer;}
 	animation:Bounce .4s linear;
 }
 
+.bttn.large{
+	font-size: 20px;
+	padding:12px 25px;
+	margin:0;
+}
+
+.bttn.site{
+	color:#0a9abd;
+	background-color: #ffffff;
+}
+
+.bttn.site:hover{
+	color:#ffffff;
+	background-color: #0a9abd;
+	border-color:#0a9abd !important;
+}
+
 @keyframes Bounce{
 	0%{transform: scale3d(.9, .9, .9);}
 	33%{transform: scale3d(1, 1, 1);}
