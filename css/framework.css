@@ -236,6 +236,7 @@ button{cursor: pointer;}
 
 .clearFixAfter::after{
 	content:'';
+	display: table;
 	height: 0;
 	visibility: hidden;
 	opacity: 0;
@@ -286,6 +287,8 @@ button{cursor: pointer;}
 .font-size-small{font-size: ;}
 
 .site-color{color:#0a9abd !important;}
+
+.site-color-2{color:#f55757 !important;}
 
 .white-color{color:#ffffff;}
 

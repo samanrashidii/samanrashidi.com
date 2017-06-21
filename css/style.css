@@ -519,6 +519,8 @@
 .googleplus:hover{background-color: #d34836;}
 .instagram:hover{background-color: #fccc63;}
 
+/*****       Footer       *****/
+
 #footer{
 	width: 100%;
 	font-size: 17px;
@@ -691,6 +693,25 @@
 	opacity: 0;
 }
 
+.main-port-content{
+	float: left;
+	width: 70%;
+}
+
+.side-port-content{
+	float: left;
+	width: 30%;
+	padding:35px 0 20px 20px;
+	text-align: right;
+}
+
+.side-port-content a{
+	min-width: 170px;
+	text-align: center;
+	padding:6px 10px;
+	margin:10px 0;
+}
+
 .samanira{padding:80px 0;}
 
 .samanira h4{margin-top:50px;}
@@ -740,4 +761,23 @@
 	border-radius: 4px;
 }
 
-/*****       Footer       *****/
+.code-box{
+	max-width: 500px;
+	height: 400px;
+	overflow-y: auto;
+	font-size: 18px;
+	color:#f55757;
+	padding:25px;
+	margin-top:20px;
+	background: #f3f3f3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 10px 25px #c3c3c3;
+    -moz-box-shadow: inset 0 10px 25px #c3c3c3;
+    box-shadow: inset 0 10px 25px #c3c3c3;
+}
+
+.code-1{color:#0a9abd;}
+.code-2{color:#232323;}
+
+.inner-code{margin-left: 100px;}
+
