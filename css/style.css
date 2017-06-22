@@ -721,6 +721,11 @@
 	color:#f55757;
 	margin-top:25px;
 }
+.samanira h6{
+	font-size: 21px;
+	color:#0a9abd;
+	margin-top:33px;
+}
 .samanira p{
 	font-family: 'Effra-light';
 	color:#dadada;
@@ -785,4 +790,16 @@ code{font-size: 15px;}
 
 .selector{color:#0a9abd;}
 .code-item{color:#f55757;}
+
+.sample-box{
+	max-width: 500px;
+	max-height: 400px;
+	overflow-y: auto;
+	font-size: 18px;
+	color:#232323;
+	padding:20px;
+	margin-top:20px;
+	background: #474747;
+    border-radius: 4px;
+}
 
