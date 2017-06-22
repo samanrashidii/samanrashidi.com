@@ -714,7 +714,10 @@
 
 .samanira{padding:80px 0;}
 
-.samanira h4{margin-top:50px;}
+.samanira h4{
+	font-size: 35px;
+	margin-top:50px;
+}
 .samanira h4 strong{color:#0a9abd;}
 .samanira h5{
 	font-size: 26px;

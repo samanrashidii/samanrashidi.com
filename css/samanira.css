@@ -47,14 +47,11 @@
 	border:none !important;
 }
 
-/* _Upload Single Button */
+/* _Upload Button */
 
 .upload-bttn{
-	position: absolute;
-	top:0;
-	right: 0;
 	display: inline-block;
-	width: 160px;
+	min-width: 120px;
 	height: 51px;
 	line-height: 51px;
 	overflow: hidden;
@@ -81,84 +78,22 @@
 
 .upload-bttn label:hover{background-color: #0a9abd;}
 
-/* _Upload Image Box */
-
-.upload-image{
-	display: table;
-	width: 100%;
-	height: 185px;
-	overflow: hidden;
-	margin-top:12px;
-	border-radius: 2px;
-}
-
-.upload-image-inner-box{
-	position: relative;
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	text-align: center;	
-	background-color: #f7f7f9;
-}    
-
-.upload-image-inner-box span {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    display: block;
-    width: 300px;
-    font-size: 14px;
-    color: #121212;
-    padding: 40px 15px 0 15px;
-    margin:-28px 0 0 -150px;
-    background: url(../images/icons/upload.png) no-repeat center top;
-    z-index: 4;
-}
-
-.upload-image a.remove {visibility: hidden;}
-
-.upload-image img{
-	position: relative;
-	display: block;
-	max-height: 175px;
-	margin:auto;
-	visibility: hidden;
-	z-index: 5;
-	border-radius: 2px;
-}
-
-.upload-image.image-added a.remove,
-.upload-image.image-added img{visibility: visible;}
-
-/* _Inline Upload with File Name */
-
-.inline-upload{
-	position: relative;
-	padding-top: 60px;
-}
-
-.inline-upload .upload-bttn{
-	right: auto;
-	left:0;
-}
-
-.file-name{
-	position: absolute;
-    top: 14px;
-    left: 180px;
-}
-
 .uploaded-photo-box{
 	position: relative;
 	display: inline-block;
 	min-width: 120px;
+	margin:5px;
 	background-color: #f7f7f9;
 	border-radius: 2px;
 }
 
 .uploaded-photo-box img{display: block;}
+
+.uploaded-photo-box a.remove{
+	-webkit-box-shadow: 0 0 4px #aaaaaa;
+	-moz-box-shadow: 0 0 4px #aaaaaa;
+	box-shadow: 0 0 4px #aaaaaa;
+}
 
 /* _Radio & _Checkbox */
 
@@ -180,7 +115,7 @@
 .radio-holder input[type="radio"] + label{
 	position: relative;
 	display: inline-block;
-	font-family: 'Roboto';
+	font-family: 'Effra-light';
 	font-size: 16px;
 	color: #686b6d;
 	padding:4px 0 4px 42px;
@@ -461,8 +396,8 @@ a.remove{
 .font-size-xsmall{font-size: 11px;}
 .font-size-xxsmall{font-size: 9px;}
 
-.font-type-default{font-family: 'Roboto';}
-.font-type-medium{font-family: 'Roboto-Medium';}
+.font-type-default{font-family: 'Effra-light';}
+.font-type-medium{font-family: 'Effra-regular';}
 .font-type-different{font-family: 'Iran';}
 
 .site-color{color:#121212 !important;}
@@ -978,14 +913,14 @@ a.close{
 
 .double-quotes::before{
 	content:'"';
-	font-family: 'Roboto-Medium';
+	font-family: 'Effra-regular';
 	font-size: 18px;
 	color:#000000;
 }
 
 .double-quotes::after{
 	content:'"';
-	font-family: 'Roboto-Medium';
+	font-family: 'Effra-regular';
 	font-size: 18px;
 	color:#000000;
 }
@@ -1136,7 +1071,7 @@ a.close{
 	padding-top:15px !important;
 }
 
-.static-content p strong{font-family: 'Roboto-Medium' !important;}
+.static-content p strong{font-family: 'Effra-regular' !important;}
 
 .static-content ul,
 .static-content ol{margin:5px 0 0 10px;}
@@ -1191,7 +1126,7 @@ a.close{
 .table td a:hover{color:#6e2878;}
 
 .table th{
-	font-family: 'Roboto';
+	font-family: 'Effra-light';
 	color:#121212;
 	background-color: #9a9a9a;
 }
@@ -1199,7 +1134,7 @@ a.close{
 .table tr.active td{background-color: #f7f7f9;}
 
 .table-filter{
-	font-family: 'Roboto-Medium';
+	font-family: 'Effra-regular';
 	padding-right: 15px;
 	cursor: pointer;
 	background: url('../images/assets/arrow-down-black.png') no-repeat right 6px;
