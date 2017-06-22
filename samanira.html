@@ -561,6 +561,112 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- This is a upload button for upload image(s) with javascript functions in samanira.js for front-end side</p>
+                                    <div class="sample-box">
+                                        <div class="upload-bttn">
+                                            <input type="file" id="upload_bttn" multiple/>
+                                            <label for="upload_bttn">Upload Image(s)</label>
+                                        </div><!-- upload-bttn end -->
+                                        <div id="uploaded-photos"></div><!-- uploaded-photos end -->
+                                    </div><!-- sample-box end -->
+                                    <h6>_Radio &amp; _Checkbox</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.checkbox-holder</span><span class="code-item">,</span>
+<span class="selector">.radio-holder</span><span class="code-item">{</span>
+    position: relative;
+    width: 100%;
+<span class="code-item">}</span>
+
+<span class="selector">.checkbox-holder input[type="checkbox"]</span><span class="code-item">,</span>
+<span class="selector">.radio-holder input[type="radio"]</span><span class="code-item">{</span>
+    position: absolute;
+    top:0;
+    left:0;
+    visibility: hidden;
+<span class="code-item">}</span>
+
+<span class="selector">.checkbox-holder input[type="checkbox"] + label</span><span class="code-item">,</span>
+<span class="selector">.radio-holder input[type="radio"] + label</span><span class="code-item">{</span>
+    position: relative;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #686b6d;
+    padding:4px 0 4px 42px;
+    margin:0;
+    cursor: pointer;
+<span class="code-item">}</span>
+
+<span class="selector">.checkbox-holder input[type="checkbox"] + label::before</span><span class="code-item">{</span>
+    content: '';
+    position: absolute;
+    top: 3px;
+    left:2px;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border:1px solid #121212;
+    border-radius: 2px;
+<span class="code-item">}</span>
+
+<span class="selector">.checkbox-holder input[type="checkbox"] + label::after</span><span class="code-item">{</span>
+    content: url('../images/assets/tick.png');
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width:14px;
+    height: 11px;
+    opacity: 0;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
+
+<span class="selector">.checkbox-holder input[type="checkbox"]:checked + label::after</span><span class="code-item">{</span>opacity: 1;<span class="code-item">}</span>
+
+<span class="selector">.radio-holder input[type="radio"] + label::before</span><span class="code-item">{</span>
+    content: '';
+    position: absolute;
+    top: 3px;
+    left:2px;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border:1px solid #121212;
+    border-radius: 50%;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
+
+<span class="selector">.radio-holder input[type="radio"] + label::after</span><span class="code-item">{</span>
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width:13px;
+    height: 13px;
+    opacity: 0;
+    background-color: #121212;
+    border-radius: 50%;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
+
+<span class="selector">.radio-holder input[type="radio"]:checked + label::after</span><span class="code-item">{</span>opacity: 1;<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <p>- These are custom radio inputs &amp; checkbox inputs</p>
+                                    <div class="sample-box">
+                                        <div class="checkbox-holder">
+                                            <input type="checkbox" id="checkbox" />
+                                            <label for="checkbox">Sample checkbox</label>
+                                        </div><!-- checkbox-holder end -->
+                                    </div><!-- sample-box end -->
                                 </div><!-- class-box end -->
                             </div><!-- defined-classes end --> 
                         </div><!-- main-port-content end -->
