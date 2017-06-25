@@ -352,13 +352,13 @@ button{cursor: pointer;}
 .svg-element{display: none;}
 
 .cart{background-image: url('../images/icons/cart.png');}
-.cart:hover{background-image: url('../images/icons/cart-orange.png');}
+.cart:hover{background-image: url('../images/icons/cart-blue.png');}
 .projects{background-image: url('../images/icons/projects.png');}
-.projects:hover{background-image: url('../images/icons/projects-orange.png');}
+.projects:hover{background-image: url('../images/icons/projects-blue.png');}
 .web{background-image: url('../images/icons/web.png');}
-.web:hover{background-image: url('../images/icons/web-orange.png');}
+.web:hover{background-image: url('../images/icons/web-blue.png');}
 .read-more{background-image: url('../images/icons/read-more.png');}
-.read-more:hover{background-image: url('../images/icons/read-more-orange.png');}
+.read-more:hover{background-image: url('../images/icons/read-more-blue.png');}
 .home-icon{background-image: url('../images/icons/home-icon.png');}
 .web-icon{background-image: url('../images/icons/web-icon.png');}
 
