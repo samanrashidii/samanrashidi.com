@@ -15,23 +15,23 @@
         <meta property="og:image" content="images/samanrashidi.png" />
         <meta name="author" content="Saman Rashidi" />
         <link rel="alternate" href="http://www.samanrashidi.com/" hreflang="en-gb" />
-        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="icon" type="image/png" href="../favicon.png" />
 
         <!-- CSS Files
         ================================================== -->
-        <link rel="stylesheet" type="text/css" href="css/samanira.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/framework.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/saman.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/media.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/samanira.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/framework.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/saman.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/media.css" media="screen" />
 
         <!-- Javascript Files
         ================================================== -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/core.plugins.js"></script>
-        <script type="text/javascript" src="js/samanira.js"></script>
-        <script type="text/javascript" src="js/reveal.js"></script>
-        <script type="text/javascript" src="js/animate.js"></script>
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/core.plugins.js"></script>
+        <script type="text/javascript" src="../js/samanira.js"></script>
+        <script type="text/javascript" src="../js/reveal.js"></script>
+        <script type="text/javascript" src="../js/animate.js"></script>
 
         <!--[if lt IE 9]>
         <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css" />
@@ -46,9 +46,9 @@
 
 
             <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website">
-                <div class="potfolio-banner no-textshadow" style="background-image:url(images/samanira/banner.jpg)">
+                <div class="potfolio-banner no-textshadow" style="background-image:url(../images/samanira/banner.jpg)">
                     <h1>
-                        <img src="images/samanira.png" alt="Samanira Logo" />
+                        <img src="../images/samanira.png" alt="Samanira Logo" />
                         <div itemprop="name" class="schema-item">SamanirA Framework</div>
                         <span>by <strong itemprop="author">Saman Rashidi</strong> &amp; <strong itemprop="author" class="site-color-2">Samira Salimian</strong></span>
                         <a class="bttn site bounce large" href="http://github.com/samanrashidii/samanira" target="_blank">Download Now</a>
@@ -76,15 +76,15 @@
                                 <ol>
                                     <li li-number="1 -">
                                         <a href="http://github.com/samanrashidii/samanira" target="_blank">Download</a> from Github
-                                        <img src="images/samanira/step-1.jpg" alt="Samanira Setup - Step 1" />
+                                        <img src="../images/samanira/step-1.jpg" alt="Samanira Setup - Step 1" />
                                     </li>
                                     <li li-number="2 -">
                                         Unzip in your project's folder
-                                        <img src="images/samanira/step-2.jpg" alt="Samanira Setup - Step 2" />
+                                        <img src="../images/samanira/step-2.jpg" alt="Samanira Setup - Step 2" />
                                     </li>
                                     <li li-number="3 -">
                                         Start coding your project
-                                        <img src="images/samanira/step-3.jpg" alt="Samanira Setup - Step 3" />
+                                        <img src="../images/samanira/step-3.jpg" alt="Samanira Setup - Step 3" />
                                     </li>
                                 </ol>
                             </div><!-- setup-samanira end -->
@@ -660,7 +660,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
-                                    <p>- These are custom radio inputs &amp; checkbox inputs</p>
+                                    <p>- These are custom radio &amp; checkbox inputs</p>
                                     <div class="sample-box">
                                         <div class="checkbox-holder">
                                             <input type="checkbox" name="checkbox_input" id="checkbox" />
@@ -677,6 +677,135 @@
                                             <input type="radio" name="radio_input" id="radio2" />
                                             <label for="radio2">Sample Radio 2</label>
                                         </div><!-- radio-holder end -->
+                                    </div><!-- sample-box end -->
+                                </div><!-- class-box end -->
+                                <div class="class-box">
+                                    <h5>#BUTTONS</h5>
+                                    <h6>_Main Styles</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.button-holder</span><span class="code-item">{</span>
+    width: 100%;
+    text-align:center;
+    margin-top:20px;
+<span class="code-item">}</span>
+
+<span class="selector">.button-holder a</span><span class="code-item">,</span>
+<span class="selector">.button-holder input</span><span class="code-item">{</span>margin:0 5px;<span class="code-item">}</span>
+
+<span class="selector">.bttn</span><span class="code-item">{</span>
+    position: relative;
+    display: inline-block;
+    min-width: 160px;
+    font-size: 16px;
+    color:#ffffff;
+    text-align: center;
+    padding:12px 20px;
+    background-color: #121212;
+    border:2px solid #121212;
+    border-radius: 2px;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn:hover</span><span class="code-item">{</span>
+    color:#121212;
+    background-color: #ffffff;
+    border-color: #ffffff;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.white</span><span class="code-item">{</span>
+    color:#121212;
+    background-color: #ffffff;
+    border-color: #ffffff;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.white:hover</span><span class="code-item">{</span>
+    color:#ffffff;
+    background-color: #121212;
+    border-color: #121212;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.black</span><span class="code-item">{</span>
+    background-color: #000000;
+    border-color: #000000;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.black:hover</span><span class="code-item">{</span>
+    color:#000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.site</span><span class="code-item">{</span>
+    color:#ffffff;
+    background-color: #0a9abd;
+    border-color: #0a9abd;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.site:hover</span><span class="code-item">{</span>
+    color:#0a9abd;
+    background-color: #ffffff;
+    border-color: #ffffff;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.site-2</span><span class="code-item">{</span>
+    color:#ffffff;
+    background-color: #f55757;
+    border-color: #f55757;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.site-2:hover</span><span class="code-item">{</span>
+    color:#f55757;
+    background-color: #ffffff;
+    border-color: #ffffff;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.has-icon</span><span class="code-item">{</span>
+    background-position: 12px center;
+    padding: 10px 15px 10px 37px;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.small</span><span class="code-item">{</span>
+    min-width: 100px;
+    font-size: 14px;
+    padding:6px 15px;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn.large</span><span class="code-item">{</span>
+    min-width: 275px;
+    font-size: 18px;
+    padding:18px 25px;
+<span class="code-item">}</span>
+
+<span class="selector">.bttn:active</span><span class="code-item">,</span>
+<span class="selector">input[type="submit"]:active</span><span class="code-item">{</span>
+    -webkit-transform:translateY(1px);
+    -moz-transform:translateY(1px);
+    transform:translateY(1px);
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <p>- These are custom buttons and you can add more easily</p>
+                                    <div class="sample-box">
+                                        <a class="bttn large" href="javascript:void(0)">Large Size</a>
+                                        <br />
+                                        <a class="bttn small" href="javascript:void(0)">Small Size</a>
+                                        <br />
+                                        <a class="bttn" href="javascript:void(0)">Default Size</a>
+                                        <br />
+                                        <a class="bttn white" href="javascript:void(0)">White Color</a>
+                                        <br />
+                                        <a class="bttn black" href="javascript:void(0)">Black Color</a>
+                                        <br />
+                                        <a class="bttn site" href="javascript:void(0)">Site Color</a>
+                                        <br />
+                                        <a class="bttn site-2" href="javascript:void(0)">Site Color 2</a>
+                                        <br />
+                                        <a class="bttn has-icon icon-1" href="javascript:void(0)">Has Icon</a>
                                     </div><!-- sample-box end -->
                                 </div><!-- class-box end -->
                             </div><!-- defined-classes end --> 
@@ -701,7 +830,7 @@
 
             <div id="footer" class="has-shape shape-4 center-aligned">
                 <div class="frame">
-                    <a href="http://www.samanrashidi.com"><img src="images/logo.png" alt="" /></a>
+                    <a href="http://www.samanrashidi.com"><img src="../images/logo.png" alt="" /></a>
                     <span>Copyright © <span class="current-year"></span> <a href="http://www.samanrashidi.com">Saman Rashidi</a>. All rights reserved</span>
                 </div><!-- frame end -->
             </div><!-- approach end -->

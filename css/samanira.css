@@ -1,4 +1,10 @@
-﻿.sample-box textarea{
+﻿/************************************************************************
+
+ JUST FOR SAMPLE ITEMS AND DO NOT USE THIS VERSION OF SAMANIRA
+
+*************************************************************************/
+
+.sample-box textarea{
 	display: block;
 	height: 100px;
 	margin:0;
@@ -206,71 +212,93 @@ a.remove{
 }
 
 .bttn{
-	position: relative;
-	display: inline-block;
-	min-width: 160px;
-	font-size: 16px;
-	color:#ffffff;
-	text-align: center;
-	padding:12px 20px;
-	background-color: #121212;
-	border:2px solid #121212;
-	border-radius: 2px;
-	-webkit-transition:all .2s ease-in-out;
-	-moz-transition:all .2s ease-in-out;
-	transition:all .2s ease-in-out;
+	position: relative !important;
+	display: inline-block !important;
+	min-width: 150px !important;
+	font-size: 16px !important;
+	color:#ffffff !important;
+	text-align: center !important;
+	padding:10px!important;
+	margin:5px 0 !important;
+	background-color: #121212 !important;
+	border:2px solid #ffffff !important;
+	border-radius: 2px !important;
+	-webkit-transition:all .2s ease-in-out !important;
+	-moz-transition:all .2s ease-in-out !important;
+	transition:all .2s ease-in-out !important;
 }
 
 .bttn:hover{
-	color:#121212;
-	background-color: #ffffff;
-	border-color: #ffffff;
+	color:#121212 !important;
+	background-color: #ffffff !important;
 }
 
 .bttn.white{
-	color:#121212;
-	background-color: #ffffff;
-	border-color: #ffffff;
+	color:#121212 !important;
+	background-color: #ffffff !important;
+	border-color: #ffffff !important;
 }
 
 .bttn.white:hover{
-	color:#ffffff;
-	background-color: #121212;
-	border-color: #121212;
+	color:#ffffff !important;
+	background-color: #121212 !important;
+	border-color: #121212 !important;
 }
 
 .bttn.black{
-	background-color: #000000;
-	border-color: #000000;
+	background-color: #000000 !important;
+	border-color: #000000 !important;
 }
 
 .bttn.black:hover{
-	color:#000000;
-	background-color: #ffffff;
-	border-color: #ffffff;
+	color:#000000 !important;
+	background-color: #ffffff !important;
+	border-color: #ffffff !important;
 }
 
 .bttn.site{
-	color:#ffffff;
-	background-color: #0a9abd;
-	border-color: #0a9abd;
+	color:#ffffff !important;
+	background-color: #0a9abd !important;
+	border-color: #0a9abd !important;
 }
 
 .bttn.site:hover{
-	color:#0a9abd;
-	background-color: #ffffff;
-	border-color: #ffffff;
+	color:#0a9abd !important;
+	background-color: #ffffff !important;
+	border-color: #ffffff !important;
+}
+
+.bttn.site-2{
+	color:#ffffff !important;
+	background-color: #f55757 !important;
+	border-color: #f55757 !important;
+}
+
+.bttn.site-2:hover{
+	color:#f55757 !important;
+	background-color: #ffffff !important;
+	border-color: #f55757 !important;
 }
 
 .bttn.has-icon{
-	background-position: 12px center;
-    padding: 10px 15px 10px 37px;
+	text-align: left !important;
+	background-position: 13px center !important;
+    padding: 10px 15px 10px 43px !important;
+}
+
+.icon-1{background: url('../images/icons/home-icon.png') no-repeat center;}
+.icon-1:hover{background-image: url('../images/icons/home-icon-blue.png');}
+
+.bttn.small{
+	min-width: 120px !important;
+	font-size: 14px !important;
+	padding:8px 5px !important;
 }
 
 .bttn.large{
-	min-width: 275px;
-	font-size: 18px;
-	padding:18px 25px;
+	min-width: 180px !important;
+	font-size: 18px !important;
+	padding:12px 10px !important;
 }
 
 .switch{

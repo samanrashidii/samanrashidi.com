@@ -457,7 +457,7 @@ body:after {
   transition: all .2s;
 }
 
-.lb-close:hover{background: url(../images/assets/close-orange.png) center center no-repeat;}
+.lb-close:hover{background: url(../images/assets/close-blue.png) center center no-repeat;}
 
 /* Pagination */
 
@@ -764,9 +764,9 @@ body:after {
 
 @media only screen and (min-width: 980px){
 
-	button:hover .home{background-image:url('../images/icons/home-orange.png');}
-	button:hover .about{background-image:url('../images/icons/about-orange.png');}
-	button:hover .portfolio{background-image:url('../images/icons/portfolio-orange.png');}
-	button:hover .contact{background-image:url('../images/icons/contact-orange.png');}
+	button:hover .home{background-image:url('../images/icons/home-blue.png');}
+	button:hover .about{background-image:url('../images/icons/about-blue.png');}
+	button:hover .portfolio{background-image:url('../images/icons/portfolio-blue.png');}
+	button:hover .contact{background-image:url('../images/icons/contact-blue.png');}
 
 }
