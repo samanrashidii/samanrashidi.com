@@ -508,7 +508,7 @@
                                     <p>- <span class="site-color">.textarea-word-tracker</span> will make a textarea with the counting number function in samanira.js</p>
                                     <div class="sample-box">
                                         <div class="textarea-word-tracker">
-                                            <textarea maxlength="250"></textarea>
+                                            <textarea maxlength="250" placeholder="Type here ..."></textarea>
                                             <span></span>
                                         </div><!-- textarea-word-tracker end -->
                                     </div><!-- sample-box end -->
@@ -697,7 +697,7 @@
 <span class="selector">.bttn</span><span class="code-item">{</span>
     position: relative;
     display: inline-block;
-    min-width: 150px;
+    min-width: 155px;
     font-size: 16px;
     color:#ffffff;
     text-align: center;
@@ -2130,6 +2130,530 @@
 <span class="code-item">}</span>
 
 <span class="selector">.has-2-2-2-2-2-2-column > .section:nth-child(6an+1)</span><span class="code-item">{</span>margin-left: 0;<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                </div><!-- class-box end -->
+                                <div class="class-box">
+                                    <h5>#RESPONSIVE</h5>
+                                    <h6>_Min width: 980px</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="code-item-2">@media only screen and (min-width:980px){</span>
+
+    <span class="selector">.tablet-only</span><span class="code-item">{</span>display: none !important;<span class="code-item">}</span>
+
+<span class="code-item-2">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Min width: 540px</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="code-item-2">@media only screen and (min-width:540px){</span>
+
+    <span class="selector">.mobile-only</span><span class="code-item">{</span>display: none !important;<span class="code-item">}</span>
+
+<span class="code-item-2">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Max width: 980px</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="code-item-2">@media only screen and (max-width:980px){</span>
+
+    <span class="selector">.desktop-only</span><span class="code-item">{</span>display: none !important;<span class="code-item">}</span>
+
+    <span class="selector">body</span><span class="code-item">{</span>font-size: 14px;<span class="code-item">}</span>
+    <span class="selector">h1</span><span class="code-item">{</span>font-size:32px;<span class="code-item">}</span>
+    <span class="selector">h2</span><span class="code-item">{</span>font-size:27px;<span class="code-item">}</span>
+    <span class="selector">h3</span><span class="code-item">{</span>font-size:23px;<span class="code-item">}</span>
+    <span class="selector">h4</span><span class="code-item">{</span>font-size:19px;<span class="code-item">}</span>
+    <span class="selector">h5</span><span class="code-item">{</span>font-size:16px;<span class="code-item">}</span>
+    <span class="selector">h6</span><span class="code-item">{</span>font-size:15px;<span class="code-item">}</span>
+    <span class="selector">p</span><span class="code-item">{</span>padding-top:10px;<span class="code-item">}</span>
+
+    <span class="selector">fieldset</span><span class="code-item">{</span>
+        padding:12px;
+        border:1px solid #121212;
+    <span class="code-item">}</span>
+
+    <span class="selector">legend</span><span class="code-item">{</span>
+        font-size: 16px;
+        color:#121212;
+        padding:0 12px;
+    <span class="code-item">}</span>
+
+    <span class="selector">label</span><span class="code-item">,</span>
+    <span class="selector">label.error</span><span class="code-item">{</span>font-size: 14px;<span class="code-item">}</span>
+
+    <span class="selector">input</span><span class="code-item">,</span>
+    <span class="selector">select</span><span class="code-item">{</span>
+        height: 45px;
+        line-height: 45px;
+    <span class="code-item">}</span>
+
+    <span class="selector">textarea</span><span class="code-item">{</span>
+        height: 120px;
+        padding:12px;
+    <span class="code-item">}</span>
+
+    <span class="selector">.field-holder</span><span class="code-item">{</span>margin:12px 0;<span class="code-item">}</span>
+
+    <span class="selector">.bttn</span><span class="code-item">{</span>
+        min-width: 120px;
+        font-size: 14px;
+        padding:8px;
+    <span class="code-item">}</span>
+
+    <span class="selector">.bttn.large</span><span class="code-item">{</span>
+        min-width: 150px;
+        font-size: 16px;
+        padding:10px;
+    <span class="code-item">}</span>
+
+    <span class="selector">.font-size-vlarge</span><span class="code-item">{</span>font-size: 25px;<span class="code-item">}</span>
+    <span class="selector">.font-size-xxlarge</span><span class="code-item">{</span>font-size: 23px;<span class="code-item">}</span>
+    <span class="selector">.font-size-xlarge</span><span class="code-item">{</span>font-size: 20px;<span class="code-item">}</span>
+    <span class="selector">.font-size-large</span><span class="code-item">{</span>font-size: 16px;<span class="code-item">}</span>
+    <span class="selector">.font-size-medium</span><span class="code-item">{</span>font-size: 13px;<span class="code-item">}</span>
+    <span class="selector">.font-size-small</span><span class="code-item">{</span>font-size: 12px;<span class="code-item">}</span>
+    <span class="selector">.font-size-xsmall</span><span class="code-item">{</span>font-size: 10px;<span class="code-item">}</span>
+    <span class="selector">.font-size-xxsmall</span><span class="code-item">{</span>font-size: 9px;<span class="code-item">}</span>
+
+    <span class="selector">.content</span><span class="code-item">{</span>padding:20px 10px;<span class="code-item">}</span>
+
+    <span class="selector">.card-box</span><span class="code-item">{</span>margin-bottom: 10px !important;<span class="code-item">}</span>
+
+    <span class="selector">.section-box</span><span class="code-item">{</span>padding:12px;<span class="code-item">}</span>
+    <span class="selector">.section-box.large-padding</span><span class="code-item">{</span>padding:15px;<span class="code-item">}</span>
+    <span class="selector">.section-box.normal-padding</span><span class="code-item">{</span>padding:10px;<span class="code-item">}</span>
+    <span class="selector">.section-box.medium-padding</span><span class="code-item">{</span>padding:7px;<span class="code-item">}</span>
+    <span class="selector">.section-box.small-padding</span><span class="code-item">{</span>padding:4px;<span class="code-item">}</span>
+
+    <span class="selector">.cl-1</span><span class="code-item">,</span>
+    <span class="selector">.cl-2</span><span class="code-item">,</span>
+    <span class="selector">.cl-3</span><span class="code-item">,</span>
+    <span class="selector">.cl-4</span><span class="code-item">,</span>
+    <span class="selector">.cl-5</span><span class="code-item">,</span>
+    <span class="selector">.cl-6</span><span class="code-item">,</span>
+    <span class="selector">.cl-7</span><span class="code-item">,</span>
+    <span class="selector">.cl-8</span><span class="code-item">,</span>
+    <span class="selector">.cl-9</span><span class="code-item">,</span>
+    <span class="selector">.cl-10</span><span class="code-item">,</span>
+    <span class="selector">.cl-11</span><span class="code-item">,</span>
+    <span class="selector">.cl-12</span><span class="code-item">{</span>
+        float: none !important;
+        width: 100% !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.has-11-1-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-1-11-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-10-2-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-2-10-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-9-3-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-3-9-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-8-4-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-4-8-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-7-5-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-5-7-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-6-6-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-4-4-4-column > .section</span><span class="code-item">{</span>
+        float: none !important;
+        width: 100% !important;
+        margin:0;
+    <span class="code-item">}</span>
+
+    <span class="selector">.has-3-3-3-3-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-2-2-2-2-2-2-column > .section</span><span class="code-item">{</span>
+        width: 48.75%;
+        margin-left: 2.5%;
+    <span class="code-item">}</span>
+
+    <span class="selector">.has-3-3-3-3-column > .section:nth-child(4n+1)</span><span class="code-item">{</span>margin-left: 2.5%;<span class="code-item">}</span>
+    <span class="selector">.has-2-2-2-2-2-2-column > .section:nth-child(6n+1)</span><span class="code-item">{</span>margin-left: 2.5%;<span class="code-item">}</span>
+
+    <span class="selector">.has-3-3-3-3-column > .section:nth-child(2n+1)</span><span class="code-item">,</span>
+    <span class="selector">.has-2-2-2-2-2-2-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>margin-left: 0;<span class="code-item">}</span>
+
+    <span class="selector">.rspv.has-6-6-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.rspv.has-4-4-4-column > .section</span><span class="code-item">{</span>
+        float: left !important;
+        width: 48.75% !important;
+        margin-left: 2.5% !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.rspv.has-6-6-column > .section:nth-child(2n+1)</span><span class="code-item">,</span>
+    <span class="selector">.rspv.has-4-4-4-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>margin-left: 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.nav-toggle</span><span class="code-item">{</span>display: block;<span class="code-item">}</span>
+
+    <span class="selector">.table td</span><span class="code-item">,</span>
+    <span class="selector">.table th</span><span class="code-item">{</span>padding:8px;<span class="code-item">}</span>
+
+    <span class="selector">.table.responsive table</span><span class="code-item">{</span>min-width: 0;<span class="code-item">}</span>
+    <span class="selector">.table.responsive thead</span><span class="code-item">{</span>display: none;<span class="code-item">}</span>
+
+    <span class="selector">.table.responsive tr</span><span class="code-item">{</span>
+        display: block;
+        margin-bottom: 20px;
+    <span class="code-item">}</span>
+
+    <span class="selector">.table.responsive td</span><span class="code-item">{</span>
+        position: relative;
+        display: block;
+        text-align: right !important;
+        padding-right: 120px;
+    <span class="code-item">}</span>
+
+    <span class="selector">.table.responsive td::before</span><span class="code-item">{</span>
+        content:attr(th-data);
+        position: absolute;
+        right: 0;
+        top:0;
+        display: block;
+        width: 100px;
+        height: 100%;
+        color:#ffffff;
+        padding:13px 0 0 15px;
+        background-color: #121212;
+    <span class="code-item">}</span>
+
+    <span class="selector">.static-content h1</span><span class="code-item">{</span>
+        font-size: 29px !important;
+        margin-top:10px !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.static-content h2</span><span class="code-item">{</span>
+        font-size: 25px !important;
+        margin-top:10px !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.static-content h3</span><span class="code-item">{</span>
+        font-size: 22px !important;
+        margin-top:10px !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.static-content h4</span><span class="code-item">{</span>
+        font-size: 20px !important;
+        margin-top:10px !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.static-content h5</span><span class="code-item">{</span>
+        font-size: 18px !important;
+        margin-top:10px !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.static-content h6</span><span class="code-item">{</span>
+        font-size: 16px !important;
+        word-break: break-word !important;
+        margin-top:10px !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.static-content img</span><span class="code-item">{</span>margin-top:10px !important;<span class="code-item">}</span>
+
+    <span class="selector">.static-content p</span><span class="code-item">{</span>
+        font-size: 14px !important;
+        padding-top:10px !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.double-quotes::before</span><span class="code-item">,</span>
+    <span class="selector">.double-quotes::after</span><span class="code-item">{</span>font-size: 16px;<span class="code-item">}</span>
+
+<span class="code-item-2">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Max width: 740px</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="code-item-2">@media only screen and (max-width:740px){</span>
+
+    <span class="selector">input</span><span class="code-item">,</span>
+    <span class="selector">textarea</span><span class="code-item">,</span>
+    <span class="selector">select</span><span class="code-item">{</span>font-size: 16px !important;<span class="code-item">}</span>
+
+    <span class="selector">input[type="submit"]</span><span class="code-item">{</span>font-size: 14px !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-vlarge-padding</span><span class="code-item">{</span>padding:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-top-padding</span><span class="code-item">{</span>padding-top:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-bottom-padding</span><span class="code-item">{</span>padding-bottom:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-left-padding</span><span class="code-item">{</span>padding-left:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-right-padding</span><span class="code-item">{</span>padding-right:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-x-padding</span><span class="code-item">{</span>padding:0 40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-y-padding</span><span class="code-item">{</span>padding:40px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-xxlarge-padding</span><span class="code-item">{</span>padding:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-top-padding</span><span class="code-item">{</span>padding-top:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-bottom-padding</span><span class="code-item">{</span>padding-bottom:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-left-padding</span><span class="code-item">{</span>padding-left:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-right-padding</span><span class="code-item">{</span>padding-right:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-x-padding</span><span class="code-item">{</span>padding:0 35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-y-padding</span><span class="code-item">{</span>padding:35px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-xlarge-padding</span><span class="code-item">{</span>padding:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-top-padding</span><span class="code-item">{</span>padding-top:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-bottom-padding</span><span class="code-item">{</span>padding-bottom:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-left-padding</span><span class="code-item">{</span>padding-left:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-right-padding</span><span class="code-item">{</span>padding-right:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-x-padding</span><span class="code-item">{</span>padding:0 30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-y-padding</span><span class="code-item">{</span>padding:30px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-large-padding</span><span class="code-item">{</span>padding:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-top-padding</span><span class="code-item">{</span>padding-top:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-bottom-padding</span><span class="code-item">{</span>padding-bottom:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-left-padding</span><span class="code-item">{</span>padding-left:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-right-padding</span><span class="code-item">{</span>padding-right:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-x-padding</span><span class="code-item">{</span>padding:0 25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-y-padding</span><span class="code-item">{</span>padding:25px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-padding</span><span class="code-item">{</span>padding:20px !important;<span class="code-item">}</span>
+    <span class="selector">.has-top-padding</span><span class="code-item">{</span>padding-top:20px!important;<span class="code-item">}</span>
+    <span class="selector">.has-bottom-padding</span><span class="code-item">{</span>padding-bottom:20px!important;<span class="code-item">}</span>
+    <span class="selector">.has-left-padding</span><span class="code-item">{</span>padding-left:20px!important;<span class="code-item">}</span>
+    <span class="selector">.has-right-padding</span><span class="code-item">{</span>padding-right:20px!important;<span class="code-item">}</span>
+    <span class="selector">.has-x-padding</span><span class="code-item">{</span>padding:0 20px !important;<span class="code-item">}</span>
+    <span class="selector">.has-y-padding</span><span class="code-item">{</span>padding:20px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-medium-padding</span><span class="code-item">{</span>padding:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-top-padding</span><span class="code-item">{</span>padding-top:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-bottom-padding</span><span class="code-item">{</span>padding-bottom:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-left-padding</span><span class="code-item">{</span>padding-left:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-right-padding</span><span class="code-item">{</span>padding-right:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-x-padding</span><span class="code-item">{</span>padding:0 15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-y-padding</span><span class="code-item">{</span>padding:15px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-small-padding</span><span class="code-item">{</span>padding:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-top-padding</span><span class="code-item">{</span>adding-top:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-bottom-padding</span><span class="code-item">{</span>padding-bottom:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-left-padding</span><span class="code-item">{</span>padding-left:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-right-padding</span><span class="code-item">{</span>padding-right:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-x-padding</span><span class="code-item">{</span>padding:0 10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-y-padding</span><span class="code-item">{</span>padding:10px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-xsmall-padding</span><span class="code-item">{</span>padding:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-top-padding</span><span class="code-item">{</span>padding-top:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-bottom-padding</span><span class="code-item">{</span>padding-bottom:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-left-padding</span><span class="code-item">{</span>padding-left:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-right-padding</span><span class="code-item">{</span>padding-right:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-x-padding</span><span class="code-item">{</span>padding:0 7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-y-padding</span><span class="code-item">{</span>padding:7px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-xxsmall-padding</span><span class="code-item">{</span>padding:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-top-padding</span><span class="code-item">{</span>padding-top:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-bottom-padding</span><span class="code-item">{</span>padding-bottom:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-left-padding</span><span class="code-item">{</span>padding-left:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-right-padding</span><span class="code-item">{</span>padding-right:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-x-padding</span><span class="code-item">{</span>padding:0 5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-y-padding</span><span class="code-item">{</span>padding:5px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-vlarge-margin</span><span class="code-item">{</span>margin:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-top-margin</span><span class="code-item">{</span>margin-top:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-bottom-margin</span><span class="code-item">{</span>margin-bottom:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-left-margin</span><span class="code-item">{</span>margin-left:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-right-margin</span><span class="code-item">{</span>margin-right:40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-x-margin</span><span class="code-item">{</span>margin:0 40px !important;<span class="code-item">}</span>
+    <span class="selector">.has-vlarge-y-margin</span><span class="code-item">{</span>margin:40px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-xxlarge-margin</span><span class="code-item">{</span>margin:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-top-margin</span><span class="code-item">{</span>margin-top:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-bottom-margin</span><span class="code-item">{</span>margin-bottom:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-left-margin</span><span class="code-item">{</span>margin-left:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-right-margin</span><span class="code-item">{</span>margin-right:35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-x-margin</span><span class="code-item">{</span>margin:0 35px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxlarge-y-margin</span><span class="code-item">{</span>margin:35px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-xlarge-margin</span><span class="code-item">{</span>margin:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-top-margin</span><span class="code-item">{</span>margin-top:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-bottom-margin</span><span class="code-item">{</span>margin-bottom:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-left-margin</span><span class="code-item">{</span>margin-left:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-right-margin</span><span class="code-item">{</span>margin-right:30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-x-margin</span><span class="code-item">{</span>margin:0 30px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xlarge-y-margin</span><span class="code-item">{</span>margin:30px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-large-margin</span><span class="code-item">{</span>margin:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-top-margin</span><span class="code-item">{</span>margin-top:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-bottom-margin</span><span class="code-item">{</span>margin-bottom:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-left-margin</span><span class="code-item">{</span>margin-left:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-right-margin</span><span class="code-item">{</span>margin-right:25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-x-margin</span><span class="code-item">{</span>margin:0 25px !important;<span class="code-item">}</span>
+    <span class="selector">.has-large-y-margin</span><span class="code-item">{</span>margin:25px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-margin</span><span class="code-item">{</span>margin:20px !important;<span class="code-item">}</span>
+    <span class="selector">.has-top-margin</span><span class="code-item">{</span>margin-top:20px !important;<span class="code-item">}</span>
+    <span class="selector">.has-bottom-margin</span><span class="code-item">{</span>margin-bottom:20px !important;<span class="code-item">}</span>
+    <span class="selector">.has-left-margin</span><span class="code-item">{</span>margin-left:20px !important;<span class="code-item">}</span>
+    <span class="selector">.has-right-margin</span><span class="code-item">{</span>margin-right:20px !important;<span class="code-item">}</span>
+    <span class="selector">.has-x-margin</span><span class="code-item">{</span>margin:0 20px !important;<span class="code-item">}</span>
+    <span class="selector">.has-y-margin</span><span class="code-item">{</span>margin:20px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-medium-margin</span><span class="code-item">{</span>margin:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-top-margin</span><span class="code-item">{</span>margin-top:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-bottom-margin</span><span class="code-item">{</span>margin-bottom:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-left-margin</span><span class="code-item">{</span>margin-left:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-right-margin</span><span class="code-item">{</span>margin-right:15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-x-margin</span><span class="code-item">{</span>margin:0 15px !important;<span class="code-item">}</span>
+    <span class="selector">.has-medium-y-margin</span><span class="code-item">{</span>margin:15px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-small-margin</span><span class="code-item">{</span>margin:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-top-margin</span><span class="code-item">{</span>margin-top:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-bottom-margin</span><span class="code-item">{</span>margin-bottom:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-left-margin</span><span class="code-item">{</span>margin-left:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-right-margin</span><span class="code-item">{</span>margin-right:10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-x-margin</span><span class="code-item">{</span>margin:0 10px !important;<span class="code-item">}</span>
+    <span class="selector">.has-small-y-margin</span><span class="code-item">{</span>margin:10px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-xsmall-margin</span><span class="code-item">{</span>margin:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-top-margin</span><span class="code-item">{</span>margin-top:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-bottom-margin</span><span class="code-item">{</span>margin-bottom:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-left-margin</span><span class="code-item">{</span>margin-left:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-right-margin</span><span class="code-item">{</span>margin-right:7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-x-margin</span><span class="code-item">{</span>margin:0 7px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xsmall-y-margin</span><span class="code-item">{</span>margin:7px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.has-xxsmall-margin</span><span class="code-item">{</span>margin:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-top-margin</span><span class="code-item">{</span>margin-top:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-bottom-margin</span><span class="code-item">{</span>margin-bottom:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-left-margin</span><span class="code-item">{</span>margin-left:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-right-margin</span><span class="code-item">{</span>margin-right:5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-x-margin</span><span class="code-item">{</span>margin:0 5px !important;<span class="code-item">}</span>
+    <span class="selector">.has-xxsmall-y-margin</span><span class="code-item">{</span>margin:5px 0 !important;<span class="code-item">}</span>
+
+    <span class="selector">.overlay-box</span><span class="code-item">{</span>padding:15px;<span class="code-item">}</span>
+
+    <span class="selector">.web-tags a</span><span class="code-item">{</span>padding:4px 10px;<span class="code-item">}</span>
+
+    <span class="selector">.tag</span><span class="code-item">{</span>
+        min-width: 40px;
+        font-size: 12px;
+        padding:2px 5px;
+    <span class="code-item">}</span>
+
+    <span class="selector">.circle-bullet li::before</span><span class="code-item">{</span>
+        width: 7px;
+        height: 7px;
+        margin-left: 8px;
+    <span class="code-item">}</span>
+
+    <span class="selector">.number-bullet li::before</span><span class="code-item">,</span>
+    <span class="selector">.tick-bullet li::before</span><span class="code-item">{</span>margin-left: 8px;<span class="code-item">}</span>
+
+    <span class="selector">.tick-bullet li</span><span class="code-item">{</span>font-size: 14px;<span class="code-item">}</span>
+
+    <span class="selector">.message</span><span class="code-item">{</span>
+        width: 300px;
+        padding:12px;
+        margin-left: -150px;
+    <span class="code-item">}</span>
+
+    <span class="selector">.post-stats span::after</span><span class="code-item">{</span>margin:0 5px;<span class="code-item">}</span>
+
+<span class="code-item-2">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Max width: 640px</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="code-item-2">@media only screen and (max-width:640px){</span>
+
+    <span class="selector">.has-3-3-3-3-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.has-2-2-2-2-2-2-column > .section</span><span class="code-item">{</span>
+        float: none !important;
+        width: 100% !important;
+        margin-left: 0;
+    <span class="code-item">}</span>
+
+    <span class="selector">.pagination ul li a</span><span class="code-item">{</span>
+        width: 30px;
+        height: 30px;
+        line-height: 27px;
+        font-size: 14px;
+    <span class="code-item">}</span>
+
+<span class="code-item-2">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Max width: 560px</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="code-item-2">@media only screen and (max-width:560px){</span>
+
+    <span class="selector">.tablet-desktop-only</span><span class="code-item">{</span>display: none !important;<span class="code-item">}</span>
+
+    <span class="selector">select</span><span class="code-item">,</span>
+    <span class="selector">input[type="search"]</span><span class="code-item">{</span>background-position-x:97%;<span class="code-item">}</span>
+
+    <span class="selector">.rspv.has-6-6-column > .section</span><span class="code-item">,</span>
+    <span class="selector">.rspv.has-4-4-4-column > .section</span><span class="code-item">{</span>
+        float: none !important;
+        width: 100% !important;
+        margin:0 !important;
+    <span class="code-item">}</span>
+
+    <span class="selector">.rspv.has-6-6-column > .card-box</span><span class="code-item">,</span>
+    <span class="selector">.rspv.has-4-4-4-column > .card-box</span><span class="code-item">{</span>margin-bottom: 10px !important;<span class="code-item">}</span>
+
+    <span class="selector">.pagination ul</span><span class="code-item">{</span>width: 100% !important;<span class="code-item">}</span>
+
+    <span class="selector">.page-count</span><span class="code-item">{</span>
+        display: block;
+        text-align: center;
+        padding-top:20px;
+    <span class="code-item">}</span>
+
+    <span class="selector">.breadcrumb ul</span><span class="code-item">{</span>padding:3px 18px;<span class="code-item">}</span>
+
+    <span class="selector">.breadcrumb ul li</span><span class="code-item">{</span>
+        position: relative;
+        float: none !important;
+        text-align: center;
+        margin:20px 0;
+    <span class="code-item">}</span>
+
+    <span class="selector">.breadcrumb ul li::before</span><span class="code-item">{</span>
+        position: absolute;
+        top:33px;
+        left:50%;
+        width: 9px;
+        height: 5px;
+        margin:0 -4.5px 0 0;
+        border-radius: 0;
+    <span class="code-item">}</span>
+
+    <span class="selector">.breadcrumb ul li:first-child::before</span><span class="code-item">{</span>display: inline-block;<span class="code-item">}</span>
+    <span class="selector">.breadcrumb ul li:last-child::before</span><span class="code-item">{</span>display: none;<span class="code-item">}</span>
+
+    <span class="selector">a.close</span><span class="code-item">{</span>
+        top:5px;
+        left:5px;
+    <span class="code-item">}</span>
+
+<span class="code-item-2">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Max width: 400px</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="code-item-2">@media only screen and (max-width:400px){</span>
+
+    <span class="selector">.pagination ul li a</span><span class="code-item">{</span>
+        width: 30px;
+        height: 30px;
+        line-height: 27px;
+    <span class="code-item">}</span>
+
+<span class="code-item-2">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
