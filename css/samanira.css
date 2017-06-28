@@ -382,6 +382,8 @@ a.remove{
 ****** #COMMON ******
 *********************/
 
+/* -- _Page Styles -- */
+
 .white-bg{background-color: #ffffff;}
 .black-bg{background-color: #000000;}
 .site-bg{background-color: #0a9abd;}
@@ -392,6 +394,7 @@ a.remove{
 .full-height{height: 100% !important;}
 
 .no-overflow{overflow: visible !important;}
+.auto-overflow{overflow: auto !important;}
 .hidden-overflow{overflow: hidden !important;}
 .hidden-visibility{visibility: hidden !important;}
 
@@ -410,40 +413,6 @@ a.remove{
 	height: 100%;
 }
 
-.top-aligned{vertical-align: top;}
-.vertical-aligned{vertical-align: middle;}
-.bottom-aligned{vertical-align: bottom;}
-
-.font-size-vlarge{font-size: 29px;}
-.font-size-xxlarge{font-size: 25px;}
-.font-size-xlarge{font-size: 22px;}
-.font-size-large{font-size: 18px;}
-.font-size-medium{font-size: 15px;}
-.font-size-small{font-size: 13px;}
-.font-size-xsmall{font-size: 11px;}
-.font-size-xxsmall{font-size: 9px;}
-
-.font-type-default{font-family: 'Effra-light';}
-.font-type-medium{font-family: 'Effra-regular';}
-.font-type-different{font-family: 'Iran';}
-
-.site-color{color:#121212 !important;}
-.site-color-2{color:#0a9abd !important;}
-.blue-color{color:#368098 !important;}
-.green-color{color:#61bd61 !important;}
-.purple-color{color:#843698 !important;}
-.red-color{color:#e56262 !important;}
-.yellow-color{color:#e4d257 !important;}
-.orange-color{color:#ef9200 !important;}
-.grey-color{color:#a7a7b4 !important;}
-.black-color{color:#000000 !important;}
-.white-color{color:#ffffff !important;}
-
-.center-aligned{text-align: center;}
-.left-aligned{text-align: left;}
-.right-aligned{text-align: right;}
-.justify-aligned{text-align: justify;}
-
 .static-position{position: static;}
 .relative-position{position: relative;}
 .z-index{
@@ -451,16 +420,9 @@ a.remove{
 	z-index: 100;
 }
 
-.right-floated{float: right;}
-.left-floated{float: left;}
-.no-float{float: none !important;}
-
-.uppercased{text-transform: uppercase;}
-.lowercased{text-transform: lowercase;}
-.capitalized{text-transform: capitalize;}
-
-.italic-style{font-style: italic;}
-.normal-style{font-style: normal;}
+.top-aligned{vertical-align: top;}
+.vertical-aligned{vertical-align: middle;}
+.bottom-aligned{vertical-align: bottom;}
 
 .no-boxshadow{
 	-webkit-box-shadow: none !important;
@@ -498,6 +460,51 @@ a.remove{
 	-moz-transition:all .2s cubic-bezier(.15,.41,.89,.63);
 	transition:all .2s cubic-bezier(.15,.41,.89,.63);
 }
+
+/* -- _Font Styles -- */
+
+.font-size-vlarge{font-size: 29px;}
+.font-size-xxlarge{font-size: 25px;}
+.font-size-xlarge{font-size: 22px;}
+.font-size-large{font-size: 18px;}
+.font-size-medium{font-size: 15px;}
+.font-size-small{font-size: 13px;}
+.font-size-xsmall{font-size: 11px;}
+.font-size-xxsmall{font-size: 9px;}
+
+.font-type-default{font-family: 'Roboto';}
+.font-type-medium{font-family: 'Roboto-Medium';}
+.font-type-different{font-family: 'Iran';}
+
+.site-color{color:#0a9abd !important;}
+.site-color-2{color:#f55757 !important;}
+.blue-color{color:#368098 !important;}
+.green-color{color:#61bd61 !important;}
+.purple-color{color:#843698 !important;}
+.red-color{color:#e56262 !important;}
+.yellow-color{color:#e4d257 !important;}
+.orange-color{color:#ef9200 !important;}
+.grey-color{color:#a7a7b4 !important;}
+.black-color{color:#000000 !important;}
+.white-color{color:#ffffff !important;}
+
+.center-aligned{text-align: center;}
+.left-aligned{text-align: left;}
+.right-aligned{text-align: right;}
+.justify-aligned{text-align: justify;}
+
+.uppercased{text-transform: uppercase;}
+.lowercased{text-transform: lowercase;}
+.capitalized{text-transform: capitalize;}
+
+.italic-style{font-style: italic;}
+.normal-style{font-style: normal;}
+
+/* -- _Box Styles -- */
+
+.right-floated{float: right;}
+.left-floated{float: left;}
+.no-float{float: none !important;}
 
 .no-border{border:none !important;}
 .has-border{border: 1px solid #121212;}
