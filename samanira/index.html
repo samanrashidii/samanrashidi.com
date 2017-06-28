@@ -904,7 +904,56 @@
                                 <div class="class-box">
                                     <h5>#FRAMES</h5>
                                     <h6>_Main Styles</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+   <span class="selector">#wrapper</span><span class="code-item">{</span>
+        position: relative;
+        min-width: 320px;
+        width:100%;
+        min-height: 100%;
+    <span class="code-item">}</span>
 
+    <span class="selector">.frame</span><span class="code-item">{</span>
+        max-width: 1120px;
+        padding: 0 15px;
+        margin:auto;
+    <span class="code-item">}</span>
+
+    <span class="selector">.frame.xxlarge</span><span class="code-item">{</span>max-width: 1470px;<span class="code-item">}</span>
+    <span class="selector">.frame.xlarge</span><span class="code-item">{</span>max-width: 1330px;<span class="code-item">}</span>
+    <span class="selector">.frame.large</span><span class="code-item">{</span>max-width: 1230px;<span class="code-item">}</span>
+    <span class="selector">.frame.medium</span><span class="code-item">{</span>max-width: 980px;<span class="code-item">}</span>
+    <span class="selector">.frame.small</span><span class="code-item">{</span>max-width: 750px;<span class="code-item">}</span>
+    <span class="selector">.frame.xsmall</span><span class="code-item">{</span>max-width: 530px;<span class="code-item">}</span>
+    <span class="selector">.frame.xxsmall</span><span class="code-item">{</span>max-width: 430px;<span class="code-item">}</span>
+
+    <span class="selector">.clearFix</span><span class="code-item">{</span>
+        display:block;
+        height:0;
+        clear:both;
+        visibility:hidden;
+    <span class="code-item">}</span>
+
+    <span class="selector">.hasClearFix::after</span><span class="code-item">{</span>
+        content:'';
+        display: table;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    <span class="code-item">}</span>
+
+    <span class="selector">.divider</span><span class="code-item">{</span>
+        display: inline-block;
+        vertical-align: middle;
+        width: 1px;
+        height: 13px;
+        margin: 0 10px;
+        background-color: #121212;
+    <span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->  
                                 </div><!-- class-box end -->
                             </div><!-- defined-classes end --> 
                         </div><!-- main-port-content end -->
