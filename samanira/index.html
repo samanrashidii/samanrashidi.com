@@ -1042,6 +1042,499 @@
                                     </div><!-- css-code-box end --> 
                                     <h6>_Font Styles</h6>
                                 </div><!-- class-box end -->
+                                <div class="class-box">
+                                    <h5>#CLASSES</h5>
+                                    <h6>_Schema</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.schema-item</span><span class="code-item">{</span>
+    display: block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->  
+                                    <h6>_Overlay</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.overlay</span><span class="code-item">{</span>
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y:auto;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0,0,0, .8);
+    z-index: 9999999;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
+
+<span class="selector">.overlay.active</span><span class="code-item">{</span>
+    visibility: visible;
+    opacity: 1;
+<span class="code-item">}</span>
+
+<span class="selector">.inner-overlay</span><span class="code-item">{</span>
+    display: table;
+    width: 100%;
+    height: 100%;
+<span class="code-item">}</span>
+
+<span class="selector">.overlay-box</span><span class="code-item">{</span>
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding:20px;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end --> 
+                                    <h6>_List Items</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.circle-bullet li::before</span><span class="code-item">{</span>
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 16px;
+    background-color: #c3aa68;
+    border-radius: 50%;
+<span class="code-item">}</span>
+
+<span class="selector">.circle-bullet.small li::before</span><span class="code-item">{</span>
+    width: 6px;
+    height: 6px;
+<span class="code-item">}</span>
+
+<span class="selector">.number-bullet li::before</span><span class="code-item">{</span>
+    content:attr(list-number);
+    display: inline-block;
+    color: #c3aa68;
+    margin-right: 8px;
+<span class="code-item">}</span>
+
+<span class="selector">.tick-bullet li</span><span class="code-item">{</span>
+    font-size: 16px;
+    color: #9e6baa;
+    margin-bottom: 16px;
+<span class="code-item">}</span>
+
+<span class="selector">.tick-bullet li:last-child</span><span class="code-item">{</span>margin-bottom: 0;<span class="code-item">}</span>
+
+<span class="selector">.tick-bullet li::before</span><span class="code-item">{</span>
+    content:'';
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 11px;
+    margin-right: 15px;
+    background:url('../images/assets/tick.png') no-repeat center;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end --> 
+                                    <h6>_Tag</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.web-tags a</span><span class="code-item">{</span>
+    display: inline-block;
+    color:#ffffff;
+    padding:5px 12px;
+    margin:5px 3px;
+    background-color:#121212;
+    border-radius: 2px;
+<span class="code-item">}</span>
+
+<span class="selector">.web-tags a:hover</span><span class="code-item">{</span>background-color:#565656;<span class="code-item">}</span>
+
+<span class="selector">.tag</span><span class="code-item">{</span>
+    display: inline-block;
+    min-width: 52px;
+    font-size: 14px;
+    color:#ffffff;
+    text-align: center;
+    padding:3px 6px;
+    background-color: #121212;
+    border-radius: 2px;
+<span class="code-item">}</span>
+<span class="selector">.tag:hover</span><span class="code-item">{</span>background-color: #565656;<span class="code-item">}</span>
+
+<span class="selector">.site-label</span><span class="code-item">{</span>background-color:#0a9abd;<span class="code-item">}</span>
+<span class="selector">.site-label:hover</span><span class="code-item">{</span>background-color:#f55757;<span class="code-item">}</span>
+
+
+<span class="selector">.blue-label</span><span class="code-item">{</span>background-color: #368098 !important;<span class="code-item">}</span>
+<span class="selector">.blue-label:hover</span><span class="code-item">{</span>background-color: #246073 !important;<span class="code-item">}</span>
+
+
+<span class="selector">.green-label</span><span class="code-item">{</span>background-color: #61bd61 !important;<span class="code-item">}</span>
+<span class="selector">.green-label:hover</span><span class="code-item">{</span>background-color: #3c893c !important;<span class="code-item">}</span>
+
+
+<span class="selector">.purple-label</span><span class="code-item">{</span>background-color: #843698 !important;<span class="code-item">}</span>
+<span class="selector">.purple-label:hover</span><span class="code-item">{</span>background-color: #532160 !important;<span class="code-item">}</span>
+
+
+<span class="selector">.red-label</span><span class="code-item">{</span>background-color: #e56262 !important;<span class="code-item">}</span>
+<span class="selector">.red-label:hover</span><span class="code-item">{</span>background-color: #c83a3a !important;<span class="code-item">}</span>
+
+
+<span class="selector">.yellow-label</span><span class="code-item">{</span>background-color: #e4d257 !important;<span class="code-item">}</span>
+<span class="selector">.yellow-label:hover</span><span class="code-item">{</span>background-color: #d6bb00 !important;<span class="code-item">}</span>
+
+
+<span class="selector">.orange-label</span><span class="code-item">{</span>background-color: #ef9200 !important;<span class="code-item">}</span>
+<span class="selector">.orange-label:hover</span><span class="code-item">{</span>background-color: #bb7301 !important;<span class="code-item">}</span>
+
+
+<span class="selector">.grey-label</span><span class="code-item">{</span>background-color: #ef9200 !important;<span class="code-item">}</span>
+<span class="selector">.grey-label:hover</span><span class="code-item">{</span>background-color: #888888 !important;<span class="code-item">}</span>
+
+
+<span class="selector">.grey-label</span><span class="code-item">{</span>background-color: #ef9200 !important;<span class="code-item">}</span>
+<span class="selector">.grey-label:hover</span><span class="code-item">{</span>background-color: #888888 !important;<span class="code-item">}</span>
+
+
+<span class="selector">.black-label</span><span class="code-item">{</span>background-color: #323232 !important;<span class="code-item">}</span>
+<span class="selector">.black-label:hover</span><span class="code-item">{</span>background-color: #000000 !important;<span class="code-item">}</span>
+
+
+<span class="selector">.white-label</span><span class="code-item">{</span>
+    color:#121212 !important;
+    background-color: #ffffff !important;
+<span class="code-item">}</span>
+
+<span class="selector">.white-label:hover</span><span class="code-item">{</span>background-color: #b7b7b7 !important;<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end --> 
+                                    <h6>_Post Stats</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.post-stats</span><span class="code-item">{</span>
+    width: 100%;
+    overflow: hidden;
+<span class="code-item">}</span>
+
+<span class="selector">.post-stats span</span><span class="code-item">{</span>
+    display: inline-block;
+    vertical-align: middle;
+    color:#9a9a9a;
+<span class="code-item">}</span>
+
+<span class="selector">.post-stats span::after</span><span class="code-item">{</span>
+    content:'•';
+    display: inline-block;
+    vertical-align: middle;
+    color:#121212;
+    margin:0 7px;
+<span class="code-item">}</span>
+
+<span class="selector">.post-stats span:last-child::after</span><span class="code-item">{</span>display: none;<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Message</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.message</span><span class="code-item">{</span>
+    position: fixed;
+    top:-100px;
+    left:50%;
+    width: 600px;
+    color:#ffffff;
+    padding:16px;
+    margin-left: -300px;
+    background-color: #121212;
+    border-radius: 2px;
+    z-index: 99999999;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
+
+<span class="selector">.message span</span><span class="code-item">{</span>
+    display: block;
+    padding:2px 30px 0 0;
+<span class="code-item">}</span>
+
+<span class="selector">.message.active</span><span class="code-item">{</span>top:15px;<span class="code-item">}</span>
+
+<span class="selector">.message.success</span><span class="code-item">{</span>background-color: #61bd61;<span class="code-item">}</span>
+<span class="selector">.message.success span</span><span class="code-item">{</span>
+    color:#3c893c;
+    background: url('../images/icons/success.png') no-repeat right center;
+<span class="code-item">}</span>
+
+<span class="selector">.message.fail</span><span class="code-item">{</span>background-color: #e56262;<span class="code-item">}</span>
+<span class="selector">.message.fail span</span><span class="code-item">{</span>
+    color:#c83a3a;
+    background: url('../images/icons/error.png') no-repeat right center;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Star Rating</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.star-box</span><span class="code-item">{</span>
+    width: 100%;
+    margin-top:5px;
+<span class="code-item">}</span>
+
+<span class="selector">.star-box span</span><span class="code-item">{</span>
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 14px;
+    background: url('../images/icons/star.png') no-repeat center center;
+<span class="code-item">}</span>
+
+<span class="selector">.star-box span.active</span><span class="code-item">{</span>background-image: url('../images/icons/star-active.png');<span class="code-item">}</span>
+
+<span class="selector">.star-box i</span><span class="code-item">{</span>
+    display: inline-block;
+    vertical-align: top;
+    font-style: normal;
+    font-size: 14px;
+    padding-top:2px;
+    margin-left: 7px;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Quotes</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.double-quotes::before</span><span class="code-item">{</span>
+    content:'"';
+    font-family: 'Roboto-Medium';
+    font-size: 18px;
+    color:#000000;
+<span class="code-item">}</span>
+
+<span class="selector">.double-quotes::after</span><span class="code-item">{</span>
+    content:'"';
+    font-family: 'Roboto-Medium';
+    font-size: 18px;
+    color:#000000;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Pagination</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.pagination</span><span class="code-item">{</span>
+    width: 100%;
+    margin: 10px 0;
+    padding: 25px 0 15px 0;
+<span class="code-item">}</span>
+
+<span class="selector">.pagination ul</span><span class="code-item">{</span>
+    width: auto;
+    text-align: center;
+    margin: auto;
+<span class="code-item">}</span>
+
+<span class="selector">.pagination ul li</span><span class="code-item">{</span>
+    display: inline-block;   
+    text-align: center;
+    margin: 0 1px;
+<span class="code-item">}</span>
+
+<span class="selector">.pagination ul li a</span><span class="code-item">{</span>
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 41px;
+    font-size: 15px;
+    color:#121212;
+    background-color: #ffffff;
+    border:1px solid #121212;
+    border-radius: 2px;
+<span class="code-item">}</span>
+
+<span class="selector">.pagination ul li.active a</span><span class="code-item">{</span>
+    color:#ffffff;
+    background-color: #121212;
+<span class="code-item">}</span>
+
+<span class="selector">.pagination ul li.prev a</span><span class="code-item">{</span>background: url('../images/assets/prev.png') no-repeat center center #ffffff;<span class="code-item">}</span>
+<span class="selector">.pagination ul li.next a</span><span class="code-item">{</span>background: url('../images/assets/next.png') no-repeat center center #ffffff;<span class="code-item">}</span>
+
+<span class="selector">.pagination ul li.etc a</span></span><span class="code-item">{</span>
+    width: 25px;
+    color: #121212;
+    background-color: transparent;
+    border-color: transparent;
+<span class="code-item">}</span>
+
+<span class="selector">.pagination ul li.prev</span><span class="code-item">,</span>
+<span class="selector">.pagination ul li.next</span><span class="code-item">{</span>margin: 0 6px;<span class="code-item">}</span>
+
+<span class="selector">.pagination ul li:not(.active):not(.etc) a:hover</span><span class="code-item">{</span>
+    color: #0a9abd;
+    border-color: #0a9abd;
+<span class="code-item">}</span>
+
+<span class="selector">.page-count</span><span class="code-item">{</span>
+    display: inline-block;
+    color:#9a9a9a;
+    padding:7px 15px 0 15px;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Breadcrumb</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.breadcrumb</span><span class="code-item">{</span>
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+<span class="code-item">}</span>
+
+<span class="selector">.breadcrumb ul</span><span class="code-item">{</span>
+    display: block;
+    overflow: hidden;
+    padding:15px 18px;
+    background-color: #ffffff;
+    border-radius: 2px;
+<span class="code-item">}</span>
+
+<span class="selector">.breadcrumb ul li</span><span class="code-item">{</span>
+    float: left;
+    color: #121212;
+<span class="code-item">}</span>
+
+<span class="selector">.breadcrumb ul li::before</span><span class="code-item">{</span>
+    content:'';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin:0 12px;
+    background-color: #121212;
+    border-radius: 50%;
+    -webkit-transform:translateY(-3px);
+    -moz-transform:translateY(-3px);
+    transform:translateY(-3px);
+<span class="code-item">}</span>
+
+<span class="selector">.breadcrumb ul li:first-child::before</span><span class="code-item">{</span>display: none;<span class="code-item">}</span>
+<span class="selector">.breadcrumb ul li a</span><span class="code-item">{</span>color:#121212;<span class="code-item">}</span>
+<span class="selector">.breadcrumb ul li a:hover</span><span class="code-item">{</span>color:#0a9abd;<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Text Editors (change the style all content comes from text editors)</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.static-content h1</span><span class="code-item">{</span>
+    font-size: 60px !important;
+    word-break: break-word !important;
+    margin-top:15px !important;
+<span class="code-item">}</span>
+
+<span class="selector">.static-content h2</span><span class="code-item">{</span>
+    font-size: 50px !important;
+    word-break: break-word !important;
+    margin-top:15px !important;
+<span class="code-item">}</span>
+
+<span class="selector">.static-content h3</span><span class="code-item">{</span>
+    font-size: 40px !important;
+    word-break: break-word !important;
+    margin-top:15px !important;
+<span class="code-item">}</span>
+
+<span class="selector">.static-content h4</span><span class="code-item">{</span>
+    font-size: 30px !important;
+    word-break: break-word !important;
+    margin-top:15px !important;
+<span class="code-item">}</span>
+
+<span class="selector">.static-content h5</span><span class="code-item">{</span>
+    font-size: 20px !important;
+    word-break: break-word !important;
+    margin-top:15px !important;
+<span class="code-item">}</span>
+
+<span class="selector">.static-content h6</span><span class="code-item">{</span>
+    font-size: 17px !important;
+    word-break: break-word !important;
+    margin-top:15px !important;
+<span class="code-item">}</span>
+
+<span class="selector">.static-content img</span><span class="code-item">,</span>
+<span class="selector">.static-content .video-player</span><span class="code-item">{</span>margin-top:15px !important;<span class="code-item">}</span>
+
+<span class="selector">.static-content p</span><span class="code-item">{</span>
+    font-size: 16px !important;
+    word-break: break-word !important;
+    padding-top:15px !important;
+<span class="code-item">}</span>
+
+<span class="selector">.static-content p strong</span><span class="code-item">{</span>font-family: 'Roboto-Medium' !important;<span class="code-item">}</span>
+
+<span class="selector">.static-content ul</span><span class="code-item">,</span>
+<span class="selector">.static-content ol</span><span class="code-item">{</span>margin:5px 0 0 10px;<span class="code-item">}</span>
+
+<span class="selector">.static-content ul li::before</span><span class="code-item">{</span>
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 12px;
+    background-color: #121212;
+    border-radius: 50%;
+<span class="code-item">}</span>
+
+<span class="selector">.static-content ol li::before</span><span class="code-item">{</span>
+    content: attr(list-number);
+    display: inline-block;
+    margin-right: 6px;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Google Map</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">#map_canvas</span><span class="code-item">{</span>
+    position: relative;
+    width:100%;
+    height:300px;
+<span class="code-item">}</span>
+
+<span class="selector">#map_canvas img</span><span class="code-item">{</span>
+    max-width:none!important;
+    background:none!important;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+
+                                </div><!-- class-box end -->
                             </div><!-- defined-classes end --> 
                         </div><!-- main-port-content end -->
                         <div class="side-port-content">
