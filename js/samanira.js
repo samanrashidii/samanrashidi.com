@@ -39,6 +39,30 @@ $(window).load(function(){
   }
 });
 
+// Switch Button
+
+$('.switch').on('click', function(){
+  $(this).toggleClass('active');
+});
+
+// Nav Toggle
+
+$('.nav-toggle').on('click', function(){
+  $(this).toggleClass('active');
+});
+
+// Remove Button
+
+$('a.remove').on('click', function(){
+  $(this).parent().remove();
+});
+
+// Remove Button
+
+$('a.close').on('click', function(){
+  $(this).parent().hide();
+});
+
 // Number Bullet
 
 $(window).load(function(){

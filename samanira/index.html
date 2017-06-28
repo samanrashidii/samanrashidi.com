@@ -697,11 +697,11 @@
 <span class="selector">.bttn</span><span class="code-item">{</span>
     position: relative;
     display: inline-block;
-    min-width: 160px;
+    min-width: 150px;
     font-size: 16px;
     color:#ffffff;
     text-align: center;
-    padding:12px 20px;
+    padding:10px;
     background-color: #121212;
     border:2px solid #121212;
     border-radius: 2px;
@@ -713,7 +713,6 @@
 <span class="selector">.bttn:hover</span><span class="code-item">{</span>
     color:#121212;
     background-color: #ffffff;
-    border-color: #ffffff;
 <span class="code-item">}</span>
 
 <span class="selector">.bttn.white</span><span class="code-item">{</span>
@@ -764,20 +763,21 @@
 <span class="code-item">}</span>
 
 <span class="selector">.bttn.has-icon</span><span class="code-item">{</span>
-    background-position: 12px center;
-    padding: 10px 15px 10px 37px;
+    text-align: left;
+    background-position: 13px center;
+    padding: 10px 15px 10px 43px;
 <span class="code-item">}</span>
 
 <span class="selector">.bttn.small</span><span class="code-item">{</span>
-    min-width: 100px;
+    min-width: 120px;
     font-size: 14px;
-    padding:6px 15px;
+    padding:8px 5px;
 <span class="code-item">}</span>
 
 <span class="selector">.bttn.large</span><span class="code-item">{</span>
-    min-width: 275px;
+    min-width: 180px;
     font-size: 18px;
-    padding:18px 25px;
+    padding:12px 10px;
 <span class="code-item">}</span>
 
 <span class="selector">.bttn:active</span><span class="code-item">,</span>
@@ -807,6 +807,104 @@
                                         <br />
                                         <a class="bttn has-icon icon-1" href="javascript:void(0)">Has Icon</a>
                                     </div><!-- sample-box end -->
+                                    <h6>_Switch</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.switch</span><span class="code-item">{</span>
+    display: block;
+    width: 58px;
+    height: 32px;
+    background: url('../images/icons/switch.png') no-repeat center;
+<span class="code-item">}</span>
+
+<span class="selector">.switch.active</span><span class="code-item">{</span>background-image: url('../images/icons/switch-on.png');<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->         
+                                    <p>- Switch button for some forms and admin panels</p>
+                                    <div class="sample-box">
+                                        <a class="switch" href="javascript:void(0)"></a>
+                                    </div><!-- sample-box end -->     
+                                    <h6>_Nav Toggle</h6>   
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.nav-toggle</span><span class="code-item">{</span>
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    display: none;
+    width: 30px;
+    height: 21px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+<span class="code-item">}</span>
+
+<span class="selector">.nav-toggle span</span><span class="code-item">{</span>
+    position: relative;
+    display: block;
+    height: 3px;
+    margin-bottom: 6px;
+    background-color: #121212;
+<span class="code-item">}</span>
+
+<span class="selector">.nav-toggle span:last-child</span><span class="code-item">{</span>margin-bottom: 0;<span class="code-item">}</span>
+<span class="selector">.nav-toggle.active span</span><span class="code-item">{</span>background-color: #0a9abd;<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->  
+                                    <p>- Nav toggle for mobile menu display</p>
+                                    <div class="sample-box">
+                                        <div class="nav-toggle">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div><!-- nav-toggle end -->
+                                    </div><!-- sample-box end -->
+                                    <h6>_Remove &amp; Close</h6>  
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">a.remove</span><span class="code-item">{</span>
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url('../images/assets/remove.png') no-repeat center center #ffffff;
+    border-radius: 2px;
+    z-index: 6;
+<span class="code-item">}</span>
+
+<span class="selector">a.close</span><span class="code-item">{</span>
+    position: absolute;
+    top:10px;
+    left:10px;
+    width: 10px;
+    height: 10px;
+    background: url('../images/assets/close.png') no-repeat center;
+    z-index: 10;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->  
+                                    <p>- Remove and close buttons for boxes</p>  
+                                    <div class="sample-box">
+                                        <div class="site-bg has-padding has-bottom-margin relative-position has-border-radius">
+                                            <a class="remove" href="javascript:void(0)"></a>
+                                        </div><!-- white-bg end -->
+                                        <div class="site-2-bg has-padding relative-position has-border-radius">
+                                            <a class="close" href="javascript:void(0)"></a>
+                                        </div><!-- white-bg end -->
+                                    </div><!-- sample-box end -->
+                                </div><!-- class-box end -->
+                                <div class="class-box">
+                                    <h5>#FRAMES</h5>
+                                    <h6>_Main Styles</h6>
+
                                 </div><!-- class-box end -->
                             </div><!-- defined-classes end --> 
                         </div><!-- main-port-content end -->

@@ -739,6 +739,9 @@
 .samanira li a,
 .samanira p a{color:#f55757;}
 
+.samanira li a:hover,
+.samanira p a:hover{border-bottom: 1px solid #f55757;}
+
 .samanira ul,
 .samanira ol{margin-top:20px;}
 .samanira ul li::before{
@@ -795,7 +798,9 @@ code{font-size: 15px;}
 .code-item{color:#f55757;}
 
 .sample-box{
+	position: relative;
 	max-width: 500px;
+	min-height: 80px;
 	max-height: 400px;
 	overflow-y: auto;
 	font-size: 18px;
