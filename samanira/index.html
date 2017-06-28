@@ -1811,7 +1811,68 @@
                                     <div class="css-code-box">
 <pre>
 <code>
+<span class="selector">.content</span><span class="code-item">{</span>padding:30px 20px;<span class="code-item">}</span>
 
+<span class="selector">.section-wrapper</span><span class="code-item">{</span>width: 100%;<span class="code-item">}</span>
+<span class="selector">.section-wrapper::before</span><span class="code-item">{</span>
+    content: " ";
+    display: table;
+    clear: both;
+<span class="code-item">}</span>
+
+<span class="selector">.section-wrapper::after</span><span class="code-item">{</span>
+    content: " ";
+    display: table;
+    clear:both;
+<span class="code-item">}</span>
+
+<span class="selector">.card-box</span><span class="code-item">{</span>margin-bottom: 20px;<span class="code-item">}</span>
+<span class="selector">.card-box:last-child</span><span class="code-item">{</span>margin-bottom: 0;<span class="code-item">}</span>
+
+<span class="selector">.section</span><span class="code-item">{</span>
+    float: left;
+    width: 100%;
+<span class="code-item">}</span>
+
+<span class="selector">.section.reverse</span><span class="code-item">{</span>float: right;<span class="code-item">}</span>
+
+<span class="selector">.section.centered</span><span class="code-item">{</span>
+    float: none;
+    margin:auto;
+<span class="code-item">}</span>
+
+<span class="selector">.section-box</span><span class="code-item">{</span>
+    position: relative;
+    width: 100%;
+    padding:30px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 2px;
+<span class="code-item">}</span>
+
+<span class="selector">.section-box.solo</span><span class="code-item">{</span>float: none;<span class="code-item">}</span>
+
+<span class="selector">.section-box.large-padding</span><span class="code-item">{</span>padding:40px;<span class="code-item">}</span>
+<span class="selector">.section-box.normal-padding</span><span class="code-item">{</span>padding:25px;<span class="code-item">}</span>
+<span class="selector">.section-box.medium-padding</span><span class="code-item">{</span>padding:20px;<span class="code-item">}</span>
+<span class="selector">.section-box.small-padding</span><span class="code-item">{</span>padding:10px;<span class="code-item">}</span>
+
+<span class="selector">.section-box-title</span><span class="code-item">{</span>
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #9a9a9a;
+<span class="code-item">}</span>
+
+<span class="selector">.section-box-content</span><span class="code-item">{</span>
+    width: 100%;
+    padding:15px 0;
+<span class="code-item">}</span>
+
+<span class="selector">.section-box-footer</span><span class="code-item">{</span>
+    width: 100%;
+    padding-top: 15px;
+    border-top: 1px solid #9a9a9a;
+<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
@@ -1819,7 +1880,27 @@
                                     <div class="css-code-box">
 <pre>
 <code>
+<span class="selector">.half-box</span><span class="code-item">{</span>
+    float: left;
+    width: 50%;
+<span class="code-item">}</span>
 
+<span class="selector">.half-half-box</span><span class="code-item">{</span>
+    float: left;
+    width: 25%;
+<span class="code-item">}</span>
+
+<span class="selector">.left-side</span><span class="code-item">{</span>
+    float: left;
+    width: 50%;
+    overflow: hidden;
+<span class="code-item">}</span>
+
+<span class="selector">.right-side</span><span class="code-item">{</span>
+    float: right;
+    width: 50%;
+    overflow: hidden;
+<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
@@ -1827,7 +1908,21 @@
                                     <div class="css-code-box">
 <pre>
 <code>
+<span class="selector">.section-wrapper.cl-column > .section</span><span class="code-item">{</span>padding:0 15px;<span class="code-item">}</span>
+<span class="selector">.section-wrapper.cl-column.y-padd > .section</span><span class="code-item">{</span>padding:15px;<span class="code-item">}</span>
 
+<span class="selector">.cl-1</span><span class="code-item">{</span>width: 8.33333333% !important;<span class="code-item">}</span>
+<span class="selector">.cl-2</span><span class="code-item">{</span>width: 16.6666667% !important;<span class="code-item">}</span>
+<span class="selector">.cl-3</span><span class="code-item">{</span>width: 25% !important;<span class="code-item">}</span>
+<span class="selector">.cl-4</span><span class="code-item">{</span>width: 33.33333333% !important;<span class="code-item">}</span>
+<span class="selector">.cl-5</span><span class="code-item">{</span>width: 41.6666667% !important;<span class="code-item">}</span>
+<span class="selector">.cl-6</span><span class="code-item">{</span>width: 50% !important;<span class="code-item">}</span>
+<span class="selector">.cl-7</span><span class="code-item">{</span>width: 58.33333333% !important;<span class="code-item">}</span>
+<span class="selector">.cl-8</span><span class="code-item">{</span>width: 66.66666666% !important;<span class="code-item">}</span>
+<span class="selector">.cl-9</span><span class="code-item">{</span>width: 75% !important;<span class="code-item">}</span>
+<span class="selector">.cl-10</span><span class="code-item">{</span>width: 83.3333334% !important;<span class="code-item">}</span>
+<span class="selector">.cl-11</span><span class="code-item">{</span>width: 91.6666667% !important;<span class="code-item">}</span>
+<span class="selector">.cl-12</span><span class="code-item">{</span>width: 100% !important;<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
@@ -1835,7 +1930,138 @@
                                     <div class="css-code-box">
 <pre>
 <code>
+<span class="selector">.has-11-1-column > .section</span><span class="code-item">{</span>
+    width: 81.5%;
+    margin-left: 3.5%;
+<span class="code-item">}</span>
 
+<span class="selector">.has-11-1-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 15%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-1-11-column > .section</span><span class="code-item">{</span>
+    width: 15%;
+    margin-left: 3.5%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-1-11-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 81.5%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-10-2-column > .section</span><span class="code-item">{</span>
+    width: 78%;
+    margin-left: 2%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-10-2-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 20%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-2-10-column > .section</span><span class="code-item">{</span>
+    width: 20%;
+    margin-left: 2%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-2-10-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 78%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-9-3-column > .section</span><span class="code-item">{</span>
+    width: 72.5%;
+    margin-left: 2.5%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-9-3-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 25%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-3-9-column > .section</span><span class="code-item">{</span>
+    width: 25%;
+    margin-left: 2.5%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-3-9-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 72.5%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-8-4-column > .section</span><span class="code-item">{</span>
+    width: 62%;
+    margin-left: 3%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-8-4-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 35%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-4-8-column > .section</span><span class="code-item">{</span>
+    width: 35%;
+    margin-left: 3%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-4-8-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 62%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-7-5-column > .section</span><span class="code-item">{</span>
+    width: 40.625%;
+    margin-left: 2.5%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-7-5-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 56.875%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-5-7-column > .section</span><span class="code-item">{</span>
+    width: 56.875%;
+    margin-left: 2.5%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-5-7-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>
+    width: 40.625%;
+    margin-left: 0;
+<span class="code-item">}</span>
+
+<span class="selector">.has-6-6-column > .section</span><span class="code-item">{</span>
+    width: 48.75%;
+    margin-left: 2.5%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-6-6-column > .section:nth-child(2n+1)</span><span class="code-item">{</span>margin-left: 0;<span class="code-item">}</span>
+
+<span class="selector">.has-4-4-4-column > .section</span><span class="code-item">{</span>
+    width: 31.66666666666667%;
+    padding:0;
+    margin-left: 2.5%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-4-4-4-column > .section:nth-child(3n+1)</span><span class="code-item">{</span>margin-left: 0;<span class="code-item">}</span>
+
+<span class="selector">.has-3-3-3-3-column > .section</span><span class="code-item">{</span>
+    float: left;
+    width: 23.72%;
+    padding:0;
+    margin-left: 1.706%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-3-3-3-3-column > .section:nth-child(4n+1)</span><span class="code-item">{</span>margin-left: 0;<span class="code-item">}</span>
+
+<span class="selector">.has-2-2-2-2-2-2-column > .section</span><span class="code-item">{</span>
+    float: left;
+    width: 15%;
+    padding:0;
+    margin-left: 2%;
+<span class="code-item">}</span>
+
+<span class="selector">.has-2-2-2-2-2-2-column > .section:nth-child(6an+1)</span><span class="code-item">{</span>margin-left: 0;<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
