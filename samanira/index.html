@@ -1784,7 +1784,29 @@
                                     <div class="css-code-box">
 <pre>
 <code>
+<span class="selector">.table</span><span class="code-item">{</span>width: 100%;<span class="code-item">}</span>
 
+<span class="selector">.table.scrollable</span><span class="code-item">{</span>overflow-x:auto;<span class="code-item">}</span>
+<span class="selector">.table.scrollable table</span><span class="code-item">{</span>min-width: 980px;<span class="code-item">}</span>
+
+<span class="selector">.table tr</span><span class="code-item">{</span>border-bottom: 1px solid #efeef2;<span class="code-item">}</span>
+
+<span class="selector">.table td</span><span class="code-item">,</span>
+<span class="selector">.table th</span><span class="code-item">{</span>
+    text-align: left;
+    padding:15px;
+<span class="code-item">}</span>
+
+<span class="selector">.table a</span><span class="code-item">{</span>color:#686b6d;<span class="code-item">}</span>
+<span class="selector">.table td a:hover</span><span class="code-item">{</span>color:#6e2878;<span class="code-item">}</span>
+
+<span class="selector">.table th</span><span class="code-item">{</span>
+    font-family: 'Roboto';
+    color:#121212;
+    background-color: #9a9a9a;
+<span class="code-item">}</span>
+
+<span class="selector">.table tr.active td</span><span class="code-item">{</span>background-color: #f7f7f9;<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
@@ -1792,7 +1814,17 @@
                                     <div class="css-code-box">
 <pre>
 <code>
+<span class="selector">.table-filter</span><span class="code-item">{</span>
+    font-family: 'Roboto-Medium';
+    padding-right: 15px;
+    cursor: pointer;
+    background: url('../images/assets/arrow-down-black.png') no-repeat right 6px;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+<span class="code-item">}</span>
 
+<span class="selector">.table-filter.active</span><span class="code-item">{</span>background: url('../images/assets/arrow-up-black.png') no-repeat right center<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
@@ -1800,7 +1832,43 @@
                                     <div class="css-code-box">
 <pre>
 <code>
+<span class="selector">.div-table .row</span><span class="code-item">{</span>
+    display: table;
+    width: 100%;
+<span class="code-item">}</span>
 
+<span class="selector">.div-table .column</span><span class="code-item">{</span>
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding:0 10px;
+<span class="code-item">}</span>
+</code>    
+</pre>                                    
+                                    </div><!-- css-code-box end -->
+                                    <h6>_Table Columns</h6>
+                                    <div class="css-code-box">
+<pre>
+<code>
+<span class="selector">.column-5</span><span class="code-item">{</span>width: 5%;<span class="code-item">}</span>
+<span class="selector">.column-10</span><span class="code-item">{</span>width: 10%;<span class="code-item">}</span>
+<span class="selector">.column-15</span><span class="code-item">{</span>width: 15%;<span class="code-item">}</span>
+<span class="selector">.column-20</span><span class="code-item">{</span>width: 20%;<span class="code-item">}</span>
+<span class="selector">.column-25</span><span class="code-item">{</span>width: 25%;<span class="code-item">}</span>
+<span class="selector">.column-30</span><span class="code-item">{</span>width: 30%;<span class="code-item">}</span>
+<span class="selector">.column-35</span><span class="code-item">{</span>width: 35%;<span class="code-item">}</span>
+<span class="selector">.column-40</span><span class="code-item">{</span>width: 40%;<span class="code-item">}</span>
+<span class="selector">.column-45</span><span class="code-item">{</span>width: 45%;<span class="code-item">}</span>
+<span class="selector">.column-50</span><span class="code-item">{</span>width: 50%;<span class="code-item">}</span>
+<span class="selector">.column-55</span><span class="code-item">{</span>width: 55%;<span class="code-item">}</span>
+<span class="selector">.column-60</span><span class="code-item">{</span>width: 60%;<span class="code-item">}</span>
+<span class="selector">.column-65</span><span class="code-item">{</span>width: 65%;<span class="code-item">}</span>
+<span class="selector">.column-70</span><span class="code-item">{</span>width: 70%;<span class="code-item">}</span>
+<span class="selector">.column-75</span><span class="code-item">{</span>width: 75%;<span class="code-item">}</span>
+<span class="selector">.column-80</span><span class="code-item">{</span>width: 80%;<span class="code-item">}</span>
+<span class="selector">.column-85</span><span class="code-item">{</span>width: 85%;<span class="code-item">}</span>
+<span class="selector">.column-90</span><span class="code-item">{</span>width: 90%;<span class="code-item">}</span>
+<span class="selector">.column-95</span><span class="code-item">{</span>width: 95%;<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
