@@ -133,8 +133,6 @@ if($(window).width() > 980){
 
 // Form Validate
 
-$('.number-field').numeric();
-
 $('form').validate({
   rules: {
     nickname: {
