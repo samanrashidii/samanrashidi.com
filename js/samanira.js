@@ -240,4 +240,10 @@ $(document).on('click', '#uploaded-photos a.remove', function(){
   fileUploaded.splice(removeID[1],1);
 });
 
+// Samanira Page Titles
+
+$('.class-box h5').on('click', function(){
+  $(this).toggleClass('active').siblings('.class-inner-box').fadeToggle(300);
+});
+
 });
