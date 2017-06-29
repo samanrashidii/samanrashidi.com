@@ -314,8 +314,12 @@ a.remove{
     width: 30px;
     height: 21px;
     text-align: center;
+    margin-top:10px;
     cursor: pointer;
     z-index: 1000;
+    -webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
 }
 
 .nav-toggle span{
@@ -324,10 +328,17 @@ a.remove{
 	height: 3px;
 	margin-bottom: 6px;
 	background-color: #121212;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
 }
 
 .nav-toggle span:last-child{margin-bottom: 0;}
-.nav-toggle.active span{background-color: #0a9abd;}
+.nav-toggle.active{margin-top:13px;}
+.nav-toggle.active span{
+	margin-bottom: 3px;
+	background-color: #0a9abd;
+}
 
 /********************
 ****** #FRAMES ******
@@ -620,6 +631,8 @@ a.remove{
 	margin-bottom: 0 !important;
 }
 
+.has-auto-margin{margin: auto !important;}
+
 .has-large-minus-margin{margin-top: -40px !important;}
 .has-minus-margin{margin-top: -30px !important;}
 .has-medium-minus-margin{margin-top: -20px !important;}
@@ -751,7 +764,7 @@ a.close{
 	display: block;
 	width: 10px;
 	height: 10px;
-	background: url('../images/assets/close.png') no-repeat center;
+	background: url('../images/assets/close-samanira.png') no-repeat center;
 	z-index: 10;
 }
 

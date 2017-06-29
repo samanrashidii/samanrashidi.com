@@ -508,7 +508,7 @@
                                     <p>- <span class="site-color">.textarea-word-tracker</span> will make a textarea with the counting number function in samanira.js</p>
                                     <div class="sample-box">
                                         <div class="textarea-word-tracker">
-                                            <textarea maxlength="250" placeholder="Type here ..."></textarea>
+                                            <textarea maxlength="250" placeholder="Type something here ..."></textarea>
                                             <span></span>
                                         </div><!-- textarea-word-tracker end -->
                                     </div><!-- sample-box end -->
@@ -831,15 +831,15 @@
 <pre>
 <code>
 <span class="selector">.nav-toggle</span><span class="code-item">{</span>
-    position: fixed;
-    left: 30px;
-    top: 30px;
-    display: none;
     width: 30px;
     height: 21px;
     text-align: center;
+    margin-top:10px;
     cursor: pointer;
     z-index: 1000;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
 <span class="code-item">}</span>
 
 <span class="selector">.nav-toggle span</span><span class="code-item">{</span>
@@ -848,10 +848,17 @@
     height: 3px;
     margin-bottom: 6px;
     background-color: #121212;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
 <span class="code-item">}</span>
 
 <span class="selector">.nav-toggle span:last-child</span><span class="code-item">{</span>margin-bottom: 0;<span class="code-item">}</span>
-<span class="selector">.nav-toggle.active span</span><span class="code-item">{</span>background-color: #0a9abd;<span class="code-item">}</span>
+<span class="selector">.nav-toggle.active</span><span class="code-item">{</span>margin-top:13px;<span class="code-item">}</span>
+<span class="selector">.nav-toggle.active span</span><span class="code-item">{</span>
+    margin-bottom: 3px;
+    background-color: #0a9abd;
+<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->  
@@ -891,7 +898,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->  
-                                    <p>- Remove and close buttons for boxes with javascript functions in samanira.js</p>  
+                                    <p>- Remove and close buttons for boxes with javascript functions in samanira.js</p>
                                     <div class="sample-box">
                                         <div class="site-bg has-padding has-bottom-margin relative-position has-border-radius">
                                             <a class="remove" href="javascript:void(0)"></a>
@@ -953,7 +960,10 @@
 <span class="code-item">}</span>
 </code>    
 </pre>                                    
-                                    </div><!-- css-code-box end -->  
+                                    </div><!-- css-code-box end -->
+                                    <p>- Define the frame of your project content with <span class="site-color">#wrapper</span> and <span class="site-color">.frame</span></p>
+                                    <p>- Clear float of a box with <span class="site-color">.clearFix</span> or give <span class="site-color">.hasClearFix</span> to it's parent</p>
+                                    <p>- Separate your content or boxes with <span class="site-color">.divider</span></p>
                                 </div><!-- class-box end -->
                                 <div class="class-box">
                                     <h5>#COMMON</h5>
@@ -1039,7 +1049,18 @@
 <span class="code-item">}</span>
 </code>    
 </pre>                                    
-                                    </div><!-- css-code-box end --> 
+                                    </div><!-- css-code-box end -->
+                                    <p>- Some common pre-defined page styles to use in different situations<br /> Here are some examples:</p>
+                                    <div class="sample-box">
+                                        <div class="site-bg auto-width inline-block-display static-position has-boxshadow has-small-padding">
+                                            div<br />
+                                            site-bg<br />
+                                            auto-width<br />
+                                            inline-block-display<br />
+                                            static-position<br />
+                                            has-boxshadow
+                                        </div>
+                                    </div><!-- sample-box end -->
                                     <h6>_Font Styles</h6>
                                     <div class="css-code-box">
 <pre>
@@ -1083,6 +1104,15 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end --> 
+                                    <p>- Some common pre-defined font styles to use in different situations<br /> Here are some examples:</p>
+                                    <div class="sample-box">
+                                        <div class="site-bg auto-width inline-block-display static-position has-boxshadow has-small-padding">
+                                            <span class="font-size-xlarge">font-size-xlarge</span><br />
+                                            <span class="site-color-2">site-color-2</span><br />
+                                            <span class="uppercased">uppercased</span><br />
+                                            <span class="italic-style">italic-style</span>
+                                        </div>
+                                    </div><!-- sample-box end -->
                                     <h6>_Box Styles</h6>
                                     <div class="css-code-box">
 <pre>
@@ -1205,6 +1235,8 @@
     margin-bottom: 0 !important;
 <span class="code-item">}</span>
 
+<span class="selector">.has-auto-margin</span><span class="code-item">{</span>margin: auto !important;<span class="code-item">}</span>
+
 <span class="selector">.has-large-minus-margin</span><span class="code-item">{</span>margin-top: -40px !important;<span class="code-item">}</span>
 <span class="selector">.has-minus-margin</span><span class="code-item">{</span>margin-top: -30px !important;<span class="code-item">}</span>
 <span class="selector">.has-medium-minus-margin</span><span class="code-item">{</span>margin-top: -20px !important;<span class="code-item">}</span>
@@ -1283,7 +1315,18 @@
 <span class="selector">.has-xxsmall-y-margin</span><span class="code-item">{</span>margin:5px 0 !important;<span class="code-item">}</span>
 </code>    
 </pre>                                    
-                                    </div><!-- css-code-box end -->  
+                                    </div><!-- css-code-box end -->
+                                    <p>- Some common pre-defined box styles to use in different situations<br /> Here are some examples:</p>
+                                    <div class="sample-box">
+                                        <div class="site-bg inline-block-display right-floated has-border has-border-radius has-padding">
+                                            site-bg<br />
+                                            inline-block-display<br />
+                                            right-floated<br />
+                                            has-border<br />
+                                            has-border-radius<br />
+                                            has-padding
+                                        </div>
+                                    </div><!-- sample-box end -->
                                 </div><!-- class-box end -->
                                 <div class="class-box">
                                     <h5>#CLASSES</h5>
