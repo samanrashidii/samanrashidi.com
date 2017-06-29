@@ -1398,7 +1398,7 @@
                                     </div><!-- css-code-box end --> 
                                     <p>- Add an overlay to your webpage and it will be a nice lightbox</p>
                                     <div class="sample-box">
-                                        <a class="bttn overlay-bttn" href="javascript:void(0)">Open Overlay</a>
+                                        <a class="bttn site overlay-bttn" href="javascript:void(0)">Open Overlay</a>
                                         <div class="overlay">
                                             <div class="inner-overlay">
                                                 <div class="overlay-box">
@@ -1633,25 +1633,29 @@
 
 <span class="selector">.message span</span><span class="code-item">{</span>
     display: block;
-    padding:2px 30px 0 0;
+    color:#ffffff;
+    padding:2px 0 0 25px;
+    background-repeat: no-repeat;
+    background-position:left center;
 <span class="code-item">}</span>
 
 <span class="selector">.message.active</span><span class="code-item">{</span>top:15px;<span class="code-item">}</span>
 
 <span class="selector">.message.success</span><span class="code-item">{</span>background-color: #61bd61;<span class="code-item">}</span>
-<span class="selector">.message.success span</span><span class="code-item">{</span>
-    color:#3c893c;
-    background: url('../images/icons/success.png') no-repeat right center;
-<span class="code-item">}</span>
+<span class="selector">.message.success span</span><span class="code-item">{</span>background-image: url('../images/icons/success.png');<span class="code-item">}</span>
 
 <span class="selector">.message.fail</span><span class="code-item">{</span>background-color: #e56262;<span class="code-item">}</span>
-<span class="selector">.message.fail span</span><span class="code-item">{</span>
-    color:#c83a3a;
-    background: url('../images/icons/error.png') no-repeat right center;
-<span class="code-item">}</span>
+<span class="selector">.message.fail span</span><span class="code-item">{</span>background-image: url('../images/icons/error.png');<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- Create a message-box for your notifications with javascript functions in samanira.js </p>
+                                    <div class="sample-box">
+                                        <a class="bttn site open-message" href="javascript:void(0)">Open Success Message</a>
+                                        <div class="message success">
+                                            <span>There is a success message for you in here</span>
+                                        </div><!-- message end -->
+                                    </div><!-- sample-box end -->
                                     <h6>_Star Rating</h6>
                                     <div class="css-code-box">
 <pre>
