@@ -695,12 +695,13 @@
 
 .main-port-content{
 	float: left;
-	width: 70%;
+	width: 75%;
 }
 
 .side-port-content{
 	float: left;
-	width: 30%;
+	display: none;
+	width: 25%;
 	padding:35px 0 20px 20px;
 	text-align: right;
 }
@@ -723,7 +724,28 @@
 	font-size: 26px;
 	color:#f55757;
 	margin-top:35px;
+	cursor: pointer;
 }
+.samanira h5::after{
+	content:'+';
+	display: inline-block;
+	vertical-align: top;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-family: 'Effra-light';
+	font-size: 21px;
+	color:#ffffff;
+	text-align: center;
+	margin:6px 0 0 10px;
+	background-color: #f55757;
+	border-radius: 2px;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+.samanira h5.active::after{content:'-';}
+
 .samanira h6{
 	font-size: 21px;
 	color:#0a9abd;
@@ -815,3 +837,8 @@ code{font-size: 15px;}
 }
 
 .sample-box strong{font-family: 'Effra-light';}
+
+.samanira .class-inner-box{display: none;}
+
+
+

@@ -131,67 +131,6 @@ if($(window).width() > 980){
   });
 }
 
-// Form Validate
-
-$('form').validate({
-  rules: {
-    nickname: {
-      required: true,
-      minlength: 5
-    },
-    email_address: {
-      required: true,
-      minlength: 5,
-      email:true
-    },
-    password: {
-      required: true,
-      minlength: 8
-    },
-    confirm_password: {
-      required: true,
-      minlength : 8,
-      equalTo : "#password"
-    },
-    mobile: {
-      required: true,
-      minlength: 5,
-      number:true
-    }
-  },
-  messages: {
-    nickname: "Please Enter Your Nickname",
-    email_address: "Please Enter Your Email Address",
-    password: "Please Enter Your Password",
-    confirm_password: "Please Confirm Your Password",
-    mobile: "Please Enter Your Mobile Number"
-  },
-  errorPlacement: function(error, element) {
-    error.insertAfter(element);
-  },
-  submitHandler: function (form) {
-    if($('.samanira_secure').val() == '') {
-      $.ajax({
-        type: "POST",
-        url: "mail.php",
-        data: $(form).serialize(),
-        success: function () {
-            $('.contact_form :input').prop('disabled', true);
-            $('.message.success').addClass('active'); 
-            setTimeout(function(){
-              $('.message.success').removeClass('active');
-            },5000);
-        }
-      });
-      return false; // required to block normal submit since you used ajax
-    } else {
-      $('.contact_form input[type="submit"]').prop('disabled', true);
-      return false;
-    }
-  }
-
-});
-
 // Upload Photo(s)
 
 var fileUploaded = [];
@@ -238,6 +177,12 @@ $(document).on('click', '#uploaded-photos a.remove', function(){
   $(this).parents('.uploaded-photo-box').remove();
   removeID = removeID.split('_');
   fileUploaded.splice(removeID[1],1);
+});
+
+// Samanira Page Titles
+
+$('.class-box h5').on('click', function(){
+  $(this).toggleClass('active').siblings('.class-inner-box').fadeToggle(300);
 });
 
 });
