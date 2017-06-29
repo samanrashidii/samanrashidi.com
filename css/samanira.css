@@ -958,7 +958,7 @@ a.close{
 
 .star-box i{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	font-style: normal;
 	font-size: 14px;
 	padding-top:2px;
@@ -970,14 +970,14 @@ a.close{
 .double-quotes::before{
 	content:'"';
 	font-family: 'Effra-regular';
-	font-size: 18px;
+	font-size: 24px;
 	color:#000000;
 }
 
 .double-quotes::after{
 	content:'"';
 	font-family: 'Effra-regular';
-	font-size: 18px;
+	font-size: 24px;
 	color:#000000;
 }
 
