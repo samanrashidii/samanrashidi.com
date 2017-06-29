@@ -1,3 +1,9 @@
+/************************************************************************
+
+ JUST FOR SAMPLE ITEMS AND DO NOT USE THIS VERSION OF SAMANIRA
+
+*************************************************************************/
+
 $(document).ready(function(){
 
 // Test Function
@@ -111,7 +117,11 @@ var MessagePopup = function(){
   setTimeout(function(){
     $('.message').removeClass('active');
   },5000);
-} 
+}
+
+$('.open-message').on('click', function(){
+  MessagePopup();
+});
 
 // Select Menu
 
