@@ -736,10 +736,12 @@
 }
 
 .samanira p strong{font-family: 'Effra-light';}
-.samanira li a,
+.samanira-ul li a,
+.samanira-ol li a,
 .samanira p a{color:#f55757;}
 
-.samanira li a:hover,
+.samanira-ul li a:hover,
+.samanira-ol li a:hover,
 .samanira p a:hover{border-bottom: 1px solid #f55757;}
 
 .samanira-ul,
@@ -808,7 +810,8 @@ code{font-size: 15px;}
 	color:#232323;
 	padding:20px;
 	margin-top:20px;
-	background: #474747;
+	background: #4f4f4f;
     border-radius: 4px;
 }
 
+.sample-box strong{font-family: 'Effra-light';}

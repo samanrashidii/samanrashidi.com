@@ -935,14 +935,14 @@
 <span class="selector">.frame.xsmall</span><span class="code-item">{</span>max-width: 530px;<span class="code-item">}</span>
 <span class="selector">.frame.xxsmall</span><span class="code-item">{</span>max-width: 430px;<span class="code-item">}</span>
 
-<span class="selector">.clearFix</span><span class="code-item">{</span>
+<span class="selector">.clear-fix</span><span class="code-item">{</span>
     display:block;
     height:0;
     clear:both;
     visibility:hidden;
 <span class="code-item">}</span>
 
-<span class="selector">.hasClearFix::after</span><span class="code-item">{</span>
+<span class="selector">.has-clear-fix::after</span><span class="code-item">{</span>
     content:'';
     display: table;
     height: 0;
@@ -971,10 +971,17 @@
                                     <div class="css-code-box">
 <pre>
 <code>
-<span class="selector">.white-bg</span><span class="code-item">{</span>background-color: #ffffff;<span class="code-item">}</span>
-<span class="selector">.black-bg</span><span class="code-item">{</span>background-color: #000000;<span class="code-item">}</span>
 <span class="selector">.site-bg</span><span class="code-item">{</span>background-color: #0a9abd;<span class="code-item">}</span>
 <span class="selector">.site-2-bg</span><span class="code-item">{</span>background-color: #f55757;<span class="code-item">}</span>
+<span class="selector">.blue-bg</span><span class="code-item">{</span>background-color:#368098;<span class="code-item">}</span>
+<span class="selector">.green-bg</span><span class="code-item">{</span>background-color:#61bd61;<span class="code-item">}</span>
+<span class="selector">.purple-bg</span><span class="code-item">{</span>background-color:#843698;<span class="code-item">}</span>
+<span class="selector">.red-bg</span><span class="code-item">{</span>background-color:#e56262;<span class="code-item">}</span>
+<span class="selector">.yellow-bg</span><span class="code-item">{</span>background-color:#e4d257;<span class="code-item">}</span>
+<span class="selector">.orange-bg</span><span class="code-item">{</span>background-color:#ef9200;<span class="code-item">}</span>
+<span class="selector">.grey-bg</span><span class="code-item">{</span>background-color:#a7a7b4;<span class="code-item">}</span>
+<span class="selector">.black-bg</span><span class="code-item">{</span>background-color:#000000;<span class="code-item">}</span>
+<span class="selector">.white-bg</span><span class="code-item">{</span>background-color:#ffffff;<span class="code-item">}</span>
 
 <span class="selector">.auto-width</span><span class="code-item">{</span>width: auto;<span class="code-item">}</span>
 <span class="selector">.full-width</span><span class="code-item">{</span>width: 100% !important;<span class="code-item">}</span>
@@ -1319,9 +1326,10 @@
                                     </div><!-- css-code-box end -->
                                     <p>- Some common pre-defined box styles to use in different situations<br /> Here are some examples:</p>
                                     <div class="sample-box">
-                                        <div class="site-bg inline-block-display right-floated has-border has-border-radius has-padding">
+                                        <div class="site-bg inline-block-display center-aligned right-floated has-border has-border-radius has-padding">
                                             site-bg<br />
                                             inline-block-display<br />
+                                            center-aligned<br />
                                             right-floated<br />
                                             has-border<br />
                                             has-border-radius<br />
@@ -1741,6 +1749,7 @@
 
 <span class="selector">.pagination ul li</span><span class="code-item">{</span>
     display: inline-block;   
+    vertical-align: middle;
     text-align: center;
     margin: 0 1px;
 <span class="code-item">}</span>
@@ -1779,15 +1788,24 @@
     color: #0a9abd;
     border-color: #0a9abd;
 <span class="code-item">}</span>
-
-<span class="selector">.page-count</span><span class="code-item">{</span>
-    display: inline-block;
-    color:#9a9a9a;
-    padding:7px 15px 0 15px;
-<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- A paginagtion for your listing pages</p>
+                                    <div class="sample-box">
+                                        <div class="pagination">
+                                            <ul>
+                                                <li class="prev"><a href="javascript:void(0)"></a></li>
+                                                <li><a href="javascript:void(0)">1</a></li>
+                                                <li><a href="javascript:void(0)">2</a></li>
+                                                <li><a href="javascript:void(0)">3</a></li>
+                                                <li><a href="javascript:void(0)">4</a></li>
+                                                <li class="etc"><a href="javascript:void(0)">...</a></li>
+                                                <li><a href="javascript:void(0)">27</a></li>
+                                                <li class="next"><a href="javascript:void(0)"></a></li>
+                                            </ul>
+                                        </div><!-- pagination end -->
+                                    </div><!-- sample-box end -->
                                     <h6>_Breadcrumb</h6>
                                     <div class="css-code-box">
 <pre>
@@ -1814,11 +1832,11 @@
 <span class="selector">.breadcrumb ul li::before</span><span class="code-item">{</span>
     content:'';
     display: inline-block;
-    width: 4px;
-    height: 4px;
+    width: 12px;
+    height: 2px;
     margin:0 12px;
     background-color: #121212;
-    border-radius: 50%;
+    border-radius: 2px;
     -webkit-transform:translateY(-3px);
     -moz-transform:translateY(-3px);
     transform:translateY(-3px);
@@ -1830,6 +1848,16 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- You can have a nice breadcrumb for your website</p>
+                                    <div class="sample-box">
+                                        <div class="breadcrumb">
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Home</a></li>
+                                                <li><a href="javascript:void(0)">SamanRashidi</a></li>
+                                                <li>SamanirA</li>
+                                            </ul>
+                                        </div><!-- breadcrumb end -->
+                                    </div><!-- sample-box end -->
                                     <h6>_Text Editors (change the style all content comes from text editors)</h6>
                                     <div class="css-code-box">
 <pre>
@@ -1902,6 +1930,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- When you use text and image added with a text editor, it's style will be break and when you put it in a &lt;div&gt; with class of <span class="site-color">.static-content</span> it will have the styles you want</p>
                                     <h6>_Google Map</h6>
                                     <div class="css-code-box">
 <pre>
@@ -1919,7 +1948,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
-
+                                    <p>- Some defined classes for google map setup</p>
                                 </div><!-- class-box end -->
                                 <div class="class-box">
                                     <h5>#TABLES</h5>
@@ -1940,37 +1969,131 @@
     padding:15px;
 <span class="code-item">}</span>
 
-<span class="selector">.table a</span><span class="code-item">{</span>color:#686b6d;<span class="code-item">}</span>
-<span class="selector">.table td a:hover</span><span class="code-item">{</span>color:#6e2878;<span class="code-item">}</span>
+<span class="selector">.table a</span><span class="code-item">{</span>color:#0a9abd;<span class="code-item">}</span>
+<span class="selector">.table td a:hover</span><span class="code-item">{</span>color:#0a9abd;<span class="code-item">}</span>
 
 <span class="selector">.table th</span><span class="code-item">{</span>
     font-family: 'Roboto';
-    color:#121212;
-    background-color: #9a9a9a;
+    color:#ffffff;
+    background-color: #0a9abd;
 <span class="code-item">}</span>
 
 <span class="selector">.table tr.active td</span><span class="code-item">{</span>background-color: #f7f7f9;<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- Add a nice table to your website by wrapping the table in a &lt;div&gt; with class of <span class="site-color">.table</span></p>
+                                    <div class="sample-box">
+                                        <div class="table">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="column-35"><span class="table-filter"></span>Header Cell 1</th>
+                                                        <th class="column-35"><span class="table-filter active"></span>Header Cell 2</th>
+                                                        <th class="column-30">Header Cell 3</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><!-- sample-box end -->
+                                    <p>- Make it scrollable in lower than 980px box's width screens by adding class of <span class="site-color">scrollable</span> to the &lt;div&gt; with class of <span class="site-color">.table</span></p>
+                                    <div class="sample-box">
+                                        <div class="table scrollable">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="column-35">Header Cell 1</th>
+                                                        <th class="column-35">Header Cell 2</th>
+                                                        <th class="column-30">Header Cell 3</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><!-- sample-box end -->
+                                    <p>- Make it responsive in lower than 980px screens width screens by adding class of <span class="site-color">responsive</span> to the &lt;div&gt; with class of <span class="site-color">.table</span></p>
+                                    <div class="sample-box">
+                                        <div class="table responsive">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="column-35">Header Cell 1</th>
+                                                        <th class="column-35">Header Cell 2</th>
+                                                        <th class="column-30">Header Cell 3</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                        <td>Standard Cell</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><!-- sample-box end -->
                                     <h6>_Table Filter</h6>
                                     <div class="css-code-box">
 <pre>
 <code>
 <span class="selector">.table-filter</span><span class="code-item">{</span>
     font-family: 'Roboto-Medium';
-    padding-right: 15px;
+    padding-left: 15px;
     cursor: pointer;
-    background: url('../images/assets/arrow-down-black.png') no-repeat right 6px;
+    background: url('../images/assets/arrow-down-black.png') no-repeat left 6px;
     -webkit-transition:all .2s ease-in-out;
     -moz-transition:all .2s ease-in-out;
     transition:all .2s ease-in-out;
 <span class="code-item">}</span>
 
-<span class="selector">.table-filter.active</span><span class="code-item">{</span>background: url('../images/assets/arrow-up-black.png') no-repeat right center<span class="code-item">}</span>
+<span class="selector">.table-filter.active</span><span class="code-item">{</span>background: url('../images/assets/arrow-up-black.png') no-repeat left center<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- You can see the <span class="site-color">.table-filter</span> in example 1 of table</p>
                                     <h6>_Div Table</h6>
                                     <div class="css-code-box">
 <pre>
@@ -1989,6 +2112,19 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- <span class="site-color">.div-table</span> is the &lt;div&gt; and css version of table for more flexibility</p>
+                                    <div class="sample-box">
+                                        <div class="div-table">
+                                            <div class="row">
+                                                <div class="column">Div Column 1</div><!-- column end -->
+                                                <div class="column">Div Column 1</div><!-- column end -->
+                                            </div><!-- row end -->
+                                            <div class="row">
+                                                <div class="column">Div Column 1</div><!-- column end -->
+                                                <div class="column">Div Column 1</div><!-- column end -->
+                                            </div><!-- row end -->
+                                        </div><!-- div-table end -->
+                                    </div><!-- sample-box end -->
                                     <h6>_Table Columns</h6>
                                     <div class="css-code-box">
 <pre>
@@ -2015,6 +2151,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- You can see the columns in table 1 &amp; 2 example</p>
                                 </div><!-- class-box end -->
                                 <div class="class-box">
                                     <h5>#LAYOUT</h5>
@@ -2087,6 +2224,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- These are the main items for your website layout and they are fully responsive.<br /> You will see the examples in the bottom</p>
                                     <h6>_Normal Columns</h6>
                                     <div class="css-code-box">
 <pre>
@@ -2115,6 +2253,17 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- Here is an example of the normal way that you can make two boxes beside each other (remember to clear after it because of the floated item)</p>
+                                    <div class="sample-box">
+                                        <div class="has-clear-fix center-aligned white-color">
+                                            <div class="half-box site-bg has-xsmall-padding">
+                                                <strong>half-box</strong>
+                                            </div><!-- half-box end -->
+                                            <div class="half-box site-2-bg has-xsmall-padding">
+                                                <strong>half-box</strong>
+                                            </div><!-- half-box end -->
+                                        </div><!-- has-clear-fix end -->
+                                    </div><!-- sample-box end -->
                                     <h6>_Cl Columns</h6>
                                     <div class="css-code-box">
 <pre>
@@ -2137,6 +2286,117 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- Here are examples of the <span class="site-color">.cl</span> way of box layout. <br />They will get responsive in below 980px screens</p>
+                                    <div class="sample-box">
+                                        <div class="section-wrapper center-aligned white-color">
+                                            <div class="section cl-6 site-bg has-xxsmall-padding">
+                                                <strong>section cl-6</strong>
+                                            </div><!-- section cl-6 end -->
+                                            <div class="section cl-6 site-2-bg has-xxsmall-padding">
+                                                <strong>section cl-6</strong>
+                                            </div><!-- section cl-6 end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper center-aligned white-color has-small-top-margin">
+                                            <div class="section cl-4 site-bg has-xxsmall-padding">
+                                                <strong>section cl-4</strong>
+                                            </div><!-- section cl-4 end -->
+                                            <div class="section cl-8 site-2-bg has-xxsmall-padding">
+                                                <strong>section cl-8</strong>
+                                            </div><!-- section cl-8 end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper center-aligned white-color has-small-top-margin">
+                                            <div class="section cl-8 site-bg has-xxsmall-padding">
+                                                <strong>section cl-8</strong>
+                                            </div><!-- section cl-8 end -->
+                                            <div class="section cl-4 site-2-bg has-xxsmall-padding">
+                                                <strong>section cl-4</strong>
+                                            </div><!-- section cl-4 end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper center-aligned white-color has-small-top-margin">
+                                            <div class="section cl-5 site-bg has-xxsmall-padding">
+                                                <strong>section cl-5</strong>
+                                            </div><!-- section cl-5 end -->
+                                            <div class="section cl-7 site-2-bg has-xxsmall-padding">
+                                                <strong>section cl-7</strong>
+                                            </div><!-- section cl-7 end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper center-aligned white-color has-small-top-margin">
+                                            <div class="section cl-7 site-bg has-xxsmall-padding">
+                                                <strong>section cl-7</strong>
+                                            </div><!-- section cl-7 end -->
+                                            <div class="section cl-5 site-2-bg has-xxsmall-padding">
+                                                <strong>section cl-5</strong>
+                                            </div><!-- section cl-5 end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper center-aligned white-color has-small-top-margin">
+                                            <div class="section cl-4 site-bg has-xxsmall-padding">
+                                                <strong>section cl-4</strong>
+                                            </div><!-- section cl-4 end -->
+                                            <div class="section cl-4 site-2-bg has-xxsmall-padding">
+                                                <strong>section cl-4</strong>
+                                            </div><!-- section cl-4 end -->
+                                            <div class="section cl-4 green-bg has-xxsmall-padding">
+                                                <strong>section cl-4</strong>
+                                            </div><!-- section cl-4 end -->
+                                        </div><!-- section-wrapper end -->                                        
+                                        <div class="section-wrapper center-aligned white-color has-small-top-margin">
+                                            <div class="section cl-3 site-bg has-xxsmall-padding">
+                                                <strong>section cl-3</strong>
+                                            </div><!-- section cl-3 end -->
+                                            <div class="section cl-3 site-2-bg has-xxsmall-padding">
+                                                <strong>section cl-3</strong>
+                                            </div><!-- section cl-3 end -->
+                                            <div class="section cl-3 green-bg has-xxsmall-padding">
+                                                <strong>section cl-3</strong>
+                                            </div><!-- section cl-3 end -->
+                                            <div class="section cl-3 purple-bg has-xxsmall-padding">
+                                                <strong>section cl-3</strong>
+                                            </div><!-- section cl-3 end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper center-aligned white-color has-small-top-margin">
+                                            <div class="section cl-2 site-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                            <div class="section cl-2 site-2-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                            <div class="section cl-2 green-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                            <div class="section cl-2 purple-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                            <div class="section cl-2 orange-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                            <div class="section cl-2 black-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper center-aligned white-color has-small-top-margin">
+                                            <div class="section cl-2 site-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                            <div class="section cl-1 site-2-bg has-xxsmall-padding">
+                                                <strong>section cl-1</strong>
+                                            </div><!-- section cl-1 end -->
+                                            <div class="section cl-2 green-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                            <div class="section cl-2 purple-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                            <div class="section cl-2 orange-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                            <div class="section cl-1 black-bg has-xxsmall-padding">
+                                                <strong>section cl-1</strong>
+                                            </div><!-- section cl-1 end -->
+                                            <div class="section cl-2 yellow-bg has-xxsmall-padding">
+                                                <strong>section cl-2</strong>
+                                            </div><!-- section cl-2 end -->
+                                        </div><!-- section-wrapper end -->
+                                    </div><!-- sample-box end -->
                                     <h6>_Has Columns</h6>
                                     <div class="css-code-box">
 <pre>
@@ -2276,6 +2536,114 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- Here are examples of the <span class="site-color">.has-column</span> way of box layout. <br />They will get responsive in below 980px &amp; 640px screens</p>
+                                    <p><span class="site-color-2">*</span> If you add <span class="site-color">.rspv</span> to the &lt;div&gt; with class of <span class="site-color">.section-wrapper</span> it will make the <span class="site-color">.has-6-6-column</span> &amp; <span class="site-color">.has-4-4-4-column</span> responsive in below 560px screens</p>
+                                    <div class="sample-box">
+                                        <div class="section-wrapper has-6-6-column center-aligned white-color">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 6</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 6</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper has-6-6-column rspv center-aligned white-color has-small-top-margin">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 6 rspv</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 6 rspv</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper has-4-8-column center-aligned white-color has-small-top-margin">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 4</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 8</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper has-8-4-column center-aligned white-color has-small-top-margin">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 8</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 4</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper has-5-7-column center-aligned white-color has-small-top-margin">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 5</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 7</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper has-7-5-column center-aligned white-color has-small-top-margin">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 7</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 5</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper has-4-4-4-column center-aligned white-color has-small-top-margin">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 4</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 4</strong>
+                                            </div><!-- section end -->
+                                            <div class="section green-bg has-xxsmall-padding">
+                                                <strong>div 4</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper has-4-4-4-column rspv center-aligned white-color has-small-top-margin">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 4 rspv</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 4 rspv</strong>
+                                            </div><!-- section end -->
+                                            <div class="section green-bg has-xxsmall-padding">
+                                                <strong>div 4 rspv</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->                                       
+                                        <div class="section-wrapper has-3-3-3-3-column center-aligned white-color has-small-top-margin">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 3</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 3</strong>
+                                            </div><!-- section end -->
+                                            <div class="section green-bg has-xxsmall-padding">
+                                                <strong>div 3</strong>
+                                            </div><!-- section end -->
+                                            <div class="section purple-bg has-xxsmall-padding">
+                                                <strong>div 3</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->
+                                        <div class="section-wrapper has-2-2-2-2-2-2-column center-aligned white-color has-small-top-margin">
+                                            <div class="section site-bg has-xxsmall-padding">
+                                                <strong>div 2</strong>
+                                            </div><!-- section end -->
+                                            <div class="section site-2-bg has-xxsmall-padding">
+                                                <strong>div 2</strong>
+                                            </div><!-- section end -->
+                                            <div class="section green-bg has-xxsmall-padding">
+                                                <strong>div 2</strong>
+                                            </div><!-- section end -->
+                                            <div class="section purple-bg has-xxsmall-padding">
+                                                <strong>div 2</strong>
+                                            </div><!-- section end -->
+                                            <div class="section orange-bg has-xxsmall-padding">
+                                                <strong>div 2</strong>
+                                            </div><!-- section end -->
+                                            <div class="section black-bg has-xxsmall-padding">
+                                                <strong>div 2</strong>
+                                            </div><!-- section end -->
+                                        </div><!-- section-wrapper end -->
+                                    </div><!-- sample-box end -->
                                 </div><!-- class-box end -->
                                 <div class="class-box">
                                     <h5>#RESPONSIVE</h5>
@@ -2291,11 +2659,12 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
-                                    <h6>_Min width: 540px</h6>
+                                    <p>- <span class="site-color">.tablet-only</span> class will make an item hidden for above 980px screens</p>
+                                    <h6>_Min width: 560px</h6>
                                     <div class="css-code-box">
 <pre>
 <code>
-<span class="code-item-2">@media only screen and (min-width:540px){</span>
+<span class="code-item-2">@media only screen and (min-width:560px){</span>
 
     <span class="selector">.mobile-only</span><span class="code-item">{</span>display: none !important;<span class="code-item">}</span>
 
@@ -2303,6 +2672,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- <span class="site-color">.mobile-only</span> class will make an item hidden for above 560px screens</p>
                                     <h6>_Max width: 980px</h6>
                                     <div class="css-code-box">
 <pre>
@@ -2438,13 +2808,14 @@
     <span class="selector">.table td</span><span class="code-item">,</span>
     <span class="selector">.table th</span><span class="code-item">{</span>padding:8px;<span class="code-item">}</span>
 
-    <span class="selector">.table.responsive table</span><span class="code-item">{</span>min-width: 0;<span class="code-item">}</span>
+    <span class="selector">.table.responsive table</span><span class="code-item">{</span>
+        min-width: 0;
+        background-color: #ffffff;
+    <span class="code-item">}</span>
     <span class="selector">.table.responsive thead</span><span class="code-item">{</span>display: none;<span class="code-item">}</span>
 
-    <span class="selector">.table.responsive tr</span><span class="code-item">{</span>
-        display: block;
-        margin-bottom: 20px;
-    <span class="code-item">}</span>
+    <span class="selector">.table.responsive tr</span><span class="code-item">{</span>display: block;<span class="code-item">}</span>
+    <span class="selector">.table.responsive tr:last-child</span><span class="code-item">{</span>border-bottom: none;<span class="code-item">}</span>
 
     <span class="selector">.table.responsive td</span><span class="code-item">{</span>
         position: relative;
@@ -2461,8 +2832,11 @@
         display: block;
         width: 100px;
         height: 100%;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
         color:#ffffff;
-        padding:13px 0 0 15px;
+        padding:12px 5px 0 5px;
         background-color: #121212;
     <span class="code-item">}</span>
 
@@ -2511,6 +2885,9 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- <span class="site-color">.desktop-only</span> class will make an item hidden for lower than 980px screens</p>
+                                    <p>- We have defined the responsive table here</p>
+                                    <p>- All other items are getting responsive</p>
                                     <h6>_Max width: 740px</h6>
                                     <div class="css-code-box">
 <pre>
@@ -2700,6 +3077,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- All other items are getting responsive</p>
                                     <h6>_Max width: 640px</h6>
                                     <div class="css-code-box">
 <pre>
@@ -2724,6 +3102,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- All other items are getting responsive</p>
                                     <h6>_Max width: 560px</h6>
                                     <div class="css-code-box">
 <pre>
@@ -2746,12 +3125,6 @@
     <span class="selector">.rspv.has-4-4-4-column > .card-box</span><span class="code-item">{</span>margin-bottom: 10px !important;<span class="code-item">}</span>
 
     <span class="selector">.pagination ul</span><span class="code-item">{</span>width: 100% !important;<span class="code-item">}</span>
-
-    <span class="selector">.page-count</span><span class="code-item">{</span>
-        display: block;
-        text-align: center;
-        padding-top:20px;
-    <span class="code-item">}</span>
 
     <span class="selector">.breadcrumb ul</span><span class="code-item">{</span>padding:3px 18px;<span class="code-item">}</span>
 
@@ -2784,6 +3157,8 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- <span class="site-color">.tablet-desktop-only</span> class will make an item hidden for lower than 560px screens</p>
+                                    <p>- All other items are getting responsive</p>
                                     <h6>_Max width: 400px</h6>
                                     <div class="css-code-box">
 <pre>
@@ -2800,6 +3175,7 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- All other items are getting responsive</p>
                                 </div><!-- class-box end -->
                             </div><!-- defined-classes end --> 
                         </div><!-- main-port-content end -->

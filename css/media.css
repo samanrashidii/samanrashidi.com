@@ -128,6 +128,13 @@
 
 	.content-text{padding:0 15px !important;}
 
+	.main-port-content{
+		float: none;
+		width: 100%;
+	}
+
+	.side-port-content{display: none;}
+
 }
 
 						/*            840px Screen         */
