@@ -63,7 +63,7 @@
                                 Created by <a href="http://wwww.samanrashidi.com" target="_blank">Saman Rashidi</a> &amp; <a href="http://www.samirasalimian.com" target="_blank">Samira Salimian</a></p>
                                 <h4 class="reveal">Why <strong>SamanirA</strong> ?</h4>
                                 <p>We have done more than 50 front-end projects such as Website, Landing Page, CMS, CRM and &hellip; in 4 years then we noticed that we need a light and comprehensive css framework to work with and it will have so many benefits for our projects:</p>
-                                <ul>
+                                <ul class="samanira-ul">
                                     <li>It is open source and easy to understand for changing values and classes based on your project's template</li>
                                     <li>It has the same arrangement for all css properties</li>
                                     <li>Most of the css classes and javascript functions that you need in projects are defined</li>
@@ -73,7 +73,7 @@
                             </div><!-- about-samanira end -->
                             <div id="setup-samanira">
                                 <h4 class="reveal">Where to <strong>begin</strong> ?</h4>
-                                <ol>
+                                <ol class="samanira-ol">
                                     <li li-number="1 -">
                                         <a href="http://github.com/samanrashidii/samanira" target="_blank">Download</a> from Github
                                         <img src="../images/samanira/step-1.jpg" alt="Samanira Setup - Step 1" />
@@ -903,7 +903,7 @@
                                         <div class="site-bg has-padding has-bottom-margin relative-position has-border-radius">
                                             <a class="remove" href="javascript:void(0)"></a>
                                         </div><!-- white-bg end -->
-                                        <div class="site-2-bg has-padding relative-position has-border-radius">
+                                        <div class="white-bg has-padding relative-position has-border-radius">
                                             <a class="close" href="javascript:void(0)"></a>
                                         </div><!-- white-bg end -->
                                     </div><!-- sample-box end -->
@@ -1058,7 +1058,8 @@
                                             auto-width<br />
                                             inline-block-display<br />
                                             static-position<br />
-                                            has-boxshadow
+                                            has-boxshadow<br />
+                                            has-small-padding
                                         </div>
                                     </div><!-- sample-box end -->
                                     <h6>_Font Styles</h6>
@@ -1345,12 +1346,15 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->  
+                                    <p>- Add schema to your web page in a &lt;strong&gt; with this class</p>
                                     <h6>_Overlay</h6>
                                     <div class="css-code-box">
 <pre>
 <code>
 <span class="selector">.overlay</span><span class="code-item">{</span>
     position: fixed;
+    top:0;
+    left:0;
     width: 100%;
     height: 100%;
     overflow-y:auto;
@@ -1380,9 +1384,32 @@
     text-align: center;
     padding:20px;
 <span class="code-item">}</span>
+
+<span class="selector">.inner-overlay-box</span><span class="code-item">{</span>
+    position: relative;
+    max-width: 780px;
+    padding:15px;
+    margin:auto;
+    background-color: #ffffff;
+    border-radius: 2px;
+<span class="code-item">}</span>
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end --> 
+                                    <p>- Add an overlay to your webpage and it will be a nice lightbox</p>
+                                    <div class="sample-box">
+                                        <a class="bttn overlay-bttn" href="javascript:void(0)">Open Overlay</a>
+                                        <div class="overlay">
+                                            <div class="inner-overlay">
+                                                <div class="overlay-box">
+                                                    <div class="inner-overlay-box">
+                                                        <a class="close overlay-close" href="javascript:void(0)"></a>
+                                                        <strong>I'm a box<br /> inside<br /> overlay</strong>
+                                                    </div><!-- inner-overlay-box end -->
+                                                </div><!-- overlay-box end -->
+                                            </div><!-- inner-overlay end -->
+                                        </div><!-- overlay end -->
+                                    </div><!-- sample-box end -->
                                     <h6>_List Items</h6>
                                     <div class="css-code-box">
 <pre>
@@ -1393,7 +1420,7 @@
     width: 10px;
     height: 10px;
     margin-right: 16px;
-    background-color: #c3aa68;
+    background-color: #0a9abd;
     border-radius: 50%;
 <span class="code-item">}</span>
 
@@ -1405,13 +1432,13 @@
 <span class="selector">.number-bullet li::before</span><span class="code-item">{</span>
     content:attr(list-number);
     display: inline-block;
-    color: #c3aa68;
+    color: #0a9abd;
     margin-right: 8px;
 <span class="code-item">}</span>
 
 <span class="selector">.tick-bullet li</span><span class="code-item">{</span>
     font-size: 16px;
-    color: #9e6baa;
+    color: #0a9abd;
     margin-bottom: 16px;
 <span class="code-item">}</span>
 
@@ -1420,7 +1447,6 @@
 <span class="selector">.tick-bullet li::before</span><span class="code-item">{</span>
     content:'';
     display: inline-block;
-    vertical-align: middle;
     width: 14px;
     height: 11px;
     margin-right: 15px;
@@ -1428,7 +1454,28 @@
 <span class="code-item">}</span>
 </code>    
 </pre>                                    
-                                    </div><!-- css-code-box end --> 
+                                    </div><!-- css-code-box end -->
+                                    <p>- Create a custom circle / number / tick bullet points with adding class of it to an &lt;ul&gt; or &lt;ol&gt;</p>
+                                    <p>- <span class="site-color">.number-bullet</span> is working with javascript functions in samanira.js </p>
+                                    <div class="sample-box">
+                                        <ul class="circle-bullet">
+                                            <li>Circle Bullet 1</li>
+                                            <li>Circle Bullet 2</li>
+                                            <li>Circle Bullet 3</li>
+                                        </ul>
+                                        <br />
+                                        <ol class="number-bullet">
+                                            <li>Number Bullet 1</li>
+                                            <li>Number Bullet 2</li>
+                                            <li>Number Bullet 3</li>
+                                        </ol>
+                                        <br />
+                                        <ul class="tick-bullet">
+                                            <li>Tick Bullet 1</li>
+                                            <li>Tick Bullet 2</li>
+                                            <li>Tick Bullet 3</li>
+                                        </ul>
+                                    </div><!-- sample-box end -->
                                     <h6>_Tag</h6>
                                     <div class="css-code-box">
 <pre>
@@ -1442,7 +1489,7 @@
     border-radius: 2px;
 <span class="code-item">}</span>
 
-<span class="selector">.web-tags a:hover</span><span class="code-item">{</span>background-color:#565656;<span class="code-item">}</span>
+<span class="selector">.web-tags a:hover</span><span class="code-item">{</span>background-color:#0a9abd;<span class="code-item">}</span>
 
 <span class="selector">.tag</span><span class="code-item">{</span>
     display: inline-block;
@@ -1451,8 +1498,12 @@
     color:#ffffff;
     text-align: center;
     padding:3px 6px;
+    margin: 2px 1px;
     background-color: #121212;
     border-radius: 2px;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
 <span class="code-item">}</span>
 <span class="selector">.tag:hover</span><span class="code-item">{</span>background-color: #565656;<span class="code-item">}</span>
 
@@ -1484,11 +1535,7 @@
 <span class="selector">.orange-label:hover</span><span class="code-item">{</span>background-color: #bb7301 !important;<span class="code-item">}</span>
 
 
-<span class="selector">.grey-label</span><span class="code-item">{</span>background-color: #ef9200 !important;<span class="code-item">}</span>
-<span class="selector">.grey-label:hover</span><span class="code-item">{</span>background-color: #888888 !important;<span class="code-item">}</span>
-
-
-<span class="selector">.grey-label</span><span class="code-item">{</span>background-color: #ef9200 !important;<span class="code-item">}</span>
+<span class="selector">.grey-label</span><span class="code-item">{</span>background-color: #a4a4a4 !important;<span class="code-item">}</span>
 <span class="selector">.grey-label:hover</span><span class="code-item">{</span>background-color: #888888 !important;<span class="code-item">}</span>
 
 
@@ -1505,6 +1552,29 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end --> 
+                                    <p>- Create nice tags / web-tags with different labels </p>
+                                    <div class="sample-box">
+                                        <strong class="block-display has-small-y-margin white-color">Web Tags:</strong>
+                                        <div class="web-tags">
+                                            <a href="javascript:void(0)">#beauty</a>
+                                            <a href="javascript:void(0)">#fashion</a>
+                                            <a href="javascript:void(0)">#style</a>
+                                        </div><!-- web-tags end -->
+                                        <strong class="block-display has-small-y-margin white-color">Label Tags:</strong>
+                                        <div>
+                                            <span class="tag">normal</span>
+                                            <span class="tag site-label">site-label</span>
+                                            <span class="tag blue-label">blue-label</span>
+                                            <span class="tag green-label">green-label</span>
+                                            <span class="tag purple-label">purple-label</span>
+                                            <span class="tag red-label">red-label</span>
+                                            <span class="tag yellow-label">yellow-label</span>
+                                            <span class="tag orange-label">orange-label</span>
+                                            <span class="tag grey-label">grey-label</span>
+                                            <span class="tag black-label">black-label</span>
+                                            <span class="tag white-label">white-label</span>
+                                        </div>
+                                    </div><!-- sample-box end -->
                                     <h6>_Post Stats</h6>
                                     <div class="css-code-box">
 <pre>
@@ -1532,6 +1602,15 @@
 </code>    
 </pre>                                    
                                     </div><!-- css-code-box end -->
+                                    <p>- Create a nice defined stats for a post </p>
+                                    <div class="sample-box">
+                                        <p class="no-padding">Hi This is a nice post or comment</p>
+                                        <div class="post-stats has-small-top-padding">
+                                            <span>2017/05/12</span>
+                                            <span>76 view</span>
+                                            <span>2039 like</span>
+                                        </div><!-- post-stats end -->
+                                    </div><!-- sample-box end -->
                                     <h6>_Message</h6>
                                     <div class="css-code-box">
 <pre>

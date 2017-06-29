@@ -742,9 +742,9 @@
 .samanira li a:hover,
 .samanira p a:hover{border-bottom: 1px solid #f55757;}
 
-.samanira ul,
-.samanira ol{margin-top:20px;}
-.samanira ul li::before{
+.samanira-ul,
+.samanira-ol{margin-top:20px;}
+.samanira-ul li::before{
 	content:'';
 	display: inline-block;
 	vertical-align: middle;
@@ -755,7 +755,7 @@
 	border-radius: 100%;
 }
 
-.samanira ol li::before{
+.samanira-ol li::before{
 	content:attr(li-number);
 	display: inline-block;
 	vertical-align: middle;
@@ -764,8 +764,8 @@
 	margin: -4px 8px 0 5px;
 }
 
-.samanira ul li,
-.samanira ol li{
+.samanira-ul li,
+.samanira-ol li{
 	font-family: 'Effra-light';
 	color:#dadada;
 	margin:10px 0;
