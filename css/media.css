@@ -93,6 +93,8 @@
 
 	.portfolio-content .frame{padding:0 20px;}
 
+	.samanira .frame{padding:0 30px !important;}
+
 }
 
 						/*            980px Screen         */
@@ -336,6 +338,11 @@
 	.content-text.mobile{width: 100%;}
 
 	.portfolio-content.has-slime-2::after{bottom:15px;}
+
+	code{font-size: 12px;}
+
+	.css-code-box,
+	.sample-box{max-height: 250px;}
 
 }
 
