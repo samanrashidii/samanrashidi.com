@@ -340,6 +340,7 @@
 	.portfolio-content.has-slime-2::after{bottom:15px;}
 
 	code{font-size: 12px;}
+	.sample-box{font-size: 14px;}
 
 	.css-code-box,
 	.sample-box{max-height: 250px;}
