@@ -7,6 +7,12 @@ $('.counter-up').counterUp({
     time: 2500
 });	
 
+// Remove Reveal In Mobile
+
+if($(window).width() < 840){
+    $('#samanira .half-box:first-child').removeClass('reveal');
+}
+
 // Reveal Content
 
 window.sr = ScrollReveal();

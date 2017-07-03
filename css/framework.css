@@ -221,6 +221,20 @@ button{cursor: pointer;}
 	border-color:#0a9abd !important;
 }
 
+.bttn.site-2{
+	min-width: 200px;
+	color:#ffffff;
+	text-align: center;
+	padding:10px 20px;
+	background-color: #0a9abd;
+	border-color:#0a9abd !important;
+}
+
+.bttn.site-2:hover{
+	background-color: #f55757;
+	border-color:#f55757 !important;
+}
+
 @keyframes Bounce{
 	0%{transform: scale3d(.9, .9, .9);}
 	33%{transform: scale3d(1, 1, 1);}
@@ -281,6 +295,8 @@ button{cursor: pointer;}
 
 .has-right-padding{padding-right:40px;}
 
+.has-large-right-padding{padding-right:60px;}
+
 .font-size-large{font-size: ;}
 
 .font-size-medium{font-size: ;}
@@ -308,7 +324,7 @@ button{cursor: pointer;}
 
 .half-box{
 	float: left;
-	width: 50%;
+	width: 45%;
 	overflow: hidden;
 }
 
