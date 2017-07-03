@@ -104,12 +104,27 @@
 
 #about-me{
 	width:100%;
-	background-color: #0a9abd;
+	background-color: #161616;
 }
 
-#about-me p{line-height: 2.1;}
+#about-me p,
+#about-me p strong{
+	font-family: 'Effra-light';
+	line-height: 2.1;
+}
 
-#about-me p a{border-bottom: 2px solid #fefefe;}
+#about-me p a{color:#0a9abd;}
+#about-me p a:hover{border-bottom:1px solid #0a9abd;}
+
+#samanira{
+	padding:80px 0 100px 0;
+	background-color: #ffffff;
+}
+
+#samanira h4{margin-top:13px;}
+#samanira p{padding-top:30px;}
+
+.samanira-main-logo{max-width: 200px;}
 
 .has-shape{
 	position: relative;
