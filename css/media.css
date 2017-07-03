@@ -347,7 +347,15 @@
 
 	.samanira-logo{max-width: 200px;}
 
-	.samanira h5{font-size: 22px;}
+	.samanira h5{font-size: 21px;}
+
+	.samanira h5::after{
+		width: 17px;
+		height: 17px;
+		line-height: 17px;
+		font-size: 16px;
+		margin:5px 0 0 10px;
+	}
 
 }
 

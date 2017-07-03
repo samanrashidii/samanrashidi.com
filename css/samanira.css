@@ -397,7 +397,6 @@ a.remove{
 	padding:10px!important;
 	margin:5px 0 !important;
 	background-color: #121212 !important;
-	border:2px solid #ffffff !important;
 	border-radius: 2px !important;
 	-webkit-transition:all .2s ease-in-out !important;
 	-moz-transition:all .2s ease-in-out !important;
@@ -424,24 +423,18 @@ a.remove{
 .bttn.white{
 	color:#121212 !important;
 	background-color: #ffffff !important;
-	border-color: #ffffff !important;
 }
 
 .bttn.white:hover{
 	color:#ffffff !important;
 	background-color: #121212 !important;
-	border-color: #121212 !important;
 }
 
-.bttn.black{
-	background-color: #000000 !important;
-	border-color: #000000 !important;
-}
+.bttn.black{background-color: #000000 !important;}
 
 .bttn.black:hover{
 	color:#000000 !important;
 	background-color: #ffffff !important;
-	border-color: #ffffff !important;
 }
 
 .bttn.site{
@@ -453,19 +446,16 @@ a.remove{
 .bttn.site:hover{
 	color:#0a9abd !important;
 	background-color: #ffffff !important;
-	border-color: #ffffff !important;
 }
 
 .bttn.site-2{
 	color:#ffffff !important;
 	background-color: #f55757 !important;
-	border-color: #f55757 !important;
 }
 
 .bttn.site-2:hover{
 	color:#f55757 !important;
 	background-color: #ffffff !important;
-	border-color: #f55757 !important;
 }
 
 .bttn.has-icon{
