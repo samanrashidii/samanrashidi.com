@@ -1642,45 +1642,24 @@ a.close{
 
 .has-4-4-4-column > .section{
 	width: 31.66666666666667%;
-	padding:0;
 	margin-left: 2.5%;
 }
 
 .has-4-4-4-column > .section:nth-child(3n+1){margin-left: 0;}
 
 .has-3-3-3-3-column > .section{
-	float: left;
 	width: 23.72%;
-	padding:0;
 	margin-left: 1.706%;
 }
 
 .has-3-3-3-3-column > .section:nth-child(4n+1){margin-left: 0;}
 
 .has-2-2-2-2-2-2-column > .section{
-	float: left;
 	width: 15%;
-	padding:0;
 	margin-left: 2%;
 }
 
 .has-2-2-2-2-2-2-column > .section:nth-child(6n+1){margin-left: 0;}
-
-.horizontal-box{
-	position: relative;
-	height: 151px;
-	padding-left: 255px;
-}
-
-.horizontal-box-image{
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 255px;
-	height: 100%;
-}
-
-.horizontal-box .section-box{height: 100%;}
 
 /************************
 ****** #RESPONSIVE ******
