@@ -460,6 +460,7 @@ a.remove{
 
 .bttn.has-icon{
 	text-align: left !important;
+	background-repeat: no-repeat !important; 
 	background-position: 13px center !important;
     padding: 10px 15px 10px 43px !important;
 }
