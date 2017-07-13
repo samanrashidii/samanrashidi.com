@@ -855,5 +855,25 @@ code{font-size: 15px;}
 
 .samanira .class-inner-box{display: none;}
 
+.in-samanira-buttons a.bttn{
+	min-width: 185px !important;
+	margin:0 5px !important;
+	border:2px solid #ffffff;
+}
 
+.in-samanira-buttons a.bttn:hover{
+	color:#ffffff !important;
+	background-color: #0a9abd !important;
+}
+
+.samanira-socials img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+	margin:20px 20px 0 0;
+}
+
+.samanira-socials a:last-child img{width: 53px;}
+
+.samanira-socials a:hover{opacity: .7;}
 
