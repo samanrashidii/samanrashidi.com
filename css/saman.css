@@ -764,9 +764,12 @@ body:after {
 
 @media only screen and (min-width: 980px){
 
-	button:hover .home{background-image:url('../images/icons/home-blue.png');}
-	button:hover .about{background-image:url('../images/icons/about-blue.png');}
-	button:hover .portfolio{background-image:url('../images/icons/portfolio-blue.png');}
-	button:hover .contact{background-image:url('../images/icons/contact-blue.png');}
+	.menu-items li button{
+		-webkit-transition:all .2s ease-in-out;
+		-moz-transition:all .2s ease-in-out;
+		transition:all .2s ease-in-out;
+	}
+
+	.menu-items li button:hover{background-color:#0a9abd;}
 
 }
