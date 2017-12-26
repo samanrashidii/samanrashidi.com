@@ -1,6 +1,10 @@
-﻿User-Agent: *
+User-Agent: *
 Disallow: http://www.samanrashidi.com/page-404.html
+
+User-Agent: *
 Disallow: http://www.samanrashidi.com/page-500.html
+
+User-Agent: *
 Disallow: http://www.samanrashidi.com/mail.php
 
 Sitemap: http://www.samanrashidi.com/sitemap.xml
