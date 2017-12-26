@@ -1,0 +1,7 @@
+﻿User-Agent: *
+Disallow: 
+Disallow: /page-404.html
+Disallow: /page-500.html
+Disallow: /mail.php
+
+Sitemap: http://www.samanrashidi.com/sitemap.xml
