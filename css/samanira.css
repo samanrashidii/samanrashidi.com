@@ -175,6 +175,11 @@ table{
     color: #636363;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {background-color: #ffffff;}
+
 textarea::-webkit-input-placeholder{color:#c3c3c3;}
 
 button{cursor: pointer;}
@@ -612,6 +617,7 @@ a.remove{
 
 .static-position{position: static;}
 .relative-position{position: relative;}
+.absolute-position{position: absolute;}
 .z-index{
 	position: relative;
 	z-index: 100;
@@ -620,6 +626,8 @@ a.remove{
 .top-aligned{vertical-align: top;}
 .vertical-aligned{vertical-align: middle;}
 .bottom-aligned{vertical-align: bottom;}
+
+.has-text-shadow{text-shadow: 0 0 2px #121212;}
 
 .no-boxshadow{
 	-webkit-box-shadow: none !important;
