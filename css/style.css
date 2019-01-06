@@ -134,7 +134,7 @@
 .has-shape::before{
 	content:'';
 	position: absolute;
-	top:-105px;
+	top:-104px;
 	left:0;
 	width:100%;
 	height: 105px;
