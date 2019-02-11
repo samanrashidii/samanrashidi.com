@@ -118,13 +118,19 @@
 
 #samanira{
 	padding:80px 0 100px 0;
-	background-color: #ffffff;
+	background-color: #f1f1f1;
 }
 
 #samanira h4{margin-top:13px;}
 #samanira p{padding-top:30px;}
 
 .samanira-main-logo{max-width: 200px;}
+
+.menu-items li button:hover{
+	-webkit-box-shadow:0 0 3px #121212;
+	-moz-box-shadow:0 0 3px #121212;
+	box-shadow:0 0 3px #121212;
+}
 
 .has-shape{
 	position: relative;
