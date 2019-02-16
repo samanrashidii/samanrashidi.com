@@ -519,10 +519,10 @@
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	margin:0 8px;
+	margin:0 5px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-color: transparent;
+	background-color: #ffffff;
 	border-radius: 3px;
 }
 
@@ -532,6 +532,11 @@
 .github{background-image: url('../images/icons/github.png');}
 .googleplus{background-image: url('../images/icons/googleplus.png');}
 .instagram{background-image: url('../images/icons/instagram.png');}
+.tumblr{background-image: url('../images/icons/tumblr.png');}
+.twitter{background-image: url('../images/icons/twitter.png');}
+.pinterest{background-image: url('../images/icons/pinterest.png');}
+.soundcloud{background-image: url('../images/icons/soundcloud.png');}
+.tripadvisor{background-image: url('../images/icons/tripadvisor.png');}
 
 .facebook:hover{background-color: #3b5998;}
 .linkedin:hover{background-color: #0077b5;}
@@ -539,6 +544,11 @@
 .github:hover{background-color: #6cc644;}
 .googleplus:hover{background-color: #d34836;}
 .instagram:hover{background-color: #fccc63;}
+.tumblr:hover{background-color: #34526f;}
+.twitter:hover{background-color: #38A1F3;}
+.pinterest:hover{background-color: #c8232c;}
+.soundcloud:hover{background-color: #ff7700;}
+.tripadvisor:hover{background-color: #00AF87;}
 
 /*****       Footer       *****/
 

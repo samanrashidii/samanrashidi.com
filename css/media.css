@@ -384,7 +384,7 @@
 
 	.pagination-content{height: 250px;}
 
-	.social-icon{margin:0 2px;}
+	.social-icon{margin:0 2px !important;}
 
 	.contact-info{padding:10px 15px;}
 
