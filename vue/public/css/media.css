@@ -20,10 +20,6 @@
 
 	.graphic--kozakura{font-size: 20px;}
 
-	.owl-newsletter{padding:0 50px;}
-	.owl-buttons .owl-next{right: 0;}
-	.owl-buttons .owl-prev{left:0;}
-
 	.has-slime-2::after{
 		top:0;
 		left:10px;
@@ -92,8 +88,6 @@
 	.portfolio-layer.half-text a.bttn{margin:5px;}
 
 	.portfolio-content .frame{padding:0 20px;}
-
-	.samanira .frame{padding:0 30px !important;}
 
 }
 
@@ -354,12 +348,6 @@
 	.content-text.mobile{width: 100%;}
 
 	.portfolio-content.has-slime-2::after{bottom:15px;}
-
-	code{font-size: 12px;}
-	.sample-box{font-size: 14px;}
-
-	.css-code-box,
-	.sample-box{max-height: 250px;}
 
 	.samanira-logo{max-width: 200px;}
 

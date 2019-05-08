@@ -10,7 +10,7 @@
 export default {
     data(){
         return {
-            parallaxTitle : `Intuitive Design Is How I Give The User <br /> New <span class="site-color">Superpowers</span>`
+            parallaxTitle : `Intuitive design is how I give the user <br /> new <span class="site-color uppercased">Superpowers</span>`
         }
     }
 }

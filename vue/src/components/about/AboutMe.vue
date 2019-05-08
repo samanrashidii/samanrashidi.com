@@ -4,7 +4,7 @@
         <div class="reveal">
           <div class="section-title">
             <span>a little</span>
-            <h1>About Me</h1>
+            <h1>ABOUT ME</h1>
           </div>
           <div class="section-content">
             <p class="justified" v-html="aboutDescription"></p>
