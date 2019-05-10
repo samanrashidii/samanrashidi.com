@@ -1,22 +1,31 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Index from './views/index.vue';
+import Index from './views/Index.vue';
+import NotFound from './views/NotFound.vue';
 
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
-      name: 'index',
+      name: 'home',
       component: Index,
     },
     {
-      path: '/:id',
-      name: 'Portfolio',
-      component: () => import('./views/Project.vue'),
+      path: '/portfolio/:id',
+      name: 'portfolio',
+      component: ()=> import('./views/Project.vue'),
     },
+    {
+      path: '/404',
+      name: 'not-found',
+      component: NotFound
+    },
+    {
+      path: '*',
+      redirect: {name : 'not-found'}
+    }
   ],
 });
