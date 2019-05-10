@@ -5,7 +5,26 @@
         "url": "dripology",
         "image": "images/portfolio/dripology-thumb.jpg",
         "imageAlt": "Dripology website by Saman Rashidi",
-        "thirdBG": true
+        "thirdBG": true,
+        "pageBanner": "images/portfolio/dripology/banner.jpg",
+        "pageItems": [
+            {
+                "type": "Desktop",
+                "image": "images/portfolio/dripology/desktop.png",
+                "description": "Dripology is the premium medical IV solution service serving the Los Angeles area"
+                },
+            {
+                "type": "Tablet",
+                "image": "images/portfolio/dripology/tablet.png",
+                "description": "Utilizing custom protocols with recommendations by The American Academy of Anti-Aging Medicine, their treatment are tailored to provide clients with a boost in all facets of life."
+            },
+            {
+                "type": "Mobile",
+                "image": "images/portfolio/dripology/mobile.png",
+                "description":"Their website is new tech one page design and suitable for all devices such as Tablet, Mobile and ..."
+            }
+        ],
+        "siteUrl": "http://www.dripologyla.com"
     },
     {
         "name": "MakianJavAria",
@@ -25,8 +44,8 @@
     {
         "name": "Esmamkoo",
         "description": "You can order this book online by typing the name and gender of your sweetheart baby and get the printed version of the book at home",
-        "url": "zafaroptic-store",
-        "image": "images/portfolio/zafaroptic-store-thumb.jpg",
+        "url": "esmamkoo",
+        "image": "images/portfolio/esmamkoo-store-thumb.jpg",
         "imageAlt": "Esmamkoo website by Saman Rashidi",
         "thirdBG": true
     },
@@ -70,7 +89,7 @@
     },
     {
         "name": "Edoramedia v5.0",
-        "description": "Edoramedia website got transformed into an awesome website in version 5.0",
+        "description": "Edoramedia website got transformed into an awesome website in v5.0",
         "url": "edoramedia-5",
         "image": "images/portfolio/edoramedia5-thumb.jpg",
         "imageAlt": "Edoramedia v5.0 website by Saman Rashidi",

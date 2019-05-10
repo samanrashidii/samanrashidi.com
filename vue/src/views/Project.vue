@@ -9,54 +9,30 @@
       />
     <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website" v-for="(portfolio, index) in portfolios" :key="index">
       <template v-if="portfolio.url == $route.params.id">
-      <div class="potfolio-banner" style="background-image:url(images/portfolio/dripology/banner.jpg)">
-          <h1><div itemprop="name">{{portfolio.name}}</div><span>by <strong itemprop="author">Saman Rashidi</strong></span></h1>
+      <div class="potfolio-banner" :style="{backgroundImage : 'url(' + portfolio.pageBanner + ')'}">
+          <h1><div itemprop="name">{{portfolio.name}}</div><span>by <strong itemprop="author">{{store.webAuthorFullName}}</strong></span></h1>
           <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('#footer').animatescroll({scrollSpeed:4800,easing:'easeInSine'})"></a>
       </div><!-- portfolio-banner end -->
       <div class="portfolio-content has-shape shape-4 has-slime-2">
           <div class="frame">
-              <div class="reveal">
-                  <div class="content-box">
-                      <div class="content-image left-aligned">
-                          <img itemprop="image" src="images/portfolio/dripology/desktop.png" alt="Dripology Desktop Version Website" />
-                      </div><!-- content-image end -->
-                      <div class="content-text">
-                          <h6 itemprop="description"><span class="site-color">"</span> {{portfolio.description}} <span class="site-color">"</span></h6>
-                      </div><!-- content-text end -->
-                      <div class="clearFix"></div><!-- clearFix end -->
-                  </div><!-- content-box end -->
-              </div><!-- reveal end -->
-
-              <div class="divider"></div><!-- divider end -->
-
-              <div class="reveal">
-                  <div class="content-box">
-                      <div class="content-text tablet">
-                          <h6><span class="site-color">"</span> Utilizing custom protocols with recommendations by The American Academy of Anti-Aging Medicine, their treatment are tailored to provide clients with a boost in all facets of life. <span class="site-color">"</span></h6>
-                      </div><!-- content-text end -->
-                      <div class="content-image right-aligned">
-                          <img src="images/portfolio/dripology/tablet.png" alt="Dripology Tablet Version Website" />
-                      </div><!-- content-image end -->
-                      <div class="clearFix"></div><!-- clearFix end -->
-                  </div><!-- content-box end -->
-              </div><!-- reveal end -->
-
-              <div class="divider reverse"></div><!-- divider end -->
-
-              <div class="reveal">
-                  <div class="content-box">
-                      <div class="content-image center-aligned">
-                          <img src="images/portfolio/dripology/mobile.png" alt="Dripology Mobile Version Website" />
-                      </div><!-- content-image end -->
-                      <div class="content-text mobile">
-                          <h6><span class="site-color">"</span> Their website is new tech one page design and suitable for all devices such as Tablet, Mobile and &hellip; <span class="site-color">"</span></h6>
-                      </div><!-- content-text end -->
-                      <div class="clearFix"></div><!-- clearFix end -->
-                  </div><!-- content-box end -->
-              </div><!-- reveal end -->
+              <div class="content-box-wrapper" v-for="(content, index) in portfolio.pageItems" :key="index">
+                <div class="divider" v-if="index == 1"></div><!-- divider end -->  
+                <div class="reveal">
+                    <div class="content-box" :class="{'tablet': index == 1, 'mobile': index == 2}">
+                        <div class="content-image">
+                            <img itemprop="image" :src="content.image" :alt="portfolio.name +' '+ content.type + ' version website'" />
+                        </div><!-- content-image end -->
+                        <div class="content-text">
+                            <h6 itemprop="description"><span class="site-color">"</span> {{content.description}} <span class="site-color">"</span></h6>
+                        </div><!-- content-text end -->
+                        <div class="clearFix"></div><!-- clearFix end -->
+                    </div><!-- content-box end -->
+                </div><!-- reveal end -->
+                <div class="divider reverse" v-if="index == 1"></div><!-- divider end -->
+              </div>
 
               <div class="button-holder center-aligned">
-                  <a itemprop="url" class="bttn has-icon web-icon" href="http://www.dripologyla.com" target="_blank">Open This Project in Web</a>
+                  <a itemprop="url" class="bttn has-icon web-icon" :href="portfolio.siteUrl" target="_blank">Open This Project in Web</a>
                   <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">Back to Homepage</a>
               </div><!-- button-holder end -->
 
