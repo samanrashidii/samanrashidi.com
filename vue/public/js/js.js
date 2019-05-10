@@ -24,43 +24,5 @@ $(document).ready(function() {
         viewportFactor: .4
     }), $(".ac-custom input").on("change", function() {
         $(this).parents(".input").toggleClass("checked")
-    }), $("#mobile_number").numeric(), $("#contact-me form").validate({
-        rules: {
-            full_name: {
-                required: !0,
-                minlength: 5
-            },
-            subject: {
-                required: !0,
-                minlength: 3
-            },
-            email_address: {
-                required: !0,
-                email: !0
-            },
-            mobile_number: {
-                required: !0,
-                minlength: 11,
-                maxlength: 11,
-                number: !0
-            },
-            message: {
-                required: !0,
-                minlength: 10
-            }
-        },
-        submitHandler: function(e) {
-            return "" == $(".samanira_secure").val() ? ($.ajax({
-                type: "POST",
-                url: "mail.php",
-                data: $(e).serialize(),
-                success: function() {
-                    $("#contact-me form :input").prop("disabled", !0), $("#contact-me .thank-you").fadeIn()
-                }
-            }), !1) : ($('.contact-form form input[type="submit"]').prop("disabled", !0), !1)
-        },
-        errorPlacement: function() {
-            return !1
-        }
     });
 });
