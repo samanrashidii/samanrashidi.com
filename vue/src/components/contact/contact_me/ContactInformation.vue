@@ -16,60 +16,60 @@
 
 <script>
 export default {
-    data(){
-        return {
-            user: {
-                tel1: '+995599399705',
-                tel2: '+989128996990',
-                email: 'me@samanrashidi.com'
-            },
-            socials: [
-                {
-                    name: 'telegram',
-                    url: 'https://telegram.me/samanrashidii'
-                },
-                {
-                    name: 'github',
-                    url: 'https://github.com/samanrashidii'
-                },
-                {
-                    name: 'linkedin',
-                    url: 'https://www.linkedin.com/in/samanrashidii'
-                },
-                {
-                    name: 'instagram',
-                    url: 'https://www.instagram.com/samanrashidii'
-                },
-                {
-                    name: 'googleplus',
-                    url: 'https://plus.google.com/109638627387819515843'
-                },
-                {
-                    name: 'facebook',
-                    url: 'https://www.facebook.com/samanrashidii'
-                },
-                {
-                    name: 'tumblr',
-                    url: 'https://samanrashidii.tumblr.com'
-                },
-                {
-                    name: 'twitter',
-                    url: 'https://twitter.com/samanrashidii'
-                },
-                {
-                    name: 'pinterest',
-                    url: 'https://www.pinterest.com/samanrashidii'
-                },
-                {
-                    name: 'soundcloud',
-                    url: 'https://soundcloud.com/samanrashidii'
-                },
-                {
-                    name: 'tripadvisor',
-                    url: 'https://www.tripadvisor.com/Profile/SamanRashidii'
-                },
-            ]
-        }
-    }
-}
+  data() {
+    return {
+      user: {
+        tel1: '+995599399705',
+        tel2: '+989128996990',
+        email: 'me@samanrashidi.com',
+      },
+      socials: [
+        {
+          name: 'telegram',
+          url: 'https://telegram.me/samanrashidii',
+        },
+        {
+          name: 'github',
+          url: 'https://github.com/samanrashidii',
+        },
+        {
+          name: 'linkedin',
+          url: 'https://www.linkedin.com/in/samanrashidii',
+        },
+        {
+          name: 'instagram',
+          url: 'https://www.instagram.com/samanrashidii',
+        },
+        {
+          name: 'googleplus',
+          url: 'https://plus.google.com/109638627387819515843',
+        },
+        {
+          name: 'facebook',
+          url: 'https://www.facebook.com/samanrashidii',
+        },
+        {
+          name: 'tumblr',
+          url: 'https://samanrashidii.tumblr.com',
+        },
+        {
+          name: 'twitter',
+          url: 'https://twitter.com/samanrashidii',
+        },
+        {
+          name: 'pinterest',
+          url: 'https://www.pinterest.com/samanrashidii',
+        },
+        {
+          name: 'soundcloud',
+          url: 'https://soundcloud.com/samanrashidii',
+        },
+        {
+          name: 'tripadvisor',
+          url: 'https://www.tripadvisor.com/Profile/SamanRashidii',
+        },
+      ],
+    };
+  },
+};
 </script>

@@ -29,11 +29,12 @@
 
 <script>
 import PortfolioItems from '@/assets/portfolio.json';
+
 export default {
-    data(){
-        return {
-            portfolios : PortfolioItems
-        }
-    }
-}
+  data() {
+    return {
+      portfolios: PortfolioItems,
+    };
+  },
+};
 </script>

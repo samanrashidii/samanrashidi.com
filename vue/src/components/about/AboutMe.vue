@@ -44,10 +44,10 @@
 
 <script>
 export default {
-    data(){
-      return {
-        aboutDescription: `<span itemprop="description">My name is <strong itemprop="name">${this.store.webAuthorFullName}</strong>, I’m a persian who lives in Georgia, <strong itemprop="nationality">Tbilisi</strong>, and I specialize in <strong>Web Design and Front-end Web Development</strong>. I hold 4 CIW certification from MFT, and have gained <strong itemprop="award">more than 11000 points and 100 achievements in <a target="_blank" href="http://www.teamtreehouse.com/samanrashidi">TeamTreeHouse</a> Website</strong>. I started working with <a itemprop="worksFor" target="_blank" href="http://www.edoramedia.com">Edoramedia</a> digital solution company since October 2014 as a front-end developer.</span> Before entering a career in creating web pages, I received my bachelor’s degree in Biology and shortly became highly interested in the science known as Neuromarketing. Due to my passion and education, I pursued the Marketing Management certification and worked with Dr. Mohsen Oftadehal (Cognitive Scientist) to concentrate on advertising skills approached using biological methods. Today I am a <strong itemprop="jobTitle">Senior Front-end Developer</strong> in Edoramedia focus on designing creative and appealing websites, attractive and clean to the viewers’ eyes, and skillfully developed on the back-end. I am the owner of <a itemprop="owns" href="http://www.samanira.com" target="_blank">SamanirA framework</a> with my partner <a target="_blank" href="http://www.samirasalimian.com">Samira Salimian</a> to make a better and simpler framework for front-end developers.`
-      }
-    }
-}
+  data() {
+    return {
+      aboutDescription: `<span itemprop="description">My name is <strong itemprop="name">${this.store.webAuthorFullName}</strong>, I’m a persian who lives in Georgia, <strong itemprop="nationality">Tbilisi</strong>, and I specialize in <strong>Web Design and Front-end Web Development</strong>. I hold 4 CIW certification from MFT, and have gained <strong itemprop="award">more than 11000 points and 100 achievements in <a target="_blank" href="http://www.teamtreehouse.com/samanrashidi">TeamTreeHouse</a> Website</strong>. I started working with <a itemprop="worksFor" target="_blank" href="http://www.edoramedia.com">Edoramedia</a> digital solution company since October 2014 as a front-end developer.</span> Before entering a career in creating web pages, I received my bachelor’s degree in Biology and shortly became highly interested in the science known as Neuromarketing. Due to my passion and education, I pursued the Marketing Management certification and worked with Dr. Mohsen Oftadehal (Cognitive Scientist) to concentrate on advertising skills approached using biological methods. Today I am a <strong itemprop="jobTitle">Senior Front-end Developer</strong> in Edoramedia focus on designing creative and appealing websites, attractive and clean to the viewers’ eyes, and skillfully developed on the back-end. I am the owner of <a itemprop="owns" href="http://www.samanira.com" target="_blank">SamanirA framework</a> with my partner <a target="_blank" href="http://www.samirasalimian.com">Samira Salimian</a> to make a better and simpler framework for front-end developers.`,
+    };
+  },
+};
 </script>

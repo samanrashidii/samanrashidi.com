@@ -11,8 +11,8 @@ import ContactMe from '@/components/contact/ContactMe.vue';
 
 export default {
   components: {
-    googleMap : GoogleMap,
-    contactMe : ContactMe
-  }
-}
+    googleMap: GoogleMap,
+    contactMe: ContactMe,
+  },
+};
 </script>

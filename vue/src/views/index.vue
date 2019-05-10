@@ -25,6 +25,8 @@ import Portfolio from '@/components/Portfolio.vue';
 import Contact from '@/components/Contact.vue';
 import Footer from '@/components/Footer.vue';
 
+
+
 export default {
   name: 'index',
   data(){
@@ -40,7 +42,7 @@ export default {
 		appAbout: About,
 		appPortfolio: Portfolio,
 		appContact: Contact,
-		appFooter: Footer
+		appFooter: Footer,
   },
 };
 </script>

@@ -15,11 +15,10 @@ import Parallax from '@/components/about/Parallax.vue';
 
 export default {
   components: {
-    aboutMe : AboutMe,
-    samanira : Samanira,
-    statistics : Statistics,
-    parallax : Parallax
-  }
-}
+    aboutMe: AboutMe,
+    samanira: Samanira,
+    statistics: Statistics,
+    parallax: Parallax,
+  },
+};
 </script>
-
