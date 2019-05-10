@@ -30,11 +30,10 @@
 
 <script>
 export default {
-    data(){
-        return {
-            menuItems: ['Home', 'About', 'Portfolio', 'ContactMe']
-        }
-    }
-}
+  data() {
+    return {
+      menuItems: ['Home', 'About', 'Portfolio', 'ContactMe'],
+    };
+  },
+};
 </script>
-

@@ -19,9 +19,8 @@ import ContactForm from '@/components/contact/contact_me/ContactForm.vue';
 
 export default {
   components: {
-    contactInformation : ContactInformation,
-    contactForm : ContactForm
-  }
-}
+    contactInformation: ContactInformation,
+    contactForm: ContactForm,
+  },
+};
 </script>
-

@@ -8,10 +8,10 @@
 
 <script>
 export default {
-    data(){
-        return {
-            parallaxTitle : `Intuitive design is how I give the user <br /> new <span class="site-color uppercased">Superpowers</span>`
-        }
-    }
-}
+  data() {
+    return {
+      parallaxTitle: 'Intuitive design is how I give the user <br /> new <span class="site-color uppercased">Superpowers</span>',
+    };
+  },
+};
 </script>

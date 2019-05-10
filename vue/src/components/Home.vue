@@ -1,5 +1,5 @@
 <template>
-    <div id="Home">			
+    <div id="Home">
         <div class="banner">
             <div class="inner-banner">
                 <h1 v-html="pageTitle"></h1>
@@ -15,11 +15,10 @@
 
 <script>
 export default {
-    data(){
-        return {
-            pageTitle : `stand out with a <span class="site-color uppercased">modern</span> website`
-        }
-    }
-}
+  data() {
+    return {
+      pageTitle: 'stand out with a <span class="site-color uppercased">modern</span> website',
+    };
+  },
+};
 </script>
-
