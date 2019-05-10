@@ -592,8 +592,14 @@
 	padding-top:80px;
 }
 
-.content-text.mobile{padding-top:190px;}
-.content-text.tablet{padding-top:120px;}
+.content-box.mobile .content-text{padding-top:190px;}
+.content-box.mobile .content-image{text-align: center;}
+
+.content-box.tablet .content-text{padding-top:120px;}
+.content-box.tablet .content-image{
+	float: right;
+	text-align: right;
+}
 
 .content-text h6{
 	font-family: 'Effra-light';
