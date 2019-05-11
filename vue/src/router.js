@@ -2,6 +2,11 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Index from './views/Index.vue';
 import NotFound from './views/NotFound.vue';
+import Project from './views/Project.vue';
+
+// const Index =  () => import('./views/Index.vue');
+// const NotFound =  () => import('./views/NotFound.vue');
+// const Project =  () => import('./views/Project.vue');
 
 Vue.use(Router);
 
@@ -16,7 +21,7 @@ export default new Router({
     {
       path: '/portfolio/:id',
       name: 'portfolio',
-      component: ()=> import('./views/Project.vue'),
+      component: Project,
     },
     {
       path: '/404',

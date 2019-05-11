@@ -1,4 +1,4 @@
-$(document).ready(function() {
+const saman = () => {
     $(".counter-up").counterUp({
         delay: 10,
         time: 2500
@@ -25,4 +25,4 @@ $(document).ready(function() {
     }), $(".ac-custom input").on("change", function() {
         $(this).parents(".input").toggleClass("checked")
     });
-});
+}
