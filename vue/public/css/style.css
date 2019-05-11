@@ -687,3 +687,13 @@
 	padding:6px 10px;
 	margin:10px 0;
 }
+.pagination-dot{
+	width:24px;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	font-size:12px;
+	transition:transform .3s;
+}
+
+.pagination-dot.active{transform:scale(1.5,1.5) !important;}
