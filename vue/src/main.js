@@ -12,6 +12,11 @@ Vue.store = Vue.prototype.store = {
   webAuthorFullName: 'Saman Rashidi',
 };
 
+router.beforeEach((to, from, next)=> {
+  window.scrollTo(0, 0);
+  next();
+});
+
 new Vue({
   router,
   render: h => h(App),

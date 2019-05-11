@@ -18,6 +18,8 @@
 
 <script>
 
+
+
 import Navigation from '@/components/Navigation.vue';
 import Home from '@/components/Home.vue';
 import About from '@/components/About.vue';
@@ -41,6 +43,10 @@ export default {
 		appPortfolio: Portfolio,
 		appContact: Contact,
 		appFooter: Footer,
+  },
+  mounted(){
+    samanJS();
+    saman();
   },
 };
 </script>
