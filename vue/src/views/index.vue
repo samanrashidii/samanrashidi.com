@@ -45,8 +45,7 @@ export default {
 		appFooter: Footer,
   },
   mounted(){
-    samanJS();
-    saman();
-  },
+    Saman();
+  }
 };
 </script>
