@@ -31,7 +31,7 @@ export default {
   name: 'index',
   data(){
     return {
-      pageTitle: `${this.store.webAuthorFullName} ~ Web Designer and Senior Front-end Developer`,
+      pageTitle: `${this.store.webAuthorFullName} ~ Senior Front-end developer`,
       pageDescription: `My name is ${this.store.webAuthorFirstName} and I specialize in Front-end Web Development. I started working with Edoramedia company since October 2014 and the owner of SamanirA framework`,
       pageUrl: `${this.$route.fullPath}`
     }

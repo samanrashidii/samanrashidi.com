@@ -7,43 +7,43 @@
           :ogDescription="pageDescription"
           :url="pageUrl"
       />
-    <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website" v-for="(portfolio, index) in portfolios" :key="index">
-      <template v-if="portfolio.url == $route.params.id">
-      <div class="potfolio-banner" :style="{backgroundImage : 'url(' + portfolio.pageBanner + ')'}">
-          <h1><div itemprop="name">{{portfolio.name}}</div><span>by <strong itemprop="author">{{store.webAuthorFullName}}</strong></span></h1>
-          <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('#footer').animatescroll({scrollSpeed:4800,easing:'easeInSine'})"></a>
-      </div><!-- portfolio-banner end -->
-      <div class="portfolio-content has-shape shape-4 has-slime-2">
-          <div class="frame">
-              <div class="content-box-wrapper" v-for="(content, index) in portfolio.pageItems" :key="index">
-                <div class="divider" v-if="index == 1"></div><!-- divider end -->  
-                <div class="reveal">
-                    <div class="content-box" :class="{'tablet': index == 1, 'mobile': index == 2}">
-                        <div class="content-image">
-                            <img itemprop="image" :src="content.image" :alt="portfolio.name +' '+ content.type + ' version website'" />
-                        </div><!-- content-image end -->
-                        <div class="content-text">
-                            <h6 itemprop="description"><span class="site-color">"</span> {{content.description}} <span class="site-color">"</span></h6>
-                        </div><!-- content-text end -->
-                        <div class="clearFix"></div><!-- clearFix end -->
-                    </div><!-- content-box end -->
-                </div><!-- reveal end -->
-                <div class="divider reverse" v-if="index == 1"></div><!-- divider end -->
-              </div>
+    <template v-for="(portfolio, index) in portfolios">
+      <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website" v-if="portfolio.url == $route.params.id"  :key="index">
+        <div class="potfolio-banner" :style="{backgroundImage : 'url(' + portfolio.pageBanner + ')'}">
+            <h1><div itemprop="name">{{portfolio.name}}</div><span>by <strong itemprop="author">{{store.webAuthorFullName}}</strong></span></h1>
+            <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('#footer').animatescroll({scrollSpeed:4800,easing:'easeInSine'})"></a>
+        </div>
+        <div class="portfolio-content has-shape shape-4 has-slime-2">
+            <div class="frame">
+                <div class="content-box-wrapper" v-for="(content, index) in portfolio.pageItems" :key="index">
+                  <div class="divider" v-if="index == 1"></div> 
+                  <div class="reveal">
+                      <div class="content-box" :class="{'tablet': index == 1, 'mobile': index == 2}">
+                          <div class="content-image">
+                              <img itemprop="image" :src="content.image" :alt="portfolio.name +' '+ content.type + ' version website'" />
+                          </div>
+                          <div class="content-text">
+                              <h6 itemprop="description"><span class="site-color">"</span> {{content.description}} <span class="site-color">"</span></h6>
+                          </div>
+                          <div class="clearFix"></div>
+                      </div>
+                  </div>
+                  <div class="divider reverse" v-if="index == 1"></div>
+                </div>
 
-              <div class="button-holder center-aligned">
-                  <a itemprop="url" class="bttn has-icon web-icon" :href="portfolio.siteUrl" target="_blank">Open This Project in Web</a>
-                  <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">Back to Homepage</a>
-              </div><!-- button-holder end -->
+                <div class="button-holder center-aligned">
+                    <a itemprop="url" class="bttn has-icon web-icon" :href="portfolio.siteUrl" target="_blank">Open This Project in Web</a>
+                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home', hash: portfolio.url})">Back to Homepage</a>
+                </div>
 
-              <div class="button-holder center-aligned">
-                  <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('.potfolio-banner').animatescroll({scrollSpeed:1200,easing:'easeInSine'})"></a>
-              </div><!-- button-holder end -->
+                <div class="button-holder center-aligned">
+                    <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('.potfolio-banner').animatescroll({scrollSpeed:1200,easing:'easeInSine'})"></a>
+                </div>
 
-          </div><!-- frame end -->
-      </div><!-- portfolio-content end -->
-      </template>
-    </div><!-- specific-portfolio end -->    
+            </div>
+        </div>
+      </div>  
+    </template>
     <app-footer></app-footer> 
   </div>         
 </template>

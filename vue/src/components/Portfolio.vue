@@ -8,7 +8,7 @@
             <div class="my-portfolio">
                 <h3 class="inner-title website-icon">websites</h3>
                 <ul class="grid effect-8" id="grid">
-                    <li v-for="(portfolio, index) in portfolios" :key="index">
+                    <li v-for="(portfolio, index) in portfolios" :key="index" :id="portfolio.url">
                         <div class="portfolio-layer" :class="{'second-bg' : portfolio.secondBG, 'third-bg' : portfolio.thirdBG, 'no-bg' : portfolio.noBG, 'half-text' : portfolio.halfText}">
                             <a class="close" href="javascript:void(0)"></a>
                             <div class="portfolio-inner-layer">

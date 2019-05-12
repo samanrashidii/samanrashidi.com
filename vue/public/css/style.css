@@ -694,7 +694,7 @@
 	line-height: 24px;
 	overflow: hidden;
 	font-size:12px;
-	transition:transform .2s;
+	transition:transform .1s;
 }
 
-.pagination-dot.active{transform:scale(1.5,1.5) !important;}
+.pagination-dot.active{transform:scale(1.4,1.4) !important;}
