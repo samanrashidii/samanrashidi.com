@@ -2,7 +2,7 @@
   <div class="portfolio-page">
     <template v-for="(portfolio, index) in portfolios">
       <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website" v-if="portfolio.url == $route.params.id"  :key="index">
-        {{ getPnData(portfolio.name) }}
+        {{ getPnData(portfolio.name, portfolio.url) }}
         <div class="potfolio-banner" :style="{backgroundImage : 'url(' + portfolio.pageBanner + ')'}">
             <h1><div itemprop="name">{{portfolio.name}}</div><span>by <strong itemprop="author">{{store.webAuthorFullName}}</strong></span></h1>
             <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('#footer').animatescroll({scrollSpeed:4800,easing:'easeInSine'})"></a>
@@ -51,7 +51,8 @@ export default {
     return {
       portfolios: PortfolioItems,
       pnData : '',
-      pID : this.$route.params.id
+      pnID : '',
+      pageID : this.$route.params.id
     }
   },
   components: {
@@ -75,7 +76,7 @@ export default {
         },
         {
           name : 'og:url',
-          content : `http://www.samanrashidi.com/portfolio/${this.pID}`
+          content : `http://www.samanrashidi.com/portfolio/${this.pageID}`
         }
       ]
     }
@@ -85,13 +86,140 @@ export default {
       this.$route.params.id = to.params.id;
     }
   },
+  mounted(){
+    this.checkURL();
+  },
+  updated(){
+    this.checkURL();
+  },
   methods: {
       goToLink(linkName){
         this.$router.push(linkName)
       },
-      getPnData(pndata){
+      getPnData(pndata, pnID){
         this.pnData = pndata;
+        this.pnID = pnID;
+      },
+      checkURL(){
+        if(this.$route.params.id !== this.pnID){
+          this.$router.push({name:'not-found'});
+        }
       }
   }
 };
 </script>
+
+<style>
+  .specific-portfolio{
+    width: 100%;
+    overflow: hidden;
+    background:#161616;
+  }
+
+  .potfolio-banner{
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+  }
+
+  .potfolio-banner h1{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Effra-light';
+    font-size: 75px;
+    color:#ffffff;
+    text-shadow:0 0 12px #181818;
+  }
+
+  .potfolio-banner.no-textshadow h1{text-shadow: none;}
+
+  .potfolio-banner h1 span{
+    display: block;
+    font-size: 30px;
+  }
+
+  .potfolio-banner h1 strong{
+    font-family: 'Effra-light';
+    color:#0a9abd;
+  }
+
+  .portfolio-content{
+    width: 100%;
+    color:#ffffff;
+    padding:200px 0 140px 0;
+  }
+
+  .portfolio-content p{padding-top:0;}
+
+  .content-text{
+    float: left;
+    width: 45%;
+    padding-top:80px;
+  }
+
+  .content-box.mobile .content-text{padding-top:190px;}
+  .content-box.mobile .content-image{text-align: center;}
+
+  .content-box.tablet .content-text{padding-top:120px;}
+  .content-box.tablet .content-image{
+    float: right;
+    text-align: right;
+  }
+
+  .content-text h6{
+    font-family: 'Effra-light';
+    line-height: 2;
+  }
+
+  .content-image{
+    float: left;
+    width: 55%;
+  }
+
+  .divider{
+    position: relative;
+    width: 60%;
+    margin:120px auto;
+    border-top:2px dashed #ffffff;
+  }
+
+  .divider::before{
+    content:'';
+    position: absolute;
+    left:0;
+    top:-80px;
+    display: block;
+    width: 2px;
+    height: 80px;
+    border-left:2px dashed #ffffff;
+  }
+
+  .divider::after{
+    content:'';
+    position: absolute;
+    right:0;
+    top:0;
+    display: block;
+    width: 2px;
+    height: 80px;
+    border-left:2px dashed #ffffff;
+  }
+
+  .divider.reverse{width: 45%;}
+  .divider.reverse::before{top:0;}
+  .divider.reverse::after{top:-80px;}
+
+  .portfolio-content .button-holder{margin-top:100px;}
+
+  .portfolio-content .button-holder a.bttn:hover{
+    color:#ffffff;
+    background-color: #0a9abd;
+    border-color: #0a9abd !important;
+  }
+</style>
