@@ -30,7 +30,7 @@
                     <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">Back to Homepage</a>
                 </div>
 
-                <div class="button-holder center-aligned">
+                <div class="button-holder center-aligned has-arrow-button">
                     <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('.potfolio-banner').animatescroll({scrollSpeed:1200,easing:'easeInSine'})"></a>
                 </div>
 
@@ -109,7 +109,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+  #footer.has-shape::before{display:none !important;}
+
   .specific-portfolio{
     width: 100%;
     overflow: hidden;
