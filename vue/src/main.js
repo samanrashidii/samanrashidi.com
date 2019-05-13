@@ -1,10 +1,14 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-import Meta from 'vue-meta'
+import Meta from 'vue-meta';
+import VeeValidate from 'vee-validate';
 
 Vue.config.productionTip = false;
 Vue.use(Meta);
+Vue.use(VeeValidate, {
+  events: 'keyup'
+});
 
 Vue.store = Vue.prototype.store = {
   webAuthorFirstName: 'Saman',
