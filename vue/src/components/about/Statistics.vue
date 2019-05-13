@@ -29,12 +29,12 @@ export default {
         {
           name: 'Lines of Codes',
           image: 'images/code.png',
-          statData: 564377,
+          statData: 568377,
         },
         {
           name: 'Cups of Coffee',
           image: 'images/coffee.png',
-          statData: 3498,
+          statData: 3524,
         },
         {
           name: 'Successful Projects',
