@@ -509,6 +509,7 @@
 	visibility: hidden !important;
 	opacity: 0 !important;
 	height: 0 !important;
+	margin-bottom:0;
 	border:none !important;
 }
 

@@ -57,9 +57,9 @@
             </div>
             <div class="message">
                 <textarea name="message" placeholder="Type your message for me &hellip;"></textarea>
-                <input type="text" name="samanira_secure" class="samanira_secure" />
             </div>
-            <input type="submit" value="Send your message to me">
+            <input type="text" name="samanira_secure" class="samanira_secure" />
+            <input type="submit" value="Send your message to me" @click.prevent="">
         </form>
     </div>
 </template>
