@@ -319,17 +319,28 @@
 		margin:10px auto;
 	}
 
-	.portfolio-content{padding-top:80px !important;}
+	.portfolio-content{padding-top:70px !important;}
 
 	.content-image{
 		float: none !important;
 		width: 100% !important;
-		text-align: center;
+		text-align: center !important;
+	}
+
+	.content-box.mobile .content-image{
+		width: 60% !important;
+		margin: auto !important;
+	}
+
+	.content-box.tablet .content-image{
+		width: 90% !important;
+		margin: auto !important;
 	}
 
 	.content-text{
 		width: 100% !important;
-		padding:50px 0 0 0 !important;
+		padding:30px 0 0 0 !important;
+		text-align: center !important;
 	}
 
 	.content-text.tablet{
@@ -407,6 +418,5 @@
 	#about-me{padding-bottom:320px;}
 
 	.stat-box-wrapper{padding-top:30px;}
-	
 
 }
