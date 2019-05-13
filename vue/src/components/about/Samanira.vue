@@ -7,8 +7,8 @@
           <a class="bttn bounce site-2" href="http://www.samanira.com" target="_blank">Read More</a>
         </div>
         <div class="half-box reveal left-aligned">
-          <h4>Owner of <strong class="site-color">SamanirA</strong> framework</h4>
-          <p>An easy HTML / CSS / JS framework for Front-end Developers who wants to quickly build a project from 0% to 100% without wasting time on defining CSS classes or some Javascript functions.</p>
+          <h4>Owner of <strong class="site-color has-small-x-margin">SamanirA</strong> framework</h4>
+          <p class="justified">An easy HTML / CSS / JS framework for Front-end Developers who wants to quickly build a project from 0% to 100% without wasting time on defining CSS classes or some Javascript functions.</p>
         </div>
       </div>
     </div>

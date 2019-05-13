@@ -530,3 +530,5 @@
 	visibility: hidden;
 	opacity: 0;
 }
+
+.has-small-x-margin{margin:0 3px;}
