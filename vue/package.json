@@ -12,6 +12,7 @@
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-headful": "^2.0.1",
+    "vue-meta": "^1.6.0",
     "vue-router": "^3.0.3"
   },
   "devDependencies": {

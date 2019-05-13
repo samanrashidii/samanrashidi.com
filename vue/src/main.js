@@ -1,10 +1,10 @@
 import Vue from 'vue';
-import vueHeadful from 'vue-headful';
 import App from './App.vue';
 import router from './router';
+import Meta from 'vue-meta'
 
 Vue.config.productionTip = false;
-Vue.component('vue-headful', vueHeadful);
+Vue.use(Meta);
 
 Vue.store = Vue.prototype.store = {
   webAuthorFirstName: 'Saman',
