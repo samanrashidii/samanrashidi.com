@@ -4,10 +4,6 @@ import Index from './views/Index.vue';
 import NotFound from './views/NotFound.vue';
 import Project from './views/Project.vue';
 
-// const Index =  () => import('./views/Index.vue');
-// const NotFound =  () => import('./views/NotFound.vue');
-// const Project =  () => import('./views/Project.vue');
-
 Vue.use(Router);
 
 export default new Router({
@@ -16,12 +12,12 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Index,
+      component: Index
     },
     {
       path: '/portfolio/:id',
       name: 'portfolio',
-      component: Project,
+      component: Project
     },
     {
       path: '/404',

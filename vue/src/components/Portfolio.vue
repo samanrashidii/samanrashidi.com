@@ -15,7 +15,7 @@
                                 <div class="portfolio-layer-content">
                                     <h4>{{portfolio.name}}</h4>
                                     <p>{{portfolio.description}}</p>
-                                    <a class="bttn has-icon read-more" @click="goToLink({name: 'portfolio', params: {id : portfolio.url}})">Read More About This Project</a>
+                                    <router-link class="bttn has-icon read-more" :to="{name: 'portfolio', params: {id : portfolio.url}}">Read More About This Project</router-link>
                                 </div>
                             </div>
                         </div>
@@ -35,11 +35,6 @@ export default {
         return {
             portfolios: PortfolioItems,
         };
-    },
-    methods: {
-        goToLink(linkName){
-            this.$router.push(linkName)
-        }
     }
 };
 </script>

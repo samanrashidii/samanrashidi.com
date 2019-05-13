@@ -1,14 +1,8 @@
 <template>
   <div class="portfolio-page">
-    <vue-headful
-          :title="pageTitle"
-          :description="pageDescription"
-          :ogTitle="pageTitle"
-          :ogDescription="pageDescription"
-          :url="pageUrl"
-      />
     <template v-for="(portfolio, index) in portfolios">
       <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website" v-if="portfolio.url == $route.params.id"  :key="index">
+        {{ getPnData(portfolio.name) }}
         <div class="potfolio-banner" :style="{backgroundImage : 'url(' + portfolio.pageBanner + ')'}">
             <h1><div itemprop="name">{{portfolio.name}}</div><span>by <strong itemprop="author">{{store.webAuthorFullName}}</strong></span></h1>
             <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('#footer').animatescroll({scrollSpeed:4800,easing:'easeInSine'})"></a>
@@ -33,7 +27,7 @@
 
                 <div class="button-holder center-aligned">
                     <a itemprop="url" class="bttn has-icon web-icon" :href="portfolio.siteUrl" target="_blank">Open This Project in Web</a>
-                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home', hash: portfolio.url})">Back to Homepage</a>
+                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">Back to Homepage</a>
                 </div>
 
                 <div class="button-holder center-aligned">
@@ -55,24 +49,48 @@ export default {
   name: 'Project',
   data() {
     return {
-      pageID : this.$route.params.id,
-      pageTitle: `${this.store.webAuthorFullName} ~ Portfolio ~ ${this.$route.params.id}`,
-      pageDescription: 'My name is Saman and I specialize in Front-end Web Development.',
-      pageUrl: `${this.$route.fullPath}`,
       portfolios: PortfolioItems,
-    };
+      pnData : '',
+      pID : this.$route.params.id
+    }
   },
   components: {
 		appFooter: Footer,
   },
+  metaInfo() {
+    return {
+      title : `Saman Rashidi ~ Portfolio ~ ${this.pnData}`,
+      meta: [
+        {
+          name : 'description',
+          content : `I'm a senior Front-end developer and ${this.pnData} website is one of my projects`
+        },
+        {
+          name : 'og:title',
+          content : `Saman Rashidi ~ Portfolio ~ ${this.pnData}`
+        },
+        {
+          name : 'og:description',
+          content : `I'm a senior Front-end developer and ${this.pnData} website is one of my projects`
+        },
+        {
+          name : 'og:url',
+          content : `http://www.samanrashidi.com/portfolio/${this.pID}`
+        }
+      ]
+    }
+  },
   watch:{
     $route(to, from){
-      this.$route.params.id = to.params.id
+      this.$route.params.id = to.params.id;
     }
   },
   methods: {
       goToLink(linkName){
-          this.$router.push(linkName)
+        this.$router.push(linkName)
+      },
+      getPnData(pndata){
+        this.pnData = pndata;
       }
   }
 };

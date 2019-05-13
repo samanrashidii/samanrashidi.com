@@ -1,12 +1,5 @@
 <template>
   <div class="index">
-    <vue-headful
-        :title="pageTitle"
-        :description="pageDescription"
-        :ogTitle="pageTitle"
-        :ogDescription="pageDescription"
-        :url="pageUrl"
-    />
     <app-navigation></app-navigation>
 		<app-home></app-home>
 		<app-about></app-about>
@@ -18,8 +11,6 @@
 
 <script>
 
-
-
 import Navigation from '@/components/Navigation.vue';
 import Home from '@/components/Home.vue';
 import About from '@/components/About.vue';
@@ -29,13 +20,6 @@ import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'index',
-  data(){
-    return {
-      pageTitle: `${this.store.webAuthorFullName} ~ Senior Front-end developer`,
-      pageDescription: `My name is ${this.store.webAuthorFirstName} and I specialize in Front-end Web Development. I started working with Edoramedia company since October 2014 and the owner of SamanirA framework`,
-      pageUrl: `${this.$route.fullPath}`
-    }
-  },
   components: {
 		appNavigation: Navigation,
 		appHome: Home,
@@ -43,6 +27,25 @@ export default {
 		appPortfolio: Portfolio,
 		appContact: Contact,
 		appFooter: Footer,
+  },
+  metaInfo() {
+    return {
+      title : `Saman Rashidi ~ Senior Front-end developer`,
+      meta: [
+        {
+          description : `My name is Saman and I specialize in Front-end web development.`
+        },
+        {
+          'og:title' : `Saman Rashidi ~ Senior Front-end developer`
+        },
+        {
+          'og:description' : `My name is Saman and I specialize in Front-end web development.`
+        },
+        {
+          'og:url' : `http://www.samanrashidi.com`
+        }
+      ]
+    }
   },
   mounted(){
     Saman();
