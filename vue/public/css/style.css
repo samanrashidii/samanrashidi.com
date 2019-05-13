@@ -116,6 +116,18 @@
 #about-me p a{color:#0a9abd;}
 #about-me p a:hover{border-bottom:1px solid #0a9abd;}
 
+.pagination-dots{margin-bottom:25px;}
+.pagination-dot{
+	width:24px;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	font-size:12px;
+	transition:transform .1s;
+}
+
+.pagination-dot.active{transform:scale(1.4,1.4) !important;}
+
 #samanira{
 	padding:80px 0 100px 0;
 	background-color: #f1f1f1;
@@ -247,12 +259,6 @@
 	background-attachment: fixed;
 }
 
-.parallax.is-map{
-	height: 550px;
-	overflow: hidden;
-	background: none;
-}
-
 .parallax-layer{
 	display: table-cell;
 	vertical-align: middle;
@@ -278,11 +284,6 @@
 .website-icon{
 	padding-left: 45px;
 	background: url('../images/icons/website.png') no-repeat left center;
-}
-
-.newsletter-icon{
-	padding-left: 35px;
-	background: url('../images/icons/newsletter.png') no-repeat left center;
 }
 
 .information-icon{
@@ -488,8 +489,6 @@
 .soundcloud:hover{background-color: #ff7700;}
 .tripadvisor:hover{background-color: #00AF87;}
 
-/*****       Footer       *****/
-
 #footer{
 	width: 100%;
 	font-size: 17px;
@@ -506,152 +505,6 @@
 
 #footer span a{color:#0a9abd;}
 
-.page{
-	display: table;
-	width: 100%;
-	height: 100%;
-	background: url('../images/page-bg.jpg') no-repeat center #000000;
-	background-size: cover;
-}
-
-.page-item{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	color:#ffffff;
-	padding:15px;
-}
-
-.page h1{
-	font-size: 150px;
-	color:#0a9abd;
-}
-
-.page h4{
-	font-size: 50px;
-	margin-top:-20px;
-}
-
-.page .bttn{margin-top:50px;}
-
-.page p{
-	color:#cfcfcf;
-	padding-top:30px;
-}
-
-.specific-portfolio{
-	width: 100%;
-	overflow: hidden;
-	background:#161616;
-}
-
-.potfolio-banner{
-	position: relative;
-	display: table;
-	width: 100%;
-	height: 700px;
-	text-align: center;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed; 
-}
-
-.potfolio-banner h1{
-	display: table-cell;
-	vertical-align: middle;
-	font-family: 'Effra-light';
-	font-size: 75px;
-	color:#ffffff;
-	text-shadow:0 0 12px #181818;
-}
-
-.potfolio-banner.no-textshadow h1{text-shadow: none;}
-
-.potfolio-banner h1 span{
-	display: block;
-	font-size: 30px;
-}
-
-.potfolio-banner h1 strong{
-	font-family: 'Effra-light';
-	color:#0a9abd;
-}
-
-.portfolio-content{
-	width: 100%;
-	color:#ffffff;
-	padding:200px 0 140px 0;
-}
-
-.portfolio-content p{padding-top:0;}
-
-.content-text{
-	float: left;
-	width: 45%;
-	padding-top:80px;
-}
-
-.content-box.mobile .content-text{padding-top:190px;}
-.content-box.mobile .content-image{text-align: center;}
-
-.content-box.tablet .content-text{padding-top:120px;}
-.content-box.tablet .content-image{
-	float: right;
-	text-align: right;
-}
-
-.content-text h6{
-	font-family: 'Effra-light';
-	line-height: 2;
-}
-
-.content-image{
-	float: left;
-	width: 55%;
-}
-
-.divider{
-	position: relative;
-	width: 60%;
-	margin:120px auto;
-	border-top:2px dashed #ffffff;
-}
-
-.divider::before{
-	content:'';
-	position: absolute;
-	left:0;
-	top:-80px;
-	display: block;
-	width: 2px;
-	height: 80px;
-	border-left:2px dashed #ffffff;
-}
-
-.divider::after{
-	content:'';
-	position: absolute;
-	right:0;
-	top:0;
-	display: block;
-	width: 2px;
-	height: 80px;
-	border-left:2px dashed #ffffff;
-}
-
-.divider.reverse{width: 45%;}
-.divider.reverse::before{top:0;}
-.divider.reverse::after{top:-80px;}
-
-.portfolio-content .button-holder{margin-top:100px;}
-
-.portfolio-content .button-holder a.bttn:hover{
-	color:#ffffff;
-	background-color: #0a9abd;
-	border-color: #0a9abd !important;
-}
-
 .samanira_secure{
 	visibility: hidden !important;
 	opacity: 0 !important;
@@ -667,34 +520,3 @@
 	visibility: hidden;
 	opacity: 0;
 }
-
-.main-port-content{
-	float: left;
-	width: 75%;
-}
-
-.side-port-content{
-	float: left;
-	display: none;
-	width: 25%;
-	padding:35px 0 20px 20px;
-	text-align: right;
-}
-
-.side-port-content a{
-	min-width: 170px;
-	text-align: center;
-	padding:6px 10px;
-	margin:10px 0;
-}
-.pagination-dots{margin-bottom:25px;}
-.pagination-dot{
-	width:24px;
-	height: 24px;
-	line-height: 24px;
-	overflow: hidden;
-	font-size:12px;
-	transition:transform .1s;
-}
-
-.pagination-dot.active{transform:scale(1.4,1.4) !important;}

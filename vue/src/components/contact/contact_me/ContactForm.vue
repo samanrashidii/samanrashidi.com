@@ -49,10 +49,10 @@
                     </svg>
                 </span>
                 <span class="input has-checkbox ac-custom ac-checkbox ac-boxfill">
-                    <input id="cb10" name="field_of_activity[]" type="checkbox" value="Website"><label for="cb10">I Want a Website</label>
+                    <input id="cb10" name="field_of_activity[]" type="checkbox" value="Website"><label for="cb10">I want a website</label>
                 </span>
                 <span class="input has-checkbox ac-custom ac-checkbox ac-boxfill">
-                    <input id="cb11" name="field_of_activity[]" type="checkbox" value="Newsletter"><label for="cb11">I'm Looking For Newsletter</label>
+                    <input id="cb11" name="field_of_activity[]" type="checkbox" value="Newsletter"><label for="cb11">I'm looking for newsletter</label>
                 </span>
             </div>
             <div class="message">
