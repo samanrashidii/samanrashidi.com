@@ -240,6 +240,10 @@
 
 	.has-shape.shape-3-revert::before,
 	.has-shape.shape-4-revert::before{display: none !important;}
+	.stat-box:last-child{margin-bottom:40px;}
+
+	.parallax{height: 300px;}
+	.parallax-layer{padding-top:20px;}
 
 	.potfolio-banner{height: 500px;}
 
@@ -248,9 +252,6 @@
 
 	.potfolio-banner h1{font-size: 50px;}
 	.potfolio-banner h1 span{font-size: 27px;}
-
-	#map_canvas{height: 320px;}
-	.parallax.is-map{height: 320px;}
 
 }
 
@@ -372,7 +373,7 @@
 
 	.pagination-content{height: 250px;}
 
-	.social-icon{margin:0 2px !important;}
+	.social-icon{margin:0 4px !important;}
 
 	.contact-info{padding:10px 15px;}
 
@@ -383,6 +384,8 @@
 	}
 
 	.stat-box strong{font-size: 33px;}
+
+	input[type=submit]{margin-top:0;}
 
 }
 
