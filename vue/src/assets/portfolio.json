@@ -1,5 +1,32 @@
 [
     {
+        "name": "Etkaline",
+        "description": "Etkaline is a well known shop in Iran and they were looking for a solution to sell their products online",
+        "url": "etkaline",
+        "image": "/images/portfolio/etkaline-thumb.jpg",
+        "imageAlt": "Etkaline website by Saman Rashidi",
+        "secondBG": true,
+        "pageBanner": "/images/portfolio/etkaline/banner.jpg",
+        "pageItems": [
+            {
+                "type": "Desktop",
+                "image": "/images/portfolio/etkaline/desktop.png",
+                "description": "Etkaline is a well known shop in Iran and they were looking for a solution to sell their products online"
+                },
+            {
+                "type": "Tablet",
+                "image": "/images/portfolio/etkaline/tablet.png",
+                "description": "Better UI and UX give them advantage to make a user friendly area for their customers"
+            },
+            {
+                "type": "Mobile",
+                "image": "/images/portfolio/etkaline/mobile.png",
+                "description":"Etkaline website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
+            }
+        ],
+        "siteUrl": "http://www.etkaline.ir"
+    },
+    {
         "name": "Dripology",
         "description": "Dripology is the premium medical IV solution service serving the Los Angeles area. Utilizing custom protocols with recommendations by The American Academy of Anti-Aging Medicine, their treatment are tailored to provide clients with a boost in all facets of life.",
         "url": "dripology",
@@ -21,7 +48,7 @@
             {
                 "type": "Mobile",
                 "image": "/images/portfolio/dripology/mobile.png",
-                "description":"Their website is new tech one page design and suitable for all devices such as Tablet, Mobile and ..."
+                "description":"Dripology website is new tech one page design and suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
         "siteUrl": "http://www.dripologyla.com"
@@ -210,7 +237,7 @@
                 "description":"Gaboja website is not built in responsive version but it will be shown great in all devices but you need to zoom-in sometimes!"
             }
         ],
-        "siteUrl": "http://www.gaboja.com"
+        "siteUrl": "http://www.samanira.com/projects/gaboja"
     },
     {
         "name": "Farnaz Yavarianfar",

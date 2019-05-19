@@ -65,6 +65,15 @@
 </template>
 
 <script>
+
+$(document).ready(function(){
+    $('.contact-form input:not([type="checkbox"]), .contact-form textarea').on('keyup', function(){
+        if($(this).val().length > 0){
+            $(this).addClass('active');
+        }
+    })
+});
+
 var axios = require('axios');
 
 export default {
