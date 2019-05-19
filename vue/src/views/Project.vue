@@ -26,8 +26,8 @@
                 </div>
 
                 <div class="button-holder center-aligned">
-                    <a itemprop="url" class="bttn has-icon web-icon" :href="portfolio.siteUrl" target="_blank">Open This Project in Web</a>
-                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">Back to Homepage</a>
+                    <a itemprop="url" class="bttn has-icon web-icon" :href="portfolio.siteUrl" target="_blank">Open this project in web</a>
+                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">Back to homepage</a>
                 </div>
 
                 <div class="button-holder center-aligned has-arrow-button">

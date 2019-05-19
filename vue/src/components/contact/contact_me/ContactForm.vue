@@ -1,7 +1,7 @@
 <template>
     <div class="reveal">
         <h3 class="inner-title form-icon">Contact Form</h3>
-        <form action="mail.php" method="POST" accept-charset="utf-8" class="contact-form">
+        <form action="#" method="POST" accept-charset="utf-8" class="contact-form">
             <div class="thank-you has-slime-2" :class="{'active' : formSubmit}">
                 <div class="thank-you-box">
                     <div class="thank-you-inner-box">
@@ -92,14 +92,15 @@ export default {
     },
     methods:{
         nextStep() {
+            var vm = this;
             this.$validator.validateAll().then((result) => {
             if (result) {
                 this.formSubmit = true;
                 const options = {
                     method: 'POST',
                     headers: { 'content-type': 'application/form-data' },
-                    data: this.contact,
-                    url: 'mail.php',
+                    data: vm.contact,
+                    url: '/mail.php',
                 };
                 axios(options).then(function (response) {
                     console.log(response);
