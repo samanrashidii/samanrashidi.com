@@ -28,34 +28,34 @@ export default {
       statistics: [
         {
           name: 'Lines of Codes',
-          image: 'images/code.png',
+          image: '/images/code.png',
           statData: 568377,
         },
         {
           name: 'Cups of Coffee',
-          image: 'images/coffee.png',
+          image: '/images/coffee.png',
           statData: 3524,
         },
         {
           name: 'Successful Projects',
-          image: 'images/project.png',
+          image: '/images/project.png',
           statData: 63,
         },
         {
           name: 'HTML 5',
-          image: 'images/html.png',
+          image: '/images/html.png',
           statData: 99,
           percentage: true,
         },
         {
           name: 'CSS 3',
-          image: 'images/css.png',
+          image: '/images/css.png',
           statData: 99,
           percentage: true,
         },
         {
           name: 'Vanilla Javascript - jQuery - Vuejs',
-          image: 'images/javascript.png',
+          image: '/images/javascript.png',
           statData: 70,
           percentage: true,
         },

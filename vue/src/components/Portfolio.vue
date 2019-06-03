@@ -15,7 +15,7 @@
                                 <div class="portfolio-layer-content">
                                     <h4>{{portfolio.name}}</h4>
                                     <p>{{portfolio.description}}</p>
-                                    <router-link class="bttn has-icon read-more" :to="{name: 'portfolio', params: {id : portfolio.url}}">Read More About This Project</router-link>
+                                    <router-link class="bttn has-icon read-more" :to="{name: 'portfolio', params: {id : portfolio.url}}">Read more about this project</router-link>
                                 </div>
                             </div>
                         </div>
