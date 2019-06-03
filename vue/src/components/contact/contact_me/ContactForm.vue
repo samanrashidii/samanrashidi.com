@@ -13,7 +13,7 @@
             </div>
             <div class="field-wrapper">
                 <span class="input input--kozakura">
-                    <input type="text" class="input__field input__field--kozakura" v-validate="'required|min:3'" id="full_name" name="full_name" v-model="contact.fullName" />
+                    <input type="text" class="input__field input__field--kozakura" v-validate="'required|min:3'" :class="{'active': addActive(contact.fullName)}" id="full_name" name="full_name" v-model="contact.fullName" />
                     <label class="input__label input__label--kozakura" for="full_name">
                         <span class="input__label-content input__label-content--kozakura" data-content="Full Name">Full Name</span>
                     </label>
@@ -22,7 +22,7 @@
                     </svg>
                 </span>
                 <span class="input input--kozakura">
-                    <input type="email" class="input__field input__field--kozakura" v-validate="'required|email'" id="email_address" name="email_address" v-model="contact.emailAddress" />
+                    <input type="email" class="input__field input__field--kozakura" v-validate="'required|email'" :class="{'active': addActive(contact.emailAddress)}" id="email_address" name="email_address" v-model="contact.emailAddress" />
                     <label class="input__label input__label--kozakura" for="email_address">
                         <span class="input__label-content input__label-content--kozakura" data-content="Email Address">Email Address</span>
                     </label>
@@ -31,7 +31,7 @@
                     </svg>
                 </span>
                 <span class="input input--kozakura">
-                    <input type="tel" class="input__field input__field--kozakura" v-validate="'required|decimal|min:11|max:13'" id="mobile_number" name="mobile_number" v-model="contact.mobileNumber" />
+                    <input type="tel" class="input__field input__field--kozakura" v-validate="'required|decimal|min:11|max:13'" :class="{'active': addActive(contact.mobileNumber)}" id="mobile_number" name="mobile_number" v-model="contact.mobileNumber" />
                     <label class="input__label input__label--kozakura" for="mobile_number">
                         <span class="input__label-content input__label-content--kozakura" data-content="Mobile Number">Mobile Number</span>
                     </label>
@@ -40,7 +40,7 @@
                     </svg>
                 </span>
                 <span class="input input--kozakura">
-                    <input type="text" class="input__field input__field--kozakura" v-validate="'required|min:3'" id="subject" name="subject" v-model="contact.subject" />
+                    <input type="text" class="input__field input__field--kozakura" v-validate="'required|min:3'" :class="{'active': addActive(contact.subject)}" id="subject" name="subject" v-model="contact.subject" />
                     <label class="input__label input__label--kozakura" for="subject">
                         <span class="input__label-content input__label-content--kozakura" data-content="Message Subject">Message Subject</span>
                     </label>
@@ -56,7 +56,7 @@
                 </span>
             </div>
             <div class="message">
-                <textarea name="message" v-validate="'required|min:20'" placeholder="Type your message for me &hellip;" v-model="contact.message"></textarea>
+                <textarea name="message" v-validate="'required|min:20'" :class="{'active': addActive(contact.message)}" placeholder="Type your message for me ..." v-model="contact.message"></textarea>
             </div>
             <input type="text" name="samanira_secure" class="samanira_secure" />
             <input type="submit" value="Send your message to me" @click.prevent="nextStep">
@@ -65,14 +65,6 @@
 </template>
 
 <script>
-
-$(document).ready(function(){
-    $('.contact-form input:not([type="checkbox"]), .contact-form textarea').on('keyup', function(){
-        if($(this).val().length > 0){
-            $(this).addClass('active');
-        }
-    })
-});
 
 var axios = require('axios');
 
@@ -110,6 +102,13 @@ export default {
                 return;
             }
         });
+        },
+        addActive(value){
+            if(value.length > 0){
+                return true
+            } else{
+                return false
+            }
         }
     }
 };

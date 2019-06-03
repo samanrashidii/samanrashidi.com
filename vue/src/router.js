@@ -1,8 +1,23 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Index from './views/Index.vue';
-import NotFound from './views/NotFound.vue';
-import Project from './views/Project.vue';
+
+const Index = resolve => {
+  require.ensure(['./views/Index.vue'], ()=>{
+    resolve(require('./views/Index.vue'));
+  });
+};
+
+const NotFound = resolve => {
+  require.ensure(['./views/NotFound.vue'], ()=>{
+    resolve(require('./views/NotFound.vue'));
+  });
+};
+
+const Project = resolve => {
+  require.ensure(['./views/Project.vue'], ()=>{
+    resolve(require('./views/Project.vue'));
+  });
+};
 
 Vue.use(Router);
 
@@ -32,10 +47,11 @@ export default new Router({
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
-       console.log(to.hash)
-        return {selector: to.hash}
-    } else {
-        return { x: 0, y: 0 }
+      console.log(to.hash);
+        return {
+          selector: to.hash
+        }
     }
+    return { x: 0, y: 0 }
   },
 });

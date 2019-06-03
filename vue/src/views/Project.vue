@@ -93,8 +93,8 @@ export default {
     this.checkURL();
   },
   methods: {
-      goToLink(linkName){
-        this.$router.push(linkName)
+      goToLink(linkData){
+        this.$router.push(linkData)
       },
       getPnData(pndata, pnID){
         this.pnData = pndata;
