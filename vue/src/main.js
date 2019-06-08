@@ -3,7 +3,6 @@ import App from './App.vue';
 import router from './router';
 import Meta from 'vue-meta';
 import VeeValidate from 'vee-validate';
-import {store} from './store/store.js'
 
 Vue.config.productionTip = false;
 Vue.use(Meta);
@@ -23,7 +22,6 @@ router.beforeEach((to, from, next)=> {
 });
 
 new Vue({
-  store,
   router,
   render: h => h(App),
 }).$mount('#app');
