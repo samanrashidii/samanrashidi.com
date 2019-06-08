@@ -1,20 +1,19 @@
 <template>
   <div class="portfolio-page">
-    <template v-for="(portfolio, index) in portfolios">
-      <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website" v-if="portfolio.url == $route.params.id"  :key="index">
-        {{ getPnData(portfolio.name, portfolio.url) }}
-        <div class="potfolio-banner" :style="{backgroundImage : 'url(' + portfolio.pageBanner + ')'}">
-            <h1><div itemprop="name">{{portfolio.name}}</div><span>by <strong itemprop="author">{{store.webAuthorFullName}}</strong></span></h1>
+    <template>
+      <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website">
+        <div class="potfolio-banner" :style="{backgroundImage : 'url(' + pn.pageBanner + ')'}">
+            <h1><div itemprop="name">{{pn.name}}</div><span>by <strong itemprop="author">{{store.webAuthorFullName}}</strong></span></h1>
             <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('#footer').animatescroll({scrollSpeed:4800,easing:'easeInSine'})"></a>
         </div>
         <div class="portfolio-content has-shape shape-4 has-slime-2">
             <div class="frame">
-                <div class="content-box-wrapper" v-for="(content, index) in portfolio.pageItems" :key="index">
+                <div class="content-box-wrapper" v-for="(content, index) in pn.pageItems" :key="index">
                   <div class="divider" v-if="index == 1"></div> 
                   <div class="reveal">
                       <div class="content-box" :class="{'tablet': index == 1, 'mobile': index == 2}">
                           <div class="content-image">
-                              <img itemprop="image" :src="content.image" :alt="portfolio.name +' '+ content.type + ' version website'" />
+                              <img itemprop="image" :src="content.image" :alt="pn.name +' '+ content.type + ' version website'" />
                           </div>
                           <div class="content-text">
                               <h6 itemprop="description"><span class="site-color">"</span> {{content.description}} <span class="site-color">"</span></h6>
@@ -26,7 +25,7 @@
                 </div>
 
                 <div class="button-holder center-aligned">
-                    <a itemprop="url" class="bttn has-icon web-icon" :href="portfolio.siteUrl" target="_blank">Open this project in web</a>
+                    <a itemprop="url" class="bttn has-icon web-icon" :href="pn.siteUrl" target="_blank">Open this project in web</a>
                     <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">Back to homepage</a>
                 </div>
 
@@ -49,9 +48,7 @@ export default {
   name: 'Project',
   data() {
     return {
-      portfolios: PortfolioItems,
-      pnData : '',
-      pnID : '',
+      pn : {},
       pageID : this.$route.params.id
     }
   },
@@ -60,19 +57,19 @@ export default {
   },
   metaInfo() {
     return {
-      title : `Saman Rashidi ~ Portfolio ~ ${this.pnData}`,
+      title : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`,
       meta: [
         {
           name : 'description',
-          content : `I'm a senior Front-end developer and ${this.pnData} website is one of my projects`
+          content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
         },
         {
           name : 'og:title',
-          content : `Saman Rashidi ~ Portfolio ~ ${this.pnData}`
+          content : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`
         },
         {
           name : 'og:description',
-          content : `I'm a senior Front-end developer and ${this.pnData} website is one of my projects`
+          content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
         },
         {
           name : 'og:url',
@@ -87,24 +84,21 @@ export default {
     }
   },
   mounted(){
+    this.pn = PortfolioItems.find(item => item.url == this.$route.params.id)
     this.checkURL();
   },
   updated(){
     this.checkURL();
   },
   methods: {
-      goToLink(linkData){
-        this.$router.push(linkData)
-      },
-      getPnData(pndata, pnID){
-        this.pnData = pndata;
-        this.pnID = pnID;
-      },
-      checkURL(){
-        if(this.$route.params.id !== this.pnID){
-          this.$router.push({name:'not-found'});
-        }
+    goToLink(linkData){
+      this.$router.push(linkData)
+    },
+    checkURL(){
+      if(this.$route.params.id !== this.pn.url){
+        this.$router.push({name:'not-found'});
       }
+    }
   }
 };
 </script>
