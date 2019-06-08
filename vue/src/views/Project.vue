@@ -84,7 +84,11 @@ export default {
     }
   },
   mounted(){
-    this.pn = PortfolioItems.find(item => item.url == this.$route.params.id)
+    if(this.getJsonData() === undefined){
+      this.$router.push({name:'not-found'});
+    } else{
+      this.pn = PortfolioItems.find(item => item.url == this.$route.params.id);
+    }
     this.checkURL();
   },
   updated(){
@@ -98,6 +102,9 @@ export default {
       if(this.$route.params.id !== this.pn.url){
         this.$router.push({name:'not-found'});
       }
+    },
+    getJsonData(){
+      return PortfolioItems.find(item => item.url == this.$route.params.id);
     }
   }
 };
