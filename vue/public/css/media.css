@@ -1,4 +1,12 @@
-						/*            1700px Screen         */
+/*            1800px Screen         */
+
+@media only screen and (min-width:1800px){
+
+	.has-shape::before{background-size: cover !important;}
+
+}
+
+/*            1700px Screen         */
 
 @media only screen and (max-width:1700px){
 

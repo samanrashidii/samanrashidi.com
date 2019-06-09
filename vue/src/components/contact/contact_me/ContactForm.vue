@@ -1,6 +1,6 @@
 <template>
     <div class="reveal">
-        <h3 class="inner-title form-icon">Contact Form</h3>
+        <h3 class="inner-title form-icon">{{sectionTitle}}</h3>
         <form action="#" method="POST" accept-charset="utf-8" class="contact-form">
             <div class="thank-you has-slime-2" :class="{'active' : formSubmit}">
                 <div class="thank-you-box">
@@ -71,6 +71,8 @@ var axios = require('axios');
 export default {
     data(){
         return {
+            sectionSub: 'some',
+            sectionTitle: 'Contact Form',
             contact : {
                 fullName : '',
                 emailAddress : '',
