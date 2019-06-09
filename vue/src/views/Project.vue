@@ -25,8 +25,8 @@
                 </div>
 
                 <div class="button-holder center-aligned">
-                    <a itemprop="url" class="bttn has-icon web-icon" :href="pn.siteUrl" target="_blank">Open this project in web</a>
-                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">Back to homepage</a>
+                    <a itemprop="url" class="bttn has-icon web-icon" :href="pn.siteUrl" target="_blank">{{bttnText1}}</a>
+                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">{{bttnText2}}</a>
                 </div>
 
                 <div class="button-holder center-aligned has-arrow-button">
@@ -48,6 +48,8 @@ export default {
   name: 'Project',
   data() {
     return {
+      bttnText1: `Open this project in web`,
+      bttnText2: `Back to homepage`,
       pn : {},
       pageID : this.$route.params.id
     }

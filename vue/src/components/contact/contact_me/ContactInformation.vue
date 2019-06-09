@@ -1,6 +1,6 @@
 <template>
     <div class="reveal">
-        <h3 class="inner-title information-icon">Contact Information</h3>
+        <h3 class="inner-title information-icon">{{sectionTitle}}</h3>
         <div class="contact-info">
             <ul>
                 <li><strong class="mobile-icon">Mobile Number:</strong> <a itemprop="telephone" :href="'tel:'+user.tel1"> {{user.tel1}}</a> | <a itemprop="telephone" :href="'tel:'+user.tel2"> {{user.tel2}}</a></li>
@@ -18,6 +18,7 @@
 export default {
   data() {
     return {
+      sectionTitle: 'Contact Information',
       user: {
         tel1: '+995599399705',
         tel2: '+989128996990',

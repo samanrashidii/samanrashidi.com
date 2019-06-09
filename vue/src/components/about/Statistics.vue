@@ -3,8 +3,8 @@
       <div class="frame">
         <div class="reveal">
           <div class="section-title">
-            <span>some</span>
-            <h1>Statistics</h1>
+            <span>{{sectionSub}}</span>
+            <h1>{{sectionTitle}}</h1>
           </div>
           <div class="section-content">
             <div class="stat-box-wrapper">
@@ -25,6 +25,8 @@
 export default {
   data() {
     return {
+      sectionSub: 'some',
+      sectionTitle: 'Statistics',
       statistics: [
         {
           name: 'Lines of Codes',
