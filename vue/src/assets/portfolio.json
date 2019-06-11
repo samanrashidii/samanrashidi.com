@@ -3,24 +3,24 @@
         "name": "Etkaline",
         "description": "Etkaline is a well known shop in Iran and they were looking for a solution to sell their products online",
         "url": "etkaline",
-        "image": "/images/portfolio/etkaline-thumb.jpg",
+        "image": "etkaline-thumb.jpg",
         "imageAlt": "Etkaline website by Saman Rashidi",
         "secondBG": true,
-        "pageBanner": "/images/portfolio/etkaline/banner.jpg",
+        "pageBanner": "etkaline/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/etkaline/desktop.png",
+                "image": "etkaline/desktop.png",
                 "description": "Etkaline is a well known shop in Iran and they were looking for a solution to sell their products online"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/etkaline/tablet.png",
+                "image": "etkaline/tablet.png",
                 "description": "Better UI and UX give them advantage to make a user friendly area for their customers"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/etkaline/mobile.png",
+                "image": "etkaline/mobile.png",
                 "description":"Etkaline website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -30,24 +30,24 @@
         "name": "Dripology",
         "description": "Dripology is the premium medical IV solution service serving the Los Angeles area. Utilizing custom protocols with recommendations by The American Academy of Anti-Aging Medicine, their treatment are tailored to provide clients with a boost in all facets of life.",
         "url": "dripology",
-        "image": "/images/portfolio/dripology-thumb.jpg",
+        "image": "dripology-thumb.jpg",
         "imageAlt": "Dripology website by Saman Rashidi",
         "thirdBG": true,
-        "pageBanner": "/images/portfolio/dripology/banner.jpg",
+        "pageBanner": "dripology/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/dripology/desktop.png",
+                "image": "dripology/desktop.png",
                 "description": "Dripology is the premium medical IV solution service serving the Los Angeles area"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/dripology/tablet.png",
+                "image": "dripology/tablet.png",
                 "description": "Utilizing custom protocols with recommendations by The American Academy of Anti-Aging Medicine, their treatment are tailored to provide clients with a boost in all facets of life."
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/dripology/mobile.png",
+                "image": "dripology/mobile.png",
                 "description":"Dripology website is new tech one page design and suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -57,23 +57,23 @@
         "name": "MakianJavAria",
         "description": "Makian Jav Aria Co has been established in 2014 by experienced managers in poultry industry and the company has put its priority to become responsible for the satisfaction of its customers",
         "url": "makianjavaria",
-        "image": "/images/portfolio/makianjav-thumb.jpg",
+        "image": "makianjav-thumb.jpg",
         "imageAlt": "MakianJavAria website by Saman Rashidi",
-        "pageBanner": "/images/portfolio/makianjav/banner.jpg",
+        "pageBanner": "makianjav/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/makianjav/desktop.png",
+                "image": "makianjav/desktop.png",
                 "description": "Makian Jav Aria Co has been established in 2014 by experienced managers in poultry industry and the company has put its priority to become responsible for the satisfaction of its customers"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/makianjav/tablet.png",
+                "image": "makianjav/tablet.png",
                 "description": "Makian Jav Aria Website has been built in modren design style with a vertical slider"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/makianjav/mobile.png",
+                "image": "makianjav/mobile.png",
                 "description":"Makian Jav Aria website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -83,24 +83,24 @@
         "name": "Flexpass",
         "description": "Flexpass curated an elite list of fitness classes in Manila and Asia. Empowering you with an unlimited variety of classes from Yoga to Kickboxing, Spinning to Dance, CrossFit to Pilates.",
         "url": "flexpass",
-        "image": "/images/portfolio/flexpass-thumb.jpg",
+        "image": "flexpass-thumb.jpg",
         "imageAlt": "Flexpass website by Saman Rashidi",
         "secondBg": true,
-        "pageBanner": "/images/portfolio/flexpass/banner.jpg",
+        "pageBanner": "flexpass/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/flexpass/desktop.png",
+                "image": "flexpass/desktop.png",
                 "description": "Flexpass curated an elite list of fitness classes in Manila and Asia. Empowering you with an unlimited variety of classes from Yoga to Kickboxing, Spinning to Dance, CrossFit to Pilates"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/flexpass/tablet.png",
+                "image": "flexpass/tablet.png",
                 "description": "Flexpass is a new way to sweat everyday!"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/flexpass/mobile.png",
+                "image": "flexpass/mobile.png",
                 "description":"Flexpass website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -110,24 +110,24 @@
         "name": "Esmamkoo",
         "description": "You can order this book online by typing the name and gender of your sweetheart baby and get the printed version of the book at home",
         "url": "esmamkoo",
-        "image": "/images/portfolio/esmamkoo-thumb.jpg",
+        "image": "esmamkoo-thumb.jpg",
         "imageAlt": "Esmamkoo website by Saman Rashidi",
         "thirdBG": true,
-        "pageBanner": "/images/portfolio/esmamkoo/banner.jpg",
+        "pageBanner": "esmamkoo/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/esmamkoo/desktop.png",
+                "image": "esmamkoo/desktop.png",
                 "description": "You can order this book online by typing the name and gender of your sweetheart baby and get the printed version of the book at home"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/esmamkoo/tablet.png",
+                "image": "esmamkoo/tablet.png",
                 "description": "Simple, Beautiful and Perfect. Kids are going to love it"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/esmamkoo/mobile.png",
+                "image": "esmamkoo/mobile.png",
                 "description":"Esmamkoo website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -137,23 +137,23 @@
         "name": "Zafar Optic Store",
         "description": "Zafar Optic as one of the core and leading companies in eyewear and optics business in Iran with a main shop and over 60 retail stores. Zafar Optic or Tehran Optic was established by Naser Yavarianfar in 1952",
         "url": "zafaroptic-store",
-        "image": "/images/portfolio/zafaroptic-store-thumb.jpg",
+        "image": "zafaroptic-store-thumb.jpg",
         "imageAlt": "Zafar Optic Store website by Saman Rashidi",
-        "pageBanner": "/images/portfolio/zafaroptic-store/banner.jpg",
+        "pageBanner": "zafaroptic-store/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/zafaroptic-store/desktop.png",
+                "image": "zafaroptic-store/desktop.png",
                 "description": "Zafar Optic as one of the core and leading companies in eyewear and optics business in Iran with a main shop and over 60 retail stores"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/zafaroptic-store/tablet.png",
+                "image": "zafaroptic-store/tablet.png",
                 "description": "Zafar Optic or Tehran Optic was established by Naser Yavarianfar in 1952"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/zafaroptic-store/mobile.png",
+                "image": "zafaroptic-store/mobile.png",
                 "description":"Zafaroptic store website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -163,24 +163,24 @@
         "name": "The Body Challenge v2.0",
         "description": "The Body Challenge is for anyone and everyone! It doesn't matter how 'Out' of shape or 'In' shape you are, the Transformation will be SHOCKING! Whether you want to lose fat, gain muscle, trim down or tone up, THE BODY CHALLENGE is for you!!!",
         "url": "the-body-challenge-2",
-        "image": "/images/portfolio/thebodychallenge2-thumb.jpg",
+        "image": "thebodychallenge2-thumb.jpg",
         "imageAlt": "The Body Challenge v2.0 website by Saman Rashidi",
         "secondBg": true,
-        "pageBanner": "/images/portfolio/the-body-challenge-2/banner.jpg",
+        "pageBanner": "the-body-challenge-2/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/the-body-challenge-2/desktop.png",
+                "image": "the-body-challenge-2/desktop.png",
                 "description": "It doesn't matter how 'Out' of shape or 'In' shape you are, the Transformation will be shocking!"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/the-body-challenge-2/tablet.png",
+                "image": "the-body-challenge-2/tablet.png",
                 "description": "Whether you want to lose fat, gain muscle, trim down or tone up, THE BODY CHALLENGE is for you"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/the-body-challenge-2/mobile.png",
+                "image": "the-body-challenge-2/mobile.png",
                 "description":"The Body Challenge v2.0 built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -190,24 +190,24 @@
         "name": "TowerPal",
         "description": "Keeping you informed on what is going on in and around your building",
         "url": "towerpal",
-        "image": "/images/portfolio/towerpal-thumb.jpg",
+        "image": "towerpal-thumb.jpg",
         "imageAlt": "TowerPal website by Saman Rashidi",
         "thirdBG": true,
-        "pageBanner": "/images/portfolio/towerpal/banner.jpg",
+        "pageBanner": "towerpal/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/towerpal/desktop.png",
+                "image": "towerpal/desktop.png",
                 "description": "Keeping you informed on what is going on in and around your building"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/towerpal/tablet.png",
+                "image": "towerpal/tablet.png",
                 "description": "Amazing design and development make this website unique and special"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/towerpal/mobile.png",
+                "image": "towerpal/mobile.png",
                 "description":"This website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -217,23 +217,23 @@
         "name": "Gaboja",
         "description": "Gaboja is an unique searching website that use google API and provide some nice features for the users",
         "url": "gaboja",
-        "image": "/images/portfolio/gaboja-thumb.jpg",
+        "image": "gaboja-thumb.jpg",
         "imageAlt": "Gaboja website by Saman Rashidi",
-        "pageBanner": "/images/portfolio/gaboja/banner.jpg",
+        "pageBanner": "gaboja/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/gaboja/desktop.png",
+                "image": "gaboja/desktop.png",
                 "description": "Gaboja provides nice features such as favorites websites, games, movies and ..."
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/gaboja/tablet.png",
+                "image": "gaboja/tablet.png",
                 "description": "Amazing design and development make this website unique and special"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/gaboja/mobile.png",
+                "image": "gaboja/mobile.png",
                 "description":"Gaboja website is not built in responsive version but it will be shown great in all devices but you need to zoom-in sometimes!"
             }
         ],
@@ -243,24 +243,24 @@
         "name": "Farnaz Yavarianfar",
         "description": "Farnaz Yavarianfar is a professional painter and graduated in Philosophy and Literature from Italy in 2007",
         "url": "farnaz-yavarianfar",
-        "image": "/images/portfolio/farnazyavarianfar-thumb.jpg",
+        "image": "farnazyavarianfar-thumb.jpg",
         "imageAlt": "Farnaz Yavarianfar website by Saman Rashidi",
         "secondBg": true,
-        "pageBanner": "/images/portfolio/farnaz-yavarianfar/banner.jpg",
+        "pageBanner": "farnaz-yavarianfar/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/farnaz-yavarianfar/desktop.png",
+                "image": "farnaz-yavarianfar/desktop.png",
                 "description": "Farnaz Yavarianfar is a professional painter and graduated in Philosophy and Literature from Italy in 2007"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/farnaz-yavarianfar/tablet.png",
+                "image": "farnaz-yavarianfar/tablet.png",
                 "description": "She has been learning painting under guidance of Master Taha Behbahani in school of Surrealism Metaphysic since 2009"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/farnaz-yavarianfar/mobile.png",
+                "image": "farnaz-yavarianfar/mobile.png",
                 "description":"Farnaz Yavarianfar's website is not built in responsive version but it will be shown great in all devices but you need to zoom-in sometimes!"
             }
         ],
@@ -270,24 +270,24 @@
         "name": "Edoramedia v5.0",
         "description": "Edoramedia website got transformed into an awesome website in v5.0",
         "url": "edoramedia-5",
-        "image": "/images/portfolio/edoramedia5-thumb.jpg",
+        "image": "edoramedia5-thumb.jpg",
         "imageAlt": "Edoramedia v5.0 website by Saman Rashidi",
         "thirdBG": true,
-        "pageBanner": "/images/portfolio/edoramedia5/banner.jpg",
+        "pageBanner": "edoramedia5/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/edoramedia5/desktop.png",
+                "image": "edoramedia5/desktop.png",
                 "description": "Edoramedia website got transformed into an awesome website in version 5.0"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/edoramedia5/tablet.png",
+                "image": "edoramedia5/tablet.png",
                 "description": "We have used the best and latest technologies in design and development"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/edoramedia5/mobile.png",
+                "image": "edoramedia5/mobile.png",
                 "description":"Edoramdia website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -297,23 +297,23 @@
         "name": "Benita v3.0",
         "description": "Benita decided to imporove their website in both design and development because of their positive feedbacks",
         "url": "benita-3",
-        "image": "/images/portfolio/benita3-thumb.jpg",
+        "image": "benita3-thumb.jpg",
         "imageAlt": "Benita v3.0 website by Saman Rashidi",
-        "pageBanner": "/images/portfolio/benita3/banner.jpg",
+        "pageBanner": "benita3/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/benita3/desktop.png",
+                "image": "benita3/desktop.png",
                 "description": "Benita decided to imporove their website in both design and development because of their positive feedbacks"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/benita3/tablet.png",
+                "image": "benita3/tablet.png",
                 "description": "Lots of pages and options added to the 3rd version of Benita"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/benita3/mobile.png",
+                "image": "benita3/mobile.png",
                 "description":"Benita got transformed in may 2017 and it got divided into Benita and Benidana sites"
             }
         ],
@@ -323,24 +323,24 @@
         "name": "Petrokabir Co.",
         "description": "Petro Sanat Kabir (PSK), was established in response to a rising demand for numerous services in oil, gas and petrochemical industries. Our talented people with the supervision of our experienced managers assist us to drive our business forward.",
         "url": "petrokabir",
-        "image": "/images/portfolio/petrokabir-thumb.jpg",
+        "image": "petrokabir-thumb.jpg",
         "imageAlt": "Petrokabir website by Saman Rashidi",
         "secondBg": true,
-        "pageBanner": "/images/portfolio/petrokabir/banner.jpg",
+        "pageBanner": "petrokabir/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/petrokabir/desktop.png",
+                "image": "petrokabir/desktop.png",
                 "description": "Petro Sanat Kabir (PSK), was established in response to a rising demand for numerous services in oil, gas and petrochemical industries"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/petrokabir/tablet.png",
+                "image": "petrokabir/tablet.png",
                 "description": "The majority of their abilities include provide commodities, spare parts and relevant chemical materials"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/petrokabir/mobile.png",
+                "image": "petrokabir/mobile.png",
                 "description":"Petrokabir website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -350,24 +350,24 @@
         "name": "Branford Training",
         "description": "Jordan’s experience over the last 15 years transcends all age categories and fitness levels.From training toddlers to tumble, to Plyometric training with World Class track athletes, to helping the elderly rehabilitate after hip surgery.",
         "url": "branford",
-        "image": "/images/portfolio/branford-thumb.jpg",
+        "image": "branford-thumb.jpg",
         "imageAlt": "Branford Training website by Saman Rashidi",
         "thirdBG": true,
-        "pageBanner": "/images/portfolio/branford/banner.jpg",
+        "pageBanner": "branford/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/branford/desktop.png",
+                "image": "branford/desktop.png",
                 "description": "Jordan’s experience over the last 15 years transcends all age categories and fitness levels"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/branford/tablet.png",
+                "image": "branford/tablet.png",
                 "description": "From training toddlers to tumble, to Plyometric training with World Class track athletes, to helping the elderly rehabilitate after hip surgery"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/branford/mobile.png",
+                "image": "branford/mobile.png",
                 "description":"Jordan Branford website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -377,23 +377,23 @@
         "name": "Virtuleap",
         "description": "They believe in empowering youth and indie teams and our platform here is an expression of that. They want you to be the vanguard of deciding how emergent, immersive, technology like virtual reality takes shape.",
         "url": "virtuleap",
-        "image": "/images/portfolio/virtuleap-thumb.jpg",
+        "image": "virtuleap-thumb.jpg",
         "imageAlt": "Virtuleap website by Saman Rashidi",
-        "pageBanner": "/images/portfolio/virtuleap/banner.jpg",
+        "pageBanner": "virtuleap/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/virtuleap/desktop.png",
+                "image": "virtuleap/desktop.png",
                 "description": "They believe in empowering youth and indie teams and our platform here is an expression of that"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/virtuleap/tablet.png",
+                "image": "virtuleap/tablet.png",
                 "description": "They want you to be the vanguard of deciding how emergent, immersive, technology like virtual reality takes shape"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/virtuleap/mobile.png",
+                "image": "virtuleap/mobile.png",
                 "description":"Virtuleap website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -403,24 +403,24 @@
         "name": "Battle Royale",
         "description": "Battle Royale began its activities through the @Broyale telegram channel. On this website you can find the latest information of Clash Royale. The main goal of Battle Royale is planning events that you and your friends can battle together.",
         "url": "battle-royale",
-        "image": "/images/portfolio/broyale-thumb.jpg",
+        "image": "broyale-thumb.jpg",
         "imageAlt": "Battle Royale website by Saman Rashidi",
         "secondBg": true,
-        "pageBanner": "/images/portfolio/broyale/banner.jpg",
+        "pageBanner": "broyale/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/broyale/desktop.png",
+                "image": "broyale/desktop.png",
                 "description": "Battle Royale began its activities through the @Broyale telegram channel. On this website you can find the latest information of Clash Royale"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/broyale/tablet.png",
+                "image": "broyale/tablet.png",
                 "description": "The main goal of Battle Royale is planning events that you and your friends can battle together"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/broyale/mobile.png",
+                "image": "broyale/mobile.png",
                 "description":"Battle Royale website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -430,24 +430,24 @@
         "name": "Benita v1.0 & v2.0",
         "description": "Benita portal provides the latest news in fashion, beauty and lifestyle tips designed. The Web site also provides a forum for women to be able to negotiate freely about their daily problems. Benita was opened in 2016 and aims to provide quality articles in Farsi and become the reference website on the everyday issues of women",
         "url": "benita",
-        "image": "/images/portfolio/benita-thumb.jpg",
+        "image": "benita-thumb.jpg",
         "imageAlt": "Benita v1.0 & v2.0 website by Saman Rashidi",
         "thirdBG": true,
-        "pageBanner": "/images/portfolio/benita/banner.jpg",
+        "pageBanner": "benita/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/benita/desktop.png",
+                "image": "benita/desktop.png",
                 "description": "Benita portal provides the latest news in fashion, beauty and lifestyle tips designed"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/benita/tablet.png",
+                "image": "benita/tablet.png",
                 "description": "The Web site also provides a forum for women to be able to negotiate freely about their daily problems"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/benita/mobile.png",
+                "image": "benita/mobile.png",
                 "description":"Benita was opened in 2016 and aims to provide quality articles in Farsi and become the reference website on the everyday issues of women"
             }
         ],
@@ -457,23 +457,23 @@
         "name": "Primal MD",
         "description": "Primal MD has the most complete evidence based Age Management model to date and is best suited to face our current healthcare challenge. Currently, lifestyle-acquired disease is the national epidemic despite more and more expensive drugs, increasingly sophisticated medical technology and our economic wealth.",
         "url": "primalmd",
-        "image": "/images/portfolio/primalmd-thumb.jpg",
+        "image": "primalmd-thumb.jpg",
         "imageAlt": "Primal MD website by Saman Rashidi",
-        "pageBanner": "/images/portfolio/primalmd/banner.jpg",
+        "pageBanner": "primalmd/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/primalmd/desktop.png",
+                "image": "primalmd/desktop.png",
                 "description": "Primal MD has the most complete evidence based Age Management model to date and is best suited to face our current healthcare challenge"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/primalmd/tablet.png",
+                "image": "primalmd/tablet.png",
                 "description": "Currently, lifestyle-acquired disease is the national epidemic despite more and more expensive drugs"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/primalmd/mobile.png",
+                "image": "primalmd/mobile.png",
                 "description":"Primal MD website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -483,24 +483,24 @@
         "name": "Sheo Sports",
         "description": "The mission of SHEO is to develop the sport industry in the UAE. Their goal is to raise the level of the players, master their game and teach them how to compete at their best level.",
         "url": "sheo-sports",
-        "image": "/images/portfolio/sheo-thumb.jpg",
+        "image": "sheo-thumb.jpg",
         "imageAlt": "Sheo Sport website by Saman Rashidi",
         "secondBg": true,
-        "pageBanner": "/images/portfolio/sheo-sports/banner.jpg",
+        "pageBanner": "sheo-sports/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/sheo-sports/desktop.png",
+                "image": "sheo-sports/desktop.png",
                 "description": "The mission of SHEO is to develop the sport industry in the UAE"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/sheo-sports/tablet.png",
+                "image": "sheo-sports/tablet.png",
                 "description": "Their goal is to raise the level of the players, master their game and teach them how to compete at their best level"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/sheo-sports/mobile.png",
+                "image": "sheo-sports/mobile.png",
                 "description":"Sheo Sport website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -510,24 +510,24 @@
         "name": "Magnihelp",
         "description": "Magnihelp is the only customer service platform on the Internet with real time audio support. Magnihelp is enables your business to engage with potential customers, ensuring that your customers get the attention they need.",
         "url": "magnihelp",
-        "image": "/images/portfolio/magnihelp-thumb.jpg",
+        "image": "magnihelp-thumb.jpg",
         "imageAlt": "Magnihelp website by Saman Rashidi",
         "thirdBG": true,
-        "pageBanner": "/images/portfolio/magnihelp/banner.jpg",
+        "pageBanner": "magnihelp/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/magnihelp/desktop.png",
+                "image": "magnihelp/desktop.png",
                 "description": "Magnihelp is the only customer service platform on the Internet with real time audio support"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/magnihelp/tablet.png",
+                "image": "magnihelp/tablet.png",
                 "description": "Magnihelp is enables your business to engage with potential customers, ensuring that your customers get the attention they need"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/magnihelp/mobile.png",
+                "image": "magnihelp/mobile.png",
                 "description":"Magnihelp website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -537,23 +537,23 @@
         "name": "Posh Vault",
         "description": "Get Credit today and start saving money on all the luxury things in life... Posh Vault will help you do it",
         "url": "poshvault",
-        "image": "/images/portfolio/poshvault-thumb.jpg",
+        "image": "poshvault-thumb.jpg",
         "imageAlt": "Posh Vault website by Saman Rashidi",
-        "pageBanner": "/images/portfolio/poshvault/banner.jpg",
+        "pageBanner": "poshvault/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/poshvault/desktop.png",
+                "image": "poshvault/desktop.png",
                 "description": "Get Credit today and start saving money on all the luxury things in life... Posh Vault will help you do it"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/poshvault/tablet.png",
+                "image": "poshvault/tablet.png",
                 "description": "Posh Vault built a game-based shop that you buy coins and use them to bid on luxury items"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/poshvault/mobile.png",
+                "image": "poshvault/mobile.png",
                 "description":"Posh Vault website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -563,24 +563,24 @@
         "name": "Emirates American Football League",
         "description": "Channeling all the noise, energy, and excitement of America’s most popular sport, They are unifying the many distinct communities of the UAE to create a diverse team of players who share a love for American football.",
         "url": "eafl",
-        "image": "/images/portfolio/eafl-thumb.jpg",
+        "image": "eafl-thumb.jpg",
         "imageAlt": "Emirates American Football League website by Saman Rashidi",
         "secondBg": true,
-        "pageBanner": "/images/portfolio/eafl/banner.jpg",
+        "pageBanner": "eafl/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/eafl/desktop.png",
+                "image": "eafl/desktop.png",
                 "description": "Channeling all the noise, energy, and excitement of America’s most popular sport"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/eafl/tablet.png",
+                "image": "eafl/tablet.png",
                 "description": "They are unifying the many distinct communities of the UAE to create a diverse team of players who share a love for American football"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/eafl/mobile.png",
+                "image": "eafl/mobile.png",
                 "description":"EAFL website is not built in responsive version but it will be shown great in all devices but you need to zoom-in sometimes!"
             }
         ],
@@ -590,24 +590,24 @@
         "name": "Line Info",
         "description": "Line application is available in 68 countries around the world as the best software and social media communication. Line Company aims to be the best content and latest news about celebrities in Iran to provide his Iranian guests.",
         "url": "line-info",
-        "image": "/images/portfolio/line-thumb.jpg",
+        "image": "line-thumb.jpg",
         "imageAlt": "Line Info Blog by Saman Rashidi",
         "thirdBG": true,
-        "pageBanner": "/images/portfolio/line-info/banner.jpg",
+        "pageBanner": "line-info/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/line-info/desktop.png",
+                "image": "line-info/desktop.png",
                 "description": "Line application is available in 68 countries around the world as the best software and social media communication"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/line-info/tablet.png",
+                "image": "line-info/tablet.png",
                 "description": "Line Company aims to be the best content and latest news about celebrities in Iran to provide his Iranian guests"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/line-info/mobile.png",
+                "image": "line-info/mobile.png",
                 "description":"Line Info blog built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -617,25 +617,25 @@
         "name": "TFG Interactive Map",
         "description": "The First Group’s commitment is to ensure client enjoy the effortless rewards of amazing property investments in Dubai. they have made it their duty to deliver the most innovative opportunities, focusing on the highly lucrative world of hotel investments.",
         "url": "tfg-map",
-        "image": "/images/portfolio/tfgmap-thumb.jpg",
+        "image": "tfgmap-thumb.jpg",
         "imageAlt": "The First Group Interactive Map by Saman Rashidi",
         "noBG": true,
         "halfText": true,
-        "pageBanner": "/images/portfolio/tfg-map/banner.jpg",
+        "pageBanner": "tfg-map/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/tfg-map/desktop.png",
+                "image": "tfg-map/desktop.png",
                 "description": "The First Group’s commitment is to ensure client enjoy the effortless rewards of amazing property investments in Dubai"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/tfg-map/tablet.png",
+                "image": "tfg-map/tablet.png",
                 "description": "They have made it their duty to deliver the most innovative opportunities, focusing on the highly lucrative world of hotel investments"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/tfg-map/mobile.png",
+                "image": "tfg-map/mobile.png",
                 "description":"TFG Interactive Map built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -645,24 +645,24 @@
         "name": "Zafar Optic v1.0",
         "description": "Zafar Optic as one of the core and leading companies in eyewear and optics business in Iran with a main shop and over 60 retail stores. Zafar Optic or Tehran Optic was established by Naser Yavarianfar in 1952",
         "url": "zafaroptic",
-        "image": "/images/portfolio/zafaroptic-thumb.jpg",
+        "image": "zafaroptic-thumb.jpg",
         "imageAlt": "Zafar Optic v1.0 website by Saman Rashidi",
         "secondBg": true,
-        "pageBanner": "/images/portfolio/zafaroptic/banner.jpg",
+        "pageBanner": "zafaroptic/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/zafaroptic/desktop.png",
+                "image": "zafaroptic/desktop.png",
                 "description": "Zafar Optic as one of the core and leading companies in eyewear and optics business in Iran with a main shop and over 60 retail stores"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/zafaroptic/tablet.png",
+                "image": "zafaroptic/tablet.png",
                 "description": "Zafar Optic or Tehran Optic was established by Naser Yavarianfar in 1952"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/zafaroptic/mobile.png",
+                "image": "zafaroptic/mobile.png",
                 "description":"Zafaroptic website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -672,24 +672,24 @@
         "name": "Edoramedia v3.0",
         "description": "Edoramedia is an independent digital design and development studio lucky enough to do what they love best. building amazing solutions for their customers and ensuring they perform at levels exceeding expectations.",
         "url": "edoramedia",
-        "image": "/images/portfolio/edoramedia-thumb.jpg",
+        "image": "edoramedia-thumb.jpg",
         "imageAlt": "Edoramedia v3.0 website by Saman Rashidi",
         "thirdBG": true,
-        "pageBanner": "/images/portfolio/edoramedia/banner.jpg",
+        "pageBanner": "edoramedia/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/edoramedia/desktop.png",
+                "image": "edoramedia/desktop.png",
                 "description": "Edoramedia is an independent digital design and development studio lucky enough to do what they love best"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/edoramedia/tablet.png",
+                "image": "edoramedia/tablet.png",
                 "description": "Building amazing solutions for their customers and ensuring they perform at levels exceeding expectations"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/edoramedia/mobile.png",
+                "image": "edoramedia/mobile.png",
                 "description":"Edoramdia v3.0 built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -699,23 +699,23 @@
         "name": "The Axiom Team",
         "description": "The Axiom is a Persian Heroes of the Storm Team, they are joining the battle to win the game!",
         "url": "theaxiom",
-        "image": "/images/portfolio/theaxiom-thumb.jpg",
+        "image": "theaxiom-thumb.jpg",
         "imageAlt": "The Axiom Team website by Saman Rashidi",
-        "pageBanner": "/images/portfolio/theaxiom/banner.jpg",
+        "pageBanner": "theaxiom/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/theaxiom/desktop.png",
+                "image": "theaxiom/desktop.png",
                 "description": "The Axiom is a Persian Heroes of the Storm Team, they are joining the battle to win the game"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/theaxiom/tablet.png",
+                "image": "theaxiom/tablet.png",
                 "description": "From Computers to the Battlefield"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/theaxiom/mobile.png",
+                "image": "theaxiom/mobile.png",
                 "description":"Team Axiom website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
             }
         ],
@@ -725,24 +725,24 @@
         "name": "The Body Challenge v1.0",
         "description": "The Body Challenge is for anyone and everyone! It doesn't matter how 'Out' of shape or 'In' shape you are, the Transformation will be SHOCKING! Whether you want to lose fat, gain muscle, trim down or tone up, THE BODY CHALLENGE is for you!!!",
         "url": "the-body-challenge",
-        "image": "/images/portfolio/thebodychallenge-thumb.jpg",
+        "image": "thebodychallenge-thumb.jpg",
         "imageAlt": "The Body Challenge v1.0 website by Saman Rashidi",
         "secondBg": true,
-        "pageBanner": "/images/portfolio/the-body-challenge/banner.jpg",
+        "pageBanner": "the-body-challenge/banner.jpg",
         "pageItems": [
             {
                 "type": "Desktop",
-                "image": "/images/portfolio/the-body-challenge/desktop.png",
+                "image": "the-body-challenge/desktop.png",
                 "description": "It doesn't matter how 'Out' of shape or 'In' shape you are, the Transformation will be shocking!"
                 },
             {
                 "type": "Tablet",
-                "image": "/images/portfolio/the-body-challenge/tablet.png",
+                "image": "the-body-challenge/tablet.png",
                 "description": "Whether you want to lose fat, gain muscle, trim down or tone up, THE BODY CHALLENGE is for you"
             },
             {
                 "type": "Mobile",
-                "image": "/images/portfolio/the-body-challenge/mobile.png",
+                "image": "the-body-challenge/mobile.png",
                 "description":"The Body Challenge v1.0 is not built in responsive version but it will be shown great in all devices but you need to zoom-in sometimes!"
             }
         ],

@@ -12,7 +12,7 @@
           <div class="pagination">
             <div class="pagination-content">
               <div class="pagination-item" v-for="(certificate, index) in certificates" :key="index">
-                <a :href="certificate.image" :data-lightbox="certificate.name" :data-title="certificate.title"><img :src="certificate.thumb" :alt="getAlt(index)" /></a>
+                <a :href="require(`@/assets/images/certificates/${certificate.image}`)" :data-lightbox="certificate.name" :data-title="certificate.title"><img :src="require(`@/assets/images/certificates/${certificate.thumb}`)" :alt="getAlt(index)" /></a>
               </div>
             </div>
             <div class="pagination-navigation">
@@ -49,35 +49,35 @@ export default {
         {
           name: 'certificate-1',
           title: 'CIW Design Certificate',
-          thumb: '/images/certificates/CIW-Design.jpg',
-          image: '/images/certificates/CIW-Design-B.jpg'
+          thumb: 'CIW-Design.jpg',
+          image: 'CIW-Design-B.jpg'
         },
         {
           name: 'certificate-2',
           title: 'CIW Development Certificate',
-          thumb: '/images/certificates/CIW-Development.jpg',
-          image: '/images/certificates/CIW-Development-B.jpg'
+          thumb: 'CIW-Development.jpg',
+          image: 'CIW-Development-B.jpg'
         },
         {
           name: 'certificate-3',
           title: 'CIW E-Commerce Certificate',
-          thumb: '/images/certificates/CIW-E-Commerce.jpg',
-          image: '/images/certificates/CIW-E-Commerce-B.jpg'
+          thumb: 'CIW-E-Commerce.jpg',
+          image: 'CIW-E-Commerce-B.jpg'
         },
         {
           name: 'certificate-4',
           title: 'CIW Foundations Certificate',
-          thumb: '/images/certificates/CIW-Foundations.jpg',
-          image: '/images/certificates/CIW-Foundations-B.jpg'
+          thumb: 'CIW-Foundations.jpg',
+          image: 'CIW-Foundations-B.jpg'
         },
         {
           name: 'certificate-5',
           title: 'Marketing Management Certificate',
-          thumb: '/images/certificates/MFT-Marketing.jpg',
-          image: '/images/certificates/MFT-Marketing-B.jpg'
+          thumb: 'MFT-Marketing.jpg',
+          image: 'MFT-Marketing-B.jpg'
         },
       ],
-      aboutImage: '/images/saman_rashidi.png'
+      aboutImage: require('@/assets/images/saman_rashidi.png')
     };
   },
   methods: {

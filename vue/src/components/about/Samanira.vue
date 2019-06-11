@@ -22,7 +22,7 @@ export default {
       sectionDescription: 'SamanirA is an easy HTML/CSS/JS framework for Front-end Developers who wants to quickly build a project from 0 to 100% without wasting time to define CSS classes or write some Javascript functions.',
       portfolioTitle: 'websites',
       readMore: 'Read more',
-      logo: '/images/samanira.png',
+      logo: require('@/assets/images/samanira.png'),
       logoAlt: 'Samanira Logo',
       url: 'http://www.samanira.com'
     }

@@ -32,7 +32,7 @@ export default {
         display: table;
         width: 100%;
         height: 100%;
-        background: url('~/images/page-bg.jpg') no-repeat center #000000;
+        background: url('../assets/images/page-bg.jpg') no-repeat center #000000;
         background-size: cover;
     }
 
