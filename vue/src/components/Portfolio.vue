@@ -19,7 +19,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img :src="portfolio.image" :alt="portfolio.imageAlt" />
+                        <img :src="require(`@/assets/images/portfolio/${portfolio.image}`)" :alt="portfolio.imageAlt" />
                     </li>
                 </ul>
             </div><!-- my-portfolio end -->

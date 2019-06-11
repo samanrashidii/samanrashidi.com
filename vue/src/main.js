@@ -4,6 +4,10 @@ import router from './router';
 import Meta from 'vue-meta';
 import VeeValidate from 'vee-validate';
 
+require('@/assets/css/saman.css');
+require('@/assets/css/style.css');
+require('@/assets/css/media.css');
+
 Vue.config.productionTip = false;
 Vue.use(Meta);
 Vue.use(VeeValidate, {

@@ -2,7 +2,7 @@
   <div class="portfolio-page">
     <template>
       <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website">
-        <div class="potfolio-banner" :style="{backgroundImage : 'url(' + pn.pageBanner + ')'}">
+        <div class="potfolio-banner" :style="{backgroundImage : `url(${getImgUrl(pn.pageBanner)})`}">
             <h1><div itemprop="name">{{pn.name}}</div><span>by <strong itemprop="author">{{store.webAuthorFullName}}</strong></span></h1>
             <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('#footer').animatescroll({scrollSpeed:4800,easing:'easeInSine'})"></a>
         </div>
@@ -13,7 +13,7 @@
                   <div class="reveal">
                       <div class="content-box" :class="{'tablet': index == 1, 'mobile': index == 2}">
                           <div class="content-image">
-                              <img itemprop="image" :src="content.image" :alt="pn.name +' '+ content.type + ' version website'" />
+                              <img itemprop="image" :src="require(`@/assets/images/portfolio/${content.image}`)" :alt="pn.name +' '+ content.type + ' version website'" />
                           </div>
                           <div class="content-text">
                               <h6 itemprop="description"><span class="site-color">"</span> {{content.description}} <span class="site-color">"</span></h6>
@@ -50,6 +50,7 @@ export default {
     return {
       bttnText1: `Open this project in web`,
       bttnText2: `Back to homepage`,
+      pageReady: true,
       pn : {},
       pageID : this.$route.params.id
     }
@@ -85,8 +86,9 @@ export default {
       this.$route.params.id = to.params.id;
     }
   },
-  mounted(){
-    if(this.getJsonData() === undefined){
+  created(){
+    if(this.getJsonData === undefined){
+      this.pageReady = false;
       this.$router.push({name:'not-found'});
     } else{
       this.pn = PortfolioItems.find(item => item.url == this.$route.params.id);
@@ -96,17 +98,25 @@ export default {
   updated(){
     this.checkURL();
   },
+  computed: {
+    getJsonData(){
+      return PortfolioItems.find(item => item.url == this.$route.params.id);
+    }
+  },
   methods: {
     goToLink(linkData){
       this.$router.push(linkData)
     },
     checkURL(){
       if(this.$route.params.id !== this.pn.url){
+        this.pageReady = false;
         this.$router.push({name:'not-found'});
       }
     },
-    getJsonData(){
-      return PortfolioItems.find(item => item.url == this.$route.params.id);
+    getImgUrl(pic) {
+      if(this.pageReady){
+        return require(`@/assets/images/portfolio/${pic}`);
+      }
     }
   }
 };

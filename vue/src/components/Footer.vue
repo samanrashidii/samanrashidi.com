@@ -12,7 +12,7 @@ export default {
     data(){
         return {
             url: 'http://www.samanrashidi.com',
-            logo: '/images/logo.png',
+            logo: require('@/assets/images/logo.png'),
             alt: 'SamanirA Logo',
             copyright: `Copyright © 2017 <a itemprop="url" href="http://www.samanrashidi.com">${this.store.webAuthorFullName}</a>. All rights reserved`
         }

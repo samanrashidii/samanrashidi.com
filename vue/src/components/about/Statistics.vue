@@ -9,7 +9,7 @@
           <div class="section-content">
             <div class="stat-box-wrapper">
               <div class="stat-box" v-for="(statistic, index) in statistics" :key="index">
-                <img :src="statistic.image" :alt="statistic.name" />
+                <img :src="require(`@/assets/images/${statistic.image}`)" :alt="statistic.name" />
                 <div class="stat-box-info">
                   <strong><span class="counter-up">{{statistic.statData}}</span><span v-if="statistic.percentage"> %</span></strong><div>{{statistic.name}}</div>
                 </div>
@@ -30,34 +30,34 @@ export default {
       statistics: [
         {
           name: 'Lines of Codes',
-          image: '/images/code.png',
+          image: 'code.png',
           statData: 568377,
         },
         {
           name: 'Cups of Coffee',
-          image: '/images/coffee.png',
+          image: 'coffee.png',
           statData: 3524,
         },
         {
           name: 'Successful Projects',
-          image: '/images/project.png',
+          image: 'project.png',
           statData: 63,
         },
         {
           name: 'HTML 5',
-          image: '/images/html.png',
+          image: 'html.png',
           statData: 99,
           percentage: true,
         },
         {
           name: 'CSS 3',
-          image: '/images/css.png',
+          image: 'css.png',
           statData: 99,
           percentage: true,
         },
         {
           name: 'Vanilla Javascript - jQuery - Vuejs',
-          image: '/images/javascript.png',
+          image: 'javascript.png',
           statData: 70,
           percentage: true,
         },
