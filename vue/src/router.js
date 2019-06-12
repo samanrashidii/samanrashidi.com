@@ -13,7 +13,7 @@ const NotFound = resolve => {
   });
 };
 
-const Project = resolve => {
+const Project = (resolve) => {
   require.ensure(['./views/Project.vue'], ()=>{
     resolve(require('./views/Project.vue'));
   });
@@ -33,7 +33,7 @@ export default new Router({
     {
       path: '/portfolio/:id',
       name: 'portfolio',
-      component: Project
+      component: Project,
     },
     {
       path: '/404',
