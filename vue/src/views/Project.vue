@@ -37,12 +37,14 @@
         </div>
       </div>  
     </template>
+    <other-projects :projectitems="projectItems" :currentProject="this.pn.url"></other-projects>
     <app-footer></app-footer> 
   </div>         
 </template>
 
 <script>
 import Footer from '@/components/Footer.vue';
+import OtherProjects from '@/components/OtherProjects.vue';
 import PortfolioItems from '@/assets/portfolio.json';
 export default {
   name: 'Project',
@@ -52,11 +54,13 @@ export default {
       bttnText2: `Back to homepage`,
       pageReady: true,
       pn : {},
-      pageID : this.$route.params.id
+      pageID : this.$route.params.id,
+      projectItems: PortfolioItems,
     }
   },
   components: {
-		appFooter: Footer,
+    appFooter: Footer,
+    otherProjects: OtherProjects
   },
   metaInfo() {
     return {
