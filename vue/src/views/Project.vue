@@ -37,7 +37,7 @@
         </div>
       </div>  
     </template>
-    <other-projects :projectitems="projectItems" :currentProject="this.pn.url"></other-projects>
+    <other-projects :projectItems="projectItems" :currentProject="this.pn.url"></other-projects>
     <app-footer></app-footer> 
   </div>         
 </template>
@@ -95,7 +95,7 @@ export default {
       this.pageReady = false;
       this.$router.push({name:'not-found'});
     } else{
-      this.pn = PortfolioItems.find(item => item.url == this.$route.params.id);
+      this.pn = this.projectItems.find(item => item.url == this.$route.params.id);
     }
     this.checkURL();
   },
@@ -104,7 +104,7 @@ export default {
   },
   computed: {
     getJsonData(){
-      return PortfolioItems.find(item => item.url == this.$route.params.id);
+      return this.projectItems.find(item => item.url == this.$route.params.id);
     }
   },
   methods: {

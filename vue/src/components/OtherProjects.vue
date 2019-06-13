@@ -2,7 +2,7 @@
     <div id="otherProjects">
         <div class="frame">
             <ul>
-                <li v-for="(project, index) in selectedProjects" :key="index" :style="{backgroundImage : `url(${getImgUrl(project.thumb)})`}">
+                <li v-for="(project) in selectedProjects" :key="project.url" :style="{backgroundImage : `url(${getImgUrl(project.thumb)})`}">
                     <router-link :to="{name: 'portfolio', params: {id : project.url}}"><strong>{{project.name}}</strong></router-link>
                 </li>
             </ul>
@@ -13,26 +13,31 @@
 <script>
 export default {
     props: {
-        projectitems : {
+        projectItems : {
             type : Array
         },
         currentProject : {
             type : String
-        },
+        }
     },
     data(){
         return {
-            projects: []
         }
     },
     computed: {
         selectedProjects(){
-            for (let i in this.projectitems) {
-                if(this.projectitems[i].url == this.currentProject){
-                    this.projectitems.splice(i, 1)
+            const projects = [...this.projectItems];
+            for (let i in projects) {
+                if(projects[i].url == this.currentProject){
+                    projects.splice(i, 1)
                 }
             }
-            return this.projectitems.sort(() => .5 - Math.random()).slice(0,3);
+            return projects.sort(() => .5 - Math.random()).slice(0,3);
+        }
+    },
+    watch:{
+        $route(to, from){
+            this.$route.params.id = to.params.id;
         }
     },
     methods: {
@@ -86,6 +91,9 @@ export default {
 
     @media only screen and (max-width:540px){
         #otherProjects{padding:13px 0;}
-        #otherProjects ul li{margin:10px 0;}
+        #otherProjects ul li{
+            max-width: 100%;
+            margin:10px 0;
+        }
     }
 </style>
