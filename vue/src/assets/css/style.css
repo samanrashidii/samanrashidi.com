@@ -12,6 +12,8 @@
 	overflow: hidden;
 }
 
+.hidden{display: none !important;}
+
 .banner{
 	display: table;
 	width: 100%;
