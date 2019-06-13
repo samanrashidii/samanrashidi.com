@@ -427,4 +427,11 @@
 
 	.stat-box-wrapper{padding-top:30px;}
 
+	.bttn.has-icon {
+		padding-left: 30px;
+		padding-right: 7px;
+		background-position: 7px center;
+		background-size: 18px;
+	}
+
 }
