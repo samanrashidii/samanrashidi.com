@@ -15,6 +15,7 @@
     "vue-headful": "^2.0.1",
     "vue-meta": "^1.6.0",
     "vue-router": "^3.0.3",
+    "vue-router-sitemap": "0.0.4",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
