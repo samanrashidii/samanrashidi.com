@@ -5,7 +5,7 @@
 		<app-about/>
 		<app-portfolio/>	
 		<app-contact/>
-		<app-footer/>
+		<AppFooter/>
   </div>
 </template>
 
@@ -16,7 +16,6 @@ import Home from '@/components/Home.vue';
 import About from '@/components/About.vue';
 import Portfolio from '@/components/Portfolio.vue';
 import Contact from '@/components/Contact.vue';
-import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'index',
@@ -26,7 +25,6 @@ export default {
 		appAbout: About,
 		appPortfolio: Portfolio,
 		appContact: Contact,
-		appFooter: Footer,
   },
   metaInfo() {
     return {
