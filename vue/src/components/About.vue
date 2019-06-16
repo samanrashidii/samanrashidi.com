@@ -1,9 +1,9 @@
 <template>
   <div id="About">
-    <about-me></about-me>
-    <samanira></samanira>
-    <statistics></statistics>
-    <parallax></parallax>
+    <about-me/>
+    <samanira/>
+    <statistics/>
+    <parallax/>
   </div>
 </template>
 

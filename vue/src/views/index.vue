@@ -1,11 +1,11 @@
 <template>
   <div class="index">
-    <app-navigation></app-navigation>
-		<app-home></app-home>
-		<app-about></app-about>
-		<app-portfolio></app-portfolio>	
-		<app-contact></app-contact>
-		<app-footer></app-footer>
+    <app-navigation/>
+		<app-home/>
+		<app-about/>
+		<app-portfolio/>	
+		<app-contact/>
+		<app-footer/>
   </div>
 </template>
 
