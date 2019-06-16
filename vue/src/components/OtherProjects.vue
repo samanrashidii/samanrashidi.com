@@ -2,7 +2,7 @@
     <div id="otherProjects">
         <div class="frame">
             <ul>
-                <li v-for="(project) in selectedProjects" :key="project.url" :style="{backgroundImage : `url(${getImgUrl(project.thumb)})`}">
+                <li v-for="project in selectedProjects" :key="project.url" :style="{backgroundImage : `url(${getImgUrl(project.thumb)})`}">
                     <router-link :to="{name: 'portfolio', params: {id : project.url}}"><strong>{{project.name}}</strong></router-link>
                 </li>
             </ul>

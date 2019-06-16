@@ -34,6 +34,7 @@ export default new Router({
       path: '/portfolio/:id',
       name: 'portfolio',
       component: Project,
+      props: true,
     },
     {
       path: '/404',

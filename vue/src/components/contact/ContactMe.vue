@@ -6,8 +6,8 @@
                 <h1>{{sectionTitle}}</h1>
             </div>
             <div class="section-content">
-                <contact-information></contact-information>
-                <contact-form></contact-form>
+                <contact-information/>
+                <contact-form/>
             </div>
         </div>
     </div>

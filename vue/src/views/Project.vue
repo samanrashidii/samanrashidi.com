@@ -37,8 +37,8 @@
         </div>
       </div>  
     </template>
-    <other-projects :projectItems="projectItems" :currentProject="this.pn.url"></other-projects>
-    <app-footer></app-footer> 
+    <other-projects :projectItems="projectItems" :currentProject="this.pn.url" />
+    <app-footer/> 
   </div>         
 </template>
 
@@ -48,13 +48,14 @@ import OtherProjects from '@/components/OtherProjects.vue';
 import PortfolioItems from '@/assets/portfolio.json';
 export default {
   name: 'Project',
+  props: ["id"],
   data() {
     return {
       bttnText1: `Open this project in web`,
       bttnText2: `Back to homepage`,
       pageReady: true,
       pn : {},
-      pageID : this.$route.params.id,
+      pageID : this.id,
       projectItems: PortfolioItems,
     }
   },
@@ -87,7 +88,7 @@ export default {
   },
   watch:{
     $route(to, from){
-      this.$route.params.id = to.params.id;
+      this.pageID = to.params.id;
     }
   },
   created(){
@@ -95,7 +96,7 @@ export default {
       this.pageReady = false;
       this.$router.push({name:'not-found'});
     } else{
-      this.pn = this.projectItems.find(item => item.url == this.$route.params.id);
+      this.pn = this.projectItems.find(item => item.url == this.pageID);
     }
     this.checkURL();
   },
@@ -104,7 +105,7 @@ export default {
   },
   computed: {
     getJsonData(){
-      return this.projectItems.find(item => item.url == this.$route.params.id);
+      return this.projectItems.find(item => item.url == this.pageID);
     }
   },
   methods: {
