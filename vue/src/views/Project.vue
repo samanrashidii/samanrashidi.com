@@ -38,12 +38,11 @@
       </div>  
     </template>
     <other-projects :projectItems="projectItems" :currentProject="this.pn.url" />
-    <app-footer/> 
+    <AppFooter/> 
   </div>         
 </template>
 
 <script>
-import Footer from '@/components/Footer.vue';
 import OtherProjects from '@/components/OtherProjects.vue';
 import PortfolioItems from '@/assets/portfolio.json';
 export default {
@@ -60,7 +59,6 @@ export default {
     }
   },
   components: {
-    appFooter: Footer,
     otherProjects: OtherProjects
   },
   metaInfo() {
