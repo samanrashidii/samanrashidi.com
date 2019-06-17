@@ -2,8 +2,8 @@
     <div id="ContactMe" class="has-shape shape-5 has-slime-3 center-aligned ">
         <div class="frame">
             <div class="section-title">
-                <span>{{sectionSub}}</span>
-                <h1>{{sectionTitle}}</h1>
+                <span>{{Contact.sectionSub}}</span>
+                <h1>{{Contact.sectionTitle}}</h1>
             </div>
             <div class="section-content">
                 <contact-information/>
@@ -16,13 +16,13 @@
 <script>
 import ContactInformation from '@/components/contact/contact_me/ContactInformation.vue';
 import ContactForm from '@/components/contact/contact_me/ContactForm.vue';
+import {mapGetters} from 'vuex';
 
 export default {
-  data(){
-      return {
-        sectionSub: 'feel free to',
-        sectionTitle: 'Contact Me',
-      }
+  computed: {
+      ...mapGetters([
+          'Contact',
+      ])
   },
   components: {
     contactInformation: ContactInformation,

@@ -2,29 +2,29 @@
     <div id="samanira" class="has-shape shape-2 has-slime-2">
       <div class="frame clearFixAfter">
         <div class="half-box reveal right-aligned has-large-right-padding">
-          <img class="samanira-main-logo" :src="logo" :alt="logoAlt" />
+          <img class="samanira-main-logo" :src="getImgUrl(Samanira.logo)" :alt="Samanira.logoAlt" />
           <br />
-          <a class="bttn bounce site-2" :href="url" target="_blank">{{readMore}}</a>
+          <a class="bttn bounce site-2" :href="Samanira.url" target="_blank">{{Samanira.readMore}}</a>
         </div>
         <div class="half-box reveal left-aligned">
-          <h4 v-html="sectionSub"></h4>
-          <p class="justified">{{sectionDescription}}</p>
+          <h4 v-html="Samanira.sectionSub"></h4>
+          <p class="justified">{{Samanira.sectionDescription}}</p>
         </div>
       </div>
     </div>
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
 export default {
-  data(){
-    return {
-      sectionSub: 'Created <strong class="site-color has-small-x-margin">SamanirA</strong> framework @ May 2017',
-      sectionDescription: 'SamanirA is an easy HTML/CSS/JS framework for Front-end Developers who wants to quickly build a project from 0 to 100% without wasting time to define CSS classes or write some Javascript functions.',
-      portfolioTitle: 'websites',
-      readMore: 'Read more',
-      logo: require('@/assets/images/samanira.png'),
-      logoAlt: 'Samanira Logo',
-      url: 'http://www.samanira.com'
+  computed: {
+    ...mapGetters([
+        'Samanira',
+    ])
+  },
+  methods: {
+    getImgUrl(pic) {
+      return require(`@/assets/images/${pic}`);
     }
   }
 };

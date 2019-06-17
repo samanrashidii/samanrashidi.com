@@ -1,20 +1,23 @@
 <template>
     <div id="footer" class="has-shape shape-4 center-aligned">
         <div class="frame">
-            <a :href="url"><img :src="logo" :alt="alt" /></a>
-            <span v-html="copyright"></span>
+            <a :href="Footer.url"><img :src="getImgUrl(Footer.logo)" :alt="Footer.alt" /></a>
+            <span v-html="Footer.copyright"></span>
         </div>
     </div>
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
 export default {
-    data(){
-        return {
-            url: 'http://www.samanrashidi.com',
-            logo: require('@/assets/images/logo.png'),
-            alt: 'SamanirA Logo',
-            copyright: `Copyright © 2017 <a itemprop="url" href="http://www.samanrashidi.com">${this.store.webAuthorFullName}</a>. All rights reserved`
+    computed: {
+      ...mapGetters([
+          'Footer',
+      ])
+    },
+    methods: {
+        getImgUrl(pic) {
+            return require(`@/assets/images/${pic}`);
         }
     }
 };

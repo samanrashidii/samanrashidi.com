@@ -3,7 +3,7 @@
         <div class="menu">
             <div class="menu-wrapper">
                 <ul class="menu-items">
-                    <li class="menu-item" v-for="(menuItem, index) in menuItems" :key="index">
+                    <li class="menu-item" v-for="(menuItem, index) in Menu" :key="index">
                         <button class="menu-item-button" :onClick="`JavaScript:$('#${menuItem}').animatescroll({scrollSpeed:1200,easing:'easeInExpo'})`">
                             <i class="menu-item-icon" :class="menuItem.toLowerCase()" :title="menuItem"></i>
                         </button>
@@ -29,11 +29,12 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
 export default {
-  data() {
-    return {
-      menuItems: ['Home', 'About', 'Portfolio', 'ContactMe'],
-    };
-  },
+  computed: {
+      ...mapGetters([
+          'Menu',
+      ])
+  }
 };
 </script>
