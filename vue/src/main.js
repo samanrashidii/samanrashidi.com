@@ -3,6 +3,7 @@ import Meta from 'vue-meta';
 import VeeValidate from 'vee-validate';
 import App from './App.vue';
 import router from './router';
+import {store} from './store/store.js'
 
 // Global Components
 
@@ -45,6 +46,7 @@ router.beforeEach((to, from, next)=> {
 // Create Vue
 
 new Vue({
+  store,
   router,
   render: h => h(App),
 }).$mount('#app');

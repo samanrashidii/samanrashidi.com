@@ -11,22 +11,19 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
 export default {
     props: {
-        projectItems : {
-            type : Array
-        },
         currentProject : {
             type : String
         }
     },
-    data(){
-        return {
-        }
-    },
     computed: {
+        ...mapGetters([
+          'Projects'
+        ]),
         selectedProjects(){
-            const projects = [...this.projectItems];
+            const projects = [...this.Projects];
             for (let i in projects) {
                 if(projects[i].url == this.currentProject){
                     projects.splice(i, 1)
@@ -49,51 +46,53 @@ export default {
 </script>
 
 <style scoped>
-    #otherProjects{
-        color:#ffffff;
-        text-align: center;
-        padding:30px 0;
-    }
 
+#otherProjects{
+    color:#ffffff;
+    text-align: center;
+    padding:30px 0;
+}
+
+#otherProjects ul li{
+    display: inline-block;
+    vertical-align: top;
+    width:100%;
+    max-width:300px;
+    height: 300px;
+    margin:15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #040404;
+    background-size: cover;
+    border:3px solid #040404;
+    border-radius: 5px;
+}
+
+#otherProjects ul li a{
+    display: inline-table;
+    width: 100%;
+    height: 100%;
+    padding:10px;
+    background:rgba(0,0,0,.15);
+}
+
+#otherProjects ul li a:hover{
+    background:transparent;
+}
+
+#otherProjects ul li a strong{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Effra-light';
+    font-size: 30px;
+}
+
+@media only screen and (max-width:540px){
+    #otherProjects{padding:13px 0;}
     #otherProjects ul li{
-        display: inline-block;
-        vertical-align: top;
-        width:100%;
-        max-width:300px;
-        height: 300px;
-        margin:15px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #040404;
-        background-size: cover;
-        border:3px solid #040404;
-        border-radius: 5px;
+        max-width: 100%;
+        margin:10px 0;
     }
+}
 
-    #otherProjects ul li a{
-        display: inline-table;
-        width: 100%;
-        height: 100%;
-        padding:10px;
-        background:rgba(0,0,0,.15);
-    }
-
-    #otherProjects ul li a:hover{
-        background:transparent;
-    }
-
-    #otherProjects ul li a strong{
-        display: table-cell;
-        vertical-align: middle;
-        font-family: 'Effra-light';
-        font-size: 30px;
-    }
-
-    @media only screen and (max-width:540px){
-        #otherProjects{padding:13px 0;}
-        #otherProjects ul li{
-            max-width: 100%;
-            margin:10px 0;
-        }
-    }
 </style>

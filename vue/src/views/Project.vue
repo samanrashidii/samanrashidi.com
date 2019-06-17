@@ -25,8 +25,8 @@
                 </div>
 
                 <div class="button-holder center-aligned">
-                    <a itemprop="url" class="bttn has-icon web-icon" :href="pn.siteUrl" target="_blank">{{bttnText1}}</a>
-                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">{{bttnText2}}</a>
+                    <a itemprop="url" class="bttn has-icon web-icon" :href="pn.siteUrl" target="_blank">{{Project.bttnText1}}</a>
+                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">{{Project.bttnText2}}</a>
                 </div>
 
                 <div class="button-holder center-aligned has-arrow-button">
@@ -37,25 +37,22 @@
         </div>
       </div>  
     </template>
-    <other-projects :projectItems="projectItems" :currentProject="this.pn.url" />
+    <other-projects :currentProject="this.pn.url" />
     <AppFooter/> 
   </div>         
 </template>
 
 <script>
 import OtherProjects from '@/components/OtherProjects.vue';
-import PortfolioItems from '@/assets/portfolio.json';
+import {mapGetters} from 'vuex';
 export default {
   name: 'Project',
   props: ["id"],
   data() {
     return {
-      bttnText1: `Open this project in web`,
-      bttnText2: `Back to homepage`,
       pageReady: true,
       pn : {},
       pageID : this.id,
-      projectItems: PortfolioItems,
     }
   },
   components: {
@@ -94,7 +91,7 @@ export default {
       this.pageReady = false;
       this.$router.push({name:'not-found'});
     } else{
-      this.pn = this.projectItems.find(item => item.url == this.pageID);
+      this.pn = this.Projects.find(item => item.url == this.pageID);
     }
     this.checkURL();
   },
@@ -102,8 +99,12 @@ export default {
     this.checkURL();
   },
   computed: {
+    ...mapGetters([
+      'Project',
+      'Projects'
+    ]),
     getJsonData(){
-      return this.projectItems.find(item => item.url == this.pageID);
+      return this.Projects.find(item => item.url == this.pageID);
     }
   },
   methods: {
@@ -126,118 +127,120 @@ export default {
 </script>
 
 <style scoped>
-  #footer.has-shape::before{display:none !important;}
 
-  .specific-portfolio{
-    width: 100%;
-    overflow: hidden;
-    background:#161616;
-  }
+#footer.has-shape::before{display:none !important;}
 
-  .potfolio-banner{
-    position: relative;
-    display: table;
-    width: 100%;
-    height: 700px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; 
-  }
+.specific-portfolio{
+  width: 100%;
+  overflow: hidden;
+  background:#161616;
+}
 
-  .potfolio-banner h1{
-    display: table-cell;
-    vertical-align: middle;
-    font-family: 'Effra-light';
-    font-size: 75px;
-    color:#ffffff;
-    text-shadow:0 0 12px #181818;
-  }
+.potfolio-banner{
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; 
+}
 
-  .potfolio-banner.no-textshadow h1{text-shadow: none;}
+.potfolio-banner h1{
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Effra-light';
+  font-size: 75px;
+  color:#ffffff;
+  text-shadow:0 0 12px #181818;
+}
 
-  .potfolio-banner h1 span{
-    display: block;
-    font-size: 30px;
-  }
+.potfolio-banner.no-textshadow h1{text-shadow: none;}
 
-  .potfolio-banner h1 strong{
-    font-family: 'Effra-light';
-    color:#0a9abd;
-  }
+.potfolio-banner h1 span{
+  display: block;
+  font-size: 30px;
+}
 
-  .portfolio-content{
-    width: 100%;
-    color:#ffffff;
-    padding:200px 0 140px 0;
-  }
+.potfolio-banner h1 strong{
+  font-family: 'Effra-light';
+  color:#0a9abd;
+}
 
-  .portfolio-content p{padding-top:0;}
+.portfolio-content{
+  width: 100%;
+  color:#ffffff;
+  padding:200px 0 140px 0;
+}
 
-  .content-text{
-    float: left;
-    width: 45%;
-    padding-top:80px;
-  }
+.portfolio-content p{padding-top:0;}
 
-  .content-box.mobile .content-text{padding-top:190px;}
-  .content-box.mobile .content-image{text-align: center;}
+.content-text{
+  float: left;
+  width: 45%;
+  padding-top:80px;
+}
 
-  .content-box.tablet .content-text{padding-top:120px;}
-  .content-box.tablet .content-image{
-    float: right;
-    text-align: right;
-  }
+.content-box.mobile .content-text{padding-top:190px;}
+.content-box.mobile .content-image{text-align: center;}
 
-  .content-text h6{
-    font-family: 'Effra-light';
-    line-height: 2;
-  }
+.content-box.tablet .content-text{padding-top:120px;}
+.content-box.tablet .content-image{
+  float: right;
+  text-align: right;
+}
 
-  .content-image{
-    float: left;
-    width: 55%;
-  }
+.content-text h6{
+  font-family: 'Effra-light';
+  line-height: 2;
+}
 
-  .divider{
-    position: relative;
-    width: 60%;
-    margin:120px auto;
-    border-top:2px dashed #ffffff;
-  }
+.content-image{
+  float: left;
+  width: 55%;
+}
 
-  .divider::before{
-    content:'';
-    position: absolute;
-    left:0;
-    top:-80px;
-    display: block;
-    width: 2px;
-    height: 80px;
-    border-left:2px dashed #ffffff;
-  }
+.divider{
+  position: relative;
+  width: 60%;
+  margin:120px auto;
+  border-top:2px dashed #ffffff;
+}
 
-  .divider::after{
-    content:'';
-    position: absolute;
-    right:0;
-    top:0;
-    display: block;
-    width: 2px;
-    height: 80px;
-    border-left:2px dashed #ffffff;
-  }
+.divider::before{
+  content:'';
+  position: absolute;
+  left:0;
+  top:-80px;
+  display: block;
+  width: 2px;
+  height: 80px;
+  border-left:2px dashed #ffffff;
+}
 
-  .divider.reverse{width: 45%;}
-  .divider.reverse::before{top:0;}
-  .divider.reverse::after{top:-80px;}
+.divider::after{
+  content:'';
+  position: absolute;
+  right:0;
+  top:0;
+  display: block;
+  width: 2px;
+  height: 80px;
+  border-left:2px dashed #ffffff;
+}
 
-  .portfolio-content .button-holder{margin-top:100px;}
+.divider.reverse{width: 45%;}
+.divider.reverse::before{top:0;}
+.divider.reverse::after{top:-80px;}
 
-  .portfolio-content .button-holder a.bttn:hover{
-    color:#ffffff;
-    background-color: #0a9abd;
-    border-color: #0a9abd !important;
-  }
+.portfolio-content .button-holder{margin-top:100px;}
+
+.portfolio-content .button-holder a.bttn:hover{
+  color:#ffffff;
+  background-color: #0a9abd;
+  border-color: #0a9abd !important;
+}
+
 </style>

@@ -1,0 +1,178 @@
+{
+    "Owner": {
+        "firstname" : "Saman",
+        "lastname" : "Rashidi",
+        "fullname" : "Saman Rashidi"
+    },
+    "Menu": ["Home", "About", "Portfolio", "ContactMe"],
+    "Home": {
+        "pageTitle": "stand out with a <span class=\"site-color uppercased\">modern</span> website",
+        "buttons": [
+            {
+            "icon": "projects",
+            "navTarget": "Portfolio",
+            "text": "View projects"
+            },
+            {
+            "icon": "cart",
+            "navTarget": "ContactMe",
+            "text": "Order now"
+            }
+        ],
+        "navTarget": "About"
+    },
+    "AboutMe": {
+        "aboutDescription" : "<span itemprop=\"description\">My name is <strong itemprop=\"name\">Saman Rashidi</strong>, I’m a persian who lives in Georgia, <strong itemprop=\"nationality\">Tbilisi</strong>, and I specialize in <strong>Web Design and Front-end Web Development</strong>. I hold 4 CIW certification from MFT, and have gained <strong itemprop=\"award\">more than 11000 points and 100 achievements in <a target=\"_blank\" class=\"txt-teamtreehouse\" href=\"http://www.teamtreehouse.com/samanrashidi\">TeamTreeHouse</a> Website</strong>. I started working with <a itemprop=\"worksFor\" target=\"_blank\" class=\"txt-edoramedia\" href=\"http://www.edoramedia.com\">Edoramedia</a> digital solution company from October 2014 until January 2019 as a Front-end Developer.</span> Before entering a career in creating web pages, I received my bachelor’s degree in Biology and shortly became highly interested in the science known as Neuromarketing. Due to my passion and education, I pursued the Marketing Management certification and worked with Dr. Mohsen Oftadehal (Cognitive Scientist) to concentrate on advertising skills approached using biological methods. Today I\"m a <strong itemprop=\"jobTitle\">Senior Front-end Developer</strong> and have focus on designing creative and appealing websites, attractive and clean to the viewers’ eyes, and skillfully developed on the back-end. In 2017 I have created <a itemprop=\"owns\" class=\"txt-samanira\" href=\"http://www.samanira.com\" target=\"_blank\">SamanirA framework</a> with my partner <a target=\"_blank\" class=\"txt-samira\" href=\"http://www.samirasalimian.com\">Samira Salimian</a> to have a simple and easy framework for Front-end Developers.",
+        "sectionSub" : "a little",
+        "sectionTitle" : "ABOUT ME",
+        "image" : "saman_rashidi.png"
+    },
+    "Parallax": {
+        "text" : "Intuitive design is how I give the user <br /> new <span class=\"site-color uppercased\">Superpowers</span>",
+        "background" : "parallax-1.jpg"
+    },
+    "Samanira": {
+        "sectionSub": "Created <strong class=\"site-color has-small-x-margin\">SamanirA</strong> framework @ May 2017",
+        "sectionDescription": "SamanirA is an easy HTML/CSS/JS framework for Front-end Developers who wants to quickly build a project from 0 to 100% without wasting time to define CSS classes or write some Javascript functions.",
+        "portfolioTitle": "websites",
+        "readMore": "Read more",
+        "logo": "samanira.png",
+        "logoAlt": "Samanira Logo",
+        "url": "http://www.samanira.com"
+    },
+    "Statistics": {
+        "sectionSub": "some",
+        "sectionTitle": "Statistics",
+        "background": "about-bg.jpg",
+        "data": [
+            {
+                "name": "Lines of Codes",
+                "image": "code.png",
+                "statData": "568377"
+            },
+            {
+                "name": "Cups of Coffee",
+                "image": "coffee.png",
+                "statData": "3524"
+            },
+            {
+                "name": "Successful Projects",
+                "image": "project.png",
+                "statData": "63"
+            },
+            {
+                "name": "HTML 5",
+                "image": "html.png",
+                "statData": "99",
+                "percentage": "true"
+            },
+            {
+                "name": "CSS 3",
+                "image": "css.png",
+                "statData": "99",
+                "percentage": "true"
+            },
+            {
+                "name": "Vanilla Javascript - jQuery - Vuejs",
+                "image": "javascript.png",
+                "statData": "70",
+                "percentage": "true"
+            }
+        ]
+    },
+    "Portfolio": {
+        "sectionSub": "take a look at my",
+        "sectionTitle": "Portfolio",
+        "portfolioTitle": "websites",
+        "readMore": "Read more about this project"
+    },
+    "Project": {
+        "bttnText1": "Open this project in web",
+        "bttnText2": "Back to homepage"
+    },
+    "Contact" : {
+        "sectionSub": "feel free to",
+        "sectionTitle": "Contact Me",
+        "subtitle1": "Contact Information",
+        "subtitle2": "Contact Form",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "mobile": "Mobile Number",
+            "subject": "Message Subject",
+            "checkbox1": "I want a website",
+            "checkbox2": "I'm looking for newsletter",
+            "message": "Type your message for me ...",
+            "button": "Send your message to me"
+        },
+        "thankyou":{
+            "icon": "happy.png",
+            "iconAlt": "Happy Icon",
+            "title": "Thank you",
+            "subTitle": "for contacting me.",
+            "description": "I'll call you as soon as possible on this number :"
+        },
+        "user": {
+            "mobileText": "Mobile Number",
+            "mobile": "+995599399705",
+            "mobile2": "+989128996990",
+            "addressText": "Address",
+            "address": "Tbilisi, Georgia.",
+            "addressCoord": "https://www.google.com/maps/@42.4943981,45.451405,6z",
+            "emailText": "Email Address",
+            "email": "me@samanrashidi.com"
+        },
+        "socials": [
+            {
+            "name": "telegram",
+            "url": "https://telegram.me/samanrashidii"
+            },
+            {
+            "name": "github",
+            "url": "https://github.com/samanrashidii"
+            },
+            {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/samanrashidii"
+            },
+            {
+            "name": "instagram",
+            "url": "https://www.instagram.com/samanrashidii"
+            },
+            {
+            "name": "googleplus",
+            "url": "https://plus.google.com/109638627387819515843"
+            },
+            {
+            "name": "facebook",
+            "url": "https://www.facebook.com/samanrashidii"
+            },
+            {
+            "name": "tumblr",
+            "url": "https://samanrashidii.tumblr.com"
+            },
+            {
+            "name": "twitter",
+            "url": "https://twitter.com/samanrashidii"
+            },
+            {
+            "name": "pinterest",
+            "url": "https://www.pinterest.com/samanrashidii"
+            },
+            {
+            "name": "soundcloud",
+            "url": "https://soundcloud.com/samanrashidii"
+            },
+            {
+            "name": "tripadvisor",
+            "url": "https://www.tripadvisor.com/Profile/SamanRashidii"
+            }
+        ]
+    },
+    "Footer": {
+        "url": "http://www.samanrashidi.com",
+        "logo": "logo.png",
+        "alt": "SamanirA Logo",
+        "copyright": "Copyright © 2017 <a itemprop=\"url\" href=\"http://www.samanrashidi.com\">Saman Rashidi</a>. All rights reserved"
+    }
+}
