@@ -26,24 +26,22 @@ export default {
 		appPortfolio: Portfolio,
 		appContact: Contact,
   },
-  metaInfo() {
-    return {
-      title : `Saman Rashidi ~ Senior Front-end developer`,
-      meta: [
-        {
-          description : `My name is Saman and I specialize in Front-end web development.`
-        },
-        {
-          'og:title' : `Saman Rashidi ~ Senior Front-end developer`
-        },
-        {
-          'og:description' : `My name is Saman and I specialize in Front-end web development.`
-        },
-        {
-          'og:url' : `http://www.samanrashidi.com`
-        }
-      ]
-    }
+  metaInfo: {
+    title : `Saman Rashidi ~ Senior Front-end developer`,
+    meta: [
+      {
+        description : `My name is Saman and I specialize in Front-end web development.`
+      },
+      {
+        'og:title' : `Saman Rashidi ~ Senior Front-end developer`
+      },
+      {
+        'og:description' : `My name is Saman and I specialize in Front-end web development.`
+      },
+      {
+        'og:url' : `http://www.samanrashidi.com`
+      }
+    ]
   },
   mounted(){
     Saman();

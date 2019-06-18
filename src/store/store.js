@@ -50,6 +50,9 @@ export const store = new Vuex.Store({
         },
         Certificates: state => {
             return state.certificates
+        },
+        p404: state => {
+            return state.website.p404
         }
     },
     mutations:{

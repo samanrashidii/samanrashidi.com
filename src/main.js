@@ -1,5 +1,4 @@
 import Vue from 'vue';
-import Meta from 'vue-meta';
 import VeeValidate from 'vee-validate';
 import App from './App.vue';
 import router from './router';
@@ -20,7 +19,6 @@ require('@/assets/css/media.css');
 // Vue Meta
 
 Vue.config.productionTip = false;
-Vue.use(Meta);
 
 // Vue VeeValidate
 

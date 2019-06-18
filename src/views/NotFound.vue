@@ -1,23 +1,42 @@
 <template>
     <div class="page">
         <div class="page-item has-slime-2">
-            <h1>{{pageTitle}}</h1>
-            <h4>{{pageSub}}</h4>
-            <p>{{pageDescription}}</p>
-            <a class="bttn" href="javascript:void(0)" @click="goToLink({name: 'home'})">{{pageButton}}</a>
+            <h1>{{p404.pageTitle}}</h1>
+            <h4>{{p404.pageSub}}</h4>
+            <p>{{p404.pageDescription}}</p>
+            <a class="bttn" href="javascript:void(0)" @click="goToLink({name: 'home'})">{{p404.pageButton}}</a>
         </div><!-- page-item end -->
     </div><!-- page end -->                
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
 export default {
-    data(){
-        return {
-            pageTitle: `404`,
-            pageSub: `Page not found`,
-            pageDescription: `I'm sorry, But the page you are looking for doesn't exist`,
-            pageButton: `Back to homepage`
-        }
+    metaInfo: {
+        title : `Saman Rashidi ~ Page not found`,
+        meta: [
+          {
+            name : 'description',
+            content : `Requested page not found (404 Error)`
+          },
+          {
+            name : 'og:title',
+            content : `Saman Rashidi ~ Page not found`
+          },
+          {
+            name : 'og:description',
+            content : `Requested page not found (404 Error)`
+          },
+          {
+            name : 'og:url',
+            content : `http://www.samanrashidi.com/404`
+          }
+        ]
+    },
+    computed: {
+        ...mapGetters([
+        'p404',
+        ])
     },
     methods: {
         goToLink(linkName){
