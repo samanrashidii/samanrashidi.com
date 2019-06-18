@@ -174,5 +174,11 @@
         "logo": "logo.png",
         "alt": "SamanirA Logo",
         "copyright": "Copyright © 2017 <a itemprop=\"url\" href=\"http://www.samanrashidi.com\">Saman Rashidi</a>. All rights reserved"
+    },
+    "p404": {
+        "pageTitle": "404",
+        "pageSub": "Page not found",
+        "pageDescription": "I'm sorry, But the page you are looking for doesn't exist",
+        "pageButton": "Back to homepage"
     }
 }

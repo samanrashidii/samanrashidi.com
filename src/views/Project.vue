@@ -58,28 +58,26 @@ export default {
   components: {
     otherProjects: OtherProjects
   },
-  metaInfo() {
-    return {
-      title : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`,
-      meta: [
-        {
-          name : 'description',
-          content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
-        },
-        {
-          name : 'og:title',
-          content : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`
-        },
-        {
-          name : 'og:description',
-          content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
-        },
-        {
-          name : 'og:url',
-          content : `http://www.samanrashidi.com/portfolio/${this.pageID}`
-        }
-      ]
-    }
+  metaInfo: {
+    title : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`,
+    meta: [
+      {
+        name : 'description',
+        content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
+      },
+      {
+        name : 'og:title',
+        content : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`
+      },
+      {
+        name : 'og:description',
+        content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
+      },
+      {
+        name : 'og:url',
+        content : `http://www.samanrashidi.com/portfolio/${this.pageID}`
+      }
+    ]
   },
   watch:{
     $route(to, from){
