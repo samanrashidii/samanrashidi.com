@@ -56,7 +56,8 @@
                 </span>
             </div>
             <div class="message">
-                <textarea name="message" v-validate="'required|min:20'" :class="{'active': addActive(contact.message)}" :placeholder="Contact.form.message" v-model="contact.message"></textarea>
+                <label for="message">&nbsp;</label>
+                <textarea name="message" id="message" v-validate="'required|min:20'" :class="{'active': addActive(contact.message)}" :placeholder="Contact.form.message" v-model="contact.message"></textarea>
             </div>
             <input type="text" name="samanira_secure" class="samanira_secure" />
             <input type="submit" :value="Contact.form.button" @click.prevent="nextStep">
