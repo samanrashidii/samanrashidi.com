@@ -30,16 +30,20 @@ export default {
     title : `Saman Rashidi ~ Senior Front-end developer`,
     meta: [
       {
-        description : `My name is Saman and I specialize in Front-end web development.`
+        name : 'description',
+        content : `My name is Saman and I specialize in Front-end web development.`
       },
       {
-        'og:title' : `Saman Rashidi ~ Senior Front-end developer`
+        name : 'og:title',
+        content : `Saman Rashidi ~ Senior Front-end developer`
       },
       {
-        'og:description' : `My name is Saman and I specialize in Front-end web development.`
+        name : 'og:description',
+        content : `My name is Saman and I specialize in Front-end web development.`
       },
       {
-        'og:url' : `http://www.samanrashidi.com`
+        name : 'og:url',
+        content : `http://www.samanrashidi.com`
       }
     ]
   },

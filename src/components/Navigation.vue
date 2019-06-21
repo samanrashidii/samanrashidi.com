@@ -4,7 +4,7 @@
             <div class="menu-wrapper">
                 <ul class="menu-items">
                     <li class="menu-item" v-for="(menuItem, index) in Menu" :key="index">
-                        <button class="menu-item-button" :onClick="`JavaScript:$('#${menuItem}').animatescroll({scrollSpeed:1200,easing:'easeInExpo'})`">
+                        <button type="button" class="menu-item-button" :onClick="`JavaScript:$('#${menuItem}').animatescroll({scrollSpeed:1200,easing:'easeInExpo'})`">
                             <i class="menu-item-icon" :class="menuItem.toLowerCase()" :title="menuItem"></i>
                         </button>
                         <div class="menu-item-bounce"></div>
