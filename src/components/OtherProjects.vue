@@ -23,12 +23,7 @@ export default {
           'Projects'
         ]),
         selectedProjects(){
-            const projects = [...this.Projects];
-            for (let i in projects) {
-                if(projects[i].url == this.currentProject){
-                    projects.splice(i, 1)
-                }
-            }
+            const projects = this.Projects.filter(project => project.url != this.currentProject)
             return projects.sort(() => .5 - Math.random()).slice(0,3);
         }
     },
