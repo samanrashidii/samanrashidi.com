@@ -1,6 +1,6 @@
 <template>
     <div id="Home">
-        <div class="banner">
+        <div class="banner" :style="{backgroundImage : `url(${getImgUrl(Home.pageBanner)})`}">
             <div class="inner-banner">
                 <h1 v-html="Home.pageTitle"></h1>
                 <div class="button-holder">
@@ -19,6 +19,11 @@ export default {
       ...mapGetters([
           'Home',
       ])
+  },
+  methods: {
+    getImgUrl(pic) {
+        return require(`@/assets/images/${pic}`);
+    }
   }
 };
 </script>

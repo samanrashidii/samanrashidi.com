@@ -46,7 +46,7 @@ export default new Router({
     {
       path: '*',
       redirect: {name : 'not-found'}
-    }
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
