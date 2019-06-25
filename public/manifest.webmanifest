@@ -1,0 +1,16 @@
+{
+    "name": "Saman Rashidi",
+    "short_name": "Samanrashidii",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#0a9abd",
+    "background_color": "#ffffff",
+    "description": "Senior Front-end developer",
+    "icons": [
+      {
+        "src": "saman-200x200.png",
+        "sizes": "200x200",
+        "type": "image/png"
+      }
+    ]
+  }
