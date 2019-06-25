@@ -8,8 +8,8 @@
   "description": "Senior Front-end developer",
   "icons": [
     {
-      "src": "saman-200x200.png",
-      "sizes": "200x200",
+      "src": "saman-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     },
     {
