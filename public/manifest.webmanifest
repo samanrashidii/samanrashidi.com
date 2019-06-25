@@ -1,16 +1,31 @@
 {
-    "name": "Saman Rashidi",
-    "short_name": "Samanrashidii",
-    "start_url": "/",
-    "display": "standalone",
-    "theme_color": "#0a9abd",
-    "background_color": "#ffffff",
-    "description": "Senior Front-end developer",
-    "icons": [
-      {
-        "src": "saman-200x200.png",
-        "sizes": "200x200",
-        "type": "image/png"
-      }
-    ]
-  }
+  "name": "Saman Rashidi",
+  "short_name": "Saman Rashidi",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0a9abd",
+  "background_color": "#ffffff",
+  "description": "Senior Front-end developer",
+  "icons": [
+    {
+      "src": "saman-200x200.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-iphone.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-iphone-retina.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}

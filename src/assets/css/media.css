@@ -102,6 +102,12 @@
 						/*            980px Screen         */
 
 @media only screen and (max-width:980px){
+	
+	body {
+		-webkit-user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+	 }
 
 	.input{
 		width: 100%;
