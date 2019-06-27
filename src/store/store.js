@@ -1,58 +1,54 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import Website from '@/assets/saman.json';
-import PortfolioItems from '@/assets/portfolio.json';
-import Certificates from '@/assets/certificates.json';
+import Saman from '@/assets/saman.json';
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
     state:{
-        website: Website,
-        portfolios: PortfolioItems,
-        certificates: Certificates
+        saman: Saman
     },
     getters:{
         Owner: state => {
-            return state.website.Owner;
+            return state.saman.website.Owner;
         },
         Menu: state => {
-            return state.website.Menu;
+            return state.saman.website.Menu;
         },
         Home: state => {
-            return state.website.Home;
+            return state.saman.website.Home;
         },
         AboutMe: state => {
-            return state.website.AboutMe;
+            return state.saman.website.AboutMe;
         },
         Parallax: state => {
-            return state.website.Parallax
+            return state.saman.website.Parallax
         },
         Samanira: state => {
-            return state.website.Samanira
+            return state.saman.website.Samanira
         },
         Statistics: state => {
-            return state.website.Statistics
+            return state.saman.website.Statistics
         },
         Portfolio: state => {
-            return state.website.Portfolio
+            return state.saman.website.Portfolio
         },
         Project: state => {
-            return state.website.Project
+            return state.saman.website.Project
         },
         Contact: state => {
-            return state.website.Contact
+            return state.saman.website.Contact
         },
         Footer: state => {
-            return state.website.Footer
-        },
-        Projects: state => {
-            return state.portfolios
-        },
-        Certificates: state => {
-            return state.certificates
+            return state.saman.website.Footer
         },
         p404: state => {
-            return state.website.p404
+            return state.saman.website.p404
+        },
+        Projects: state => {
+            return state.saman.portfolio
+        },
+        Certificates: state => {
+            return state.saman.certificates
         }
     },
     mutations:{
