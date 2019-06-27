@@ -1,12 +1,12 @@
-# Samanrashidi website
+# Samanrashidi portfolio website
 
 ## Technologies
 ```
-Veujs
+Veu.js
 ```
 
 ```
-Veu-Cli
+Veu Cli
 ```
 
 ```
@@ -14,7 +14,7 @@ Vuex
 ```
 
 ```
-Vue-Router
+Vue Router
 ```
 
 ```
@@ -33,5 +33,5 @@ TweenMax
 Schema
 ```
 
-### Interested?
+## Interested?
 See [Samanrashidi website](https://www.samanrashidi.com).
