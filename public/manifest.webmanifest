@@ -8,22 +8,22 @@
   "description": "Senior Front-end developer",
   "icons": [
     {
-      "src": "saman-512x512.png",
+      "src": "images/saman-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "apple-touch-icon.png",
+      "src": "images/apple-touch-icon.png",
       "sizes": "200x200",
       "type": "image/png"
     },
     {
-      "src": "apple-touch-icon-iphone.png",
+      "src": "images/apple-touch-icon-iphone.png",
       "sizes": "114x114",
       "type": "image/png"
     },
     {
-      "src": "apple-touch-icon-iphone-retina.png",
+      "src": "images/apple-touch-icon-iphone-retina.png",
       "sizes": "144x144",
       "type": "image/png"
     }
