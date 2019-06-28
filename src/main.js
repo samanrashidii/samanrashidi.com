@@ -16,7 +16,7 @@ require('@/assets/css/saman.css');
 require('@/assets/css/style.css');
 require('@/assets/css/media.css');
 
-// Vue Meta
+// Vue Config
 
 Vue.config.productionTip = false;
 
@@ -25,14 +25,6 @@ Vue.config.productionTip = false;
 Vue.use(VeeValidate, {
   events: 'keyup',
 });
-
-// Vue Store Data
-
-Vue.store = Vue.prototype.store = {
-  webAuthorFirstName: 'Saman',
-  webAuthorLastName: 'Rashidi',
-  webAuthorFullName: 'Saman Rashidi',
-};
 
 // Vue Router
 
