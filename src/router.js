@@ -2,20 +2,20 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Meta from 'vue-meta';
 
-const Index = resolve => {
-  require.ensure(['./views/Index.vue'], ()=>{
+const Index = (resolve) => {
+  require.ensure(['./views/Index.vue'], () => {
     resolve(require('./views/Index.vue'));
   });
 };
 
-const NotFound = resolve => {
-  require.ensure(['./views/NotFound.vue'], ()=>{
+const NotFound = (resolve) => {
+  require.ensure(['./views/NotFound.vue'], () => {
     resolve(require('./views/NotFound.vue'));
   });
 };
 
 const Project = (resolve) => {
-  require.ensure(['./views/Project.vue'], ()=>{
+  require.ensure(['./views/Project.vue'], () => {
     resolve(require('./views/Project.vue'));
   });
 };
@@ -30,7 +30,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Index
+      component: Index,
     },
     {
       path: '/portfolio/:id',
@@ -41,19 +41,19 @@ export default new Router({
     {
       path: '/404',
       name: 'not-found',
-      component: NotFound
+      component: NotFound,
     },
     {
       path: '*',
-      redirect: {name : 'not-found'}
+      redirect: { name: 'not-found' },
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to) {
     if (to.hash) {
-        return {
-          selector: to.hash
-        }
+      return {
+        selector: to.hash,
+      };
     }
-    return { x: 0, y: 0 }
+    return { x: 0, y: 0 };
   },
 });
