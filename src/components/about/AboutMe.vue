@@ -25,7 +25,7 @@
             </div>
           </div>
         </div>
-        <img itemprop="image" :class="store.webAuthorFirstName.toLowerCase()" :src="getImgUrl(AboutMe.image)" :alt="store.webAuthorFullName" />
+        <img itemprop="image" :class="Owner.firstname.toLowerCase()" :src="getImgUrl(AboutMe.image)" :alt="Owner.fullname" />
       </div>
     </div>
 </template>
