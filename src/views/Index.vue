@@ -27,23 +27,42 @@ export default {
 		appContact: Contact,
   },
   metaInfo: {
-    title : `Saman Rashidi ~ Senior Front-end developer`,
+    title : 'Saman Rashidi ~ Senior Front-end developer',
     meta: [
       {
+        vmid : 'description',
         name : 'description',
-        content : `My name is Saman and I specialize in Front-end web development.`
+        content : 'My name is Saman and I specialize in Front-end web development.'
       },
       {
+        vmid : 'og:title',
         name : 'og:title',
-        content : `Saman Rashidi ~ Senior Front-end developer`
+        content : 'Saman Rashidi ~ Senior Front-end developer'
       },
       {
+        vmid : 'og:description',
         name : 'og:description',
-        content : `My name is Saman and I specialize in Front-end web development.`
+        content : 'My name is Saman and I specialize in Front-end web development.'
       },
       {
+        vmid : 'og:url',
         name : 'og:url',
-        content : `http://www.samanrashidi.com`
+        content : 'http://www.samanrashidi.com'
+      },
+      {
+        vmid : 'twitter:title',
+        name : 'twitter:title',
+        content : 'Saman Rashidi ~ Senior Front-end developer'
+      },
+      {
+        vmid : 'twitter:description',
+        name : 'twitter:description',
+        content : 'My name is Saman and I specialize in Front-end web development.'
+      },
+      {
+        vmid : 'twitter:url',
+        name : 'twitter:url',
+        content : 'http://www.samanrashidi.com'
       }
     ]
   },
