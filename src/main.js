@@ -29,10 +29,7 @@ Vue.use(VeeValidate, {
 // Vue Router
 
 router.beforeEach((to, from, next) => {
-  window.scrollTo({ 
-    top: 0,
-    behavior: 'smooth',
-  });
+  $('html').animatescroll({scrollSpeed:1000})
   next();
 });
 
@@ -41,7 +38,7 @@ async function registerSW() {
     try {
       await navigator.serviceWorker.register('./sw.js');
     } catch (e) {
-      console.log('SW registration failed');
+      console.log('SW registration failed')
     }
   }
 }
