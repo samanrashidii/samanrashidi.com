@@ -60,9 +60,6 @@ export default {
   },
   metaInfo() {
     return {
-      changed (newInfo, addedTags, removedTags) {
-        console.log(addedTags)
-      },
       title : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`,
       meta: [
         {
