@@ -28,8 +28,11 @@ Vue.use(VeeValidate, {
 
 // Vue Router
 
-router.beforeEach((to, from, next)=> {
-  window.scrollTo(0, 0);
+router.beforeEach((to, from, next) => {
+  window.scrollTo({ 
+    top: 0,
+    behavior: 'smooth',
+  });
   next();
 });
 

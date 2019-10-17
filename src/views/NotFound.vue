@@ -13,24 +13,43 @@
 import {mapGetters} from 'vuex';
 export default {
     metaInfo: {
-        title : `Saman Rashidi ~ Page not found`,
+        title : 'Saman Rashidi ~ Page not found',
         meta: [
-          {
-            name : 'description',
-            content : `Requested page not found (404 Error)`
-          },
-          {
-            name : 'og:title',
-            content : `Saman Rashidi ~ Page not found`
-          },
-          {
-            name : 'og:description',
-            content : `Requested page not found (404 Error)`
-          },
-          {
-            name : 'og:url',
-            content : `http://www.samanrashidi.com/404`
-          }
+            {
+                vmid : 'description',
+                name : 'description',
+                content : 'Requested page not found (404 Error)'
+            },
+            {
+                vmid : 'og:title',  
+                name : 'og:title',
+                content : 'Saman Rashidi ~ Page not found'
+            },
+            {
+                vmid : 'og:description',  
+                name : 'og:description',
+                content : 'Requested page not found (404 Error)'
+            },
+            {
+                vmid : 'og:url',
+                name : 'og:url',
+                content : 'http://www.samanrashidi.com/404'
+            },
+            {
+                vmid : 'twitter:title',
+                name : 'twitter:title',
+                content : 'Saman Rashidi ~ Page not found'
+            },
+            {
+                vmid : 'twitter:description',
+                name : 'twitter:description',
+                content : 'Requested page not found (404 Error)'
+            },
+            {
+                vmid : 'twitter:url',
+                name : 'twitter:url',
+                content : 'http://www.samanrashidi.com/404'
+            }
         ]
     },
     computed: {

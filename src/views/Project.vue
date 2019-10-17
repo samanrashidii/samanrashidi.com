@@ -3,7 +3,7 @@
     <template>
       <div class="specific-portfolio" itemscope itemtype="http://schema.org/Website">
         <div class="potfolio-banner" :style="{backgroundImage : `url(${getImgUrl(pn.pageBanner)})`}">
-            <h1><div itemprop="name">{{pn.name}}</div><span>by <strong itemprop="author">{{store.webAuthorFullName}}</strong></span></h1>
+            <h1><div itemprop="name">{{pn.name}}</div><span>by <strong itemprop="author">{{ Owner.fullname }}</strong></span></h1>
             <a class="Arrow" href="javascript:void(0)" onClick="JavaScript:$('#footer').animatescroll({scrollSpeed:4800,easing:'easeInSine'})"></a>
         </div>
         <div class="portfolio-content has-shape shape-4 has-slime-2">
@@ -60,22 +60,44 @@ export default {
   },
   metaInfo() {
     return {
+      changed (newInfo, addedTags, removedTags) {
+        console.log(addedTags)
+      },
       title : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`,
       meta: [
         {
+          vmid: 'description',
           name : 'description',
           content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
         },
         {
+          vmid: 'og:title',
           name : 'og:title',
           content : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`
         },
         {
+          vmid : 'og:description',
           name : 'og:description',
           content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
         },
         {
+          vmid : 'og:url',
           name : 'og:url',
+          content : `http://www.samanrashidi.com/portfolio/${this.pageID}`
+        },
+        {
+          vmid : 'twitter:title',
+          name : 'twitter:title',
+          content : `Saman Rashidi ~ Portfolio ~ ${this.pn.name}`
+        },
+        {
+          vmid : 'twitter:description',
+          name : 'twitter:description',
+          content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
+        },
+        {
+          vmid : 'twitter:url',
+          name : 'twitter:url',
           content : `http://www.samanrashidi.com/portfolio/${this.pageID}`
         }
       ]
@@ -101,7 +123,8 @@ export default {
   computed: {
     ...mapGetters([
       'Project',
-      'Projects'
+      'Projects',
+      'Owner'
     ]),
     getJsonData(){
       return this.Projects.find(item => item.url == this.pageID);
