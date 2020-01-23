@@ -200,6 +200,34 @@
 ],
 "portfolio":[
         {
+            "name": "MafiaBuzz",
+            "description": "MafiaBuzz is a web application to set up and manage the 'Mafia Party Game' easily.You can setup your game and choose roles as Creator to start a Game",
+            "url": "mafiabuzz",
+            "image": "mafiabuzz-thumb.jpg",
+            "thumb": "mafiabuzz-thumb-small.jpg",
+            "imageAlt": "MafiaBuzz Application by Saman Rashidi",
+            "thirdBG": true,
+            "pageBanner": "mafiabuzz/banner.jpg",
+            "pageItems": [
+                {
+                    "type": "Desktop",
+                    "image": "mafiabuzz/desktop.png",
+                    "description": "MafiaBuzz is a web application to set up and manage the 'Mafia Party Game' easily"
+                },
+                {
+                    "type": "Tablet",
+                    "image": "mafiabuzz/tablet.png",
+                    "description": "People can setup a new game and choose roles as Creator to start a Game"
+                },
+                {
+                    "type": "Mobile",
+                    "image": "mafiabuzz/mobile.png",
+                    "description":"Mafiabuzz is built with latest technologies such as Vuejs, Vuex, SaSS and ... for a great 'Progressive Web Application'"
+                }
+            ],
+            "siteUrl": "https://www.mafiabuzz.app"
+        },
+        {
             "name": "Virtuleap",
             "description": "They believe in empowering youth and indie teams and our platform here is an expression of that. They want you to be the vanguard of deciding how emergent, immersive, technology like virtual reality takes shape.",
             "url": "virtuleap",
