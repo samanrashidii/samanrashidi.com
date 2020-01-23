@@ -65,7 +65,7 @@ export default {
         {
           vmid: 'description',
           name : 'description',
-          content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
+          content : `Developed and coded ${this.pn.name} website as one of my projects`
         },
         {
           vmid: 'og:title',
@@ -75,7 +75,7 @@ export default {
         {
           vmid : 'og:description',
           name : 'og:description',
-          content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
+          content : `Developed and coded ${this.pn.name} website as one of my projects`
         },
         {
           vmid : 'og:url',
@@ -90,7 +90,7 @@ export default {
         {
           vmid : 'twitter:description',
           name : 'twitter:description',
-          content : `I'm a senior Front-end developer and ${this.pn.name} website is one of my projects`
+          content : `Developed and coded ${this.pn.name} website as one of my projects`
         },
         {
           vmid : 'twitter:url',
