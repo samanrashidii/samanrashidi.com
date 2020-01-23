@@ -24,7 +24,7 @@
         "navTarget": "About"
     },
     "AboutMe": {
-        "aboutDescription" : "<span itemprop=\"description\">My name is <strong itemprop=\"name\">Saman Rashidi</strong>, I’m a persian who lives in Georgia, <strong itemprop=\"nationality\">Tbilisi</strong>, and I specialize in <strong>Web Design and Front-end Web Development</strong>. I hold 4 CIW certification from MFT, and have gained <strong itemprop=\"award\">more than 11000 points and 100 achievements in <a target=\"_blank\" class=\"txt-teamtreehouse\" href=\"http://www.teamtreehouse.com/samanrashidi\">TeamTreeHouse</a> Website</strong>. I started working with <a itemprop=\"worksFor\" target=\"_blank\" class=\"txt-edoramedia\" href=\"http://www.edoramedia.com\">Edoramedia</a> digital solution company from October 2014 until January 2019 as a Front-end Developer.</span> Before entering a career in creating web pages, I received my bachelor’s degree in Biology and shortly became highly interested in the science known as Neuromarketing. Due to my passion and education, I pursued the Marketing Management certification and worked with Dr. Mohsen Oftadehal (Cognitive Scientist) to concentrate on advertising skills approached using biological methods. Today I\"m a <strong itemprop=\"jobTitle\">Senior Front-end Developer</strong> and have focus on designing creative and appealing websites, attractive and clean to the viewers’ eyes, and skillfully developed on the back-end. In 2017 I have created <a itemprop=\"owns\" class=\"txt-samanira\" href=\"http://www.samanira.com\" target=\"_blank\">SamanirA framework</a> with my partner <a target=\"_blank\" class=\"txt-samira\" href=\"http://www.samirasalimian.com\">Samira Salimian</a> to have a simple and easy framework for Front-end Developers.",
+        "aboutDescription" : "<span itemprop=\"description\">My name is <strong itemprop=\"name\">Saman Rashidi</strong>, I’m a persian who lives in Georgia, <strong itemprop=\"nationality\">Tbilisi</strong>, and I specialize in <strong>Web Design and Front-end Web Development</strong>. I hold 4 CIW certification from MFT, and have gained <strong itemprop=\"award\">more than 11000 points and 100 achievements in <a target=\"_blank\" class=\"txt-teamtreehouse\" href=\"http://www.teamtreehouse.com/samanrashidi\">TeamTreeHouse</a> Website</strong>. I started working with <a itemprop=\"worksFor\" target=\"_blank\" class=\"txt-edoramedia\" href=\"http://www.edoramedia.com\">Edoramedia</a> digital solution company from October 2014 until January 2019 as a Front-end Developer.</span> Before entering a career in creating web pages, I received my bachelor’s degree in Biology and shortly became highly interested in the science known as Neuromarketing. Due to my passion and education, I pursued the Marketing Management certification and worked with Dr. Mohsen Oftadehal (Cognitive Scientist) to concentrate on advertising skills approached using biological methods. Today I\"m a <strong itemprop=\"jobTitle\">Senior Front-end Developer</strong> and have focus on designing creative and appealing websites, attractive and clean to the viewers’ eyes, and skillfully developed on the back-end. In 2017 I have created <a itemprop=\"owns\" class=\"txt-samanira\" href=\"http://samanira.samanrashidi.com\" target=\"_blank\">SamanirA framework</a> with my partner <a target=\"_blank\" class=\"txt-samira\" href=\"http://www.samirasalimian.com\">Samira Salimian</a> to have a simple and easy framework for Front-end Developers.",
         "sectionSub" : "a little",
         "sectionTitle" : "ABOUT ME",
         "image" : "saman_rashidi.png"
@@ -40,7 +40,7 @@
         "readMore": "Read more",
         "logo": "samanira.png",
         "logoAlt": "Samanira Logo",
-        "url": "http://www.samanira.com"
+        "url": "http://samanira.samanrashidi.com"
     },
     "Statistics": {
         "sectionSub": "some",
@@ -50,7 +50,7 @@
             {
                 "name": "Lines of Codes",
                 "image": "code.png",
-                "statData": "568377"
+                "statData": "1573134"
             },
             {
                 "name": "Cups of Coffee",
@@ -61,24 +61,6 @@
                 "name": "Successful Projects",
                 "image": "project.png",
                 "statData": "63"
-            },
-            {
-                "name": "HTML 5",
-                "image": "html.png",
-                "statData": "99",
-                "percentage": "true"
-            },
-            {
-                "name": "CSS 3",
-                "image": "css.png",
-                "statData": "99",
-                "percentage": "true"
-            },
-            {
-                "name": "Javascript - jQuery - Vuejs",
-                "image": "javascript.png",
-                "statData": "70",
-                "percentage": "true"
             }
         ]
     },
@@ -218,6 +200,33 @@
 ],
 "portfolio":[
         {
+            "name": "Virtuleap",
+            "description": "They believe in empowering youth and indie teams and our platform here is an expression of that. They want you to be the vanguard of deciding how emergent, immersive, technology like virtual reality takes shape.",
+            "url": "virtuleap",
+            "image": "virtuleap-thumb.jpg",
+            "thumb": "virtuleap-thumb-small.jpg",
+            "imageAlt": "Virtuleap website by Saman Rashidi",
+            "pageBanner": "virtuleap/banner.jpg",
+            "pageItems": [
+                {
+                    "type": "Desktop",
+                    "image": "virtuleap/desktop.png",
+                    "description": "They believe in empowering youth and indie teams and our platform here is an expression of that"
+                },
+                {
+                    "type": "Tablet",
+                    "image": "virtuleap/tablet.png",
+                    "description": "They want you to be the vanguard of deciding how emergent, immersive, technology like virtual reality takes shape"
+                },
+                {
+                    "type": "Mobile",
+                    "image": "virtuleap/mobile.png",
+                    "description":"Virtuleap is built with latest technologies such as Vuejs, Vuex, SaSS and ..."
+                }
+            ],
+            "siteUrl": "http://www.virtuleap.com"
+        },
+        {
             "name": "Etkaline",
             "description": "Etkaline is a well known shop in Iran and they were looking for a solution to sell their products online",
             "url": "etkaline",
@@ -326,7 +335,7 @@
                     "description":"Flexpass website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.flexpass.pt"
+            "siteUrl": "http://flexpass.samanrashidi.com"
         },
         {
             "name": "Esmamkoo",
@@ -437,7 +446,7 @@
                     "description":"This website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/towerpal"
+            "siteUrl": "http://towerpal.samanrashidi.com/"
         },
         {
             "name": "Gaboja",
@@ -464,7 +473,7 @@
                     "description":"Gaboja website is not built in responsive version but it will be shown great in all devices but you need to zoom-in sometimes!"
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/gaboja"
+            "siteUrl": "http://gaboja.samanrashidi.com/"
         },
         {
             "name": "Farnaz Yavarianfar",
@@ -520,7 +529,7 @@
                     "description":"Edoramdia website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.edoramedia.com"
+            "siteUrl": "http://edoramedia.samanrashidi.com"
         },
         {
             "name": "Benita v3.0",
@@ -547,7 +556,7 @@
                     "description":"Benita got transformed in may 2017 and it got divided into Benita and Benidana sites"
                 }
             ],
-            "siteUrl": "http://www.mybenita.com"
+            "siteUrl": "http://benita.samanrashidi.com"
         },
         {
             "name": "Petrokabir Co.",
@@ -603,34 +612,7 @@
                     "description":"Jordan Branford website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/branford"
-        },
-        {
-            "name": "Virtuleap",
-            "description": "They believe in empowering youth and indie teams and our platform here is an expression of that. They want you to be the vanguard of deciding how emergent, immersive, technology like virtual reality takes shape.",
-            "url": "virtuleap",
-            "image": "virtuleap-thumb.jpg",
-            "thumb": "virtuleap-thumb-small.jpg",
-            "imageAlt": "Virtuleap website by Saman Rashidi",
-            "pageBanner": "virtuleap/banner.jpg",
-            "pageItems": [
-                {
-                    "type": "Desktop",
-                    "image": "virtuleap/desktop.png",
-                    "description": "They believe in empowering youth and indie teams and our platform here is an expression of that"
-                },
-                {
-                    "type": "Tablet",
-                    "image": "virtuleap/tablet.png",
-                    "description": "They want you to be the vanguard of deciding how emergent, immersive, technology like virtual reality takes shape"
-                },
-                {
-                    "type": "Mobile",
-                    "image": "virtuleap/mobile.png",
-                    "description":"Virtuleap website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
-                }
-            ],
-            "siteUrl": "http://www.virtuleap.com"
+            "siteUrl": "http://branford.samanrashidi.com/"
         },
         {
             "name": "Battle Royale",
@@ -658,35 +640,7 @@
                     "description":"Battle Royale website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/broyale"
-        },
-        {
-            "name": "Benita v1.0 & v2.0",
-            "description": "Benita portal provides the latest news in fashion, beauty and lifestyle tips designed. The Web site also provides a forum for women to be able to negotiate freely about their daily problems. Benita was opened in 2016 and aims to provide quality articles in Farsi and become the reference website on the everyday issues of women",
-            "url": "benita",
-            "image": "benita-thumb.jpg",
-            "thumb": "benita-thumb-small.jpg",
-            "imageAlt": "Benita v1.0 & v2.0 website by Saman Rashidi",
-            "thirdBG": true,
-            "pageBanner": "benita/banner.jpg",
-            "pageItems": [
-                {
-                    "type": "Desktop",
-                    "image": "benita/desktop.png",
-                    "description": "Benita portal provides the latest news in fashion, beauty and lifestyle tips designed"
-                },
-                {
-                    "type": "Tablet",
-                    "image": "benita/tablet.png",
-                    "description": "The Web site also provides a forum for women to be able to negotiate freely about their daily problems"
-                },
-                {
-                    "type": "Mobile",
-                    "image": "benita/mobile.png",
-                    "description":"Benita was opened in 2016 and aims to provide quality articles in Farsi and become the reference website on the everyday issues of women"
-                }
-            ],
-            "siteUrl": "http://www.mybenita.com"
+            "siteUrl": "http://broyale.samanrashidi.com/"
         },
         {
             "name": "Primal MD",
@@ -713,7 +667,7 @@
                     "description":"Primal MD website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/primalmd"
+            "siteUrl": "http://primalmd.samanrashidi.com/"
         },
         {
             "name": "Sheo Sports",
@@ -741,7 +695,7 @@
                     "description":"Sheo Sport website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/sheosports"
+            "siteUrl": "http://sheosports.samanrashidi.com/"
         },
         {
             "name": "Magnihelp",
@@ -769,7 +723,7 @@
                     "description":"Magnihelp website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/magnihelp"
+            "siteUrl": "http://magnihelp.samanrashidi.com/"
         },
         {
             "name": "Posh Vault",
@@ -796,7 +750,7 @@
                     "description":"Posh Vault website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/poshvault"
+            "siteUrl": "http://poshvault.samanrashidi.com/"
         },
         {
             "name": "Emirates American Football League",
@@ -824,7 +778,7 @@
                     "description":"EAFL website is not built in responsive version but it will be shown great in all devices but you need to zoom-in sometimes!"
                 }
             ],
-            "siteUrl": "http://www.eafl.ae"
+            "siteUrl": "http://eafl.samanrashidi.com"
         },
         {
             "name": "Line Info",
@@ -852,7 +806,7 @@
                     "description":"Line Info blog built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/lineinfo/listing.html"
+            "siteUrl": "http://lineinfo.samanrashidi.com/"
         },
         {
             "name": "TFG Interactive Map",
@@ -909,7 +863,7 @@
                     "description":"Zafaroptic website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://www.samanira.com/projects/zafaroptic"
+            "siteUrl": "http://zafaroptic.samanrashidi.com/"
         },
         {
             "name": "Edoramedia v3.0",
@@ -964,7 +918,7 @@
                     "description":"Team Axiom website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
-            "siteUrl": "http://samanira.com/projects/theaxiom"
+            "siteUrl": "http://theaxiom.samanrashidi.com/"
         },
         {
             "name": "The Body Challenge v1.0",
@@ -992,7 +946,7 @@
                     "description":"The Body Challenge v1.0 is not built in responsive version but it will be shown great in all devices but you need to zoom-in sometimes!"
                 }
             ],
-            "siteUrl": "http://samanira.com/projects/thebodychallenge"
+            "siteUrl": "http://thebodychallenge.samanrashidi.com/"
         }
 ]
 }

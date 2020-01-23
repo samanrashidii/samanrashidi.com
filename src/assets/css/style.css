@@ -219,6 +219,10 @@
   margin-top:8px;
 }
 
+#samanira .half-box.left-aligned{
+	padding-top:15px;
+}
+
 #about-me{
 	width:100%;
 	background-color: #161616;
@@ -249,6 +253,7 @@
 #statistics{
 	width:100%;
 	padding-bottom: 0;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-color: #161616;
