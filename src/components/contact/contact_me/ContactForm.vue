@@ -49,10 +49,10 @@
                     </svg>
                 </span>
                 <span class="input has-checkbox ac-custom ac-checkbox ac-boxfill">
-                    <input id="cb10" name="field_of_activity" type="checkbox" value="Website" v-model="contact.request"><label for="cb10">{{Contact.form.checkbox1}}</label>
+                    <input id="cb10" name="urgent" type="checkbox" value="Yes" v-model="contact.urgent"><label for="cb10">{{Contact.form.checkbox1}}</label>
                 </span>
                 <span class="input has-checkbox ac-custom ac-checkbox ac-boxfill">
-                    <input id="cb11" name="field_of_activity" type="checkbox" value="Newsletter" v-model="contact.request"><label for="cb11">{{Contact.form.checkbox2}}</label>
+                    <input id="cb11" name="robot_test" type="checkbox" value="True" v-validate="'required'" v-model="contact.robot_test"><label for="cb11">{{Contact.form.checkbox2}}</label>
                 </span>
             </div>
             <div class="message">
@@ -78,7 +78,8 @@ export default {
                 emailAddress : '',
                 mobileNumber : '',
                 subject : '',
-                request : [],
+                urgent : '',
+                robotTest : '',
                 message : '',
             },
             formSubmit : false

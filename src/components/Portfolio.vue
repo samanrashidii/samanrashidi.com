@@ -5,8 +5,7 @@
                 <span>{{Portfolio.sectionSub}}</span>
                 <h1>{{Portfolio.sectionTitle}}</h1>
             </div>
-            <div class="my-portfolio">
-                <h3 class="inner-title website-icon">{{Portfolio.portfolioTitle}}</h3>
+            <div class="my-portfolio has-top-margin">
                 <ul class="grid effect-8" id="grid">
                     <li v-for="(project, index) in Projects" :key="index" :id="project.url">
                         <div class="portfolio-layer" :class="{'second-bg' : project.secondBG, 'third-bg' : project.thirdBG, 'no-bg' : project.noBG, 'half-text' : project.halfText}">

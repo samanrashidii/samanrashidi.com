@@ -39,6 +39,14 @@
 	text-shadow:0 0 12px #181818;
 }
 
+.inner-banner p{
+	font-family: 'Effra-light';
+	font-size:24px;
+	color:#fefefe;
+	text-shadow:0 0 12px #181818;
+	padding-top:0;
+}
+
 .button-holder{
 	position: relative;
 	margin-top:30px;
@@ -190,9 +198,9 @@
 .parallax{
 	display: table;
 	width: 100%;
-  height: 680px;
-  background-repeat: no-repeat;
-  background-position: center;
+	height: 680px;
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -200,12 +208,21 @@
 .parallax-layer{
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 55px;
+	font-family: 'Effra-light';
+	font-size: 24px;
 	padding-top:150px;
-	text-shadow:0 0 12px #121212;
+	text-shadow:0 0 12px #040404;
 }
 
-.parallax-layer strong{font-family: 'Effra-light';}
+.parallax-box{
+	max-width: 980px;
+	padding:0 20px;
+	margin:auto;
+}
+
+.parallax-layer strong{
+	font-size: 55px;
+}
 
 #samanira{
 	padding:80px 0 100px 0;
@@ -258,8 +275,6 @@
 	background-position: right bottom;
 	background-color: #161616;
 }
-
-.section-title h1{text-transform: uppercase;}
 
 .section-title span{
 	display: block;
@@ -423,6 +438,11 @@
 }
 
 .contact-form{position: relative;}
+
+.ac-custom input[aria-invalid="true"] + label{color: tomato;}
+.ac-custom input[aria-invalid="true"] + label::before{
+	border-color: tomato;
+}
 
 .thank-you{
 	position: absolute;
