@@ -1,7 +1,7 @@
 <template>
     <div class="reveal">
         <h3 class="inner-title form-icon">{{Contact.subtitle2}}</h3>
-        <form action="#" method="POST" accept-charset="utf-8" class="contact-form">
+        <form action="#" method="POST" accept-charset="utf-8" class="contact-form" @submit.prevent="nextStep">
             <div class="thank-you has-slime-2" :class="{'active' : formSubmit}">
                 <div class="thank-you-box">
                     <div class="thank-you-inner-box">
@@ -49,10 +49,10 @@
                     </svg>
                 </span>
                 <span class="input has-checkbox ac-custom ac-checkbox ac-boxfill">
-                    <input id="cb10" name="field_of_activity[]" type="checkbox" value="Website" v-model="contact.request"><label for="cb10">{{Contact.form.checkbox1}}</label>
+                    <input id="cb10" name="field_of_activity" type="checkbox" value="Website" v-model="contact.request"><label for="cb10">{{Contact.form.checkbox1}}</label>
                 </span>
                 <span class="input has-checkbox ac-custom ac-checkbox ac-boxfill">
-                    <input id="cb11" name="field_of_activity[]" type="checkbox" value="Newsletter" v-model="contact.request"><label for="cb11">{{Contact.form.checkbox2}}</label>
+                    <input id="cb11" name="field_of_activity" type="checkbox" value="Newsletter" v-model="contact.request"><label for="cb11">{{Contact.form.checkbox2}}</label>
                 </span>
             </div>
             <div class="message">
@@ -60,12 +60,13 @@
                 <textarea name="message" id="message" v-validate="'required|min:20'" :class="{'active': addActive(contact.message)}" :placeholder="Contact.form.message" v-model="contact.message"></textarea>
             </div>
             <input type="text" name="samanira_secure" class="samanira_secure" />
-            <input type="submit" :value="Contact.form.button" @click.prevent="nextStep">
+            <input type="submit" :value="Contact.form.button">
         </form>
     </div>
 </template>
 
 <script>
+import emailjs from 'emailjs-com';
 
 var axios = require('axios');
 import {mapGetters} from 'vuex';
@@ -89,23 +90,22 @@ export default {
         ])
     },
     methods:{
-        nextStep() {
+        sendEmail: (e) => {
+            console.log(e.target)
+            return emailjs.sendForm('gmail', 'template_JDv6AO1p', e.target, 'user_QpKRTvucCWKNw4lTdEKuc')
+        },
+        nextStep(e) {
             var vm = this;
             this.$validator.validateAll().then((result) => {
                 if (result) {
-                    this.formSubmit = true;
-                    const options = {
-                        method: 'POST',
-                        headers: { 'content-type': 'application/form-data' },
-                        data: vm.contact,
-                        url: '/mail.php',
-                    };
-                    axios(options).then(function (response) {
-                        console.log(response);
-                    }).catch(function (error) {
-                        console.log(error.message);
-                    });
-                    return;
+                    this.sendEmail(e)
+                        .then((res) => {
+                            console.log(res)
+                            this.formSubmit = true;
+                        })
+                        .catch((err) => {
+                            console.log(err)
+                        })
                 }
             });
         },
