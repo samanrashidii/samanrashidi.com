@@ -1,16 +1,16 @@
 <template>
     <div class="reveal">
         <h3 class="inner-title form-icon">{{Contact.subtitle2}}</h3>
-        <form action="#" method="POST" accept-charset="utf-8" class="contact-form">
-            <div class="thank-you has-slime-2" :class="{'active' : formSubmit}">
-                <div class="thank-you-box">
-                    <div class="thank-you-inner-box">
-                        <img :src="getImgUrl(Contact.thankyou.icon)" :alt="Contact.thankyou.iconAlt" />
-                        <h2>{{Contact.thankyou.title}} <span class="site-color">{{contact.fullName}}</span> <br /> {{Contact.thankyou.subtitle}}</h2>
-                        <p>{{Contact.thankyou.description}} <span class="site-color">{{contact.mobileNumber}}</span></p>
-                    </div>
+        <div class="thank-you has-slime-2" :class="{'active' : formSubmit}">
+            <div class="thank-you-box">
+                <div class="thank-you-inner-box">
+                    <img :src="getImgUrl(Contact.thankyou.icon)" :alt="Contact.thankyou.iconAlt" />
+                    <h2>{{Contact.thankyou.title}} <span class="site-color">{{contact.fullName}}</span> <br /> {{Contact.thankyou.subtitle}}</h2>
+                    <p>{{Contact.thankyou.description}} <span class="site-color">{{contact.mobileNumber}}</span></p>
                 </div>
             </div>
+        </div>
+        <form action="#" method="POST" accept-charset="utf-8" class="contact-form" @submit.prevent="nextStep">
             <div class="field-wrapper">
                 <span class="input input--kozakura">
                     <input type="text" class="input__field input__field--kozakura" v-validate="'required|min:3'" :class="{'active': addActive(contact.fullName)}" id="full_name" name="full_name" v-model="contact.fullName" />
@@ -49,10 +49,10 @@
                     </svg>
                 </span>
                 <span class="input has-checkbox ac-custom ac-checkbox ac-boxfill">
-                    <input id="cb10" name="field_of_activity[]" type="checkbox" value="Website" v-model="contact.request"><label for="cb10">{{Contact.form.checkbox1}}</label>
+                    <input id="cb10" name="urgent" type="checkbox" value="Yes" v-model="contact.urgent"><label for="cb10">{{Contact.form.checkbox1}}</label>
                 </span>
                 <span class="input has-checkbox ac-custom ac-checkbox ac-boxfill">
-                    <input id="cb11" name="field_of_activity[]" type="checkbox" value="Newsletter" v-model="contact.request"><label for="cb11">{{Contact.form.checkbox2}}</label>
+                    <input id="cb11" name="robot_test" type="checkbox" value="True" v-validate="'required'" v-model="contact.robot_test"><label for="cb11">{{Contact.form.checkbox2}}</label>
                 </span>
             </div>
             <div class="message">
@@ -60,12 +60,13 @@
                 <textarea name="message" id="message" v-validate="'required|min:20'" :class="{'active': addActive(contact.message)}" :placeholder="Contact.form.message" v-model="contact.message"></textarea>
             </div>
             <input type="text" name="samanira_secure" class="samanira_secure" />
-            <input type="submit" :value="Contact.form.button" @click.prevent="nextStep">
+            <input type="submit" :value="Contact.form.button">
         </form>
     </div>
 </template>
 
 <script>
+import emailjs from 'emailjs-com';
 
 var axios = require('axios');
 import {mapGetters} from 'vuex';
@@ -77,7 +78,8 @@ export default {
                 emailAddress : '',
                 mobileNumber : '',
                 subject : '',
-                request : [],
+                urgent : '',
+                robotTest : '',
                 message : '',
             },
             formSubmit : false
@@ -89,23 +91,22 @@ export default {
         ])
     },
     methods:{
-        nextStep() {
+        sendEmail: (e) => {
+            console.log(e.target)
+            return emailjs.sendForm('gmail', 'contact_form', e.target, 'user_QpKRTvucCWKNw4lTdEKuc')
+        },
+        nextStep(e) {
             var vm = this;
             this.$validator.validateAll().then((result) => {
                 if (result) {
-                    this.formSubmit = true;
-                    const options = {
-                        method: 'POST',
-                        headers: { 'content-type': 'application/form-data' },
-                        data: vm.contact,
-                        url: '/mail.php',
-                    };
-                    axios(options).then(function (response) {
-                        console.log(response);
-                    }).catch(function (error) {
-                        console.log(error.message);
-                    });
-                    return;
+                    this.sendEmail(e)
+                        .then((res) => {
+                            console.log(res)
+                            this.formSubmit = true;
+                        })
+                        .catch((err) => {
+                            console.log(err)
+                        })
                 }
             });
         },

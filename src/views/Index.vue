@@ -27,22 +27,22 @@ export default {
 		appContact: Contact,
   },
   metaInfo: {
-    title : 'Saman Rashidi ~ Senior Front-end developer',
+    title : 'Saman Rashidi ~ Sr. Front-end Developer',
     meta: [
       {
         vmid : 'description',
         name : 'description',
-        content : 'My name is Saman and I specialize in Front-end web development.'
+        content : "Hi, I'm Saman and specialized in Front-end Development. I'm working most of the time with HTML, SASS , Javascript and Vuejs."
       },
       {
         vmid : 'og:title',
         name : 'og:title',
-        content : 'Saman Rashidi ~ Senior Front-end developer'
+        content : 'Saman Rashidi ~ Sr. Front-end Developer'
       },
       {
         vmid : 'og:description',
         name : 'og:description',
-        content : 'My name is Saman and I specialize in Front-end web development.'
+        content : "Hi, I'm Saman and specialized in Front-end Development. I'm working most of the time with HTML, SASS , Javascript and Vuejs."
       },
       {
         vmid : 'og:url',
@@ -52,12 +52,12 @@ export default {
       {
         vmid : 'twitter:title',
         name : 'twitter:title',
-        content : 'Saman Rashidi ~ Senior Front-end developer'
+        content : 'Saman Rashidi ~ Sr. Front-end Developer'
       },
       {
         vmid : 'twitter:description',
         name : 'twitter:description',
-        content : 'My name is Saman and I specialize in Front-end web development.'
+        content : "Hi, I'm Saman and specialized in Front-end Development. I'm working most of the time with HTML, SASS , Javascript and Vuejs."
       },
       {
         vmid : 'twitter:url',

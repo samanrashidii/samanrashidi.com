@@ -16,6 +16,18 @@
 
    <url>
 
+      <loc>http://www.samanrashidi.com/portfolio/mafiabuzz</loc>
+
+      <lastmod>2020-01-24</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+
+   <url>
+
       <loc>http://www.samanrashidi.com/portfolio/etkaline</loc>
 
       <lastmod>2019-06-14</lastmod>
@@ -197,18 +209,6 @@
    <url>
 
       <loc>http://www.samanrashidi.com/portfolio/battle-royale</loc>
-
-      <lastmod>2019-06-14</lastmod>
-
-      <changefreq>monthly</changefreq>
-
-      <priority>0.9</priority>
-
-   </url>
-
-   <url>
-
-      <loc>http://www.samanrashidi.com/portfolio/benita</loc>
 
       <lastmod>2019-06-14</lastmod>
 
