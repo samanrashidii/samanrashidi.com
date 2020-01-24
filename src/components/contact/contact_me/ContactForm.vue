@@ -1,16 +1,16 @@
 <template>
     <div class="reveal">
         <h3 class="inner-title form-icon">{{Contact.subtitle2}}</h3>
-        <form action="#" method="POST" accept-charset="utf-8" class="contact-form" @submit.prevent="nextStep">
-            <div class="thank-you has-slime-2" :class="{'active' : formSubmit}">
-                <div class="thank-you-box">
-                    <div class="thank-you-inner-box">
-                        <img :src="getImgUrl(Contact.thankyou.icon)" :alt="Contact.thankyou.iconAlt" />
-                        <h2>{{Contact.thankyou.title}} <span class="site-color">{{contact.fullName}}</span> <br /> {{Contact.thankyou.subtitle}}</h2>
-                        <p>{{Contact.thankyou.description}} <span class="site-color">{{contact.mobileNumber}}</span></p>
-                    </div>
+        <div class="thank-you has-slime-2" :class="{'active' : formSubmit}">
+            <div class="thank-you-box">
+                <div class="thank-you-inner-box">
+                    <img :src="getImgUrl(Contact.thankyou.icon)" :alt="Contact.thankyou.iconAlt" />
+                    <h2>{{Contact.thankyou.title}} <span class="site-color">{{contact.fullName}}</span> <br /> {{Contact.thankyou.subtitle}}</h2>
+                    <p>{{Contact.thankyou.description}} <span class="site-color">{{contact.mobileNumber}}</span></p>
                 </div>
             </div>
+        </div>
+        <form action="#" method="POST" accept-charset="utf-8" class="contact-form" @submit.prevent="nextStep">
             <div class="field-wrapper">
                 <span class="input input--kozakura">
                     <input type="text" class="input__field input__field--kozakura" v-validate="'required|min:3'" :class="{'active': addActive(contact.fullName)}" id="full_name" name="full_name" v-model="contact.fullName" />
@@ -92,7 +92,7 @@ export default {
     methods:{
         sendEmail: (e) => {
             console.log(e.target)
-            return emailjs.sendForm('gmail', 'template_JDv6AO1p', e.target, 'user_QpKRTvucCWKNw4lTdEKuc')
+            return emailjs.sendForm('gmail', 'contact_form', e.target, 'user_QpKRTvucCWKNw4lTdEKuc')
         },
         nextStep(e) {
             var vm = this;
