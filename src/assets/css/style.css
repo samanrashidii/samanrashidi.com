@@ -216,6 +216,7 @@
 
 .parallax-box{
 	max-width: 980px;
+	overflow: hidden;
 	padding:0 20px;
 	margin:auto;
 }

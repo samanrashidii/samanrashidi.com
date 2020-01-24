@@ -87,7 +87,8 @@
             "mobile": "Mobile Number",
             "subject": "Message Subject",
             "checkbox1": "It is Urgent",
-            "checkbox2": "Not a Robot",
+            "checkbox2": "Not a Robot?",
+            "checkbox2Active": "Cool!!! You are not a bot",
             "message": "Type your message for me ...",
             "button": "Send your message to me"
         },

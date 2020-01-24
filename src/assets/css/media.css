@@ -125,8 +125,11 @@
 	.input.has-checkbox:last-child{margin-left: 4%;}
 
 	.parallax-layer{
-		font-size: 44px;
 		padding:40px 20px 0 20px;
+	}
+
+	.parallax-layer strong{
+		font-size: 44px;
 	}
 
 	.banner,
@@ -282,7 +285,6 @@
 	p{padding-top:20px !important;}
 	#about-me p{padding-top:30px !important;}
 
-	.parallax-layer{font-size: 45px;}
 	.section-title span{font-size: 19px;}
 
 	.has-shape::before{background-size: contain !important;}
@@ -422,8 +424,6 @@
 @media only screen and (max-width:430px){
 
 	.button-holder .bttn{margin: 10px;}
-
-	.parallax-layer{font-size: 37px;}
 
 	.pagination-item{margin-left: -160px;}
 
