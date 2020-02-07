@@ -49,6 +49,10 @@
 		bottom:0;
 	}
 
+	#samanira .half-box.left-aligned{
+		padding-top:15px;
+	}
+
 }
 
 						/*            1050px Screen         */
@@ -60,7 +64,7 @@
 	.inner-banner{padding: 0 20px 50px 20px;}
 
 	.has-shape::before{
-		top:-50px;
+		top:-49px;
 		height: 50px;
 		background-position: center bottom !important;
 	}
@@ -125,8 +129,11 @@
 	.input.has-checkbox:last-child{margin-left: 4%;}
 
 	.parallax-layer{
-		font-size: 44px;
 		padding:40px 20px 0 20px;
+	}
+
+	.parallax-layer strong{
+		font-size: 44px;
 	}
 
 	.banner,
@@ -282,7 +289,6 @@
 	p{padding-top:20px !important;}
 	#about-me p{padding-top:30px !important;}
 
-	.parallax-layer{font-size: 45px;}
 	.section-title span{font-size: 19px;}
 
 	.has-shape::before{background-size: contain !important;}
@@ -306,6 +312,10 @@
 		height: 50px;
 	}
 
+	.parallax-layer strong{
+		font-size: 32px;
+	}
+
 	.pagination{margin-top:40px;}
 
 	.has-slime-2::after {
@@ -317,7 +327,11 @@
 	.stat-box{
 		float: none;
 		width: 100%;
-		padding:25px 0;
+		padding:10px 0;
+	}
+
+	.stat-box-info{
+		margin-top:-20px;
 	}
 
 	.page h1{font-size: 100px;}
@@ -422,8 +436,6 @@
 @media only screen and (max-width:430px){
 
 	.button-holder .bttn{margin: 10px;}
-
-	.parallax-layer{font-size: 37px;}
 
 	.pagination-item{margin-left: -160px;}
 

@@ -216,7 +216,7 @@
 
 .parallax-box{
 	max-width: 980px;
-	padding:0 20px;
+	overflow: hidden;
 	margin:auto;
 }
 
@@ -234,10 +234,6 @@
 .samanira-main-logo{
   max-width: 200px;
   margin-top:8px;
-}
-
-#samanira .half-box.left-aligned{
-	padding-top:15px;
 }
 
 #about-me{
@@ -301,7 +297,22 @@
 	float: left;
 	width: 33.3333333333333%;
 	text-align: center;
-	padding:40px 0;
+}
+
+.skill-box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding:80px 0 40px 0;
+}
+
+.skill{
+	margin:20px;
+}
+
+.skill img{
+	max-width: 120px;
+	height: 60px;
 }
 
 .stat-box strong{
