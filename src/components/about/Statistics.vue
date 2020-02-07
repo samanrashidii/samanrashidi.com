@@ -9,7 +9,9 @@
           <div class="section-content">
             <div class="stat-box-wrapper">
               <div class="stat-box" v-for="(statistic, index) in Statistics.data" :key="index">
-                <img :src="require(`@/assets/images/${statistic.image}`)" :alt="statistic.name" />
+                <lottie-player
+                  :src="statistic.image"  background="transparent"  :speed="statistic.speed"  style="width: 200px; height: 200px;"  loop  autoplay >
+                </lottie-player>
                 <div class="stat-box-info">
                   <strong><span class="counter-up">{{statistic.statData}}</span><span v-if="statistic.percentage"> %</span></strong><div>{{statistic.name}}</div>
                 </div>
@@ -36,3 +38,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  .lottie-wrapper svg path{
+    stroke: #ffffff;
+  }
+</style>

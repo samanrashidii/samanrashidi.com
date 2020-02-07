@@ -51,18 +51,21 @@
         "data": [
             {
                 "name": "Lines of Codes",
-                "image": "code.png",
-                "statData": "1573134"
+                "image": "https://assets4.lottiefiles.com/packages/lf20_r16oE0.json",
+                "speed": "1",
+                "statData": "2373239"
             },
             {
                 "name": "Cups of Coffee",
-                "image": "coffee.png",
-                "statData": "3524"
+                "image": "https://assets3.lottiefiles.com/packages/lf20_MMzJtI.json",
+                "speed": "1",
+                "statData": "4424"
             },
             {
                 "name": "Successful Projects",
-                "image": "project.png",
-                "statData": "63"
+                "image": "https://assets3.lottiefiles.com/packages/lf20_qg4cSS.json",
+                "speed": "2",
+                "statData": "64"
             }
         ]
     },
