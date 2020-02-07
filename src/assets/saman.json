@@ -67,6 +67,38 @@
                 "speed": "2",
                 "statData": "64"
             }
+        ],
+        "skills": [
+            {
+                "url": "vuejs.svg",
+                "name": "Vuejs",
+                "floating": "floating-1"
+            },
+            {
+                "url": "html-5.svg",
+                "name": "HTML 5",
+                "floating": "floating-2"
+            },
+            {
+                "url": "css-3.svg",
+                "name": "CSS 3",
+                "floating": "floating-1"
+            },
+            {
+                "url": "javascript.svg",
+                "name": "Javascript",
+                "floating": "floating-2"
+            },
+            {
+                "url": "git.svg",
+                "name": "Git",
+                "floating": "floating-1"
+            },
+            {
+                "url": "jquery.svg",
+                "name": "jQuery",
+                "floating": "floating-2"
+            }
         ]
     },
     "Portfolio": {

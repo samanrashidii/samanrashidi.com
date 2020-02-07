@@ -300,6 +300,20 @@
 	text-align: center;
 }
 
+.skill-box{
+	display: flex;
+	justify-content: center;
+	padding:40px 0;
+}
+
+.skill{
+	margin:20px;
+}
+
+.skill img{
+	width:60px;
+}
+
 .stat-box strong{
 	display: block;
 	font-size: 40px;

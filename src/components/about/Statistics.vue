@@ -17,6 +17,9 @@
                 </div>
               </div>
             </div>
+            <div class="skill-box">
+              <Skill v-for="(skill, index) in Statistics.skills" :key="index" :skill="skill" />
+            </div>
           </div>
         </div>
       </div>
@@ -25,7 +28,12 @@
 
 <script>
 import {mapGetters} from 'vuex';
+import Skill from '@/components/Skill.vue';
+
 export default {
+  components: {
+    Skill,
+  },
   computed: {
     ...mapGetters([
         'Statistics',
