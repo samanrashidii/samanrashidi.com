@@ -32,7 +32,7 @@ export default {
       {
         vmid : 'description',
         name : 'description',
-        content : "Hi, I'm Saman and specialized in Front-end Development. I'm working most of the time with HTML, SASS , Javascript and Vuejs."
+        content : "Hi I'm Saman and specialized in Front-end Development. I'm coding most of the time with Vuejs, Javascript, Sass and HTML"
       },
       {
         vmid : 'og:title',
@@ -42,7 +42,7 @@ export default {
       {
         vmid : 'og:description',
         name : 'og:description',
-        content : "Hi, I'm Saman and specialized in Front-end Development. I'm working most of the time with HTML, SASS , Javascript and Vuejs."
+        content : "Hi I'm Saman and specialized in Front-end Development. I'm coding most of the time with Vuejs, Javascript, Sass and HTML"
       },
       {
         vmid : 'og:url',
@@ -57,7 +57,7 @@ export default {
       {
         vmid : 'twitter:description',
         name : 'twitter:description',
-        content : "Hi, I'm Saman and specialized in Front-end Development. I'm working most of the time with HTML, SASS , Javascript and Vuejs."
+        content : "Hi I'm Saman and specialized in Front-end Development. I'm coding most of the time with Vuejs, Javascript, Sass and HTML"
       },
       {
         vmid : 'twitter:url',
