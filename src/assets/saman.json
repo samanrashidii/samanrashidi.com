@@ -50,7 +50,7 @@
         "background": "about-bg.jpg",
         "data": [
             {
-                "name": "Lines of Codes",
+                "name": "Lines of Code",
                 "image": "https://assets4.lottiefiles.com/packages/lf20_r16oE0.json",
                 "speed": "1",
                 "statData": "2373239"
@@ -98,6 +98,81 @@
                 "url": "jquery.svg",
                 "name": "jQuery",
                 "floating": "floating-2"
+            },
+            {
+                "url": "bootstrap-4.svg",
+                "name": "Bootstrap 4",
+                "floating": "floating-1"
+            },
+            {
+                "url": "adobe-photoshop.svg",
+                "name": "Adobe Photoshop",
+                "floating": "floating-2"
+            },
+            {
+                "url": "nuxt.svg",
+                "name": "Nuxtjs",
+                "floating": "floating-1"
+            },
+            {
+                "url": "google-analytics.svg",
+                "name": "Google Analytics",
+                "floating": "floating-2"
+            },
+            {
+                "url": "docker.svg",
+                "name": "Docker",
+                "floating": "floating-1"
+            },
+            {
+                "url": "eslint.svg",
+                "name": "Eslint",
+                "floating": "floating-2"
+            },
+            {
+                "url": "github.svg",
+                "name": "Github",
+                "floating": "floating-1"
+            },
+            {
+                "url": "gitlab.svg",
+                "name": "Gitlab",
+                "floating": "floating-2"
+            },
+            {
+                "url": "nodejs.svg",
+                "name": "Nodejs",
+                "floating": "floating-1"
+            },
+            {
+                "url": "npm.svg",
+                "name": "Npm",
+                "floating": "floating-2"
+            },
+            {
+                "url": "yarn.svg",
+                "name": "Yarn",
+                "floating": "floating-1"
+            },
+            {
+                "url": "vscode.svg",
+                "name": "Visual Studio Code",
+                "floating": "floating-2"
+            },
+            {
+                "url": "sass.svg",
+                "name": "Sass",
+                "floating": "floating-1"
+            },
+            {
+                "url": "vim.svg",
+                "name": "Vim",
+                "floating": "floating-2"
+            },
+            {
+                "url": "postman.svg",
+                "name": "Postman",
+                "floating": "floating-1"
             }
         ]
     },
