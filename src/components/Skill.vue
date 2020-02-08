@@ -18,7 +18,7 @@ export default {
 <style scoped>
 .floating-1{
     animation-name:floating;
-    animation-delay:-2.8s;
+    animation-delay:-3s;
     animation-duration:4s;
     animation-direction:alternate;
     animation-iteration-count:infinite;
@@ -28,7 +28,7 @@ export default {
 }
 .floating-2{
     animation-name:floating-reverse;
-    animation-delay:-2.4s;
+    animation-delay:-2.6s;
     animation-duration:4.4s;
     animation-direction:alternate;
     animation-iteration-count:infinite;
@@ -39,19 +39,19 @@ export default {
 
 @keyframes floating{
     from{
-        transform:translateY(10px) rotate3d(0,0,1,8deg)
+        transform:translateY(10px) rotate3d(0,0,1,10deg)
     }
     to{
-        transform:translateY(-10px) rotate3d(0,0,1,0deg)
+        transform:translateY(-10px) rotate3d(0,0,1,-2deg)
     }
 }
 
 @keyframes floating-reverse{
     from{
-        transform:translateY(12px) rotate3d(0,0,1,-8deg)
+        transform:translateY(15px) rotate3d(0,0,1,-10deg)
     }
     to{
-        transform:translateY(-12px) rotate3d(0,0,1,0deg)
+        transform:translateY(-15px) rotate3d(0,0,1,2deg)
     }
 }
 </style>

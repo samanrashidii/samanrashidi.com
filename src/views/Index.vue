@@ -27,7 +27,7 @@ export default {
 		appContact: Contact,
   },
   metaInfo: {
-    title : 'Saman Rashidi ~ Sr. Front-end Developer',
+    title : 'Saman Rashidi ~ Front-end Developer',
     meta: [
       {
         vmid : 'description',
@@ -37,7 +37,7 @@ export default {
       {
         vmid : 'og:title',
         name : 'og:title',
-        content : 'Saman Rashidi ~ Sr. Front-end Developer'
+        content : 'Saman Rashidi ~ Front-end Developer'
       },
       {
         vmid : 'og:description',
@@ -52,7 +52,7 @@ export default {
       {
         vmid : 'twitter:title',
         name : 'twitter:title',
-        content : 'Saman Rashidi ~ Sr. Front-end Developer'
+        content : 'Saman Rashidi ~ Front-end Developer'
       },
       {
         vmid : 'twitter:description',

@@ -8,7 +8,7 @@
     "Menu": ["Home", "About", "Portfolio", "ContactMe"],
     "Home": {
         "pageTitle": "<span class=\"site-color\">Saman</span> Rashidi",
-        "pageSubTitle": "Sr. Front-end Developer",
+        "pageSubTitle": "Front-end Developer",
         "pageBanner": "banner.jpg",
         "buttons": [
             {
@@ -173,6 +173,11 @@
                 "url": "postman.svg",
                 "name": "Postman",
                 "floating": "floating-1"
+            },
+            {
+                "url": "linux.svg",
+                "name": "Linux",
+                "floating": "floating-2"
             }
         ]
     },
