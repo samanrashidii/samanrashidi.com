@@ -20,6 +20,7 @@ You can see the project by clicking below link :
 * CSS
 * Javascript
 * jQuery
+* SVG
 * Schema
 
 ## Authors
