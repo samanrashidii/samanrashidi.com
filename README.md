@@ -8,6 +8,10 @@
 
 My personal website created by vuejs to present myself, my projects and some statistics
 
+## Language
+
+English - LTR
+
 ## Live Version
 
 You can see the project by clicking below link :
