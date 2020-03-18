@@ -242,10 +242,11 @@
 	background-color: #161616;
 }
 
+#about-me p{padding-bottom: 20px;}
 #about-me p,
 #about-me p strong{
 	font-family: 'Effra-light';
-	line-height: 2.1;
+	line-height: 1.8;
 }
 
 #about-me p a{

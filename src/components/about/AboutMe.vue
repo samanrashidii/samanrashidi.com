@@ -9,7 +9,7 @@
           <div class="about-wrapper">
             <img itemprop="image" :class="Owner.firstname.toLowerCase()" src="@/assets/images/samanrashidii.png" :alt="Owner.fullname" />
             <div class="section-content">
-              <p class="justified" v-html="AboutMe.aboutDescription"></p>
+              <p class="left-aligned" v-html="AboutMe.aboutDescription" />
             </div>
           </div>
         </div>

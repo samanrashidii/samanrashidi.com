@@ -1,6 +1,6 @@
 /*            1800px Screen         */
 
-@media only screen and (min-width:1800px){
+@media (min-width:1800px){
 
 	.has-shape::before{background-size: cover !important;}
 
@@ -8,7 +8,7 @@
 
 						/*            1220px Screen         */
 
-@media only screen and (max-width:1220px){
+@media (max-width:1220px){
 
 	body{font-size: 17px;}
 	h1{font-size:55px;}
@@ -38,7 +38,10 @@
 
 	.portfolio-content.has-slime-2::after{
 		top:auto;
-		bottom:0;
+		bottom:0;.saman{
+		max-width: 150px;
+		margin-left: -75px;
+	}
 	}
 
 	#samanira .half-box.left-aligned{
@@ -47,9 +50,9 @@
 
 }
 
-						/*            1050px Screen         */
+						/*            980px Screen         */
 
-@media only screen and (max-width:1050px){
+@media (max-width:980px){
 
 	.has-shape{padding:20px 0 40px 0;}
 
@@ -97,7 +100,7 @@
 
 						/*            980px Screen         */
 
-@media only screen and (max-width:980px){
+@media (max-width:980px){
 	
 	body {
 		-webkit-user-select: none;
@@ -145,18 +148,11 @@
 
 						/*            840px Screen         */
 
-@media only screen and (max-width:840px){
+@media (max-width:840px){
 
-	#about-me{padding-bottom: 420px;}
 	#about-me p{line-height: 1.7;}
 
 	.pagination{float: none;}
-
-	.saman{
-		width: 200px;
-		left: 50%;
-		margin-left: -100px;
-	}
 
 	.inner-banner{padding:0 15px;}
 
@@ -183,7 +179,7 @@
 
 						/*            630px Screen         */
 
-@media only screen and (max-width:630px){
+@media (max-width:630px){
 
 	.contact-info{padding:10px 20px;}
 
@@ -242,6 +238,20 @@
 	    left: 6px;
 	}
 
+	.about-wrapper{align-items: flex-end;}
+
+	.saman{
+		max-width: 180px;
+		margin-left: -89px;
+	}
+
+	#about-me p{
+		padding-top:30px !important;
+		-webkit-transform:translateY(-15px);
+		-moz-transform:translateY(-15px);
+		transform:translateY(-15px);
+	}
+
 	.menu{
 		right: 50% !important;
 		top:auto !important;
@@ -270,7 +280,7 @@
 
 						/*            540px Screen         */
 
-@media only screen and (max-width:540px){
+@media (max-width:540px){
 
 	h1{font-size:45px;}
 	h2{font-size:38px;}
@@ -279,7 +289,6 @@
 	h5{font-size:22px;}
 	h6{font-size:19px;}
 	p{padding-top:20px !important;}
-	#about-me p{padding-top:30px !important;}
 
 	.section-title span{font-size: 19px;}
 
@@ -396,13 +405,6 @@
 
 	body{font-size: 16px;}
 
-	#about-me{padding-bottom: 350px;}
-
-	.saman{
-		width: 150px;
-		margin-left: -75px;
-	}
-
 	.social-icon{margin:0 4px !important;}
 
 	.contact-info{padding:10px 15px;}
@@ -425,15 +427,13 @@
 
 						/*           430px Screen         */
 
-@media only screen and (max-width:430px){
+@media (max-width:430px){
 
 	.button-holder .bttn{margin: 10px;}
 
 	.pagination-item{margin-left: -160px;}
 
 	.pagination-content{height: 250px;}
-
-	#about-me{padding-bottom:320px;}
 
 	.stat-box-wrapper{padding-top:30px;}
 
@@ -444,4 +444,11 @@
 		background-size: 18px;
 	}
 
+}
+
+@media (max-width: 360px) {
+	.saman{
+		max-width: 144px;
+		margin-left: -80px;
+	}
 }
