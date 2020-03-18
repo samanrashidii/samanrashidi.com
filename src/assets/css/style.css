@@ -284,8 +284,9 @@
 
 .saman{
 	position: absolute;
-	left:10%;
+	left:50%;
 	bottom:0;
+	margin-left: -100px;
 }
 
 .stat-box-wrapper{
