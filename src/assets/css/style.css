@@ -519,9 +519,8 @@
 }
 
 .contact-info strong{display: inline-block;}
-
 .contact-info a{color:#fefefe;}
-
+.contact-info a:hover{color:#f55757;}
 .contact-info ul li{margin:15px 0;}
 
 .socials{margin-top:30px !important;}
