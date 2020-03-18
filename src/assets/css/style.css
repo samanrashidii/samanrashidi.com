@@ -450,7 +450,10 @@
 	background-color: #0a9abd;
 }
 
-.contact-form{position: relative;}
+.contact-form{
+	position: relative;
+	margin-top:30px;
+}
 
 .ac-custom input[aria-invalid="true"] + label{color: tomato;}
 .ac-custom input[aria-invalid="true"] + label::before{
@@ -506,10 +509,10 @@
 }
 
 .contact-info{
-	width: 100%;
-	text-align: left;
+	max-width: 386px;
+	text-align: center;
 	padding:20px 35px;
-	margin-top:70px;
+	margin:40px auto 0 auto;
 	border:3px dashed #161616;
 }
 
@@ -537,6 +540,7 @@
 .linkedin{background-image: url('../images/icons/linkedin.png');}
 .telegram{background-image: url('../images/icons/telegram.png');}
 .github{background-image: url('../images/icons/github.png');}
+.gitlab{background-image: url('../images/icons/gitlab.png');}
 .googleplus{background-image: url('../images/icons/googleplus.png');}
 .instagram{background-image: url('../images/icons/instagram.png');}
 .tumblr{background-image: url('../images/icons/tumblr.png');}
@@ -549,8 +553,9 @@
 .linkedin:hover{background-color: #0077b5;}
 .telegram:hover{background-color: #0088cc;}
 .github:hover{background-color: #6cc644;}
+.gitlab:hover{background-color: #fca326;}
 .googleplus:hover{background-color: #d34836;}
-.instagram:hover{background-color: #fccc63;}
+.instagram:hover{background-color: #dd2a7b;}
 .tumblr:hover{background-color: #34526f;}
 .twitter:hover{background-color: #38A1F3;}
 .pinterest:hover{background-color: #c8232c;}

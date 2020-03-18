@@ -1,6 +1,5 @@
 <template>
     <div class="reveal">
-        <h3 class="inner-title form-icon">{{Contact.subtitle2}}</h3>
         <div class="thank-you has-slime-2" :class="{'active' : formSubmit}">
             <div class="thank-you-box">
                 <div class="thank-you-inner-box">

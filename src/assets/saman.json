@@ -221,13 +221,9 @@
             "address": "Tbilisi, Georgia.",
             "addressCoord": "https://www.google.com/maps/@42.4943981,45.451405,6z",
             "emailText": "Email Address",
-            "email": "me@samanrashidi.com"
+            "email": "samanrashidi44@gmail.com"
         },
         "socials": [
-            {
-                "name": "telegram",
-                "url": "https://telegram.me/samanrashidii"
-            },
             {
                 "name": "github",
                 "url": "https://github.com/samanrashidii"
@@ -237,36 +233,20 @@
                 "url": "https://www.linkedin.com/in/samanrashidii"
             },
             {
+                "name": "gitlab",
+                "url": "https://www.gitlab.com/samanrashidii"
+            },
+            {
+                "name": "telegram",
+                "url": "https://telegram.me/samanrashidii"
+            },
+            {
                 "name": "instagram",
                 "url": "https://www.instagram.com/samanrashidii"
             },
             {
-                "name": "googleplus",
-                "url": "https://plus.google.com/109638627387819515843"
-            },
-            {
-                "name": "facebook",
-                "url": "https://www.facebook.com/samanrashidii"
-            },
-            {
-                "name": "tumblr",
-                "url": "https://samanrashidii.tumblr.com"
-            },
-            {
-                "name": "twitter",
-                "url": "https://twitter.com/samanrashidii"
-            },
-            {
-                "name": "pinterest",
-                "url": "https://www.pinterest.com/samanrashidii"
-            },
-            {
                 "name": "soundcloud",
                 "url": "https://soundcloud.com/samanrashidii"
-            },
-            {
-                "name": "tripadvisor",
-                "url": "https://www.tripadvisor.com/Profile/SamanRashidii"
             }
         ]
     },
