@@ -27,8 +27,7 @@
     "AboutMe": {
         "aboutDescription" : "<span itemprop=\"description\">My name is <strong itemprop=\"name\">Saman Rashidi</strong>, I’m a persian and I specialized in <strong>Front-end Web Development</strong>. I hold 4 CIW certification from MFT, and have gained <strong itemprop=\"award\">more than 11000 points in <a target=\"_blank\" class=\"txt-teamtreehouse\" href=\"http://www.teamtreehouse.com/samanrashidi\">TeamTreeHouse</a> Website</strong>. I started working with <a itemprop=\"worksFor\" target=\"_blank\" class=\"txt-edoramedia\" href=\"http://www.edoramedia.com\">Edoramedia</a> digital solution company from October 2014 until January 2019 as a Front-end Developer.</span> Before entering a career in creating web pages, I received my bachelor’s degree in Biology and shortly became highly interested in the science known as Neuromarketing. Due to my passion and education, I pursued the Marketing Management certification and worked with Dr. Mohsen Oftadehal (Cognitive Scientist) to concentrate on advertising skills approached using biological methods. Today I\"m a <strong itemprop=\"jobTitle\">Front-end Developer</strong> and have focus on developing creative and appealing websites, attractive and clean to the viewers’ eyes. In year 2017 because of the number of projects in company I had to create a <a itemprop=\"owns\" class=\"txt-samanira\" href=\"http://samanira.samanrashidi.com\" target=\"_blank\">CSS/JS framework</a> for developers to speed up coding in company. Most of the time when I'm not coding, I play online computer games like Overwatch and Heroes of the Storm professionally.",
         "sectionSub" : "a little",
-        "sectionTitle" : "About Me",
-        "image" : "saman_rashidi.png"
+        "sectionTitle" : "About Me"
     },
     "Parallax": {
         "text" : "If the implementation is <span class='site-color'>easy to explain</span>, it may be a <span class='site-color'>good idea</span>",
@@ -105,8 +104,8 @@
                 "floating": "floating-1"
             },
             {
-                "url": "adobe-photoshop.svg",
-                "name": "Adobe Photoshop",
+                "url": "react.svg",
+                "name": "React",
                 "floating": "floating-2"
             },
             {
@@ -120,8 +119,8 @@
                 "floating": "floating-2"
             },
             {
-                "url": "docker.svg",
-                "name": "Docker",
+                "url": "svelte.svg",
+                "name": "Svelte",
                 "floating": "floating-1"
             },
             {

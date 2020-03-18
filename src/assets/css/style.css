@@ -238,6 +238,7 @@
 
 #about-me{
 	width:100%;
+	padding-bottom: 444px !important;
 	background-color: #161616;
 }
 
@@ -283,7 +284,7 @@
 
 .saman{
 	position: absolute;
-	left:100px ;
+	left:10%;
 	bottom:0;
 }
 
