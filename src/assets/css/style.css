@@ -238,7 +238,7 @@
 
 #about-me{
 	width:100%;
-	padding-bottom: 444px !important;
+	padding-bottom: 0 !important;
 	background-color: #161616;
 }
 
@@ -264,6 +264,16 @@
 #about-me p a.txt-samanira:hover{border-bottom:1px solid#0a9abd;}
 #about-me p a.txt-samira:hover{border-bottom:1px solid#f05758;}
 
+.about-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+.saman{
+	padding-right: 20px;
+	margin-bottom: -10px;
+}
+
 #statistics{
 	width:100%;
 	padding-bottom: 0;
@@ -281,13 +291,6 @@
 }
 
 .white-color .section-title span{color:#fefefe;}
-
-.saman{
-	position: absolute;
-	left:50%;
-	bottom:0;
-	margin-left: -100px;
-}
 
 .stat-box-wrapper{
 	width: 100%;
@@ -509,16 +512,15 @@
 }
 
 .contact-info{
-	max-width: 386px;
 	text-align: center;
 	padding:20px 35px;
 	margin:40px auto 0 auto;
-	border:3px dashed #161616;
+	border:3px solid #161616;
 }
 
 .contact-info strong{display: inline-block;}
 
-.contact-info a:hover{color:#fefefe;}
+.contact-info a{color:#fefefe;}
 
 .contact-info ul li{margin:15px 0;}
 
