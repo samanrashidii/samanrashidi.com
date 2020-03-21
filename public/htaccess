@@ -3,6 +3,8 @@ AddType image/svg+xml svgz
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   RewriteBase /
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
@@ -21,4 +23,3 @@ RewriteRule ^img\/?$ "http\:\/\/www\.samanrashidi\.com\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^samanrashidi\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.samanrashidi\.com$
 RewriteRule ^images\/?$ "http\:\/\/www\.samanrashidi\.com\/" [R=301,L]
-
