@@ -25,8 +25,8 @@
                 </div>
 
                 <div class="button-holder center-aligned">
-                    <a itemprop="url" class="bttn has-icon web-icon" :href="pn.siteUrl" target="_blank">{{Project.bttnText1}}</a>
-                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})">{{Project.bttnText2}}</a>
+                    <a itemprop="url" class="bttn has-icon web-icon" :href="pn.siteUrl" target="_blank"><span>{{Project.bttnText1}}</span></a>
+                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})"><span>{{Project.bttnText2}}</span></a>
                 </div>
 
                 <div class="button-holder center-aligned has-arrow-button">

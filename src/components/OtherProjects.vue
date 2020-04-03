@@ -54,7 +54,7 @@ export default {
     width:100%;
     max-width:300px;
     height: 300px;
-    margin:15px;
+    margin:7px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #040404;

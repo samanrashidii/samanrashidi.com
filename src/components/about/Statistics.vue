@@ -9,7 +9,7 @@
           <div class="stat-box-wrapper">
             <div class="stat-box" v-for="(statistic, index) in Statistics.data" :key="index">
               <lottie-player
-                :src="statistic.image"  background="transparent"  :speed="statistic.speed"  style="width: 200px; height: 200px;"  loop  autoplay >
+                :src="statistic.image"  background="transparent"  :speed="statistic.speed"  style="width: 200px; height: 200px; margin:0 auto;"  loop  autoplay >
               </lottie-player>
               <div class="stat-box-info">
                 <strong><span class="counter-up">{{statistic.statData}}</span><span v-if="statistic.percentage"> %</span></strong><div>{{statistic.name}}</div>
