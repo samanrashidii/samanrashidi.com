@@ -250,7 +250,7 @@
         "url": "http://www.samanrashidi.com",
         "logo": "logo.png",
         "alt": "SamanirA Logo",
-        "copyright": "Copyright © 2020 <a itemprop=\"url\" href=\"http://www.samanrashidi.com\">Saman Rashidi</a>. All rights reserved"
+        "copyright": "Thank you for visiting my website"
     },
     "p404": {
         "pageTitle": "404",
@@ -402,33 +402,6 @@
                 }
             ],
             "siteUrl": "http://www.dripologyla.com"
-        },
-        {
-            "name": "MakianJavAria",
-            "description": "Makian Jav Aria Co has been established in 2014 by experienced managers in poultry industry and the company has put its priority to become responsible for the satisfaction of its customers",
-            "url": "makianjavaria",
-            "image": "makianjav-thumb.jpg",
-            "thumb": "makianjav-thumb-small.jpg",
-            "imageAlt": "MakianJavAria website by Saman Rashidi",
-            "pageBanner": "makianjav/banner.jpg",
-            "pageItems": [
-                {
-                    "type": "Desktop",
-                    "image": "makianjav/desktop.png",
-                    "description": "Makian Jav Aria Co has been established in 2014 by experienced managers in poultry industry and the company has put its priority to become responsible for the satisfaction of its customers"
-                },
-                {
-                    "type": "Tablet",
-                    "image": "makianjav/tablet.png",
-                    "description": "Makian Jav Aria Website has been built in modren design style with a vertical slider"
-                },
-                {
-                    "type": "Mobile",
-                    "image": "makianjav/mobile.png",
-                    "description":"Makian Jav Aria website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
-                }
-            ],
-            "siteUrl": "http://www.makianjav.com"
         },
         {
             "name": "Flexpass",
@@ -597,115 +570,59 @@
             "siteUrl": "http://gaboja.samanrashidi.com/"
         },
         {
-            "name": "Farnaz Yavarianfar",
-            "description": "Farnaz Yavarianfar is a professional painter and graduated in Philosophy and Literature from Italy in 2007",
-            "url": "farnaz-yavarianfar",
-            "image": "farnazyavarianfar-thumb.jpg",
-            "thumb": "farnazyavarianfar-thumb-small.jpg",
-            "imageAlt": "Farnaz Yavarianfar website by Saman Rashidi",
-            "secondBg": true,
-            "pageBanner": "farnaz-yavarianfar/banner.jpg",
-            "pageItems": [
-                {
-                    "type": "Desktop",
-                    "image": "farnaz-yavarianfar/desktop.png",
-                    "description": "Farnaz Yavarianfar is a professional painter and graduated in Philosophy and Literature from Italy in 2007"
-                },
-                {
-                    "type": "Tablet",
-                    "image": "farnaz-yavarianfar/tablet.png",
-                    "description": "She has been learning painting under guidance of Master Taha Behbahani in school of Surrealism Metaphysic since 2009"
-                },
-                {
-                    "type": "Mobile",
-                    "image": "farnaz-yavarianfar/mobile.png",
-                    "description":"Farnaz Yavarianfar's website is not built in responsive version but it will be shown great in all devices but you need to zoom-in sometimes!"
-                }
-            ],
-            "siteUrl": "http://www.farnazyavarianfar.com"
-        },
-        {
-            "name": "Edoramedia v5.0",
-            "description": "Edoramedia website got transformed into an awesome website in v5.0",
-            "url": "edoramedia-5",
-            "image": "edoramedia5-thumb.jpg",
-            "thumb": "edoramedia5-thumb-small.jpg",
-            "imageAlt": "Edoramedia v5.0 website by Saman Rashidi",
+            "name": "Edoramedia",
+            "description": "Edoramedia website got transformed into an awesome website in",
+            "url": "edoramedia",
+            "image": "edoramedia-thumb.jpg",
+            "thumb": "edoramedia-thumb-small.jpg",
+            "imageAlt": "Edoramedia website by Saman Rashidi",
             "thirdBG": true,
-            "pageBanner": "edoramedia5/banner.jpg",
+            "pageBanner": "edoramedia/banner.jpg",
             "pageItems": [
                 {
                     "type": "Desktop",
-                    "image": "edoramedia5/desktop.png",
-                    "description": "Edoramedia website got transformed into an awesome website in version 5.0"
+                    "image": "edoramedia/desktop.png",
+                    "description": "Edoramedia website got transformed into an awesome website in version"
                 },
                 {
                     "type": "Tablet",
-                    "image": "edoramedia5/tablet.png",
+                    "image": "edoramedia/tablet.png",
                     "description": "We have used the best and latest technologies in design and development"
                 },
                 {
                     "type": "Mobile",
-                    "image": "edoramedia5/mobile.png",
+                    "image": "edoramedia/mobile.png",
                     "description":"Edoramdia website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
                 }
             ],
             "siteUrl": "http://edoramedia.samanrashidi.com"
         },
         {
-            "name": "Benita v3.0",
+            "name": "Benita",
             "description": "Benita decided to imporove their website in both design and development because of their positive feedbacks",
-            "url": "benita-3",
-            "image": "benita3-thumb.jpg",
-            "thumb": "benita3-thumb-small.jpg",
-            "imageAlt": "Benita v3.0 website by Saman Rashidi",
-            "pageBanner": "benita3/banner.jpg",
+            "url": "benita",
+            "image": "benita-thumb.jpg",
+            "thumb": "benita-thumb-small.jpg",
+            "imageAlt": "Benita website by Saman Rashidi",
+            "pageBanner": "benita/banner.jpg",
             "pageItems": [
                 {
                     "type": "Desktop",
-                    "image": "benita3/desktop.png",
+                    "image": "benita/desktop.png",
                     "description": "Benita decided to imporove their website in both design and development because of their positive feedbacks"
                 },
                 {
                     "type": "Tablet",
-                    "image": "benita3/tablet.png",
+                    "image": "benita/tablet.png",
                     "description": "Lots of pages and options added to the 3rd version of Benita"
                 },
                 {
                     "type": "Mobile",
-                    "image": "benita3/mobile.png",
+                    "image": "benita/mobile.png",
                     "description":"Benita got transformed in may 2017 and it got divided into Benita and Benidana sites"
                 }
             ],
             "siteUrl": "http://benita.samanrashidi.com"
-        },
-        {
-            "name": "Petrokabir Co.",
-            "description": "Petro Sanat Kabir (PSK), was established in response to a rising demand for numerous services in oil, gas and petrochemical industries. Our talented people with the supervision of our experienced managers assist us to drive our business forward.",
-            "url": "petrokabir",
-            "image": "petrokabir-thumb.jpg",
-            "thumb": "petrokabir-thumb-small.jpg",
-            "imageAlt": "Petrokabir website by Saman Rashidi",
-            "secondBg": true,
-            "pageBanner": "petrokabir/banner.jpg",
-            "pageItems": [
-                {
-                    "type": "Desktop",
-                    "image": "petrokabir/desktop.png",
-                    "description": "Petro Sanat Kabir (PSK), was established in response to a rising demand for numerous services in oil, gas and petrochemical industries"
-                },
-                {
-                    "type": "Tablet",
-                    "image": "petrokabir/tablet.png",
-                    "description": "The majority of their abilities include provide commodities, spare parts and relevant chemical materials"
-                },
-                {
-                    "type": "Mobile",
-                    "image": "petrokabir/mobile.png",
-                    "description":"Petrokabir website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
-                }
-            ],
-            "siteUrl": "http://www.petrokabir.com"
         },
         {
             "name": "Branford Training",
@@ -734,34 +651,6 @@
                 }
             ],
             "siteUrl": "http://branford.samanrashidi.com/"
-        },
-        {
-            "name": "Battle Royale",
-            "description": "Battle Royale began its activities through the @Broyale telegram channel. On this website you can find the latest information of Clash Royale. The main goal of Battle Royale is planning events that you and your friends can battle together.",
-            "url": "battle-royale",
-            "image": "broyale-thumb.jpg",
-            "thumb": "broyale-thumb-small.jpg",
-            "imageAlt": "Battle Royale website by Saman Rashidi",
-            "secondBg": true,
-            "pageBanner": "broyale/banner.jpg",
-            "pageItems": [
-                {
-                    "type": "Desktop",
-                    "image": "broyale/desktop.png",
-                    "description": "Battle Royale began its activities through the @Broyale telegram channel. On this website you can find the latest information of Clash Royale"
-                },
-                {
-                    "type": "Tablet",
-                    "image": "broyale/tablet.png",
-                    "description": "The main goal of Battle Royale is planning events that you and your friends can battle together"
-                },
-                {
-                    "type": "Mobile",
-                    "image": "broyale/mobile.png",
-                    "description":"Battle Royale website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
-                }
-            ],
-            "siteUrl": "http://broyale.samanrashidi.com/"
         },
         {
             "name": "Primal MD",
@@ -957,62 +846,6 @@
                 }
             ],
             "siteUrl": "http://easymap.thefirstgroupinvestor.com/dubaimap"
-        },
-        {
-            "name": "Zafar Optic v1.0",
-            "description": "Zafar Optic as one of the core and leading companies in eyewear and optics business in Iran with a main shop and over 60 retail stores. Zafar Optic or Tehran Optic was established by Naser Yavarianfar in 1952",
-            "url": "zafaroptic",
-            "image": "zafaroptic-thumb.jpg",
-            "thumb": "zafaroptic-thumb-small.jpg",
-            "imageAlt": "Zafar Optic v1.0 website by Saman Rashidi",
-            "secondBg": true,
-            "pageBanner": "zafaroptic/banner.jpg",
-            "pageItems": [
-                {
-                    "type": "Desktop",
-                    "image": "zafaroptic/desktop.png",
-                    "description": "Zafar Optic as one of the core and leading companies in eyewear and optics business in Iran with a main shop and over 60 retail stores"
-                },
-                {
-                    "type": "Tablet",
-                    "image": "zafaroptic/tablet.png",
-                    "description": "Zafar Optic or Tehran Optic was established by Naser Yavarianfar in 1952"
-                },
-                {
-                    "type": "Mobile",
-                    "image": "zafaroptic/mobile.png",
-                    "description":"Zafaroptic website built in responsive version suitable for all devices such as Tablet, Mobile and ..."
-                }
-            ],
-            "siteUrl": "http://zafaroptic.samanrashidi.com/"
-        },
-        {
-            "name": "Edoramedia v3.0",
-            "description": "Edoramedia is an independent digital design and development studio lucky enough to do what they love best. building amazing solutions for their customers and ensuring they perform at levels exceeding expectations.",
-            "url": "edoramedia",
-            "image": "edoramedia-thumb.jpg",
-            "thumb": "edoramedia-thumb-small.jpg",
-            "imageAlt": "Edoramedia v3.0 website by Saman Rashidi",
-            "thirdBG": true,
-            "pageBanner": "edoramedia/banner.jpg",
-            "pageItems": [
-                {
-                    "type": "Desktop",
-                    "image": "edoramedia/desktop.png",
-                    "description": "Edoramedia is an independent digital design and development studio lucky enough to do what they love best"
-                },
-                {
-                    "type": "Tablet",
-                    "image": "edoramedia/tablet.png",
-                    "description": "Building amazing solutions for their customers and ensuring they perform at levels exceeding expectations"
-                },
-                {
-                    "type": "Mobile",
-                    "image": "edoramedia/mobile.png",
-                    "description":"Edoramdia v3.0 built in responsive version suitable for all devices such as Tablet, Mobile and ..."
-                }
-            ],
-            "siteUrl": "http://www.edoramedia.com"
         },
         {
             "name": "The Axiom Team",
