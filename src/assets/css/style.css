@@ -41,10 +41,10 @@
 
 .inner-banner p{
 	font-family: 'Effra-light';
-	font-size:24px;
+	font-size:30px;
 	color:#fefefe;
 	text-shadow:0 0 12px #181818;
-	padding-top:0;
+	padding-top:20px;
 }
 
 .button-holder{
@@ -257,12 +257,12 @@
 
 #about-me p a.txt-teamtreehouse{color:#5fcf80;}
 #about-me p a.txt-edoramedia{color:#c2196c;}
-#about-me p a.txt-samanira{color:#0a9abd;}
+#about-me p a.txt-samanira{color:#b6ef13;}
 #about-me p a.txt-samira{color:#f05758;}
 
 #about-me p a.txt-teamtreehouse:hover{border-bottom:1px solid #5fcf80;}
 #about-me p a.txt-edoramedia:hover{border-bottom:1px solid#c2196c;}
-#about-me p a.txt-samanira:hover{border-bottom:1px solid#0a9abd;}
+#about-me p a.txt-samanira:hover{border-bottom:1px solid#b6ef13;}
 #about-me p a.txt-samira:hover{border-bottom:1px solid#f05758;}
 
 .about-wrapper{
@@ -451,7 +451,7 @@
 
 #ContactMe{
 	width:100%;
-	background-color: #0a9abd;
+	background-color: #b6ef13;
 }
 
 .contact-form{
@@ -578,7 +578,7 @@
 	margin-right: 10px;
 }
 
-#footer span a{color:#0a9abd;}
+#footer span a{color:#b6ef13;}
 
 .samanira_secure{
 	visibility: hidden !important;

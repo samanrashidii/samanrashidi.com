@@ -7,8 +7,8 @@
     },
     "Menu": ["Home", "About", "Portfolio", "ContactMe"],
     "Home": {
-        "pageTitle": "<span class=\"site-color\">Saman</span> Rashidi",
-        "pageSubTitle": "Front-end Developer",
+        "pageTitle": "Saman <span class=\"site-color\">\" VorteX \"</span> Rashidi",
+        "pageSubTitle": "Front-end Developer & Pro Gamer",
         "pageBanner": "banner.jpg",
         "buttons": [
             {
