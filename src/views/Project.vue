@@ -25,8 +25,8 @@
                 </div>
 
                 <div class="button-holder center-aligned">
-                    <a itemprop="url" class="bttn has-icon web-icon" :href="pn.siteUrl" target="_blank"><span>{{Project.bttnText1}}</span></a>
-                    <a class="bttn has-icon home-icon" href="javascript:void(0)" @click="goToLink({name: 'home'})"><span>{{Project.bttnText2}}</span></a>
+                    <a itemprop="url" class="bttn" :href="pn.siteUrl" target="_blank"><span>{{Project.bttnText1}}</span></a>
+                    <a class="bttn" href="javascript:void(0)" @click="goToLink({name: 'home'})"><span>{{Project.bttnText2}}</span></a>
                 </div>
 
                 <div class="button-holder center-aligned has-arrow-button">
@@ -160,7 +160,7 @@ export default {
   position: relative;
   display: table;
   width: 100%;
-  height: 700px;
+  height: 640px;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -186,7 +186,7 @@ export default {
 
 .potfolio-banner h1 strong{
   font-family: 'Effra-light';
-  color:#0a9abd;
+  color:#b6ef13;
 }
 
 .portfolio-content{
@@ -258,9 +258,9 @@ export default {
 .portfolio-content .button-holder{margin-top:100px;}
 
 .portfolio-content .button-holder a.bttn:hover{
-  color:#ffffff;
-  background-color: #0a9abd;
-  border-color: #0a9abd !important;
+  color:#151618;
+  background-color: #b6ef13;
+  border-color: #b6ef13 !important;
 }
 
 </style>

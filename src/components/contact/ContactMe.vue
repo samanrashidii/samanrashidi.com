@@ -7,7 +7,6 @@
             </div>
             <div class="section-content">
                 <contact-information/>
-                <contact-form/>
             </div>
         </div>
     </div>
@@ -15,7 +14,6 @@
 
 <script>
 import ContactInformation from '@/components/contact/contact_me/ContactInformation.vue';
-import ContactForm from '@/components/contact/contact_me/ContactForm.vue';
 import {mapGetters} from 'vuex';
 
 export default {
@@ -26,7 +24,6 @@ export default {
   },
   components: {
     contactInformation: ContactInformation,
-    contactForm: ContactForm,
   },
 };
 </script>

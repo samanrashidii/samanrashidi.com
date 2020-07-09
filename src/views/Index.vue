@@ -1,10 +1,10 @@
 <template>
   <div class="index">
-    <app-navigation/>
-		<app-home/>
-		<app-about/>
-		<app-portfolio/>	
-		<app-contact/>
+    <AppNavigation/>
+		<AppHome/>
+		<AppAbout/>
+		<AppPortfolio/>	
+		<AppContact/>
 		<AppFooter/>
   </div>
 </template>
@@ -20,11 +20,11 @@ import Contact from '@/components/Contact.vue';
 export default {
   name: 'index',
   components: {
-		appNavigation: Navigation,
-		appHome: Home,
-		appAbout: About,
-		appPortfolio: Portfolio,
-		appContact: Contact,
+		AppNavigation: Navigation,
+		AppHome: Home,
+		AppAbout: About,
+		AppPortfolio: Portfolio,
+		AppContact: Contact,
   },
   metaInfo: {
     title : 'Saman Rashidi ~ Front-end Developer',

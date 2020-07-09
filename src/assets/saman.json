@@ -8,7 +8,7 @@
     "Menu": ["Home", "About", "Portfolio", "ContactMe"],
     "Home": {
         "pageTitle": "Saman <span class=\"site-color\">\" VorteX \"</span> Rashidi",
-        "pageSubTitle": "Front-end Developer & Pro Gamer",
+        "pageSubTitle": "Front-end Developer <span class=\"site-color\"> & </span> Pro Gamer",
         "pageBanner": "banner.jpg",
         "buttons": [
             {
@@ -187,8 +187,8 @@
         "readMore": "Read more about this project"
     },
     "Project": {
-        "bttnText1": "Open this project in web",
-        "bttnText2": "Back to homepage"
+        "bttnText1": "Open Project",
+        "bttnText2": "Back to Homepage"
     },
     "Contact" : {
         "sectionSub": "feel free to",
@@ -207,8 +207,8 @@
             "button": "Send your message to me"
         },
         "thankyou":{
-            "icon": "happy.png",
-            "iconAlt": "Happy Icon",
+            "icon": "logo.png",
+            "iconAlt": "MadVorteX Logo",
             "title": "Thank you",
             "subTitle": "for contacting me.",
             "description": "I'll call you as soon as possible on this number :"
@@ -220,7 +220,7 @@
             "addressText": "Address",
             "address": "Tbilisi, Georgia.",
             "addressCoord": "https://www.google.com/maps/@42.4943981,45.451405,6z",
-            "emailText": "Email Address",
+            "emailText": "@ Email Address",
             "email": "samanrashidi44@gmail.com"
         },
         "socials": [

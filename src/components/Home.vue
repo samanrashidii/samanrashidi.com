@@ -2,9 +2,8 @@
     <div id="Home">
         <div class="banner" :style="{backgroundImage : `url(${getImgUrl(Home.pageBanner)})`}">
             <div class="inner-banner">
-                <h1 v-html="Home.pageTitle"></h1>
-                <p>{{ Home.pageSubTitle }}</p>
-                <a class="Arrow" href="javascript:void(0)" :onClick="`JavaScript:$('#${Home.navTarget}').animatescroll({scrollSpeed:1200,easing:'easeInExpo'})`"></a>
+                <h1 v-html="Home.pageTitle" />
+                <p v-html="Home.pageSubTitle" />
             </div>
         </div>
     </div>
