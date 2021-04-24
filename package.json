@@ -7,22 +7,22 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "core-js": "^2.6.11",
-    "emailjs-com": "^2.4.1",
+    "axios": "^0.21.1",
+    "core-js": "^2.6.12",
+    "emailjs-com": "^2.6.4",
     "vee-validate": "^2.2.15",
-    "vue": "^2.6.11",
+    "vue": "^2.6.12",
     "vue-meta": "^1.6.0",
-    "vue-router": "^3.1.5",
+    "vue-router": "^3.5.1",
     "vue-router-sitemap": "0.0.4",
-    "vuex": "^3.1.2"
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
-    "@vue/cli-service": "^4.1.2",
-    "node-sass": "^4.13.1",
+    "@vue/cli-service": "^4.5.12",
+    "node-sass": "^4.14.1",
     "sass-loader": "^7.3.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "postcss": {
     "plugins": {
