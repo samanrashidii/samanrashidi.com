@@ -7,8 +7,8 @@
     },
     "Menu": ["Home", "About", "Portfolio", "ContactMe"],
     "Home": {
-        "pageTitle": "Saman <span class=\"site-color\">\" VorteX \"</span> Rashidi",
-        "pageSubTitle": "Front-end Developer <span class=\"site-color\"> & </span> Pro Gamer",
+        "pageTitle": "Saman <span class=\"site-color\">Rashidi</span> ",
+        "pageSubTitle": "Front-end Developer",
         "pageBanner": "banner.jpg",
         "buttons": [
             {
@@ -52,13 +52,13 @@
                 "name": "Lines of Code",
                 "image": "https://assets4.lottiefiles.com/packages/lf20_r16oE0.json",
                 "speed": "1",
-                "statData": "2373239"
+                "statData": "3173239"
             },
             {
                 "name": "Cups of Coffee",
                 "image": "https://assets3.lottiefiles.com/packages/lf20_MMzJtI.json",
                 "speed": "1",
-                "statData": "4424"
+                "statData": "4825"
             },
             {
                 "name": "Successful Projects",
@@ -109,6 +109,11 @@
                 "floating": "floating-2"
             },
             {
+                "url": "jest.svg",
+                "name": "Jest",
+                "floating": "floating-2"
+            },
+            {
                 "url": "nuxt.svg",
                 "name": "Nuxtjs",
                 "floating": "floating-1"
@@ -117,11 +122,6 @@
                 "url": "google-analytics.svg",
                 "name": "Google Analytics",
                 "floating": "floating-2"
-            },
-            {
-                "url": "svelte.svg",
-                "name": "Svelte",
-                "floating": "floating-1"
             },
             {
                 "url": "eslint.svg",
@@ -137,11 +137,6 @@
                 "url": "gitlab.svg",
                 "name": "Gitlab",
                 "floating": "floating-2"
-            },
-            {
-                "url": "nodejs.svg",
-                "name": "Nodejs",
-                "floating": "floating-1"
             },
             {
                 "url": "npm.svg",
