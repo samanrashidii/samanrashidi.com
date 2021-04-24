@@ -374,12 +374,12 @@
 	display: table;
 	width: 100%;
 	height: 100%;
-	background: url('../images/slime-black.png') no-repeat -25px -25px rgba(182,239,19, .90);
+	background: url('../images/slime-black.png') no-repeat -25px -25px rgba(182,239,19, .95);
 }
 
-.portfolio-layer.second-bg .portfolio-inner-layer{background: url('../images/slime-2-black.png') no-repeat center -25px rgba(182,239,19, .90);}
-.portfolio-layer.third-bg .portfolio-inner-layer{background: url('../images/slime-3-black.png') no-repeat 95% 95% rgba(182,239,19, .90);}
-.portfolio-layer.no-bg .portfolio-inner-layer{background: rgba(182,239,19, .90);}
+.portfolio-layer.second-bg .portfolio-inner-layer{background: url('../images/slime-2-black.png') no-repeat center -25px rgba(182,239,19, .95);}
+.portfolio-layer.third-bg .portfolio-inner-layer{background: url('../images/slime-3-black.png') no-repeat 95% 95% rgba(182,239,19, .95);}
+.portfolio-layer.no-bg .portfolio-inner-layer{background: rgba(182,239,19, .95);}
 
 .portfolio-layer-content{
 	display: table-cell;
@@ -460,6 +460,7 @@
 	font-size: 17px;
 	color:#bcbaba;
 	padding:30px 0;
+	margin-top:-30px;
 	background: #151618;
 }
 
