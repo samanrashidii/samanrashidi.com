@@ -130,8 +130,8 @@
 .has-shape.shape-3::before{background: url('../images/shape-3.png') no-repeat center center;}
 .has-shape.shape-4::before{background: url('../images/shape-4.png') no-repeat center center;}
 .has-shape.shape-5::before{background: url('../images/shape-5.png') no-repeat center center;}
-.has-shape.shape-3-revert::before{background: url('../images/shape-3-revert.png') no-repeat center center;top:0;}
-.has-shape.shape-4-revert::before{background: url('../images/shape-4-revert.png') no-repeat center center;top:0;}
+.has-shape.shape-3-revert::before{background: url('../images/shape-3-revert.png') no-repeat center center;top:-1px;}
+.has-shape.shape-4-revert::before{background: url('../images/shape-4-revert.png') no-repeat center center;top:-1px;}
 
 .has-slime::after{
 	content:'';
