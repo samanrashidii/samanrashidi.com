@@ -9,7 +9,7 @@ import ContactMe from '@/components/contact/ContactMe.vue';
 
 export default {
   components: {
-    contactMe: ContactMe,
-  },
-};
+    contactMe: ContactMe
+  }
+}
 </script>

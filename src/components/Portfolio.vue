@@ -7,18 +7,52 @@
             </div>
             <div class="my-portfolio has-top-margin">
                 <ul class="grid effect-8" id="grid">
-                    <li v-for="(project, index) in Projects" :key="index" :id="project.url">
-                        <div class="portfolio-layer" :class="{'second-bg' : project.secondBG, 'third-bg' : project.thirdBG, 'no-bg' : project.noBG, 'half-text' : project.halfText}">
-                            <a class="close" href="javascript:void(0)"></a>
-                            <div class="portfolio-inner-layer">
-                                <div class="portfolio-layer-content">
-                                    <h4>{{project.name}}</h4>
-                                    <p>{{project.description}}</p>
-                                    <router-link class="bttn site-3" :to="{name: 'portfolio', params: {id : project.url}}"><span>{{Portfolio.readMore}}</span></router-link>
+                    <li
+                        v-for="(project, index) in Projects"
+                        :key="index"
+                        :id="project.url"
+                    >
+                        <div
+                            class="portfolio-layer"
+                            :class="{
+                                'second-bg' : project.secondBG,
+                                'third-bg' : project.thirdBG,
+                                'no-bg' : project.noBG, 'half-text' : project.halfText}
+                            ">
+                            <a
+                                class="close"
+                                href="javascript:void(0)"
+                            />
+                            <div
+                                class="portfolio-inner-layer"
+                            >
+                                <div
+                                    class="portfolio-layer-content"
+                                >
+                                    <h4>
+                                        {{ project.name }}
+                                    </h4>
+                                    <p>
+                                        {{ project.description }}
+                                    </p>
+                                    <router-link
+                                        class="bttn site-3"
+                                        :to="{
+                                            name: 'portfolio',
+                                            params: { id : project.url }
+                                        }"
+                                    >
+                                        <span>
+                                            {{ Portfolio.readMore }}
+                                        </span>
+                                    </router-link>
                                 </div>
                             </div>
                         </div>
-                        <img :src="require(`@/assets/images/portfolio/${project.image}`)" :alt="project.imageAlt" />
+                        <img
+                            :src="require(`@/assets/images/portfolio/${project.image}`)"
+                            :alt="project.imageAlt"
+                        />
                     </li>
                 </ul>
             </div><!-- my-portfolio end -->
@@ -35,5 +69,5 @@ export default {
           'Projects'
         ])
     }
-};
+}
 </script>

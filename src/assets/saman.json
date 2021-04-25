@@ -34,15 +34,6 @@
         "author": "The Zen of Python",
         "background" : "parallax-1.jpg"
     },
-    "Samanira": {
-        "sectionSub": "Developed <strong class=\"site-color has-small-x-margin\">SamanirA</strong> framework @ May 2017",
-        "sectionDescription": "SamanirA is an easy frontend framework for Front-end Developers who wants to quickly build a project from 0 to 100% without wasting time to define CSS classes or write some Javascript functions.",
-        "portfolioTitle": "websites",
-        "readMore": "Read more",
-        "logo": "samanira.png",
-        "logoAlt": "Samanira Logo",
-        "url": "http://samanira.samanrashidi.com"
-    },
     "Statistics": {
         "sectionSub": "some",
         "sectionTitle": "Statistics and Skills",

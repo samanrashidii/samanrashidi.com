@@ -203,22 +203,10 @@
 	font-size: 55px;
 }
 
-#samanira{
-	padding:80px 0 100px 0;
-	background-color: #f1f1f1;
-}
-
-#samanira p{padding-top:22px;}
-
-.samanira-main-logo{
-  max-width: 200px;
-  margin-top:8px;
-}
-
 #about-me{
 	width:100%;
 	padding-bottom: 0 !important;
-	background-color: #161616;
+	background-color: #070707;
 }
 
 #about-me p{padding-bottom: 20px;}

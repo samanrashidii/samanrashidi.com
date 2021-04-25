@@ -3,20 +3,42 @@
         <div class="menu">
             <div class="menu-wrapper">
                 <ul class="menu-items">
-                    <li class="menu-item" v-for="(menuItem, index) in Menu" :key="index">
-                        <button type="button" class="menu-item-button" :onClick="`JavaScript:$('#${menuItem}').animatescroll({scrollSpeed:1200,easing:'easeInExpo'})`">
-                            <i class="menu-item-icon" :class="menuItem.toLowerCase()" :title="menuItem"></i>
+                    <li
+                        class="menu-item"
+                        v-for="(menuItem, index) in Menu"
+                        :key="index"
+                    >
+                        <button
+                            type="button"
+                            class="menu-item-button"
+                            :onClick="`JavaScript:$('#${menuItem}').animatescroll({scrollSpeed:1200,easing:'easeInExpo'})`"
+                        >
+                            <i
+                                class="menu-item-icon"
+                                :class="menuItem.toLowerCase()"
+                                :title="menuItem"
+                            />
                         </button>
-                        <div class="menu-item-bounce"></div>
+                        <div
+                            class="menu-item-bounce"
+                        />
                     </li>
                 </ul>
-                <button class="menu-toggle-button">
-                    <i class="menu-toggle-icon plus"></i>
+                <button
+                    class="menu-toggle-button"
+                >
+                    <i
+                        class="menu-toggle-icon plus"
+                    />
                 </button>
             </div>
         </div>
-
-        <svg class="svg-element" xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+        <svg
+            class="svg-element"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="800"
+        >
             <defs>
             <filter id="goo">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
@@ -33,8 +55,8 @@ import {mapGetters} from 'vuex';
 export default {
   computed: {
       ...mapGetters([
-          'Menu',
+          'Menu'
       ])
   }
-};
+}
 </script>

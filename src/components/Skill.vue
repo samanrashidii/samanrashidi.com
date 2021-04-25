@@ -1,6 +1,13 @@
 <template>
-    <div class="skill" :class="skill.floating">
-        <img :src="require(`@/assets/images/skills/${skill.url}`)" :alt="skill.name" :title="skill.name">
+    <div
+        class="skill"
+        :class="skill.floating"
+    >
+        <img
+            :src="require(`@/assets/images/skills/${skill.url}`)"
+            :alt="skill.name"
+            :title="skill.name"
+        >
     </div>
 </template>
 

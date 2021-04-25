@@ -23,9 +23,6 @@ export const store = new Vuex.Store({
         Parallax: state => {
             return state.saman.website.Parallax
         },
-        Samanira: state => {
-            return state.saman.website.Samanira
-        },
         Statistics: state => {
             return state.saman.website.Statistics
         },

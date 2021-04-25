@@ -2,8 +2,20 @@
     <div id="otherProjects">
         <div class="frame">
             <ul>
-                <li v-for="project in selectedProjects" :key="project.url" :style="{backgroundImage : `url(${getImgUrl(project.thumb)})`}">
-                    <router-link :to="{name: 'portfolio', params: {id : project.url}}"><strong>{{project.name}}</strong></router-link>
+                <li
+                    v-for="project in selectedProjects"
+                    :key="project.url"
+                    :style="{backgroundImage : `url(${getImgUrl(project.thumb)})`}"
+                >
+                    <router-link
+                        :to="{
+                            name: 'portfolio',
+                            params: {id : project.url}}"
+                        >
+                        <strong>
+                            {{project.name}}
+                        </strong>
+                    </router-link>
                 </li>
             </ul>
         </div>
@@ -24,20 +36,20 @@ export default {
         ]),
         selectedProjects(){
             const projects = this.Projects.filter(project => project.url != this.currentProject)
-            return projects.sort(() => .5 - Math.random()).slice(0,3);
+            return projects.sort(() => .5 - Math.random()).slice(0,3)
         }
     },
     watch:{
         $route(to, from){
-            this.$route.params.id = to.params.id;
+            this.$route.params.id = to.params.id
         }
     },
     methods: {
         getImgUrl(pic) {
-            return require(`@/assets/images/portfolio/${pic}`);
+            return require(`@/assets/images/portfolio/${pic}`)
         }
     }
-};
+}
 </script>
 
 <style scoped>

@@ -1,5 +1,8 @@
 <template>
-    <div id="ContactMe" class="has-shape shape-5 has-slime-3 center-aligned ">
+    <div
+        id="ContactMe"
+        class="has-shape shape-5 has-slime-3 center-aligned"
+    >
         <div class="frame">
             <div class="section-title">
                 <span>{{Contact.sectionSub}}</span>
@@ -19,11 +22,11 @@ import {mapGetters} from 'vuex';
 export default {
   computed: {
       ...mapGetters([
-          'Contact',
+          'Contact'
       ])
   },
   components: {
-    contactInformation: ContactInformation,
-  },
-};
+    contactInformation: ContactInformation
+  }
+}
 </script>
